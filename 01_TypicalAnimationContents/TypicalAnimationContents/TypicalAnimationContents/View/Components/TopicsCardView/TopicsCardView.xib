@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F77-A6-9rZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iwm-KI-Riz">
+                    <rect key="frame" x="18" y="226" width="200" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/02/11 更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auP-ja-xcC">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="25"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キャッチコピーなどが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXT-yF-R6m">
+                            <rect key="frame" x="0.0" y="25" width="200" height="25"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="5nX-eq-Fa0"/>
+                        <constraint firstAttribute="height" constant="50" id="aro-OY-DDU"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-ym-Vgc">
+                    <rect key="frame" x="18" y="86" width="333" height="47"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー的なものが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t65-Gj-306">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="13"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                            <color key="textColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今週のお題：●●●●" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF3-un-fc1">
+                            <rect key="frame" x="0.0" y="23" width="333" height="24"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTY-79-cQE">
+                    <rect key="frame" x="313" y="28" width="44" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y2y-nS-Zsa">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtV-3a-ahb">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TtV-3a-ahb" secondAttribute="bottom" id="8Ko-QJ-9bq"/>
+                        <constraint firstItem="y2y-nS-Zsa" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="top" id="CpU-gf-2bl"/>
+                        <constraint firstItem="TtV-3a-ahb" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="top" id="DF1-j0-IWB"/>
+                        <constraint firstItem="y2y-nS-Zsa" firstAttribute="leading" secondItem="HTY-79-cQE" secondAttribute="leading" id="KPx-Eo-uSb"/>
+                        <constraint firstItem="TtV-3a-ahb" firstAttribute="leading" secondItem="HTY-79-cQE" secondAttribute="leading" id="NQc-KI-zLL"/>
+                        <constraint firstAttribute="height" constant="44" id="OM5-GY-hbE"/>
+                        <constraint firstAttribute="trailing" secondItem="TtV-3a-ahb" secondAttribute="trailing" id="Rfd-dO-nmU"/>
+                        <constraint firstAttribute="trailing" secondItem="y2y-nS-Zsa" secondAttribute="trailing" id="cHd-St-gK8"/>
+                        <constraint firstAttribute="bottom" secondItem="y2y-nS-Zsa" secondAttribute="bottom" id="cfE-Ej-TRg"/>
+                        <constraint firstAttribute="width" constant="44" id="uai-pb-ndN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F77-A6-9rZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3v4-Rq-vWD"/>
+                <constraint firstItem="F77-A6-9rZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="5AX-Ve-hlq"/>
+                <constraint firstItem="HTY-79-cQE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="28" id="7dG-zA-5CZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iwm-KI-Riz" secondAttribute="bottom" constant="24" id="G5G-9g-2SW"/>
+                <constraint firstItem="iwm-KI-Riz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="KcR-Gh-5pn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VaL-ym-Vgc" secondAttribute="trailing" constant="24" id="M7v-PF-UVy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HTY-79-cQE" secondAttribute="trailing" constant="18" id="N9X-6r-zUy"/>
+                <constraint firstItem="VaL-ym-Vgc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="d5A-cn-WNE"/>
+                <constraint firstItem="F77-A6-9rZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kfb-zg-ABa"/>
+                <constraint firstItem="F77-A6-9rZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="o0O-CB-2tX"/>
+                <constraint firstItem="VaL-ym-Vgc" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="bottom" constant="14" id="s04-nb-v2F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="148.42578710644679"/>
+        </view>
+    </objects>
+</document>

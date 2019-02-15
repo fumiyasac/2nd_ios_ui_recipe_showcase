@@ -29,6 +29,19 @@
 		DE5673E222175608009BEA75 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E122175608009BEA75 /* UICollectionViewExtension.swift */; };
 		DE5673E522175620009BEA75 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E422175620009BEA75 /* UITableViewExtension.swift */; };
 		DE5673E722175650009BEA75 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */; };
+		DE5673EB221759D9009BEA75 /* MainTabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673EA221759D9009BEA75 /* MainTabBarItems.swift */; };
+		DE5673ED22175DF4009BEA75 /* MainTabBarAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673EC22175DF4009BEA75 /* MainTabBarAnimations.swift */; };
+		DE5673F5221767B4009BEA75 /* TopicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673F4221767B4009BEA75 /* TopicsDetail.storyboard */; };
+		DE5673FC22176830009BEA75 /* TopicsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673FB22176830009BEA75 /* TopicsDetailViewController.swift */; };
+		DE5673FF221768ED009BEA75 /* MasonryCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673FE221768ED009BEA75 /* MasonryCollectionViewLayout.swift */; };
+		DE567407221769E8009BEA75 /* TopicsHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE567405221769E8009BEA75 /* TopicsHeaderReusableView.swift */; };
+		DE567408221769E8009BEA75 /* TopicsHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE567406221769E8009BEA75 /* TopicsHeaderReusableView.xib */; };
+		DE56740C22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56740A22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift */; };
+		DE56740D22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE56740B22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib */; };
+		DE56741122176D9E009BEA75 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56740F22176D9E009BEA75 /* NewsTableViewCell.swift */; };
+		DE56741222176D9E009BEA75 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE56741022176D9E009BEA75 /* NewsTableViewCell.xib */; };
+		DE56741522176ECD009BEA75 /* TopicsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56741422176ECD009BEA75 /* TopicsCardView.swift */; };
+		DE56741722176EDB009BEA75 /* TopicsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE56741622176EDB009BEA75 /* TopicsCardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +84,7 @@
 		DE5673CB22175329009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimeTable.storyboard; sourceTree = "<group>"; };
 		DE5673CE221753B4009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PhotoGallery.storyboard; sourceTree = "<group>"; };
 		DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
-		DE5673D222175413009BEA75 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = TypicalAnimationContents/ViewController/NewsViewController.swift; sourceTree = SOURCE_ROOT; };
+		DE5673D222175413009BEA75 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = TypicalAnimationContents/ViewController/News/NewsViewController.swift; sourceTree = SOURCE_ROOT; };
 		DE5673D52217543F009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/News.storyboard; sourceTree = "<group>"; };
 		DE5673D72217549D009BEA75 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		DE5673DC221755C0009BEA75 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
@@ -79,6 +92,19 @@
 		DE5673E122175608009BEA75 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DE5673E422175620009BEA75 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DE5673EA221759D9009BEA75 /* MainTabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarItems.swift; sourceTree = "<group>"; };
+		DE5673EC22175DF4009BEA75 /* MainTabBarAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarAnimations.swift; sourceTree = "<group>"; };
+		DE5673F4221767B4009BEA75 /* TopicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopicsDetail.storyboard; sourceTree = "<group>"; };
+		DE5673FB22176830009BEA75 /* TopicsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsDetailViewController.swift; sourceTree = "<group>"; };
+		DE5673FE221768ED009BEA75 /* MasonryCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonryCollectionViewLayout.swift; sourceTree = "<group>"; };
+		DE567405221769E8009BEA75 /* TopicsHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsHeaderReusableView.swift; sourceTree = "<group>"; };
+		DE567406221769E8009BEA75 /* TopicsHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicsHeaderReusableView.xib; sourceTree = "<group>"; };
+		DE56740A22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE56740B22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE56740F22176D9E009BEA75 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		DE56741022176D9E009BEA75 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		DE56741422176ECD009BEA75 /* TopicsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsCardView.swift; sourceTree = "<group>"; };
+		DE56741622176EDB009BEA75 /* TopicsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicsCardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,11 +230,11 @@
 		DE5673BC22175105009BEA75 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DE5673BE221751DE009BEA75 /* MainTabBarController.swift */,
-				DE5673D222175413009BEA75 /* NewsViewController.swift */,
-				DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */,
-				DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */,
-				DE5673C82217530B009BEA75 /* TimeTableViewController.swift */,
+				DE5673F6221767E1009BEA75 /* News */,
+				DE5673F8221767F7009BEA75 /* PhotoGallery */,
+				DE5673F7221767EB009BEA75 /* TabBar */,
+				DE5673FD2217683E009BEA75 /* TimeTable */,
+				DE5673F922176802009BEA75 /* Topics */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -225,12 +251,12 @@
 		DE5673C02217523A009BEA75 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DE12ECA122101AD9008DFBFB /* LaunchScreen.storyboard */,
-				DE12EC9C22101AD7008DFBFB /* MainTabBar.storyboard */,
-				DE5673D42217543F009BEA75 /* News.storyboard */,
-				DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */,
-				DE5673C5221752A9009BEA75 /* Topics.storyboard */,
-				DE5673CA22175329009BEA75 /* TimeTable.storyboard */,
+				DE5673F0221766D9009BEA75 /* Launch */,
+				DE5673F1221766F8009BEA75 /* News */,
+				DE5673F222176702009BEA75 /* PhotoGallery */,
+				DE5673EF221766CE009BEA75 /* TabBar */,
+				DE5673F322176712009BEA75 /* TimeTable */,
+				DE5673EE221766B4009BEA75 /* Topics */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -245,6 +271,8 @@
 		DE5673DA22175566009BEA75 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				DE5673EA221759D9009BEA75 /* MainTabBarItems.swift */,
+				DE5673EC22175DF4009BEA75 /* MainTabBarAnimations.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -260,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5673D72217549D009BEA75 /* CustomViewBase.swift */,
+				DE5673FE221768ED009BEA75 /* MasonryCollectionViewLayout.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -267,8 +296,138 @@
 		DE5673E92217579E009BEA75 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE56741322176EAE009BEA75 /* TopicsCardView */,
+				DE56740E22176D80009BEA75 /* NewsTableViewCell */,
+				DE56740922176C6F009BEA75 /* PhotoGalleryCollectionViewCell */,
+				DE5674002217697F009BEA75 /* TopicsHeaderReusableView */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		DE5673EE221766B4009BEA75 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673C5221752A9009BEA75 /* Topics.storyboard */,
+				DE5673F4221767B4009BEA75 /* TopicsDetail.storyboard */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		DE5673EF221766CE009BEA75 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DE12EC9C22101AD7008DFBFB /* MainTabBar.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DE5673F0221766D9009BEA75 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				DE12ECA122101AD9008DFBFB /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		DE5673F1221766F8009BEA75 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673D42217543F009BEA75 /* News.storyboard */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		DE5673F222176702009BEA75 /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		DE5673F322176712009BEA75 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673CA22175329009BEA75 /* TimeTable.storyboard */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		DE5673F6221767E1009BEA75 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673D222175413009BEA75 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		DE5673F7221767EB009BEA75 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673BE221751DE009BEA75 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DE5673F8221767F7009BEA75 /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		DE5673F922176802009BEA75 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */,
+				DE5673FB22176830009BEA75 /* TopicsDetailViewController.swift */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		DE5673FD2217683E009BEA75 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673C82217530B009BEA75 /* TimeTableViewController.swift */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		DE5674002217697F009BEA75 /* TopicsHeaderReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE567405221769E8009BEA75 /* TopicsHeaderReusableView.swift */,
+				DE567406221769E8009BEA75 /* TopicsHeaderReusableView.xib */,
+			);
+			path = TopicsHeaderReusableView;
+			sourceTree = "<group>";
+		};
+		DE56740922176C6F009BEA75 /* PhotoGalleryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE56740A22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift */,
+				DE56740B22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib */,
+			);
+			path = PhotoGalleryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DE56740E22176D80009BEA75 /* NewsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE56740F22176D9E009BEA75 /* NewsTableViewCell.swift */,
+				DE56741022176D9E009BEA75 /* NewsTableViewCell.xib */,
+			);
+			path = NewsTableViewCell;
+			sourceTree = "<group>";
+		};
+		DE56741322176EAE009BEA75 /* TopicsCardView */ = {
+			isa = PBXGroup;
+			children = (
+				DE56741422176ECD009BEA75 /* TopicsCardView.swift */,
+				DE56741622176EDB009BEA75 /* TopicsCardView.xib */,
+			);
+			path = TopicsCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,7 +542,12 @@
 				DE12ECA022101AD9008DFBFB /* Assets.xcassets in Resources */,
 				DE5673D62217543F009BEA75 /* News.storyboard in Resources */,
 				DE5673CF221753B4009BEA75 /* PhotoGallery.storyboard in Resources */,
+				DE56741722176EDB009BEA75 /* TopicsCardView.xib in Resources */,
+				DE56740D22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib in Resources */,
+				DE56741222176D9E009BEA75 /* NewsTableViewCell.xib in Resources */,
 				DE12EC9E22101AD7008DFBFB /* MainTabBar.storyboard in Resources */,
+				DE5673F5221767B4009BEA75 /* TopicsDetail.storyboard in Resources */,
+				DE567408221769E8009BEA75 /* TopicsHeaderReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,18 +625,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5673EB221759D9009BEA75 /* MainTabBarItems.swift in Sources */,
+				DE5673FC22176830009BEA75 /* TopicsDetailViewController.swift in Sources */,
+				DE567407221769E8009BEA75 /* TopicsHeaderReusableView.swift in Sources */,
 				DE5673D82217549D009BEA75 /* CustomViewBase.swift in Sources */,
 				DE5673DD221755C0009BEA75 /* NSObjectProtocolExtension.swift in Sources */,
 				DE12EC9B22101AD7008DFBFB /* TopicsViewController.swift in Sources */,
+				DE56741522176ECD009BEA75 /* TopicsCardView.swift in Sources */,
 				DE12EC9922101AD7008DFBFB /* AppDelegate.swift in Sources */,
 				DE5673E222175608009BEA75 /* UICollectionViewExtension.swift in Sources */,
 				DE5673E522175620009BEA75 /* UITableViewExtension.swift in Sources */,
+				DE5673FF221768ED009BEA75 /* MasonryCollectionViewLayout.swift in Sources */,
 				DE5673C92217530B009BEA75 /* TimeTableViewController.swift in Sources */,
 				DE5673DF221755CF009BEA75 /* UIColorExtension.swift in Sources */,
+				DE5673ED22175DF4009BEA75 /* MainTabBarAnimations.swift in Sources */,
 				DE5673E722175650009BEA75 /* UIViewControllerExtension.swift in Sources */,
 				DE5673D322175413009BEA75 /* NewsViewController.swift in Sources */,
 				DE5673BF221751DE009BEA75 /* MainTabBarController.swift in Sources */,
+				DE56740C22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift in Sources */,
 				DE5673D1221753C7009BEA75 /* PhotoGalleryViewController.swift in Sources */,
+				DE56741122176D9E009BEA75 /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

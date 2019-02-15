@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="TopicsHeaderReusableView" customModule="TypicalAnimationContents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50I-3z-Ebg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFO-yF-5hD">
+                            <rect key="frame" x="0.0" y="63.5" width="320" height="0.5"/>
+                            <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="jXO-43-lZM"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今月の話題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojx-UH-Ia9">
+                            <rect key="frame" x="16" y="19.5" width="160" height="32"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月2回更新中！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcf-3m-3aZ">
+                            <rect key="frame" x="224" y="39.5" width="80" height="12"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YFO-yF-5hD" firstAttribute="top" secondItem="Ojx-UH-Ia9" secondAttribute="bottom" constant="12" id="FOw-Pc-yrE"/>
+                        <constraint firstItem="Ojx-UH-Ia9" firstAttribute="leading" secondItem="50I-3z-Ebg" secondAttribute="leading" constant="16" id="Ivk-eN-bR2"/>
+                        <constraint firstAttribute="bottom" secondItem="YFO-yF-5hD" secondAttribute="bottom" id="JqD-Fe-8Ub"/>
+                        <constraint firstItem="YFO-yF-5hD" firstAttribute="leading" secondItem="50I-3z-Ebg" secondAttribute="leading" id="XN5-VM-VgJ"/>
+                        <constraint firstItem="YFO-yF-5hD" firstAttribute="top" secondItem="Bcf-3m-3aZ" secondAttribute="bottom" constant="12" id="dBg-Tl-SQX"/>
+                        <constraint firstAttribute="trailing" secondItem="YFO-yF-5hD" secondAttribute="trailing" id="hse-fa-aIg"/>
+                        <constraint firstAttribute="trailing" secondItem="Bcf-3m-3aZ" secondAttribute="trailing" constant="16" id="y91-eV-jVM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="50I-3z-Ebg" secondAttribute="trailing" id="5Ko-k4-9Vs"/>
+                <constraint firstItem="50I-3z-Ebg" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="Hx1-jI-Ofk"/>
+                <constraint firstAttribute="bottom" secondItem="50I-3z-Ebg" secondAttribute="bottom" id="R9L-Jx-T4g"/>
+                <constraint firstItem="50I-3z-Ebg" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="qrG-dD-W2z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -20,6 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="96w-f2-rAx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="r8A-3E-ffC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X73-Vs-O9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.swift
+//  TopicsDetailViewController.swift
 //  TypicalAnimationContents
 //
 //  Created by 酒井文也 on 2019/02/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class TopicsDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
