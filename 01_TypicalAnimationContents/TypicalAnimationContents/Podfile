@@ -6,15 +6,20 @@ target 'TypicalAnimationContents' do
   use_frameworks!
 
   # Pods for TypicalAnimationContents
-
-  target 'TypicalAnimationContentsTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'TypicalAnimationContentsUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+  pod 'FontAwesome.swift'
+  pod 'TransitionableTab', '~> 0.2.0'
+  pod 'GridView'
+  pod 'EasyTransitions'
 end
+
+# TransitionableTabのライブラリバージョンをSwift4.2に固定する
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['TransitionableTab' , 'EasyTransitions'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+  end
+end
+

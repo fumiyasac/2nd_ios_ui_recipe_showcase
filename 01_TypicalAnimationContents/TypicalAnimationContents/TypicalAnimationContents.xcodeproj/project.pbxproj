@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75E89CC248C303F0EFE2575C /* Pods_TypicalAnimationContents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2D152B19B1229D41FEF072 /* Pods_TypicalAnimationContents.framework */; };
 		DE12EC9922101AD7008DFBFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12EC9822101AD7008DFBFB /* AppDelegate.swift */; };
-		DE12EC9B22101AD7008DFBFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12EC9A22101AD7008DFBFB /* ViewController.swift */; };
-		DE12EC9E22101AD7008DFBFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12EC9C22101AD7008DFBFB /* Main.storyboard */; };
+		DE12EC9B22101AD7008DFBFB /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */; };
+		DE12EC9E22101AD7008DFBFB /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12EC9C22101AD7008DFBFB /* MainTabBar.storyboard */; };
 		DE12ECA022101AD9008DFBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE12EC9F22101AD9008DFBFB /* Assets.xcassets */; };
 		DE12ECA322101AD9008DFBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12ECA122101AD9008DFBFB /* LaunchScreen.storyboard */; };
 		DE12ECAE22101AD9008DFBFB /* TypicalAnimationContentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECAD22101AD9008DFBFB /* TypicalAnimationContentsTests.swift */; };
 		DE12ECB922101AD9008DFBFB /* TypicalAnimationContentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECB822101AD9008DFBFB /* TypicalAnimationContentsUITests.swift */; };
+		DE5673BF221751DE009BEA75 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673BE221751DE009BEA75 /* MainTabBarController.swift */; };
+		DE5673C7221752A9009BEA75 /* Topics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673C5221752A9009BEA75 /* Topics.storyboard */; };
+		DE5673C92217530B009BEA75 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673C82217530B009BEA75 /* TimeTableViewController.swift */; };
+		DE5673CC22175329009BEA75 /* TimeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673CA22175329009BEA75 /* TimeTable.storyboard */; };
+		DE5673CF221753B4009BEA75 /* PhotoGallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */; };
+		DE5673D1221753C7009BEA75 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */; };
+		DE5673D322175413009BEA75 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673D222175413009BEA75 /* NewsViewController.swift */; };
+		DE5673D62217543F009BEA75 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673D42217543F009BEA75 /* News.storyboard */; };
+		DE5673D82217549D009BEA75 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673D72217549D009BEA75 /* CustomViewBase.swift */; };
+		DE5673DD221755C0009BEA75 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673DC221755C0009BEA75 /* NSObjectProtocolExtension.swift */; };
+		DE5673DF221755CF009BEA75 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673DE221755CF009BEA75 /* UIColorExtension.swift */; };
+		DE5673E222175608009BEA75 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E122175608009BEA75 /* UICollectionViewExtension.swift */; };
+		DE5673E522175620009BEA75 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E422175620009BEA75 /* UITableViewExtension.swift */; };
+		DE5673E722175650009BEA75 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C2D152B19B1229D41FEF072 /* Pods_TypicalAnimationContents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypicalAnimationContents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA0BF3E6010A149E59609C9 /* Pods-TypicalAnimationContents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypicalAnimationContents.release.xcconfig"; path = "Target Support Files/Pods-TypicalAnimationContents/Pods-TypicalAnimationContents.release.xcconfig"; sourceTree = "<group>"; };
+		CDA1202564F49910B47B2746 /* Pods-TypicalAnimationContents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypicalAnimationContents.debug.xcconfig"; path = "Target Support Files/Pods-TypicalAnimationContents/Pods-TypicalAnimationContents.debug.xcconfig"; sourceTree = "<group>"; };
 		DE12EC9522101AD7008DFBFB /* TypicalAnimationContents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypicalAnimationContents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12EC9822101AD7008DFBFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE12EC9A22101AD7008DFBFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE12EC9D22101AD7008DFBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
+		DE12EC9D22101AD7008DFBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabBar.storyboard; sourceTree = "<group>"; };
 		DE12EC9F22101AD9008DFBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE12ECA222101AD9008DFBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE12ECA422101AD9008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +65,20 @@
 		DE12ECB422101AD9008DFBFB /* TypicalAnimationContentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypicalAnimationContentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12ECB822101AD9008DFBFB /* TypicalAnimationContentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicalAnimationContentsUITests.swift; sourceTree = "<group>"; };
 		DE12ECBA22101AD9008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5673BE221751DE009BEA75 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DE5673C6221752A9009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Topics.storyboard; sourceTree = "<group>"; };
+		DE5673C82217530B009BEA75 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		DE5673CB22175329009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimeTable.storyboard; sourceTree = "<group>"; };
+		DE5673CE221753B4009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PhotoGallery.storyboard; sourceTree = "<group>"; };
+		DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		DE5673D222175413009BEA75 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = TypicalAnimationContents/ViewController/NewsViewController.swift; sourceTree = SOURCE_ROOT; };
+		DE5673D52217543F009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/News.storyboard; sourceTree = "<group>"; };
+		DE5673D72217549D009BEA75 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DE5673DC221755C0009BEA75 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DE5673DE221755CF009BEA75 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DE5673E122175608009BEA75 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DE5673E422175620009BEA75 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E89CC248C303F0EFE2575C /* Pods_TypicalAnimationContents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BB9D3C3CBA952D0341981BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C2D152B19B1229D41FEF072 /* Pods_TypicalAnimationContents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD9025C74DED5196A780AE63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDA1202564F49910B47B2746 /* Pods-TypicalAnimationContents.debug.xcconfig */,
+				8CA0BF3E6010A149E59609C9 /* Pods-TypicalAnimationContents.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DE12EC8C22101AD7008DFBFB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				DE12ECAC22101AD9008DFBFB /* TypicalAnimationContentsTests */,
 				DE12ECB722101AD9008DFBFB /* TypicalAnimationContentsUITests */,
 				DE12EC9622101AD7008DFBFB /* Products */,
+				BD9025C74DED5196A780AE63 /* Pods */,
+				3BB9D3C3CBA952D0341981BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +149,17 @@
 		DE12EC9722101AD7008DFBFB /* TypicalAnimationContents */ = {
 			isa = PBXGroup;
 			children = (
-				DE12EC9822101AD7008DFBFB /* AppDelegate.swift */,
-				DE12EC9A22101AD7008DFBFB /* ViewController.swift */,
-				DE12EC9C22101AD7008DFBFB /* Main.storyboard */,
-				DE12EC9F22101AD9008DFBFB /* Assets.xcassets */,
-				DE12ECA122101AD9008DFBFB /* LaunchScreen.storyboard */,
 				DE12ECA422101AD9008DFBFB /* Info.plist */,
+				DE12EC9822101AD7008DFBFB /* AppDelegate.swift */,
+				DE12EC9F22101AD9008DFBFB /* Assets.xcassets */,
+				DE5673E0221755E1009BEA75 /* Data */,
+				DE5673DA22175566009BEA75 /* Enum */,
+				DE5673BA221750EA009BEA75 /* Extensions */,
+				DE5673C122175247009BEA75 /* Model */,
+				DE5673BB221750F7009BEA75 /* Presenter */,
+				DE5673C02217523A009BEA75 /* Storyboard */,
+				DE5673BD2217510E009BEA75 /* View */,
+				DE5673BC22175105009BEA75 /* ViewController */,
 			);
 			path = TypicalAnimationContents;
 			sourceTree = "<group>";
@@ -125,6 +182,95 @@
 			path = TypicalAnimationContentsUITests;
 			sourceTree = "<group>";
 		};
+		DE5673BA221750EA009BEA75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673DC221755C0009BEA75 /* NSObjectProtocolExtension.swift */,
+				DE5673E122175608009BEA75 /* UICollectionViewExtension.swift */,
+				DE5673DE221755CF009BEA75 /* UIColorExtension.swift */,
+				DE5673E422175620009BEA75 /* UITableViewExtension.swift */,
+				DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE5673BB221750F7009BEA75 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE5673BC22175105009BEA75 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673BE221751DE009BEA75 /* MainTabBarController.swift */,
+				DE5673D222175413009BEA75 /* NewsViewController.swift */,
+				DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */,
+				DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */,
+				DE5673C82217530B009BEA75 /* TimeTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DE5673BD2217510E009BEA75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673E92217579E009BEA75 /* Components */,
+				DE5673E82217578E009BEA75 /* Classes */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE5673C02217523A009BEA75 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE12ECA122101AD9008DFBFB /* LaunchScreen.storyboard */,
+				DE12EC9C22101AD7008DFBFB /* MainTabBar.storyboard */,
+				DE5673D42217543F009BEA75 /* News.storyboard */,
+				DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */,
+				DE5673C5221752A9009BEA75 /* Topics.storyboard */,
+				DE5673CA22175329009BEA75 /* TimeTable.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE5673C122175247009BEA75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE5673DA22175566009BEA75 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DE5673E0221755E1009BEA75 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DE5673E82217578E009BEA75 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE5673D72217549D009BEA75 /* CustomViewBase.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DE5673E92217579E009BEA75 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE12ECBD22101AD9008DFBFB /* Build configuration list for PBXNativeTarget "TypicalAnimationContents" */;
 			buildPhases = (
+				DE5C9FE81297D27C7E96A192 /* [CP] Check Pods Manifest.lock */,
 				DE12EC9122101AD7008DFBFB /* Sources */,
 				DE12EC9222101AD7008DFBFB /* Frameworks */,
 				DE12EC9322101AD7008DFBFB /* Resources */,
+				763389F20C96B0EF2ABA007E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,8 +378,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE12ECA322101AD9008DFBFB /* LaunchScreen.storyboard in Resources */,
+				DE5673CC22175329009BEA75 /* TimeTable.storyboard in Resources */,
+				DE5673C7221752A9009BEA75 /* Topics.storyboard in Resources */,
 				DE12ECA022101AD9008DFBFB /* Assets.xcassets in Resources */,
-				DE12EC9E22101AD7008DFBFB /* Main.storyboard in Resources */,
+				DE5673D62217543F009BEA75 /* News.storyboard in Resources */,
+				DE5673CF221753B4009BEA75 /* PhotoGallery.storyboard in Resources */,
+				DE12EC9E22101AD7008DFBFB /* MainTabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +403,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		763389F20C96B0EF2ABA007E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TypicalAnimationContents/Pods-TypicalAnimationContents-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyTransitions/EasyTransitions.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GridView/GridView.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionableTab/TransitionableTab.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTransitions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GridView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionableTab.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TypicalAnimationContents/Pods-TypicalAnimationContents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE5C9FE81297D27C7E96A192 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TypicalAnimationContents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE12EC9122101AD7008DFBFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE12EC9B22101AD7008DFBFB /* ViewController.swift in Sources */,
+				DE5673D82217549D009BEA75 /* CustomViewBase.swift in Sources */,
+				DE5673DD221755C0009BEA75 /* NSObjectProtocolExtension.swift in Sources */,
+				DE12EC9B22101AD7008DFBFB /* TopicsViewController.swift in Sources */,
 				DE12EC9922101AD7008DFBFB /* AppDelegate.swift in Sources */,
+				DE5673E222175608009BEA75 /* UICollectionViewExtension.swift in Sources */,
+				DE5673E522175620009BEA75 /* UITableViewExtension.swift in Sources */,
+				DE5673C92217530B009BEA75 /* TimeTableViewController.swift in Sources */,
+				DE5673DF221755CF009BEA75 /* UIColorExtension.swift in Sources */,
+				DE5673E722175650009BEA75 /* UIViewControllerExtension.swift in Sources */,
+				DE5673D322175413009BEA75 /* NewsViewController.swift in Sources */,
+				DE5673BF221751DE009BEA75 /* MainTabBarController.swift in Sources */,
+				DE5673D1221753C7009BEA75 /* PhotoGalleryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +508,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DE12EC9C22101AD7008DFBFB /* Main.storyboard */ = {
+		DE12EC9C22101AD7008DFBFB /* MainTabBar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DE12EC9D22101AD7008DFBFB /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainTabBar.storyboard;
 			sourceTree = "<group>";
 		};
 		DE12ECA122101AD9008DFBFB /* LaunchScreen.storyboard */ = {
@@ -307,6 +522,38 @@
 				DE12ECA222101AD9008DFBFB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5673C5221752A9009BEA75 /* Topics.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5673C6221752A9009BEA75 /* Base */,
+			);
+			name = Topics.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5673CA22175329009BEA75 /* TimeTable.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5673CB22175329009BEA75 /* Base */,
+			);
+			name = TimeTable.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5673CE221753B4009BEA75 /* Base */,
+			);
+			name = PhotoGallery.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5673D42217543F009BEA75 /* News.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5673D52217543F009BEA75 /* Base */,
+			);
+			name = News.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,6 +677,7 @@
 		};
 		DE12ECBE22101AD9008DFBFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA1202564F49910B47B2746 /* Pods-TypicalAnimationContents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +696,7 @@
 		};
 		DE12ECBF22101AD9008DFBFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA0BF3E6010A149E59609C9 /* Pods-TypicalAnimationContents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

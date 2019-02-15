@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TopicsViewController.swift
 //  TypicalAnimationContents
 //
 //  Created by 酒井文也 on 2019/02/10.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TopicsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
