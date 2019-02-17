@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FontAwesome_swift
 
 // MARK: - Protocol
 
@@ -24,6 +25,15 @@ final class TopicsCardView: CustomViewBase {
 
     // Viewのサイズ
     static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width - cardMargin * 2, height: 400.0)
+
+    @IBOutlet weak private var categoryLabel: UILabel!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var topicImageView: UIImageView!
+    @IBOutlet weak private var publishDateLabel: UILabel!
+    @IBOutlet weak private var catchCopyLabel: UILabel!
+
+    @IBOutlet weak private var closeButton: UIButton!
+    @IBOutlet weak private var closeButtonImageView: UIImageView!
 
     // MARK: - Initializer
 
@@ -56,7 +66,11 @@ final class TopicsCardView: CustomViewBase {
     }
 
     // MARK: - Function
-    
+
+    func setCell() {
+        
+    }
+
     // 引数で渡されたレイアウトに関する定義を適用する
     func applyLayoutSettings(layoutState: TopicsCardView.LayoutState) {
         self.layer.cornerRadius = layoutState.cornerRadius
@@ -65,8 +79,19 @@ final class TopicsCardView: CustomViewBase {
 
     // MARK: - Private Function
 
-    // MEMO: 初期化時は折りたたんだ状態のレイアウトを適用する
+    @objc private func closeButtonTapped() {
+        self.delegate?.closeTopicsCard()
+    }
+
     private func setupTopicsCardView() {
+
+        // MEMO: 初期化時は折りたたんだ状態のレイアウトを適用する
         applyLayoutSettings(layoutState: LayoutState.collapsed)
+
+        // MEMO: 戻るボタンのデザインを適用する
+        let buttonImageSize = CGSize(width: 44.0, height: 44.0)
+        let buttonImageColor: UIColor = UIColor(code: "#bcbcbc")
+        closeButtonImageView.image = UIImage.fontAwesomeIcon(name: .timesCircle, style: .solid, textColor: buttonImageColor, size: buttonImageSize)
+        closeButton.addTarget(self, action: #selector(self.closeButtonTapped), for: .touchUpInside)
     }
 }

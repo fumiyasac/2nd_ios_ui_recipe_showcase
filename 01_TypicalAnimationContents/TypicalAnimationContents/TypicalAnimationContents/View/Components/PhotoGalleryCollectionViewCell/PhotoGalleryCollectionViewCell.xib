@@ -91,6 +91,11 @@
                 <constraint firstItem="WKQ-UV-gDU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wNG-9E-E3M"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="photoGalleryImageView" destination="lZx-zn-Wj0" id="3wO-cX-ATG"/>
+                <outlet property="summaryLabel" destination="yz6-YT-MXz" id="mhB-mb-Ird"/>
+                <outlet property="titleLabel" destination="2I9-RX-Amx" id="nwE-vL-Bbs"/>
+            </connections>
             <point key="canvasLocation" x="137.59999999999999" y="148.42578710644679"/>
         </collectionViewCell>
     </objects>

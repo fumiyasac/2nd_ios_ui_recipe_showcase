@@ -10,7 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopicsCardView" customModule="TypicalAnimationContents" customModuleProvider="target">
+            <connections>
+                <outlet property="catchCopyLabel" destination="ZXT-yF-R6m" id="TGT-6l-SYE"/>
+                <outlet property="categoryLabel" destination="t65-Gj-306" id="YSB-BI-VcL"/>
+                <outlet property="closeButton" destination="TtV-3a-ahb" id="LcC-dq-9ko"/>
+                <outlet property="closeButtonImageView" destination="y2y-nS-Zsa" id="OZ6-hh-Vid"/>
+                <outlet property="publishDateLabel" destination="auP-ja-xcC" id="gL9-vx-fZW"/>
+                <outlet property="titleLabel" destination="MF3-un-fc1" id="vsv-Nq-IJf"/>
+                <outlet property="topicImageView" destination="F77-A6-9rZ" id="mIY-LM-bjw"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
