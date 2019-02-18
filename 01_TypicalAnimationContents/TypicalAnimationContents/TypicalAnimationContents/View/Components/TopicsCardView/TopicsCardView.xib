@@ -29,6 +29,10 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F77-A6-9rZ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                 </imageView>
+                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3t-2s-IwL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iwm-KI-Riz">
                     <rect key="frame" x="18" y="226" width="200" height="50"/>
                     <subviews>
@@ -100,9 +104,13 @@
                 <constraint firstItem="iwm-KI-Riz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="KcR-Gh-5pn"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VaL-ym-Vgc" secondAttribute="trailing" constant="24" id="M7v-PF-UVy"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HTY-79-cQE" secondAttribute="trailing" constant="18" id="N9X-6r-zUy"/>
+                <constraint firstItem="U3t-2s-IwL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QIP-hX-NQY"/>
+                <constraint firstItem="U3t-2s-IwL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ar9-ck-5To"/>
                 <constraint firstItem="VaL-ym-Vgc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="d5A-cn-WNE"/>
+                <constraint firstItem="U3t-2s-IwL" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="kCe-cm-NcQ"/>
                 <constraint firstItem="F77-A6-9rZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kfb-zg-ABa"/>
                 <constraint firstItem="F77-A6-9rZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="o0O-CB-2tX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="U3t-2s-IwL" secondAttribute="trailing" id="roH-23-S5d"/>
                 <constraint firstItem="VaL-ym-Vgc" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="bottom" constant="14" id="s04-nb-v2F"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

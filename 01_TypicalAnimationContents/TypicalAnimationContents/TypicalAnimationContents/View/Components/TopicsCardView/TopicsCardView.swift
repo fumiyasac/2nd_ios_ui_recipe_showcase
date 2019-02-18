@@ -61,6 +61,7 @@ final class TopicsCardView: CustomViewBase {
             self.shouldCloseButtonHide = shouldCloseButtonHide
         }
 
+        // 定義した状態に応じたこのViewの角丸と閉じるボタン設定を作成する
         public static let collapsed = LayoutState(cornerRadius: 13.0, shouldCloseButtonHide: true)
         public static let expanded  = LayoutState(cornerRadius: 0.0, shouldCloseButtonHide: false)
     }
@@ -73,8 +74,11 @@ final class TopicsCardView: CustomViewBase {
 
     // 引数で渡されたレイアウトに関する定義を適用する
     func applyLayoutSettings(layoutState: TopicsCardView.LayoutState) {
-        self.layer.cornerRadius = layoutState.cornerRadius
         self.layer.masksToBounds = true
+        self.layer.cornerRadius = layoutState.cornerRadius
+        if let wrappedView = closeButton.superview {
+            wrappedView.isHidden = layoutState.shouldCloseButtonHide
+        }
     }
 
     // MARK: - Private Function

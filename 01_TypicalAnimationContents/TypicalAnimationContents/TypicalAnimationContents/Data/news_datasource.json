@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "2019年3月からの限定メニュー紹介",
+        "category": "お知らせ",
+        "image_name": "news1"
+    },
+    {
+        "id": 2,
+        "title": "2019年3月のイベント情報について",
+        "category": "イベント",
+        "image_name": "news2"
+    },
+    {
+        "id": 3,
+        "title": "2019年3月の営業と貸切予約に関して",
+        "category": "営業時間",
+        "image_name": "news3"
+    },
+    {
+        "id": 4,
+        "title": "2019年2月からの限定メニュー紹介",
+        "category": "お知らせ",
+        "image_name": "news4"
+    },
+    {
+        "id": 5,
+        "title": "2019年2月のイベント情報について",
+        "category": "イベント",
+        "image_name": "news5"
+    },
+    {
+        "id": 6,
+        "title": "2019年2月の営業と貸切予約に関して",
+        "category": "営業時間",
+        "image_name": "news6"
+    },
+    {
+        "id": 7,
+        "title": "2019年1月からの限定メニュー紹介",
+        "category": "お知らせ",
+        "image_name": "news7"
+    },
+    {
+        "id": 8,
+        "title": "2019年1月のイベント情報について",
+        "category": "イベント",
+        "image_name": "news8"
+    },
+    {
+        "id": 9,
+        "title": "2019年1月の営業と貸切予約に関して",
+        "category": "営業時間",
+        "image_name": "news9"
+    },
+    {
+        "id": 10,
+        "title": "年末年始の営業時間に関して",
+        "category": "営業時間",
+        "image_name": "news10"
+    }
+]
