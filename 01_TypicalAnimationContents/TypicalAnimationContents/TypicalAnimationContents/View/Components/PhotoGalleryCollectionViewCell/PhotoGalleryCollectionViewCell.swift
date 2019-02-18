@@ -20,7 +20,18 @@ final class PhotoGalleryCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Function
 
-    func setCell() {
+    func setCell(_ photo: PhotoGalleryModel) {
+
+        // 画像データを表示する
+        // MEMO: UIImageViewに取得した画像を反映させる際に0.24秒遅延させる
+        // → この処理を行わないとUICollectionViewCellの画像が調整されないまま表示されてしまうためレイアウトが崩れる
+        photoGalleryImageView.alpha = 0
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.24) {
+            self.photoGalleryImageView.image = photo.image
+            UIView.animate(withDuration: 0.24, animations: {
+                self.photoGalleryImageView.alpha = 1
+            })
+        }
 
         // タイトル表示用ラベルの装飾を適用して表示する
         let titleAttributes = getAttributesForLabel(
@@ -28,7 +39,7 @@ final class PhotoGalleryCollectionViewCell: UICollectionViewCell {
             font: UIFont(name: "HiraKakuProN-W6", size: 12.0)!,
             foregroundColor: UIColor(code: "#333333")
         )
-        titleLabel.attributedText = NSAttributedString(string: "", attributes: titleAttributes)
+        titleLabel.attributedText = NSAttributedString(string: photo.title, attributes: titleAttributes)
 
         // サマリー表示用ラベルの装飾を適用して表示する
         let summaryAttributes = getAttributesForLabel(
@@ -36,7 +47,7 @@ final class PhotoGalleryCollectionViewCell: UICollectionViewCell {
             font: UIFont(name: "HiraKakuProN-W3", size: 11.0)!,
             foregroundColor: UIColor(code: "#777777")
         )
-        summaryLabel.attributedText = NSAttributedString(string: "", attributes: summaryAttributes)
+        summaryLabel.attributedText = NSAttributedString(string: photo.summary, attributes: summaryAttributes)
 
         // セルの装飾を適用する
         setCellDecoration()

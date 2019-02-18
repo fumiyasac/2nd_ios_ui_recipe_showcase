@@ -45,6 +45,10 @@
 		DE56741D221A4E1E009BEA75 /* news_datasource.json in Resources */ = {isa = PBXBuildFile; fileRef = DE56741A221A4E1D009BEA75 /* news_datasource.json */; };
 		DE56741E221A4E1E009BEA75 /* photo_gallery_datasource.json in Resources */ = {isa = PBXBuildFile; fileRef = DE56741B221A4E1E009BEA75 /* photo_gallery_datasource.json */; };
 		DE56741F221A4E1E009BEA75 /* topics_datasource.json in Resources */ = {isa = PBXBuildFile; fileRef = DE56741C221A4E1E009BEA75 /* topics_datasource.json */; };
+		DE567421221A4F58009BEA75 /* PhotoGalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE567420221A4F58009BEA75 /* PhotoGalleryModel.swift */; };
+		DE567423221A4F6D009BEA75 /* PhotoGalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE567422221A4F6D009BEA75 /* PhotoGalleryPresenter.swift */; };
+		DE567425221A6D64009BEA75 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE567424221A6D64009BEA75 /* NewsModel.swift */; };
+		DE567427221A6DF6009BEA75 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE567426221A6DF6009BEA75 /* NewsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,10 @@
 		DE56741A221A4E1D009BEA75 /* news_datasource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news_datasource.json; sourceTree = "<group>"; };
 		DE56741B221A4E1E009BEA75 /* photo_gallery_datasource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photo_gallery_datasource.json; sourceTree = "<group>"; };
 		DE56741C221A4E1E009BEA75 /* topics_datasource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topics_datasource.json; sourceTree = "<group>"; };
+		DE567420221A4F58009BEA75 /* PhotoGalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryModel.swift; sourceTree = "<group>"; };
+		DE567422221A4F6D009BEA75 /* PhotoGalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryPresenter.swift; sourceTree = "<group>"; };
+		DE567424221A6D64009BEA75 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		DE567426221A6DF6009BEA75 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +237,8 @@
 		DE5673BB221750F7009BEA75 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DE567426221A6DF6009BEA75 /* NewsPresenter.swift */,
+				DE567422221A4F6D009BEA75 /* PhotoGalleryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 		DE5673C122175247009BEA75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE567424221A6D64009BEA75 /* NewsModel.swift */,
+				DE567420221A4F58009BEA75 /* PhotoGalleryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -638,13 +650,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5673EB221759D9009BEA75 /* MainTabBarItems.swift in Sources */,
+				DE567425221A6D64009BEA75 /* NewsModel.swift in Sources */,
 				DE5673FC22176830009BEA75 /* TopicsDetailViewController.swift in Sources */,
+				DE567427221A6DF6009BEA75 /* NewsPresenter.swift in Sources */,
 				DE567407221769E8009BEA75 /* TopicsHeaderReusableView.swift in Sources */,
 				DE5673D82217549D009BEA75 /* CustomViewBase.swift in Sources */,
 				DE5673DD221755C0009BEA75 /* NSObjectProtocolExtension.swift in Sources */,
 				DE12EC9B22101AD7008DFBFB /* TopicsViewController.swift in Sources */,
 				DE56741522176ECD009BEA75 /* TopicsCardView.swift in Sources */,
 				DE12EC9922101AD7008DFBFB /* AppDelegate.swift in Sources */,
+				DE567423221A4F6D009BEA75 /* PhotoGalleryPresenter.swift in Sources */,
+				DE567421221A4F58009BEA75 /* PhotoGalleryModel.swift in Sources */,
 				DE5673E222175608009BEA75 /* UICollectionViewExtension.swift in Sources */,
 				DE5673E522175620009BEA75 /* UITableViewExtension.swift in Sources */,
 				DE5673FF221768ED009BEA75 /* MasonryCollectionViewLayout.swift in Sources */,

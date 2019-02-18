@@ -17,21 +17,43 @@
                     <view key="view" contentMode="scaleToFill" id="j0J-E8-JC9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-VN-6ea">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LYt-NU-lQZ" customClass="MasonryCollectionViewLayout" customModule="TypicalAnimationContents" customModuleProvider="target">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sGj-VN-6ea" firstAttribute="bottom" secondItem="t53-Uy-tks" secondAttribute="bottom" id="VbV-nh-f27"/>
+                            <constraint firstItem="sGj-VN-6ea" firstAttribute="top" secondItem="t53-Uy-tks" secondAttribute="top" id="brU-GX-pOD"/>
+                            <constraint firstItem="sGj-VN-6ea" firstAttribute="trailing" secondItem="t53-Uy-tks" secondAttribute="trailing" id="iNK-8V-x0h"/>
+                            <constraint firstItem="sGj-VN-6ea" firstAttribute="leading" secondItem="t53-Uy-tks" secondAttribute="leading" id="u6U-6q-cnP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t53-Uy-tks"/>
                     </view>
                     <navigationItem key="navigationItem" id="J2Y-Y4-VIv"/>
+                    <connections>
+                        <outlet property="photoGalleryCollectionView" destination="sGj-VN-6ea" id="dK3-FO-n1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fn8-uW-pqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="95"/>
+            <point key="canvasLocation" x="173.59999999999999" y="94.902548725637189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oop-qJ-rWO">
             <objects>
                 <navigationController id="lQi-00-WGS" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zh0-4X-2WQ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Zh0-4X-2WQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

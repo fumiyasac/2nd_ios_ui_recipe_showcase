@@ -11,11 +11,12 @@ import UIKit
 // MEMO: InterfaceBuilder内で下記のように設定する
 // 1. 配置したUIImageViewのcontentModeを.aspectFillとする
 // 2. 配置したUIImageViewのclipToBoundsをtrueとする
+// 3. 配置したUIImageViewの親のUIViewもclipToBoundsをtrueとする
 
 final class NewsTableViewCell: UITableViewCell {
 
     // 視差効果のズレを生むための定数（大きいほど視差効果が大きい）
-    private let parallaxFactor: CGFloat = 50.0
+    private let parallaxFactor: CGFloat = 30.0
 
     // 視差効果の計算用の変数
     private var topInitialConstraint: CGFloat!
@@ -39,8 +40,10 @@ final class NewsTableViewCell: UITableViewCell {
 
     // MARK: - Function
 
-    func setCell() {
-        
+    func setCell(_ news: NewsModel) {
+        categoryLabel.text = news.category
+        titleLabel.text = news.title
+        newsImageView.image = news.image
     }
 
     // 画像にかけられているAutoLayoutの制約を再計算して制約をかけ直す

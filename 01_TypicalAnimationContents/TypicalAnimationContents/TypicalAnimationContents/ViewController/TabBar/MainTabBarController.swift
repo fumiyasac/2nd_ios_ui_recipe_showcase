@@ -14,7 +14,7 @@ class MainTabBarController: UITabBarController {
 
     private let selectedTabBarAnimation: MainTabBarAnimations = .move
 
-    // MARK: - Override Function
+    // MARK: - Override
 
     override func viewDidLoad() {
         super.viewDidLoad()
