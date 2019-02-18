@@ -66,8 +66,7 @@ extension PhotoGalleryViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCustomCell(with: PhotoGalleryCollectionViewCell.self, indexPath: indexPath)
-        let targetPhoto = targetPhotos[indexPath.row]
-        cell.setCell(targetPhoto)
+        cell.setCell(targetPhotos[indexPath.row])
         return cell
     }
 }

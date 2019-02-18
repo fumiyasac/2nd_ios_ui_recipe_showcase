@@ -16,6 +16,7 @@ protocol TopicsCardViewDelegate: class {
     func closeTopicsCard()
 }
 
+// MEMO: このViewはSafeAreaをキャンセルした状態にする
 final class TopicsCardView: CustomViewBase {
 
     weak var delegate: TopicsCardViewDelegate?
@@ -24,16 +25,17 @@ final class TopicsCardView: CustomViewBase {
     static let cardMargin: CGFloat = 20.0
 
     // Viewのサイズ
-    static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width - cardMargin * 2, height: 400.0)
+    static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width - cardMargin * 2, height: UIScreen.main.bounds.height * 0.5)
 
     @IBOutlet weak private var categoryLabel: UILabel!
     @IBOutlet weak private var titleLabel: UILabel!
-    @IBOutlet weak private var topicImageView: UIImageView!
     @IBOutlet weak private var publishDateLabel: UILabel!
     @IBOutlet weak private var catchCopyLabel: UILabel!
+    @IBOutlet weak private var topicImageView: UIImageView!
 
     @IBOutlet weak private var closeButton: UIButton!
     @IBOutlet weak private var closeButtonImageView: UIImageView!
+    @IBOutlet weak private var closeButtonTopConstraint: NSLayoutConstraint!
 
     // MARK: - Initializer
 
@@ -62,23 +64,31 @@ final class TopicsCardView: CustomViewBase {
         }
 
         // 定義した状態に応じたこのViewの角丸と閉じるボタン設定を作成する
-        public static let collapsed = LayoutState(cornerRadius: 13.0, shouldCloseButtonHide: true)
+        public static let collapsed = LayoutState(cornerRadius: 15.0, shouldCloseButtonHide: true)
         public static let expanded  = LayoutState(cornerRadius: 0.0, shouldCloseButtonHide: false)
     }
 
     // MARK: - Function
 
-    func setCell() {
-        
+    func setViewData(_ topic: TopicsModel) {
+        titleLabel.text = topic.title
+        categoryLabel.text = topic.category
+        publishDateLabel.text = topic.publishDate
+        catchCopyLabel.text = topic.catchCopy
+        topicImageView.image = topic.image
     }
 
     // 引数で渡されたレイアウトに関する定義を適用する
     func applyLayoutSettings(layoutState: TopicsCardView.LayoutState) {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = layoutState.cornerRadius
+        // 閉じるボタンの表示を決定する
         if let wrappedView = closeButton.superview {
             wrappedView.isHidden = layoutState.shouldCloseButtonHide
         }
+        // ステータスバーを考慮した閉じるボタンの制約を決定する
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        closeButtonTopConstraint.constant = statusBarHeight + 8.0
     }
 
     // MARK: - Private Function
@@ -94,7 +104,7 @@ final class TopicsCardView: CustomViewBase {
 
         // MEMO: 戻るボタンのデザインを適用する
         let buttonImageSize = CGSize(width: 44.0, height: 44.0)
-        let buttonImageColor: UIColor = UIColor(code: "#bcbcbc")
+        let buttonImageColor: UIColor = UIColor(code: "#eeeeee")
         closeButtonImageView.image = UIImage.fontAwesomeIcon(name: .timesCircle, style: .solid, textColor: buttonImageColor, size: buttonImageSize)
         closeButton.addTarget(self, action: #selector(self.closeButtonTapped), for: .touchUpInside)
     }

@@ -27,6 +27,15 @@ extension UIViewController {
 
         // タイトルを入れる
         self.navigationItem.title = title
+
+        // ラージタイトルの表示設定に関する設定やデザイン調整を行う
+        self.navigationItem.largeTitleDisplayMode = .always
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+
+        var largeAttributes = [NSAttributedString.Key : Any]()
+        largeAttributes[NSAttributedString.Key.font] = UIFont(name: "HiraKakuProN-W6", size: 26.0)
+        largeAttributes[NSAttributedString.Key.foregroundColor] = UIColor(code: "#333333")
+        navigationController?.navigationBar.largeTitleTextAttributes = largeAttributes
     }
 
     // 戻るボタンの「戻る」テキストを削除した状態にするメソッド

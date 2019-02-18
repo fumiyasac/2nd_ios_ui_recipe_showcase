@@ -11,5 +11,5 @@ import UIKit
 final class TopicsHeaderReusableView: UICollectionReusableView {
 
     // Viewのサイズ
-    static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width, height: 96.0)
+    static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width, height: 92.0)
 }

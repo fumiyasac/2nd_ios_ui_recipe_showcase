@@ -17,13 +17,39 @@
                     <view key="view" contentMode="scaleToFill" id="VgA-HH-ADX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="q1i-Eo-cPa"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e36-HU-EQV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q71-OJ-3AW" customClass="TopicsCardView" customModule="TypicalAnimationContents" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="EBa-7a-7dI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="e36-HU-EQV" firstAttribute="top" secondItem="VgA-HH-ADX" secondAttribute="top" id="EGo-IM-7fg"/>
+                            <constraint firstItem="e36-HU-EQV" firstAttribute="leading" secondItem="VgA-HH-ADX" secondAttribute="leading" id="OI0-8z-Nja"/>
+                            <constraint firstItem="q71-OJ-3AW" firstAttribute="top" secondItem="VgA-HH-ADX" secondAttribute="top" id="b9M-8J-KPW"/>
+                            <constraint firstItem="q71-OJ-3AW" firstAttribute="leading" secondItem="VgA-HH-ADX" secondAttribute="leading" id="gHV-YM-hnh"/>
+                            <constraint firstAttribute="trailing" secondItem="e36-HU-EQV" secondAttribute="trailing" id="gjw-Hl-y7n"/>
+                            <constraint firstAttribute="bottom" secondItem="e36-HU-EQV" secondAttribute="bottom" id="nlr-p2-obK"/>
+                            <constraint firstAttribute="trailing" secondItem="q71-OJ-3AW" secondAttribute="trailing" id="zMA-0M-iue"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xyk-9v-pRj"/>
                     </view>
+                    <connections>
+                        <outlet property="topicCardHeightConstraint" destination="EBa-7a-7dI" id="plQ-ND-OK6"/>
+                        <outlet property="topicsDetailBackgroundView" destination="e36-HU-EQV" id="wgP-AG-I5F"/>
+                        <outlet property="topicsDetailCardView" destination="q71-OJ-3AW" id="WqI-Bo-ETM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Rn-uS-rFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="72"/>
+            <point key="canvasLocation" x="96.799999999999997" y="71.514242878560722"/>
         </scene>
     </scenes>
 </document>

@@ -32,8 +32,8 @@ struct NewsModel: Decodable {
         let container = try decoder.container(keyedBy: Keys.self)
 
         // JSONの配列内の要素にある値をDecodeして初期化する
-        self.id       = try container.decode(Int.self, forKey: .id)
-        self.title    = try container.decode(String.self, forKey: .title)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.title = try container.decode(String.self, forKey: .title)
         self.category = try container.decode(String.self, forKey: .category)
  
         let imageName = try container.decode(String.self, forKey: .imageName)

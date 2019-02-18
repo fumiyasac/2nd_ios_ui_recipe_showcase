@@ -10,7 +10,7 @@ import UIKit
 import FontAwesome_swift
 import TransitionableTab
 
-class MainTabBarController: UITabBarController {
+final class MainTabBarController: UITabBarController {
 
     private let selectedTabBarAnimation: MainTabBarAnimations = .move
 

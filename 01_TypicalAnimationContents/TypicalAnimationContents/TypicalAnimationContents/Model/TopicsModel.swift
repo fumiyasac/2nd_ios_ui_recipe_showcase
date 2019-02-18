@@ -1,5 +1,5 @@
 //
-//  PhotoGalleryModel.swift
+//  TopicsModel.swift
 //  TypicalAnimationContents
 //
 //  Created by 酒井文也 on 2019/02/18.
@@ -10,17 +10,21 @@ import Foundation
 import UIKit
 
 // MEMO: こちらのデータはJSONから生成する
-struct PhotoGalleryModel: Decodable {
+struct TopicsModel: Decodable {
 
     let id: Int
     let title: String
-    let summary: String
+    let category: String
+    let publishDate: String
+    let catchCopy: String
     let image: UIImage
 
     private enum Keys: String, CodingKey {
         case id
         case title
-        case summary
+        case category
+        case publishDate = "publish_date"
+        case catchCopy = "catch_copy"
         case imageName = "image_name"
     }
 
@@ -34,7 +38,9 @@ struct PhotoGalleryModel: Decodable {
         // JSONの配列内の要素にある値をDecodeして初期化する
         self.id = try container.decode(Int.self, forKey: .id)
         self.title = try container.decode(String.self, forKey: .title)
-        self.summary = try container.decode(String.self, forKey: .summary)
+        self.category = try container.decode(String.self, forKey: .category)
+        self.publishDate = try container.decode(String.self, forKey: .publishDate)
+        self.catchCopy   = try container.decode(String.self, forKey: .catchCopy)
 
         let imageName = try container.decode(String.self, forKey: .imageName)
         self.image = UIImage(named: imageName)!
