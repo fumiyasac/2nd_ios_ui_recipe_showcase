@@ -1,28 +1,24 @@
 PODS:
-  - EasyTransitions (0.5.4)
   - FontAwesome.swift (1.5.0)
   - GridView (0.1.3)
   - TransitionableTab (0.2.0)
 
 DEPENDENCIES:
-  - EasyTransitions
   - FontAwesome.swift
   - GridView
   - TransitionableTab (~> 0.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - EasyTransitions
     - FontAwesome.swift
     - GridView
     - TransitionableTab
 
 SPEC CHECKSUMS:
-  EasyTransitions: 843a3e93b4cac14315e5d997b762bd1d214beb9c
   FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
   GridView: df9bb15be23d674b8797a972c04de30b7bf665c0
   TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
 
-PODFILE CHECKSUM: d6d4598f7a5c0338190057ae947b2e4457dff493
+PODFILE CHECKSUM: edb01432085b57bfe665e13a00139283e3e39f0b
 
 COCOAPODS: 1.6.0

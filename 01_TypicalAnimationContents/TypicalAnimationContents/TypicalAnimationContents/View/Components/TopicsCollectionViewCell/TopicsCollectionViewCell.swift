@@ -15,6 +15,6 @@ class TopicsCollectionViewCell: UICollectionViewCell {
     // MARK: - Function
 
     func setCell(_ topic: TopicsModel) {
-        topicsCardView.setViewData(topic)
+        topicsCardView.setView(topic)
     }
 }

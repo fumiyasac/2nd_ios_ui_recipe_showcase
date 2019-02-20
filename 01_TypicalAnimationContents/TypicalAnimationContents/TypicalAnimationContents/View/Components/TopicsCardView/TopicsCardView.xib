@@ -13,9 +13,6 @@
             <connections>
                 <outlet property="catchCopyLabel" destination="ZXT-yF-R6m" id="TGT-6l-SYE"/>
                 <outlet property="categoryLabel" destination="t65-Gj-306" id="YSB-BI-VcL"/>
-                <outlet property="closeButton" destination="TtV-3a-ahb" id="LcC-dq-9ko"/>
-                <outlet property="closeButtonImageView" destination="y2y-nS-Zsa" id="OZ6-hh-Vid"/>
-                <outlet property="closeButtonTopConstraint" destination="7dG-zA-5CZ" id="OFl-fu-ZgZ"/>
                 <outlet property="publishDateLabel" destination="auP-ja-xcC" id="gL9-vx-fZW"/>
                 <outlet property="titleLabel" destination="MF3-un-fc1" id="vsv-Nq-IJf"/>
                 <outlet property="topicImageView" destination="F77-A6-9rZ" id="mIY-LM-bjw"/>
@@ -54,7 +51,7 @@
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-ym-Vgc">
-                    <rect key="frame" x="18" y="74" width="333" height="56"/>
+                    <rect key="frame" x="18" y="36" width="333" height="56"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー的なものが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t65-Gj-306">
                             <rect key="frame" x="0.0" y="0.0" width="333" height="14"/>
@@ -70,47 +67,22 @@
                         </label>
                     </subviews>
                 </stackView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTY-79-cQE">
-                    <rect key="frame" x="321" y="24" width="36" height="36"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y2y-nS-Zsa">
-                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtV-3a-ahb">
-                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                        </button>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="TtV-3a-ahb" secondAttribute="bottom" id="8Ko-QJ-9bq"/>
-                        <constraint firstItem="y2y-nS-Zsa" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="top" id="CpU-gf-2bl"/>
-                        <constraint firstItem="TtV-3a-ahb" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="top" id="DF1-j0-IWB"/>
-                        <constraint firstItem="y2y-nS-Zsa" firstAttribute="leading" secondItem="HTY-79-cQE" secondAttribute="leading" id="KPx-Eo-uSb"/>
-                        <constraint firstItem="TtV-3a-ahb" firstAttribute="leading" secondItem="HTY-79-cQE" secondAttribute="leading" id="NQc-KI-zLL"/>
-                        <constraint firstAttribute="height" constant="36" id="OM5-GY-hbE"/>
-                        <constraint firstAttribute="trailing" secondItem="TtV-3a-ahb" secondAttribute="trailing" id="Rfd-dO-nmU"/>
-                        <constraint firstAttribute="trailing" secondItem="y2y-nS-Zsa" secondAttribute="trailing" id="cHd-St-gK8"/>
-                        <constraint firstAttribute="bottom" secondItem="y2y-nS-Zsa" secondAttribute="bottom" id="cfE-Ej-TRg"/>
-                        <constraint firstAttribute="width" constant="36" id="uai-pb-ndN"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="F77-A6-9rZ" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="3v4-Rq-vWD"/>
                 <constraint firstItem="F77-A6-9rZ" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="5AX-Ve-hlq"/>
-                <constraint firstItem="HTY-79-cQE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="7dG-zA-5CZ"/>
                 <constraint firstAttribute="bottom" secondItem="iwm-KI-Riz" secondAttribute="bottom" constant="24" id="G5G-9g-2SW"/>
                 <constraint firstItem="z9e-sd-XfM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KPB-vq-bXk"/>
                 <constraint firstItem="iwm-KI-Riz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="KcR-Gh-5pn"/>
                 <constraint firstAttribute="trailing" secondItem="VaL-ym-Vgc" secondAttribute="trailing" constant="24" id="M7v-PF-UVy"/>
-                <constraint firstAttribute="trailing" secondItem="HTY-79-cQE" secondAttribute="trailing" constant="18" id="N9X-6r-zUy"/>
                 <constraint firstItem="z9e-sd-XfM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TR1-gG-Fqw"/>
+                <constraint firstItem="VaL-ym-Vgc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="36" id="Xhh-8t-8oO"/>
                 <constraint firstAttribute="bottom" secondItem="z9e-sd-XfM" secondAttribute="bottom" id="b0Z-BX-bAA"/>
                 <constraint firstItem="VaL-ym-Vgc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="d5A-cn-WNE"/>
                 <constraint firstItem="F77-A6-9rZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kfb-zg-ABa"/>
                 <constraint firstAttribute="trailing" secondItem="iwm-KI-Riz" secondAttribute="trailing" constant="18" id="lrH-VC-fUc"/>
                 <constraint firstItem="F77-A6-9rZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o0O-CB-2tX"/>
-                <constraint firstItem="VaL-ym-Vgc" firstAttribute="top" secondItem="HTY-79-cQE" secondAttribute="bottom" constant="14" id="s04-nb-v2F"/>
                 <constraint firstAttribute="trailing" secondItem="z9e-sd-XfM" secondAttribute="trailing" id="vcV-cs-cHH"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

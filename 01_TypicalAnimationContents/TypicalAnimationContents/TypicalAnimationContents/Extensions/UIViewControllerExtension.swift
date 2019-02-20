@@ -29,6 +29,8 @@ extension UIViewController {
         self.navigationItem.title = title
 
         // ラージタイトルの表示設定に関する設定やデザイン調整を行う
+        // 下記リンクも参考に!
+        // http://bit.ly/2TXCbd7
         self.navigationItem.largeTitleDisplayMode = .always
         self.navigationController?.navigationBar.prefersLargeTitles = true
 

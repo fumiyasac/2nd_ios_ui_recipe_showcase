@@ -31,11 +31,7 @@
 		DE5673E722175650009BEA75 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */; };
 		DE5673EB221759D9009BEA75 /* MainTabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673EA221759D9009BEA75 /* MainTabBarItems.swift */; };
 		DE5673ED22175DF4009BEA75 /* MainTabBarAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673EC22175DF4009BEA75 /* MainTabBarAnimations.swift */; };
-		DE5673F5221767B4009BEA75 /* TopicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673F4221767B4009BEA75 /* TopicsDetail.storyboard */; };
-		DE5673FC22176830009BEA75 /* TopicsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673FB22176830009BEA75 /* TopicsDetailViewController.swift */; };
 		DE5673FF221768ED009BEA75 /* MasonryCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673FE221768ED009BEA75 /* MasonryCollectionViewLayout.swift */; };
-		DE567407221769E8009BEA75 /* TopicsHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE567405221769E8009BEA75 /* TopicsHeaderReusableView.swift */; };
-		DE567408221769E8009BEA75 /* TopicsHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE567406221769E8009BEA75 /* TopicsHeaderReusableView.xib */; };
 		DE56740C22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56740A22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift */; };
 		DE56740D22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE56740B22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib */; };
 		DE56741122176D9E009BEA75 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56740F22176D9E009BEA75 /* NewsTableViewCell.swift */; };
@@ -105,11 +101,7 @@
 		DE5673E622175650009BEA75 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DE5673EA221759D9009BEA75 /* MainTabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarItems.swift; sourceTree = "<group>"; };
 		DE5673EC22175DF4009BEA75 /* MainTabBarAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarAnimations.swift; sourceTree = "<group>"; };
-		DE5673F4221767B4009BEA75 /* TopicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopicsDetail.storyboard; sourceTree = "<group>"; };
-		DE5673FB22176830009BEA75 /* TopicsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsDetailViewController.swift; sourceTree = "<group>"; };
 		DE5673FE221768ED009BEA75 /* MasonryCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonryCollectionViewLayout.swift; sourceTree = "<group>"; };
-		DE567405221769E8009BEA75 /* TopicsHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsHeaderReusableView.swift; sourceTree = "<group>"; };
-		DE567406221769E8009BEA75 /* TopicsHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicsHeaderReusableView.xib; sourceTree = "<group>"; };
 		DE56740A22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE56740B22176C9A009BEA75 /* PhotoGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		DE56740F22176D9E009BEA75 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -331,7 +323,6 @@
 				DE56740922176C6F009BEA75 /* PhotoGalleryCollectionViewCell */,
 				DE56741322176EAE009BEA75 /* TopicsCardView */,
 				DEC64799221A7F9E00DE08F1 /* TopicsCollectionViewCell */,
-				DE5674002217697F009BEA75 /* TopicsHeaderReusableView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -340,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				DE5673C5221752A9009BEA75 /* Topics.storyboard */,
-				DE5673F4221767B4009BEA75 /* TopicsDetail.storyboard */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -413,7 +403,6 @@
 			isa = PBXGroup;
 			children = (
 				DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */,
-				DE5673FB22176830009BEA75 /* TopicsDetailViewController.swift */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -424,15 +413,6 @@
 				DE5673C82217530B009BEA75 /* TimeTableViewController.swift */,
 			);
 			path = TimeTable;
-			sourceTree = "<group>";
-		};
-		DE5674002217697F009BEA75 /* TopicsHeaderReusableView */ = {
-			isa = PBXGroup;
-			children = (
-				DE567405221769E8009BEA75 /* TopicsHeaderReusableView.swift */,
-				DE567406221769E8009BEA75 /* TopicsHeaderReusableView.xib */,
-			);
-			path = TopicsHeaderReusableView;
 			sourceTree = "<group>";
 		};
 		DE56740922176C6F009BEA75 /* PhotoGalleryCollectionViewCell */ = {
@@ -591,8 +571,6 @@
 				DE56741D221A4E1E009BEA75 /* news_datasource.json in Resources */,
 				DE56741222176D9E009BEA75 /* NewsTableViewCell.xib in Resources */,
 				DE12EC9E22101AD7008DFBFB /* MainTabBar.storyboard in Resources */,
-				DE5673F5221767B4009BEA75 /* TopicsDetail.storyboard in Resources */,
-				DE567408221769E8009BEA75 /* TopicsHeaderReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,7 +600,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TypicalAnimationContents/Pods-TypicalAnimationContents-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EasyTransitions/EasyTransitions.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/GridView/GridView.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionableTab/TransitionableTab.framework",
@@ -631,7 +608,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTransitions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GridView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionableTab.framework",
@@ -672,9 +648,7 @@
 			files = (
 				DE5673EB221759D9009BEA75 /* MainTabBarItems.swift in Sources */,
 				DE567425221A6D64009BEA75 /* NewsModel.swift in Sources */,
-				DE5673FC22176830009BEA75 /* TopicsDetailViewController.swift in Sources */,
 				DE567427221A6DF6009BEA75 /* NewsPresenter.swift in Sources */,
-				DE567407221769E8009BEA75 /* TopicsHeaderReusableView.swift in Sources */,
 				DE5673D82217549D009BEA75 /* CustomViewBase.swift in Sources */,
 				DE5673DD221755C0009BEA75 /* NSObjectProtocolExtension.swift in Sources */,
 				DE12EC9B22101AD7008DFBFB /* TopicsViewController.swift in Sources */,
