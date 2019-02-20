@@ -44,9 +44,9 @@ final class MainTabBarController: UITabBarController {
         
         // UITabBarControllerDelegateの宣言
         self.delegate = self
-        
+
         // 初期設定として空のUIViewControllerのインスタンスを追加する
-        self.viewControllers = [UIViewController(), UIViewController(), UIViewController(), UIViewController()]
+        self.viewControllers = [UIViewController(), UIViewController(), UIViewController()]
     }
 
     // GlobalTabBarControllerで表示したい画面に関する設定処理

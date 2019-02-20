@@ -16,7 +16,6 @@ enum MainTabBarItems: CaseIterable {
     case topics
     case news
     case photos
-    case timetable
 
     // MARK: - Function
 
@@ -30,8 +29,6 @@ enum MainTabBarItems: CaseIterable {
             storyboardName = "News"
         case .photos:
             storyboardName = "PhotoGallery"
-        case .timetable:
-            storyboardName = "TimeTable"
         }
         return UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()
     }
@@ -45,8 +42,6 @@ enum MainTabBarItems: CaseIterable {
             return 1
         case .photos:
             return 2
-        case .timetable:
-            return 3
         }
     }
 
@@ -59,8 +54,6 @@ enum MainTabBarItems: CaseIterable {
             return "ニュース"
         case .photos:
             return "ギャラリー"
-        case .timetable:
-            return "番組表"
         }
     }
 
@@ -73,8 +66,6 @@ enum MainTabBarItems: CaseIterable {
             return .newspaper
         case .photos:
             return .images
-        case .timetable:
-            return .calendarAlt
         }
     }
 }

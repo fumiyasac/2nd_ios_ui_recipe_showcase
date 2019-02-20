@@ -17,8 +17,6 @@
 		DE12ECB922101AD9008DFBFB /* TypicalAnimationContentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECB822101AD9008DFBFB /* TypicalAnimationContentsUITests.swift */; };
 		DE5673BF221751DE009BEA75 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673BE221751DE009BEA75 /* MainTabBarController.swift */; };
 		DE5673C7221752A9009BEA75 /* Topics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673C5221752A9009BEA75 /* Topics.storyboard */; };
-		DE5673C92217530B009BEA75 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673C82217530B009BEA75 /* TimeTableViewController.swift */; };
-		DE5673CC22175329009BEA75 /* TimeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673CA22175329009BEA75 /* TimeTable.storyboard */; };
 		DE5673CF221753B4009BEA75 /* PhotoGallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */; };
 		DE5673D1221753C7009BEA75 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */; };
 		DE5673D322175413009BEA75 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5673D222175413009BEA75 /* NewsViewController.swift */; };
@@ -87,8 +85,6 @@
 		DE12ECBA22101AD9008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5673BE221751DE009BEA75 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DE5673C6221752A9009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Topics.storyboard; sourceTree = "<group>"; };
-		DE5673C82217530B009BEA75 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
-		DE5673CB22175329009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimeTable.storyboard; sourceTree = "<group>"; };
 		DE5673CE221753B4009BEA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PhotoGallery.storyboard; sourceTree = "<group>"; };
 		DE5673D0221753C7009BEA75 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		DE5673D222175413009BEA75 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = TypicalAnimationContents/ViewController/News/NewsViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -250,7 +246,6 @@
 				DE5673F6221767E1009BEA75 /* News */,
 				DE5673F8221767F7009BEA75 /* PhotoGallery */,
 				DE5673F7221767EB009BEA75 /* TabBar */,
-				DE5673FD2217683E009BEA75 /* TimeTable */,
 				DE5673F922176802009BEA75 /* Topics */,
 			);
 			path = ViewController;
@@ -272,7 +267,6 @@
 				DE5673F1221766F8009BEA75 /* News */,
 				DE5673F222176702009BEA75 /* PhotoGallery */,
 				DE5673EF221766CE009BEA75 /* TabBar */,
-				DE5673F322176712009BEA75 /* TimeTable */,
 				DE5673EE221766B4009BEA75 /* Topics */,
 			);
 			path = Storyboard;
@@ -367,14 +361,6 @@
 			path = PhotoGallery;
 			sourceTree = "<group>";
 		};
-		DE5673F322176712009BEA75 /* TimeTable */ = {
-			isa = PBXGroup;
-			children = (
-				DE5673CA22175329009BEA75 /* TimeTable.storyboard */,
-			);
-			path = TimeTable;
-			sourceTree = "<group>";
-		};
 		DE5673F6221767E1009BEA75 /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,14 +391,6 @@
 				DE12EC9A22101AD7008DFBFB /* TopicsViewController.swift */,
 			);
 			path = Topics;
-			sourceTree = "<group>";
-		};
-		DE5673FD2217683E009BEA75 /* TimeTable */ = {
-			isa = PBXGroup;
-			children = (
-				DE5673C82217530B009BEA75 /* TimeTableViewController.swift */,
-			);
-			path = TimeTable;
 			sourceTree = "<group>";
 		};
 		DE56740922176C6F009BEA75 /* PhotoGalleryCollectionViewCell */ = {
@@ -558,7 +536,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE12ECA322101AD9008DFBFB /* LaunchScreen.storyboard in Resources */,
-				DE5673CC22175329009BEA75 /* TimeTable.storyboard in Resources */,
 				DE5673C7221752A9009BEA75 /* Topics.storyboard in Resources */,
 				DE12ECA022101AD9008DFBFB /* Assets.xcassets in Resources */,
 				DE56741F221A4E1E009BEA75 /* topics_datasource.json in Resources */,
@@ -661,7 +638,6 @@
 				DE5673E522175620009BEA75 /* UITableViewExtension.swift in Sources */,
 				DEC647A1221A81EB00DE08F1 /* TopicsPresenter.swift in Sources */,
 				DE5673FF221768ED009BEA75 /* MasonryCollectionViewLayout.swift in Sources */,
-				DE5673C92217530B009BEA75 /* TimeTableViewController.swift in Sources */,
 				DE5673DF221755CF009BEA75 /* UIColorExtension.swift in Sources */,
 				DE5673ED22175DF4009BEA75 /* MainTabBarAnimations.swift in Sources */,
 				DEC6479F221A808000DE08F1 /* TopicsModel.swift in Sources */,
@@ -728,14 +704,6 @@
 				DE5673C6221752A9009BEA75 /* Base */,
 			);
 			name = Topics.storyboard;
-			sourceTree = "<group>";
-		};
-		DE5673CA22175329009BEA75 /* TimeTable.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE5673CB22175329009BEA75 /* Base */,
-			);
-			name = TimeTable.storyboard;
 			sourceTree = "<group>";
 		};
 		DE5673CD221753B4009BEA75 /* PhotoGallery.storyboard */ = {
