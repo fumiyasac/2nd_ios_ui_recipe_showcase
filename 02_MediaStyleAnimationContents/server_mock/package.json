@@ -1,0 +1,15 @@
+{
+  "name": "chapter02_mock_server",
+  "version": "1.0.0",
+  "description": "mock server of sample app MediaStyleAnimationContents.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "json-server": "^0.14.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fumiyasac",
+  "license": "ISC"
+}
