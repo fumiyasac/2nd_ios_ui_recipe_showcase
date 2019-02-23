@@ -26,6 +26,8 @@
 		DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B32221043B0005B137 /* UICollectionViewExtension.swift */; };
 		DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B722210A210005B137 /* CustomViewBase.swift */; };
 		DEAAA1BB22210DEB0005B137 /* ArticleCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */; };
+		DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */; };
+		DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		DEAAA1B32221043B0005B137 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DEAAA1B722210A210005B137 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCategories.swift; sourceTree = "<group>"; };
+		DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderViewController.swift; sourceTree = "<group>"; };
+		DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,8 @@
 			children = (
 				DEAAA1A7222101C40005B137 /* ArchiveViewController.swift */,
 				DEAAA19F222101110005B137 /* DetailViewController.swift */,
+				DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */,
+				DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */,
 				DE12ECD422101BA3008DFBFB /* MainViewController.swift */,
 			);
 			path = ViewController;
@@ -500,8 +506,10 @@
 				DE12ECD522101BA3008DFBFB /* MainViewController.swift in Sources */,
 				DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */,
 				DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */,
+				DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */,
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,
 				DEAAA1BB22210DEB0005B137 /* ArticleCategories.swift in Sources */,
+				DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */,
 				DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */,
