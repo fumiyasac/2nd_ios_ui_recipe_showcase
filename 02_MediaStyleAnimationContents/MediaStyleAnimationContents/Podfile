@@ -6,14 +6,21 @@ target 'MediaStyleAnimationContents' do
   use_frameworks!
 
   # Pods for MediaStyleAnimationContents
+ 
+  # その他の処理で利用するライブラリ
+  pod 'SwiftyJSON'
+  pod 'Alamofire' 
+  pod 'RealmSwift' 
+  pod 'Kingfisher'
+
+  # UI実装で利用するライブラリ
   pod 'FontAwesome.swift'
   pod 'Floaty'
   pod 'FSPagerView'
   pod 'AMScrollingNavbar'
   pod 'BTNavigationDropdownMenu'
   pod 'PullUpController'
-  pod 'LTMorphingLabel'
   pod 'ActiveLabel'
   pod 'Toast-Swift', '~> 4.0.0'
-  pod 'SwipeCellKit', '2.4.3'
+  pod 'SwipeCellKit'
 end
