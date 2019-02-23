@@ -24,6 +24,8 @@
 		DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1AF222103860005B137 /* UIColorExtension.swift */; };
 		DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B1222104180005B137 /* UITableViewExtension.swift */; };
 		DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B32221043B0005B137 /* UICollectionViewExtension.swift */; };
+		DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B722210A210005B137 /* CustomViewBase.swift */; };
+		DEAAA1BB22210DEB0005B137 /* ArticleCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		DEAAA1AF222103860005B137 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DEAAA1B1222104180005B137 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DEAAA1B32221043B0005B137 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DEAAA1B722210A210005B137 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +138,8 @@
 				DE12ECDE22101BA6008DFBFB /* Info.plist */,
 				DE12ECD222101BA3008DFBFB /* AppDelegate.swift */,
 				DE12ECD922101BA6008DFBFB /* Assets.xcassets */,
-				DEAAA19A2220FB3C0005B137 /* Enum */,
+				DEAAA1BC22210EB00005B137 /* Entity */,
+				DEAAA1B922210DBB0005B137 /* Enum */,
 				DEAAA19B2220FB500005B137 /* Extensions */,
 				DEAAA1982220FB170005B137 /* Model */,
 				DEAAA1992220FB280005B137 /* Storyboard */,
@@ -176,6 +181,8 @@
 		DEAAA1962220FAF00005B137 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEAAA1B6222109E60005B137 /* Components */,
+				DEAAA1B5222109DC0005B137 /* Classes */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,14 +210,6 @@
 				DE12ECD622101BA3008DFBFB /* Main.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		DEAAA19A2220FB3C0005B137 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Enum;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DEAAA19B2220FB500005B137 /* Extensions */ = {
@@ -247,6 +246,36 @@
 			children = (
 			);
 			path = Stub;
+			sourceTree = "<group>";
+		};
+		DEAAA1B5222109DC0005B137 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1B722210A210005B137 /* CustomViewBase.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DEAAA1B6222109E60005B137 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DEAAA1B922210DBB0005B137 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DEAAA1BC22210EB00005B137 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		FCCC4AAC49243F9360B506C4 /* Frameworks */ = {
@@ -422,11 +451,11 @@
 				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
 				"${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PullUpController/PullUpController.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -441,11 +470,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActiveLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BTNavigationDropdownMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullUpController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -465,12 +494,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,
 				DE12ECD522101BA3008DFBFB /* MainViewController.swift in Sources */,
 				DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */,
 				DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */,
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,
+				DEAAA1BB22210DEB0005B137 /* ArticleCategories.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */,
 				DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */,

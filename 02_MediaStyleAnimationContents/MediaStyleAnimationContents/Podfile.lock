@@ -1,12 +1,13 @@
 PODS:
   - ActiveLabel (1.0.1)
   - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
   - AMScrollingNavbar (5.2.0)
   - BTNavigationDropdownMenu (0.5)
   - Floaty (4.1.0)
   - FontAwesome.swift (1.5.0)
   - FSPagerView (0.8.2)
-  - Kingfisher (5.1.1)
   - PullUpController (0.6.0)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
@@ -20,12 +21,12 @@ PODS:
 DEPENDENCIES:
   - ActiveLabel
   - Alamofire
+  - AlamofireImage
   - AMScrollingNavbar
   - BTNavigationDropdownMenu
   - Floaty
   - FontAwesome.swift
   - FSPagerView
-  - Kingfisher
   - PullUpController
   - RealmSwift
   - SwiftyJSON
@@ -36,12 +37,12 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ActiveLabel
     - Alamofire
+    - AlamofireImage
     - AMScrollingNavbar
     - BTNavigationDropdownMenu
     - Floaty
     - FontAwesome.swift
     - FSPagerView
-    - Kingfisher
     - PullUpController
     - Realm
     - RealmSwift
@@ -52,12 +53,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   AMScrollingNavbar: 9df3652d6757f1a24646d8e90cb458591d8b1a6a
   BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
   Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
   FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
-  Kingfisher: 2558186963e5be42d98c5b110ccb3130148b77e4
   PullUpController: 55d372633d55345a209add771458962abcdfbbf9
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
@@ -65,6 +66,6 @@ SPEC CHECKSUMS:
   SwipeCellKit: 30fd6a4f8a8b8ac864ea389c8b4c8bac5ba5471a
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: d72a7800cda61fe1214d85344db9a845d5959999
+PODFILE CHECKSUM: a9c67257e3657a2a29b4bf977ff5d5d639de0ffe
 
 COCOAPODS: 1.6.0
