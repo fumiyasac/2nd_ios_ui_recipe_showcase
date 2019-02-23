@@ -1,0 +1,52 @@
+PODS:
+  - ActiveLabel (1.0.1)
+  - AMScrollingNavbar (5.2.0)
+  - BTNavigationDropdownMenu (0.5)
+  - Floaty (4.1.0)
+  - FontAwesome.swift (1.5.0)
+  - FSPagerView (0.8.2)
+  - LTMorphingLabel (0.6.0)
+  - PullUpController (0.6.0)
+  - SwipeCellKit (2.4.3)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - AMScrollingNavbar
+  - BTNavigationDropdownMenu
+  - Floaty
+  - FontAwesome.swift
+  - FSPagerView
+  - LTMorphingLabel
+  - PullUpController
+  - SwipeCellKit (= 2.4.3)
+  - Toast-Swift (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - AMScrollingNavbar
+    - BTNavigationDropdownMenu
+    - Floaty
+    - FontAwesome.swift
+    - FSPagerView
+    - LTMorphingLabel
+    - PullUpController
+    - SwipeCellKit
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
+  AMScrollingNavbar: 9df3652d6757f1a24646d8e90cb458591d8b1a6a
+  BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
+  Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
+  FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  LTMorphingLabel: c73ebfef9009c0a098546c29f566024442d1a91e
+  PullUpController: 55d372633d55345a209add771458962abcdfbbf9
+  SwipeCellKit: cee9906e6d3a36e22ad1a852fba7f8fa0839d113
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: 31f18767d8ab6dc56a9152ee14cc468797991b50
+
+COCOAPODS: 1.6.0

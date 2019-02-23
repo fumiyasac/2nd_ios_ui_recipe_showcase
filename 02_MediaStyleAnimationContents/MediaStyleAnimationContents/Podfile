@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MediaStyleAnimationContents' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MediaStyleAnimationContents
+  pod 'FontAwesome.swift'
+  pod 'Floaty'
+  pod 'FSPagerView'
+  pod 'AMScrollingNavbar'
+  pod 'BTNavigationDropdownMenu'
+  pod 'PullUpController'
+  pod 'LTMorphingLabel'
+  pod 'ActiveLabel'
+  pod 'Toast-Swift', '~> 4.0.0'
+  pod 'SwipeCellKit', '2.4.3'
+end
