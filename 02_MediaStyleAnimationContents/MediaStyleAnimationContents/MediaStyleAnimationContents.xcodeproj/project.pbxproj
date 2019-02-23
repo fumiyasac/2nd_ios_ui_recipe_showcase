@@ -25,9 +25,14 @@
 		DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B1222104180005B137 /* UITableViewExtension.swift */; };
 		DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B32221043B0005B137 /* UICollectionViewExtension.swift */; };
 		DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1B722210A210005B137 /* CustomViewBase.swift */; };
-		DEAAA1BB22210DEB0005B137 /* ArticleCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */; };
+		DEAAA1BB22210DEB0005B137 /* ArticleCategoryLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1BA22210DEB0005B137 /* ArticleCategoryLists.swift */; };
 		DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */; };
 		DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */; };
+		DEAAA1C422211F5D0005B137 /* MainArticleRequestButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1C322211F5D0005B137 /* MainArticleRequestButtonView.xib */; };
+		DEAAA1C622211F7D0005B137 /* MainArticleRequestButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1C522211F7D0005B137 /* MainArticleRequestButtonView.swift */; };
+		DEAAA1CA22212E710005B137 /* MainArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1C822212E710005B137 /* MainArticleTableViewCell.swift */; };
+		DEAAA1CB22212E710005B137 /* MainArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1C922212E710005B137 /* MainArticleTableViewCell.xib */; };
+		DEAAA1D0222131B70005B137 /* MainMenuLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1CF222131B70005B137 /* MainMenuLists.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +79,14 @@
 		DEAAA1B1222104180005B137 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DEAAA1B32221043B0005B137 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DEAAA1B722210A210005B137 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
-		DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCategories.swift; sourceTree = "<group>"; };
+		DEAAA1BA22210DEB0005B137 /* ArticleCategoryLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCategoryLists.swift; sourceTree = "<group>"; };
 		DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderViewController.swift; sourceTree = "<group>"; };
 		DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleViewController.swift; sourceTree = "<group>"; };
+		DEAAA1C322211F5D0005B137 /* MainArticleRequestButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainArticleRequestButtonView.xib; sourceTree = "<group>"; };
+		DEAAA1C522211F7D0005B137 /* MainArticleRequestButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleRequestButtonView.swift; sourceTree = "<group>"; };
+		DEAAA1C822212E710005B137 /* MainArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleTableViewCell.swift; sourceTree = "<group>"; };
+		DEAAA1C922212E710005B137 /* MainArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainArticleTableViewCell.xib; sourceTree = "<group>"; };
+		DEAAA1CF222131B70005B137 /* MainMenuLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuLists.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +157,6 @@
 				DEAAA19B2220FB500005B137 /* Extensions */,
 				DEAAA1982220FB170005B137 /* Model */,
 				DEAAA1992220FB280005B137 /* Storyboard */,
-				DEAAA1952220FAE60005B137 /* Test */,
 				DEAAA1962220FAF00005B137 /* View */,
 				DEAAA19C2220FC660005B137 /* ViewController */,
 				DEAAA1972220FB100005B137 /* ViewModel */,
@@ -158,6 +167,7 @@
 		DE12ECE622101BA6008DFBFB /* MediaStyleAnimationContentsTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEAAA1952220FAE60005B137 /* Test */,
 				DE12ECE722101BA6008DFBFB /* MediaStyleAnimationContentsTests.swift */,
 				DE12ECE922101BA6008DFBFB /* Info.plist */,
 			);
@@ -231,11 +241,9 @@
 		DEAAA19C2220FC660005B137 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1A7222101C40005B137 /* ArchiveViewController.swift */,
-				DEAAA19F222101110005B137 /* DetailViewController.swift */,
-				DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */,
-				DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */,
-				DE12ECD422101BA3008DFBFB /* MainViewController.swift */,
+				DEAAA1CD222130C70005B137 /* Archive */,
+				DEAAA1CE222130D90005B137 /* Detail */,
+				DEAAA1CC222130C10005B137 /* Main */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -265,6 +273,8 @@
 		DEAAA1B6222109E60005B137 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEAAA1C722212E4E0005B137 /* MainArticleTableViewCell */,
+				DEAAA1C222211F3A0005B137 /* MainArticleRequestButtonView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -272,7 +282,8 @@
 		DEAAA1B922210DBB0005B137 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1BA22210DEB0005B137 /* ArticleCategories.swift */,
+				DEAAA1BA22210DEB0005B137 /* ArticleCategoryLists.swift */,
+				DEAAA1CF222131B70005B137 /* MainMenuLists.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -282,6 +293,58 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		DEAAA1C222211F3A0005B137 /* MainArticleRequestButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1C522211F7D0005B137 /* MainArticleRequestButtonView.swift */,
+				DEAAA1C322211F5D0005B137 /* MainArticleRequestButtonView.xib */,
+			);
+			path = MainArticleRequestButtonView;
+			sourceTree = "<group>";
+		};
+		DEAAA1C722212E4E0005B137 /* MainArticleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1C822212E710005B137 /* MainArticleTableViewCell.swift */,
+				DEAAA1C922212E710005B137 /* MainArticleTableViewCell.xib */,
+			);
+			path = MainArticleTableViewCell;
+			sourceTree = "<group>";
+		};
+		DEAAA1CC222130C10005B137 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1D1222133D00005B137 /* ContainerView */,
+				DE12ECD422101BA3008DFBFB /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEAAA1CD222130C70005B137 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1A7222101C40005B137 /* ArchiveViewController.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		DEAAA1CE222130D90005B137 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA19F222101110005B137 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DEAAA1D1222133D00005B137 /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1C0222111F20005B137 /* MainArticleViewController.swift */,
+				DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */,
+			);
+			path = ContainerView;
 			sourceTree = "<group>";
 		};
 		FCCC4AAC49243F9360B506C4 /* Frameworks */ = {
@@ -398,6 +461,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAAA1CB22212E710005B137 /* MainArticleTableViewCell.xib in Resources */,
+				DEAAA1C422211F5D0005B137 /* MainArticleRequestButtonView.xib in Resources */,
 				DEAAA1A6222101B30005B137 /* Archive.storyboard in Resources */,
 				DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE12ECDA22101BA6008DFBFB /* Assets.xcassets in Resources */,
@@ -500,15 +565,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAAA1C622211F7D0005B137 /* MainArticleRequestButtonView.swift in Sources */,
 				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,
 				DE12ECD522101BA3008DFBFB /* MainViewController.swift in Sources */,
 				DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */,
 				DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */,
+				DEAAA1D0222131B70005B137 /* MainMenuLists.swift in Sources */,
+				DEAAA1CA22212E710005B137 /* MainArticleTableViewCell.swift in Sources */,
 				DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */,
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,
-				DEAAA1BB22210DEB0005B137 /* ArticleCategories.swift in Sources */,
+				DEAAA1BB22210DEB0005B137 /* ArticleCategoryLists.swift in Sources */,
 				DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */,

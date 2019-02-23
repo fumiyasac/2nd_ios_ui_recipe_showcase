@@ -1,5 +1,5 @@
 //
-//  ArticleCategories.swift
+//  MainMenuLists.swift
 //  MediaStyleAnimationContents
 //
 //  Created by 酒井文也 on 2019/02/23.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum ArticleCategories: CaseIterable {
+enum MainMenuLists: CaseIterable {
     
 }

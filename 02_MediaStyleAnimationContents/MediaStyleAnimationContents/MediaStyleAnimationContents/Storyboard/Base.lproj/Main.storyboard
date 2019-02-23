@@ -106,6 +106,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="y8b-Tp-MHa"/>
                     <size key="freeformSize" width="375" height="820"/>
+                    <connections>
+                        <outlet property="mainArticlesContainerViewHeightConstraint" destination="Ndi-g6-OeY" id="SBG-Em-gyI"/>
+                        <outlet property="mainMenuButton" destination="bZ4-ZX-xy7" id="rPe-Tt-3jZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +153,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-hd-qsD">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-hd-qsD" customClass="MainArticleRequestButtonView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="306" width="375" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
