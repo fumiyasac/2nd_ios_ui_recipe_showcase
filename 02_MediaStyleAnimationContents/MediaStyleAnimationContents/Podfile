@@ -17,7 +17,6 @@ target 'MediaStyleAnimationContents' do
   pod 'FontAwesome.swift'
   pod 'Floaty'
   pod 'FSPagerView'
-  pod 'AMScrollingNavbar'
   pod 'BTNavigationDropdownMenu'
   pod 'PullUpController'
   pod 'ActiveLabel'
