@@ -35,6 +35,7 @@
 		DEAAA1D0222131B70005B137 /* MainMenuLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1CF222131B70005B137 /* MainMenuLists.swift */; };
 		DEAAA1D32223C2A40005B137 /* MainArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */; };
 		DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */; };
+		DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		DEAAA1CF222131B70005B137 /* MainMenuLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuLists.swift; sourceTree = "<group>"; };
 		DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleEntity.swift; sourceTree = "<group>"; };
 		DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderEntity.swift; sourceTree = "<group>"; };
+		DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				DE12ECDE22101BA6008DFBFB /* Info.plist */,
 				DE12ECD222101BA3008DFBFB /* AppDelegate.swift */,
 				DE12ECD922101BA6008DFBFB /* Assets.xcassets */,
+				DEAAA1D62223CFE40005B137 /* APIManager */,
 				DEAAA1BC22210EB00005B137 /* Entity */,
 				DEAAA1B922210DBB0005B137 /* Enum */,
 				DEAAA19B2220FB500005B137 /* Extensions */,
@@ -351,6 +354,14 @@
 				DEAAA1BE222111AA0005B137 /* MainSliderViewController.swift */,
 			);
 			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		DEAAA1D62223CFE40005B137 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 		FCCC4AAC49243F9360B506C4 /* Frameworks */ = {
@@ -586,6 +597,7 @@
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,
 				DEAAA1BB22210DEB0005B137 /* ArticleCategoryLists.swift in Sources */,
 				DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */,
+				DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */,
 				DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */,
