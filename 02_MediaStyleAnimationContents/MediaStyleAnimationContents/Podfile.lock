@@ -7,6 +7,15 @@ PODS:
   - Floaty (4.1.0)
   - FontAwesome.swift (1.5.0)
   - FSPagerView (0.8.2)
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.3):
+    - PromiseKit/CorePromise
   - PullUpController (0.6.0)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
@@ -25,6 +34,7 @@ DEPENDENCIES:
   - Floaty
   - FontAwesome.swift
   - FSPagerView
+  - PromiseKit
   - PullUpController
   - RealmSwift
   - SwiftyJSON
@@ -40,6 +50,7 @@ SPEC REPOS:
     - Floaty
     - FontAwesome.swift
     - FSPagerView
+    - PromiseKit
     - PullUpController
     - Realm
     - RealmSwift
@@ -55,6 +66,7 @@ SPEC CHECKSUMS:
   Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
   FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
   PullUpController: 55d372633d55345a209add771458962abcdfbbf9
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
@@ -62,6 +74,6 @@ SPEC CHECKSUMS:
   SwipeCellKit: 30fd6a4f8a8b8ac864ea389c8b4c8bac5ba5471a
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: d5dd743e1ef0c86a17b80dd66e8671473566cd6d
+PODFILE CHECKSUM: f9d22039c987185e9fcba48e651485343121965b
 
 COCOAPODS: 1.6.0
