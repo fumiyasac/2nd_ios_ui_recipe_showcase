@@ -33,6 +33,8 @@
 		DEAAA1CA22212E710005B137 /* MainArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1C822212E710005B137 /* MainArticleTableViewCell.swift */; };
 		DEAAA1CB22212E710005B137 /* MainArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1C922212E710005B137 /* MainArticleTableViewCell.xib */; };
 		DEAAA1D0222131B70005B137 /* MainMenuLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1CF222131B70005B137 /* MainMenuLists.swift */; };
+		DEAAA1D32223C2A40005B137 /* MainArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */; };
+		DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		DEAAA1C822212E710005B137 /* MainArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleTableViewCell.swift; sourceTree = "<group>"; };
 		DEAAA1C922212E710005B137 /* MainArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainArticleTableViewCell.xib; sourceTree = "<group>"; };
 		DEAAA1CF222131B70005B137 /* MainMenuLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuLists.swift; sourceTree = "<group>"; };
+		DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleEntity.swift; sourceTree = "<group>"; };
+		DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,8 @@
 		DEAAA1BC22210EB00005B137 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */,
+				DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -563,7 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAAA1D32223C2A40005B137 /* MainArticleEntity.swift in Sources */,
 				DEAAA1C622211F7D0005B137 /* MainArticleRequestButtonView.swift in Sources */,
+				DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */,
 				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,

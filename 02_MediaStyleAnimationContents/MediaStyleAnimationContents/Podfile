@@ -11,6 +11,7 @@ target 'MediaStyleAnimationContents' do
   pod 'SwiftyJSON'
   pod 'Alamofire' 
   pod 'RealmSwift' 
+  pod 'PromiseKit'
   pod 'AlamofireImage'
 
   # UI実装で利用するライブラリ
