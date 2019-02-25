@@ -12,8 +12,8 @@ import SwiftyJSON
 struct MainArticleEntity {
 
     private (set)var id: Int = 0
+    private (set)var category: Int = 0
     private (set)var title: String = ""
-    private (set)var category: String = ""
     private (set)var summary: String = ""
     private (set)var thumbnailUrl: URL? = nil
     private (set)var publishDate: String = ""
@@ -25,11 +25,11 @@ struct MainArticleEntity {
         if let id = json["id"].int {
             self.id = id
         }
+        if let category = json["category"].int {
+            self.category = category
+        }
         if let title = json["title"].string {
             self.title = title
-        }
-        if let category = json["category"].string {
-            self.category = category
         }
         if let summary = json["summary"].string {
             self.summary = summary

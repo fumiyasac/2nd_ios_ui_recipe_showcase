@@ -42,36 +42,32 @@ final class MainViewController: UIViewController {
 
             // ボタンアイテムのタップ時挙動を設定する
             item.handler = { _ in
-                /*
-                let sb = UIStoryboard(name: menuButtonCase.getStoryboardName(), bundle: nil)
+                let sb = UIStoryboard(name: mainManuCase.getStoryboardName(), bundle: nil)
                 if let vc = sb.instantiateInitialViewController() {
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
-                */
             }
 
             // ボタンアイテムのデザインを設定する
-            decorarteMainMenuButton(item: item, menuType: mainManuCase)
+            decorarteMainMenuButton(item: item, mainMenu: mainManuCase)
 
             // ボタンアイテムを配置する
             mainMenuButton.addItem(item: item)
         }
     }
     
-    private func decorarteMainMenuButton(item: FloatyItem, menuType: MainMenuLists) {
+    private func decorarteMainMenuButton(item: FloatyItem, mainMenu: MainMenuLists) {
 
         // アイコンの配置位置とサイズを設定する
         let itemOrigin = CGPoint(x: 7.0, y: 7.0)
         let itemSize = CGSize(width: 28.0, height: 28.0)
         
         // タイトル文字列を設定する
-        /*
-        item.title = menuType.getButtonName()
-        */
-        
+        item.title = mainMenu.getButtonTitle()
+
         // ボタンの色を設定する
         item.buttonColor = UIColor(code: "#333333", alpha: 0.5)
-        
+
         // 表示ラベルのフォントを設定する
         item.titleLabel.textAlignment = .right
         item.titleLabel.font = UIFont(name: "HiraKakuProN-W6", size: 14.0)
@@ -79,8 +75,6 @@ final class MainViewController: UIViewController {
         // ボタン右のアイコン表示を設定する
         item.iconImageView.tintColor = .white
         item.iconImageView.frame = CGRect(origin: itemOrigin, size: itemSize)
-        /*
-        item.iconImageView.image = UIImage.fontAwesomeIcon(name: type.getFontAwesomeIcon(), style: .solid, textColor: .white, size: itemSize)
-        */
+        item.iconImageView.image = UIImage.fontAwesomeIcon(name: mainMenu.getIcon(), style: .solid, textColor: .white, size: itemSize)
     }
 }

@@ -36,6 +36,12 @@
 		DEAAA1D32223C2A40005B137 /* MainArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */; };
 		DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */; };
 		DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */; };
+		DEAAA1DA2223DA7E0005B137 /* MainArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D92223DA7E0005B137 /* MainArticle.swift */; };
+		DEAAA1DC2223DD950005B137 /* MainSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1DB2223DD950005B137 /* MainSlider.swift */; };
+		DEAAA1DE2223E4310005B137 /* ArchiveMainArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1DD2223E4310005B137 /* ArchiveMainArticleEntity.swift */; };
+		DEAAA1E02223E8480005B137 /* ArchiveMainArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1DF2223E8480005B137 /* ArchiveMainArticle.swift */; };
+		DEAAA1E32223EE0E0005B137 /* Qiita.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1E12223EE0E0005B137 /* Qiita.storyboard */; };
+		DEAAA1E62223EE640005B137 /* QiitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1E52223EE640005B137 /* QiitaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleEntity.swift; sourceTree = "<group>"; };
 		DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderEntity.swift; sourceTree = "<group>"; };
 		DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleAPIManager.swift; sourceTree = "<group>"; };
+		DEAAA1D92223DA7E0005B137 /* MainArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticle.swift; sourceTree = "<group>"; };
+		DEAAA1DB2223DD950005B137 /* MainSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSlider.swift; sourceTree = "<group>"; };
+		DEAAA1DD2223E4310005B137 /* ArchiveMainArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveMainArticleEntity.swift; sourceTree = "<group>"; };
+		DEAAA1DF2223E8480005B137 /* ArchiveMainArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveMainArticle.swift; sourceTree = "<group>"; };
+		DEAAA1E22223EE0E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Qiita.storyboard; sourceTree = "<group>"; };
+		DEAAA1E52223EE640005B137 /* QiitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +230,9 @@
 		DEAAA1982220FB170005B137 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEAAA1DF2223E8480005B137 /* ArchiveMainArticle.swift */,
+				DEAAA1D92223DA7E0005B137 /* MainArticle.swift */,
+				DEAAA1DB2223DD950005B137 /* MainSlider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +244,7 @@
 				DEAAA1A12221016E0005B137 /* Detail.storyboard */,
 				DE12ECDB22101BA6008DFBFB /* LaunchScreen.storyboard */,
 				DE12ECD622101BA3008DFBFB /* Main.storyboard */,
+				DEAAA1E12223EE0E0005B137 /* Qiita.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -251,6 +267,7 @@
 				DEAAA1CD222130C70005B137 /* Archive */,
 				DEAAA1CE222130D90005B137 /* Detail */,
 				DEAAA1CC222130C10005B137 /* Main */,
+				DEAAA1E42223EE430005B137 /* Qiita */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -298,6 +315,7 @@
 		DEAAA1BC22210EB00005B137 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DEAAA1DD2223E4310005B137 /* ArchiveMainArticleEntity.swift */,
 				DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */,
 				DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */,
 			);
@@ -362,6 +380,14 @@
 				DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		DEAAA1E42223EE430005B137 /* Qiita */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAA1E52223EE640005B137 /* QiitaViewController.swift */,
+			);
+			path = Qiita;
 			sourceTree = "<group>";
 		};
 		FCCC4AAC49243F9360B506C4 /* Frameworks */ = {
@@ -485,6 +511,7 @@
 				DE12ECDA22101BA6008DFBFB /* Assets.xcassets in Resources */,
 				DE12ECD822101BA3008DFBFB /* Main.storyboard in Resources */,
 				DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */,
+				DEAAA1E32223EE0E0005B137 /* Qiita.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,15 +615,20 @@
 				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,
+				DEAAA1DC2223DD950005B137 /* MainSlider.swift in Sources */,
 				DE12ECD522101BA3008DFBFB /* MainViewController.swift in Sources */,
+				DEAAA1DE2223E4310005B137 /* ArchiveMainArticleEntity.swift in Sources */,
 				DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */,
 				DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */,
+				DEAAA1DA2223DA7E0005B137 /* MainArticle.swift in Sources */,
 				DEAAA1D0222131B70005B137 /* MainMenuLists.swift in Sources */,
+				DEAAA1E02223E8480005B137 /* ArchiveMainArticle.swift in Sources */,
 				DEAAA1CA22212E710005B137 /* MainArticleTableViewCell.swift in Sources */,
 				DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */,
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,
 				DEAAA1BB22210DEB0005B137 /* ArticleCategoryLists.swift in Sources */,
 				DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */,
+				DEAAA1E62223EE640005B137 /* QiitaViewController.swift in Sources */,
 				DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */,
@@ -666,6 +698,14 @@
 				DEAAA1A5222101B30005B137 /* Base */,
 			);
 			name = Archive.storyboard;
+			sourceTree = "<group>";
+		};
+		DEAAA1E12223EE0E0005B137 /* Qiita.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEAAA1E22223EE0E0005B137 /* Base */,
+			);
+			name = Qiita.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

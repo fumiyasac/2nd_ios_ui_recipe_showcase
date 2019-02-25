@@ -18,11 +18,11 @@ extension UIViewController {
         // NavigationControllerのフォントに関するデザイン調整を行う
         var attributes = [NSAttributedString.Key : Any]()
         attributes[NSAttributedString.Key.font] = UIFont(name: "HiraKakuProN-W6", size: 14.0)
-        attributes[NSAttributedString.Key.foregroundColor] = UIColor(code: "#cf504c")
+        attributes[NSAttributedString.Key.foregroundColor] = UIColor(code: "#ffffff")
 
         // NavigationControllerの配色に関するデザイン調整を行う
         self.navigationController!.navigationBar.isTranslucent = false
-        self.navigationController!.navigationBar.barTintColor = UIColor(code: "#ffffff")
+        self.navigationController!.navigationBar.barTintColor = UIColor(code: "#cf504c")
         self.navigationController!.navigationBar.titleTextAttributes = attributes
 
         // タイトルを入れる
@@ -32,7 +32,7 @@ extension UIViewController {
     // 戻るボタンの「戻る」テキストを削除した状態にするメソッド
     func removeBackButtonText() {
         let backButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationController!.navigationBar.tintColor = UIColor(code: "#cf504c")
+        self.navigationController!.navigationBar.tintColor = UIColor(code: "#ffffff")
         self.navigationItem.backBarButtonItem = backButtonItem
     }
 }

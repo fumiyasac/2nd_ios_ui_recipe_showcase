@@ -8,6 +8,7 @@
 
 import UIKit
 import FontAwesome_swift
+import AlamofireImage
 
 final class MainArticleTableViewCell: UITableViewCell {
 
@@ -35,11 +36,30 @@ final class MainArticleTableViewCell: UITableViewCell {
 
     // MARK: - Function
 
-    func setCell() {
+    func setCell(_ mainArticle: MainArticleEntity) {
         
     }
 
     // MARK: - Private Function
+
+    // 該当のUILabelに付与する属性を設定する
+    private func getLabelAttributesBy(keys: (lineSpacing: CGFloat, font: UIFont, foregroundColor: UIColor)) -> [NSAttributedString.Key : Any] {
+        
+        // 行間に関する設定をする
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = keys.lineSpacing
+
+        // MEMO: lineBreakModeの指定しないとはみ出た場合の「...」が出なくなる
+        paragraphStyle.lineBreakMode = .byTruncatingTail
+
+        // 上記で定義した行間・フォント・色を属性値として設定する
+        var attributes: [NSAttributedString.Key : Any] = [:]
+        attributes[NSAttributedString.Key.paragraphStyle] = paragraphStyle
+        attributes[NSAttributedString.Key.font] = keys.font
+        attributes[NSAttributedString.Key.foregroundColor] = keys.foregroundColor
+
+        return attributes
+    }
 
     private func setupMainArticleTableViewCell() {
 

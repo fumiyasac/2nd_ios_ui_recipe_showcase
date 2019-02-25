@@ -7,7 +7,38 @@
 //
 
 import Foundation
+import FontAwesome_swift
 
 enum MainMenuLists: CaseIterable {
-    
+
+    case archive, qiita
+
+    // MARK: - Function
+
+    func getStoryboardName() -> String {
+        switch self {
+        case .archive:
+            return "Archive"
+        case .qiita:
+            return "Qiita"
+        }
+    }
+
+    func getIcon() -> FontAwesome {
+        switch self {
+        case .archive:
+            return .archive
+        case .qiita:
+            return .fileAlt
+        }
+    }
+
+    func getButtonTitle() -> String {
+        switch self {
+        case .archive:
+            return "アーカイブした記事一覧"
+        case .qiita:
+            return "その他実装の参考資料集"
+        }
+    }
 }
