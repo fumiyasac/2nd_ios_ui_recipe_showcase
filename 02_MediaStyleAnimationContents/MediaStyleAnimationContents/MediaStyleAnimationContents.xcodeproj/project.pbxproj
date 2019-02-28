@@ -15,6 +15,7 @@
 		DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12ECDB22101BA6008DFBFB /* LaunchScreen.storyboard */; };
 		DE12ECE822101BA6008DFBFB /* MediaStyleAnimationContentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECE722101BA6008DFBFB /* MediaStyleAnimationContentsTests.swift */; };
 		DE12ECF322101BA6008DFBFB /* MediaStyleAnimationContentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECF222101BA6008DFBFB /* MediaStyleAnimationContentsUITests.swift */; };
+		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
 		DEAAA1A6222101B30005B137 /* Archive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A4222101B30005B137 /* Archive.storyboard */; };
@@ -38,8 +39,6 @@
 		DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */; };
 		DEAAA1DA2223DA7E0005B137 /* MainArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1D92223DA7E0005B137 /* MainArticle.swift */; };
 		DEAAA1DC2223DD950005B137 /* MainSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1DB2223DD950005B137 /* MainSlider.swift */; };
-		DEAAA1DE2223E4310005B137 /* ArchiveMainArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1DD2223E4310005B137 /* ArchiveMainArticleEntity.swift */; };
-		DEAAA1E02223E8480005B137 /* ArchiveMainArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1DF2223E8480005B137 /* ArchiveMainArticle.swift */; };
 		DEAAA1E32223EE0E0005B137 /* Qiita.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1E12223EE0E0005B137 /* Qiita.storyboard */; };
 		DEAAA1E62223EE640005B137 /* QiitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1E52223EE640005B137 /* QiitaViewController.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +77,7 @@
 		DE12ECEE22101BA6008DFBFB /* MediaStyleAnimationContentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStyleAnimationContentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12ECF222101BA6008DFBFB /* MediaStyleAnimationContentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStyleAnimationContentsUITests.swift; sourceTree = "<group>"; };
 		DE12ECF422101BA6008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		DEAAA1A5222101B30005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Archive.storyboard; sourceTree = "<group>"; };
@@ -101,8 +101,6 @@
 		DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleAPIManager.swift; sourceTree = "<group>"; };
 		DEAAA1D92223DA7E0005B137 /* MainArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticle.swift; sourceTree = "<group>"; };
 		DEAAA1DB2223DD950005B137 /* MainSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSlider.swift; sourceTree = "<group>"; };
-		DEAAA1DD2223E4310005B137 /* ArchiveMainArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveMainArticleEntity.swift; sourceTree = "<group>"; };
-		DEAAA1DF2223E8480005B137 /* ArchiveMainArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveMainArticle.swift; sourceTree = "<group>"; };
 		DEAAA1E22223EE0E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Qiita.storyboard; sourceTree = "<group>"; };
 		DEAAA1E52223EE640005B137 /* QiitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,7 +228,6 @@
 		DEAAA1982220FB170005B137 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1DF2223E8480005B137 /* ArchiveMainArticle.swift */,
 				DEAAA1D92223DA7E0005B137 /* MainArticle.swift */,
 				DEAAA1DB2223DD950005B137 /* MainSlider.swift */,
 			);
@@ -308,6 +305,7 @@
 			children = (
 				DEAAA1BA22210DEB0005B137 /* ArticleCategoryLists.swift */,
 				DEAAA1CF222131B70005B137 /* MainMenuLists.swift */,
+				DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -315,7 +313,6 @@
 		DEAAA1BC22210EB00005B137 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1DD2223E4310005B137 /* ArchiveMainArticleEntity.swift */,
 				DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */,
 				DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */,
 			);
@@ -572,10 +569,8 @@
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PullUpController/PullUpController.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -591,10 +586,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullUpController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,18 +604,17 @@
 			files = (
 				DEAAA1D32223C2A40005B137 /* MainArticleEntity.swift in Sources */,
 				DEAAA1C622211F7D0005B137 /* MainArticleRequestButtonView.swift in Sources */,
+				DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */,
 				DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */,
 				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,
 				DEAAA1DC2223DD950005B137 /* MainSlider.swift in Sources */,
 				DE12ECD522101BA3008DFBFB /* MainViewController.swift in Sources */,
-				DEAAA1DE2223E4310005B137 /* ArchiveMainArticleEntity.swift in Sources */,
 				DEAAA1B2222104180005B137 /* UITableViewExtension.swift in Sources */,
 				DEAAA1B42221043B0005B137 /* UICollectionViewExtension.swift in Sources */,
 				DEAAA1DA2223DA7E0005B137 /* MainArticle.swift in Sources */,
 				DEAAA1D0222131B70005B137 /* MainMenuLists.swift in Sources */,
-				DEAAA1E02223E8480005B137 /* ArchiveMainArticle.swift in Sources */,
 				DEAAA1CA22212E710005B137 /* MainArticleTableViewCell.swift in Sources */,
 				DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */,
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,

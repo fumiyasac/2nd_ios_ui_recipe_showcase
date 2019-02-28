@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 enum ArticleCategoryLists: Int, CaseIterable {
+
     case normal = 0, new, event, menu
 
     // MARK: - Function

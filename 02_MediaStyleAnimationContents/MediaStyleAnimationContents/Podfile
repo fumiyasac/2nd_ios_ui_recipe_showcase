@@ -10,7 +10,6 @@ target 'MediaStyleAnimationContents' do
   # その他の処理で利用するライブラリ
   pod 'SwiftyJSON'
   pod 'Alamofire' 
-  pod 'RealmSwift' 
   pod 'PromiseKit'
   pod 'AlamofireImage'
 
@@ -18,9 +17,9 @@ target 'MediaStyleAnimationContents' do
   pod 'FontAwesome.swift'
   pod 'Floaty'
   pod 'FSPagerView'
+  pod 'SVProgressHUD'
   pod 'BTNavigationDropdownMenu'
   pod 'PullUpController'
   pod 'ActiveLabel'
   pod 'Toast-Swift', '~> 4.0.0'
-  pod 'SwipeCellKit'
 end

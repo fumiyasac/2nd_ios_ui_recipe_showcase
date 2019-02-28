@@ -33,7 +33,7 @@ enum MainMenuLists: CaseIterable {
         }
     }
 
-    func getButtonTitle() -> String {
+    func getTitle() -> String {
         switch self {
         case .archive:
             return "アーカイブした記事一覧"

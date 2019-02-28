@@ -15,6 +15,8 @@ final class MainViewController: UIViewController {
     @IBOutlet weak private var mainMenuButton: Floaty!
     @IBOutlet weak private var mainArticlesContainerViewHeightConstraint: NSLayoutConstraint!
 
+    // MARK: - Override
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,7 +65,7 @@ final class MainViewController: UIViewController {
         let itemSize = CGSize(width: 28.0, height: 28.0)
         
         // タイトル文字列を設定する
-        item.title = mainMenu.getButtonTitle()
+        item.title = mainMenu.getTitle()
 
         // ボタンの色を設定する
         item.buttonColor = UIColor(code: "#333333", alpha: 0.5)

@@ -10,6 +10,8 @@ import UIKit
 
 final class MainSliderViewController: UIViewController {
 
+    // MARK: - Override
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
