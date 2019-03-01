@@ -11,14 +11,14 @@ import FontAwesome_swift
 
 enum MainMenuLists: CaseIterable {
 
-    case archive, qiita
+    case profile, qiita
 
     // MARK: - Function
 
     func getStoryboardName() -> String {
         switch self {
-        case .archive:
-            return "Archive"
+        case .profile:
+            return "Profile"
         case .qiita:
             return "Qiita"
         }
@@ -26,8 +26,8 @@ enum MainMenuLists: CaseIterable {
 
     func getIcon() -> FontAwesome {
         switch self {
-        case .archive:
-            return .archive
+        case .profile:
+            return .smile
         case .qiita:
             return .fileAlt
         }
@@ -35,10 +35,10 @@ enum MainMenuLists: CaseIterable {
 
     func getTitle() -> String {
         switch self {
-        case .archive:
-            return "アーカイブした記事一覧"
+        case .profile:
+            return "自己紹介とソーシャルリンク集"
         case .qiita:
-            return "その他実装の参考資料集"
+            return "その他実装の参考Qiita資料集"
         }
     }
 }

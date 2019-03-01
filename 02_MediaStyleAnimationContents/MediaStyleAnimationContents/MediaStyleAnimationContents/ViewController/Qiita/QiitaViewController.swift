@@ -11,9 +11,8 @@ import WebKit
 import SafariServices
 
 import BTNavigationDropdownMenu
-import FontAwesome_swift
-//import Toast_Swift
 import SVProgressHUD
+import FontAwesome_swift
 
 final class QiitaViewController: UIViewController {
 
@@ -39,15 +38,6 @@ final class QiitaViewController: UIViewController {
         setupDropdownMenuView()
     }
 
-    /*
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        // 一番最初だけToast表示を実行する
-        showToastForAnnounce()
-    }
-    */
-
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -62,19 +52,17 @@ final class QiitaViewController: UIViewController {
 
     private func setupWebview() {
 
-        // WKWebViewを作成する
+        // WKWebViewを作成と設定
         webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
         webView.allowsBackForwardNavigationGestures = true
         webView.backgroundColor = .white
-
-        //
         webView.navigationDelegate = self
         webView.uiDelegate = self
         
         // WKWebViewを追加してし制約を付与する
         self.view.addSubview(webView)
 
-        //
+        // コードによるAutoLayoutの制約をWKWebViewへ付与する
         webView.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
             webView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -137,37 +125,10 @@ final class QiitaViewController: UIViewController {
         dropdownMenuView.maskBackgroundOpacity = 0.72
     }
 
-    /*
-    private func showToastForAnnounce() {
-        let centerX: CGFloat = UIScreen.main.bounds.width / 2
-        let centerY: CGFloat = 96.0
-        let toastShowPoint = CGPoint(x: centerX, y: centerY)
-
-        var style = ToastStyle()
-        style.titleFont = UIFont(name: "HiraKakuProN-W6", size: 11.0)!
-        style.messageFont = UIFont(name: "HiraKakuProN-W3", size: 10.0)!
-        style.messageColor = .white
-        style.backgroundColor = UIColor(code: "#333333", alpha: 0.5)
-
-        self.view.makeToast("This is Webview which displays target articles of 'New York Times.'", duration: 1.0, point: toastShowPoint, title: "Thanks for watching my sample!", image: nil, completion: nil)
-    }
-    */
-
     private func requestQiitaUrl() {
         if let url = selectedQiitaContents.getUrl() {
             let urlRequest = URLRequest(url: url)
             webView.load(urlRequest)
-        }
-    }
-
-    private func openOutboundURL(_ url: URL) {
-        // MEMO: 「The specified URL has an unsupported scheme. Only HTTP and HTTPS URLs are supported」対策
-        // 参考: https://stackov9erflow.com/questions/32864287/sfsafariviewcontroller-crash-the-specified-url-has-an-unsupported-scheme/35458932
-        if (["http", "https"].contains(url.scheme?.lowercased() ?? "")) {
-            let safariVC = SFSafariViewController(url: url)
-            self.present(safariVC, animated: true, completion: nil)
-        } else {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 }
@@ -178,10 +139,10 @@ extension QiitaViewController: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
 
-        // WKWebView内で<a>タグのリンクがクリックされた際の処理
+        // WKWebView内で<a>タグのリンクがクリックされた際はWebView内での画面遷移を許可しない
         if navigationAction.navigationType == WKNavigationType.linkActivated {
             if let url = navigationAction.request.url {
-                openOutboundURL(url)
+                openURL(url)
                 decisionHandler(.cancel)
                 return
             }
@@ -191,27 +152,63 @@ extension QiitaViewController: WKUIDelegate, WKNavigationDelegate {
         decisionHandler(.allow)
     }
 
+    // WKWebViewで読み込みが開始された際に実行する処理
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        webView.alpha = 0.6
+
+        // 配置したWebViewやドロップダウンメニューの操作に関する設定
+        webView.alpha = 0.46
         webView.isUserInteractionEnabled = false
         dropdownMenuView.isUserInteractionEnabled = false
-        SVProgressHUD.show()
+
+        // プログレスバー表示に関する設定
+        SVProgressHUD.setBackgroundColor(.lightGray)
+        SVProgressHUD.show(withStatus: "記事データ読み込み中...")
     }
 
+    // WKWebViewで読み込みが完了した際に実行する処理
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+
+        // 配置したWebViewやドロップダウンメニューの操作に関する設定
         webView.alpha = 1
         webView.isUserInteractionEnabled = true
         dropdownMenuView.isUserInteractionEnabled = true
+
+        // プログレスバー表示に関する設定
         SVProgressHUD.dismiss()
     }
 
+    // WKWebViewで読み込みが失敗した際に実行する処理
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-        print("読み込みエラー時")
+
+        // 配置したWebViewやドロップダウンメニューの操作に関する設定
+        webView.alpha = 1
+        webView.isUserInteractionEnabled = true
+        dropdownMenuView.isUserInteractionEnabled = true
+
+        // プログレスバー表示に関する設定
+        SVProgressHUD.setBackgroundColor(.lightGray)
+        SVProgressHUD.showError(withStatus: "エラーが発生しました")
     }
 
-    // 3Dタッチの無効化
+    // WKWebView内における3Dタッチを設定に関する設定(trueにすると有効になる)
     func webView(_ webView: WKWebView, shouldPreviewElement elementInfo: WKPreviewElementInfo) -> Bool {
         return false
     }
-}
 
+    // MARK: - Private Function
+
+    private func openURL(_ url: URL) {
+
+        // MEMO: 下記のクラッシュ防止対策として導入する
+        // https://stackoverflow.com/questions/32864287/sfsafariviewcontroller-crash-the-specified-url-has-an-unsupported-scheme
+        if let urlScheme = url.scheme {
+            let isValidScheme = ["http", "https"].contains(urlScheme.lowercased())
+            if isValidScheme {
+                let safariVC = SFSafariViewController(url: url)
+                self.present(safariVC, animated: true, completion: nil)
+            } else {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+    }
+}

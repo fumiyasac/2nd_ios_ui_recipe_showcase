@@ -18,8 +18,8 @@
 		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
-		DEAAA1A6222101B30005B137 /* Archive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A4222101B30005B137 /* Archive.storyboard */; };
-		DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1A7222101C40005B137 /* ArchiveViewController.swift */; };
+		DEAAA1A6222101B30005B137 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A4222101B30005B137 /* Profile.storyboard */; };
+		DEAAA1A8222101C40005B137 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1A7222101C40005B137 /* ProfileViewController.swift */; };
 		DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1AB222103200005B137 /* NSObjectProtocolExtension.swift */; };
 		DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1AD222103470005B137 /* UIViewControllerExtension.swift */; };
 		DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA1AF222103860005B137 /* UIColorExtension.swift */; };
@@ -80,8 +80,8 @@
 		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
-		DEAAA1A5222101B30005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Archive.storyboard; sourceTree = "<group>"; };
-		DEAAA1A7222101C40005B137 /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		DEAAA1A5222101B30005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		DEAAA1A7222101C40005B137 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DEAAA1AB222103200005B137 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DEAAA1AD222103470005B137 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DEAAA1AF222103860005B137 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -237,10 +237,10 @@
 		DEAAA1992220FB280005B137 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1A4222101B30005B137 /* Archive.storyboard */,
 				DEAAA1A12221016E0005B137 /* Detail.storyboard */,
 				DE12ECDB22101BA6008DFBFB /* LaunchScreen.storyboard */,
 				DE12ECD622101BA3008DFBFB /* Main.storyboard */,
+				DEAAA1A4222101B30005B137 /* Profile.storyboard */,
 				DEAAA1E12223EE0E0005B137 /* Qiita.storyboard */,
 			);
 			path = Storyboard;
@@ -261,9 +261,9 @@
 		DEAAA19C2220FC660005B137 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1CD222130C70005B137 /* Archive */,
 				DEAAA1CE222130D90005B137 /* Detail */,
 				DEAAA1CC222130C10005B137 /* Main */,
+				DEAAA1CD222130C70005B137 /* Profile */,
 				DEAAA1E42223EE430005B137 /* Qiita */,
 			);
 			path = ViewController;
@@ -346,12 +346,12 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		DEAAA1CD222130C70005B137 /* Archive */ = {
+		DEAAA1CD222130C70005B137 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1A7222101C40005B137 /* ArchiveViewController.swift */,
+				DEAAA1A7222101C40005B137 /* ProfileViewController.swift */,
 			);
-			path = Archive;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		DEAAA1CE222130D90005B137 /* Detail */ = {
@@ -503,7 +503,7 @@
 			files = (
 				DEAAA1CB22212E710005B137 /* MainArticleTableViewCell.xib in Resources */,
 				DEAAA1C422211F5D0005B137 /* MainArticleRequestButtonView.xib in Resources */,
-				DEAAA1A6222101B30005B137 /* Archive.storyboard in Resources */,
+				DEAAA1A6222101B30005B137 /* Profile.storyboard in Resources */,
 				DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE12ECDA22101BA6008DFBFB /* Assets.xcassets in Resources */,
 				DE12ECD822101BA3008DFBFB /* Main.storyboard in Resources */,
@@ -623,7 +623,7 @@
 				DEAAA1E62223EE640005B137 /* QiitaViewController.swift in Sources */,
 				DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
-				DEAAA1A8222101C40005B137 /* ArchiveViewController.swift in Sources */,
+				DEAAA1A8222101C40005B137 /* ProfileViewController.swift in Sources */,
 				DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,12 +684,12 @@
 			name = Detail.storyboard;
 			sourceTree = "<group>";
 		};
-		DEAAA1A4222101B30005B137 /* Archive.storyboard */ = {
+		DEAAA1A4222101B30005B137 /* Profile.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DEAAA1A5222101B30005B137 /* Base */,
 			);
-			name = Archive.storyboard;
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 		DEAAA1E12223EE0E0005B137 /* Qiita.storyboard */ = {
