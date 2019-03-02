@@ -112,9 +112,9 @@ final class QiitaViewController: UIViewController {
         dropdownMenuView.shouldKeepSelectedCellColor = true
 
         // MEMO: セルのアイコン表示に関する設定
+        let iconSize = CGSize(width: 16.0, height: 16.0)
         dropdownMenuView.arrowPadding = 15
-        dropdownMenuView.checkMarkImage
-            = UIImage.fontAwesomeIcon(name: .checkCircle, style: .solid, textColor: .gray, size: CGSize(width: 16.0, height: 16.0))
+        dropdownMenuView.checkMarkImage = UIImage.fontAwesomeIcon(name: .checkCircle, style: .solid, textColor: .gray, size: iconSize)
 
         // MEMO: ナビゲーションバーのタイトル表示に関する設定
         dropdownMenuView.navigationBarTitleFont = UIFont(name: "HiraKakuProN-W6", size: 14.0)
@@ -161,7 +161,7 @@ extension QiitaViewController: WKUIDelegate, WKNavigationDelegate {
         dropdownMenuView.isUserInteractionEnabled = false
 
         // プログレスバー表示に関する設定
-        SVProgressHUD.setBackgroundColor(.lightGray)
+        SVProgressHUD.setBackgroundColor(UIColor(code: "#f3f3f3"))
         SVProgressHUD.show(withStatus: "記事データ読み込み中...")
     }
 
@@ -186,7 +186,7 @@ extension QiitaViewController: WKUIDelegate, WKNavigationDelegate {
         dropdownMenuView.isUserInteractionEnabled = true
 
         // プログレスバー表示に関する設定
-        SVProgressHUD.setBackgroundColor(.lightGray)
+        SVProgressHUD.setBackgroundColor(UIColor(code: "#f3f3f3"))
         SVProgressHUD.showError(withStatus: "エラーが発生しました")
     }
 
