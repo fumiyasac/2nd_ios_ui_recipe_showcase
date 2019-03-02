@@ -27,8 +27,8 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="利用しているもののリンク名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC7-sd-7lR">
-                        <rect key="frame" x="75" y="11" width="230" height="13"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                        <rect key="frame" x="75" y="10" width="230" height="14"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -51,8 +51,8 @@
                     <constraint firstItem="ibX-3h-Kln" firstAttribute="top" secondItem="mC7-sd-7lR" secondAttribute="bottom" constant="10" id="ENw-5f-FOW"/>
                     <constraint firstAttribute="trailing" secondItem="ibX-3h-Kln" secondAttribute="trailing" constant="15" id="I42-vy-LmC"/>
                     <constraint firstAttribute="trailing" secondItem="mC7-sd-7lR" secondAttribute="trailing" constant="15" id="NoA-am-kBp"/>
-                    <constraint firstItem="mC7-sd-7lR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Shi-zz-Y4I"/>
                     <constraint firstItem="Lgu-wy-UVg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="bvx-Oa-kHS"/>
+                    <constraint firstItem="mC7-sd-7lR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fJE-zA-GVp"/>
                     <constraint firstItem="ibX-3h-Kln" firstAttribute="leading" secondItem="Lgu-wy-UVg" secondAttribute="trailing" constant="15" id="mSO-5e-KyL"/>
                     <constraint firstItem="mC7-sd-7lR" firstAttribute="leading" secondItem="Lgu-wy-UVg" secondAttribute="trailing" constant="15" id="yNC-Fw-Kgt"/>
                 </constraints>

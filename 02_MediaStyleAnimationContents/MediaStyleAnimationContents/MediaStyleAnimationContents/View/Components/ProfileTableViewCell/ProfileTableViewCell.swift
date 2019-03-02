@@ -29,15 +29,39 @@ final class ProfileTableViewCell: UITableViewCell {
 
     func setCell(_ profileList: ProfileLists) {
         titleLabel.text = profileList.getTitle()
-        descriptionLabel.text = profileList.getDescription()
-        iconImageView.image = UIImage.fontAwesomeIcon(name: profileList.getIcon(), style: .solid, textColor: profileList.getColor(), size: iconSize)
+        titleLabel.textColor = profileList.getColor()
+        let descriptionKeys = (
+            lineSpacing: CGFloat(5),
+            font: UIFont(name: "HiraKakuProN-W3", size: 10.0)!,
+            foregroundColor: UIColor(code: "#777777")
+        )
+        let descriptionAttributes = getLabelAttributesBy(keys: descriptionKeys)
+        descriptionLabel.attributedText = NSAttributedString(string: profileList.getDescription(), attributes: descriptionAttributes)
+        iconImageView.image = UIImage.fontAwesomeIcon(name: .file, style: .solid, textColor: UIColor(code: "#dddddd"), size: iconSize)
     }
 
     // MARK: - Private Function
 
-    private func setupProfileTableViewCell() {
+    // 該当のUILabelに付与する属性を設定する
+    private func getLabelAttributesBy(keys: (lineSpacing: CGFloat, font: UIFont, foregroundColor: UIColor)) -> [NSAttributedString.Key : Any] {
 
-        // UITableViewCellに関するそれ自体に関する設定
+        // 行間に関する設定をする
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = keys.lineSpacing
+
+        // MEMO: lineBreakModeの指定しないとはみ出た場合の「...」が出なくなる
+        paragraphStyle.lineBreakMode = .byTruncatingTail
+
+        // 上記で定義した行間・フォント・色を属性値として設定する
+        var attributes: [NSAttributedString.Key : Any] = [:]
+        attributes[NSAttributedString.Key.paragraphStyle] = paragraphStyle
+        attributes[NSAttributedString.Key.font] = keys.font
+        attributes[NSAttributedString.Key.foregroundColor] = keys.foregroundColor
+
+        return attributes
+    }
+
+    private func setupProfileTableViewCell() {
         self.accessoryType = .none
         self.selectionStyle = .none
     }

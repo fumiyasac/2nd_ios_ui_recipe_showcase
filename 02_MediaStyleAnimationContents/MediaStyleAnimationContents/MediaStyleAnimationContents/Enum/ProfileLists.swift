@@ -36,17 +36,17 @@ enum ProfileLists: CaseIterable {
     func getDescription() -> String {
         switch self {
         case .twitter:
-            return "日々の細かなことや勉強会のアウトプット用ノートを掲載しています。"
+            return "日々の細かなことやおかしなつぶやき・勉強会のアウトプット用ノート等を不定期に掲載しています。"
         case .facebook:
-            return "最近は勉強会での登壇資料やオフィシャルでの告知を掲載しています。"
+            return "最近では勉強会での登壇資料の共有や日々のプライベート・オフィシャルでの告知を掲載しています。"
         case .github:
-            return "時間があればサンプルを開発やUI検証・サーバーサイドの設計をしてます。"
+            return "時間があればサンプルを開発やUI実装検証をはじめ稀にサーバーサイド部分の試し打ちをしています。"
         case .slideshare:
-            return "大体月数回ほどのペースで主にiOSアプリ開発に関する登壇をしています。"
+            return "最近では大体月数回程のペースで主にiOSアプリ開発におけるUI実装TIPSに関する登壇をしています。"
         case .medium:
-            return "こちらは「サンプル開発のまかないアイデア」として不定期で更新中です。"
+            return "こちらはQiita等でのアウトプットの過程で出た「サンプル開発のまかないアイデア紹介」をしています。"
         case .note:
-            return "こちらは「コードを伴わない文章でのアウトプット」をメインに行っています。"
+            return "参加したイベントの感想や日記的な「コードを伴わない文章でのアウトプット」をメインに行っています。"
         }
     }
 
@@ -81,23 +81,6 @@ enum ProfileLists: CaseIterable {
             return URL(string: "https://medium.com/@fumiyasakai/")
         case .note:
             return URL(string: "https://note.mu/fumiyasac")
-        }
-    }
-
-    func getIcon() -> FontAwesome {
-        switch self {
-        case .twitter:
-            return .twitter
-        case .facebook:
-            return .facebook
-        case .github:
-            return .github
-        case .slideshare:
-            return .slidersH
-        case .medium:
-            return .medium
-        case .note:
-            return .file
         }
     }
 }
