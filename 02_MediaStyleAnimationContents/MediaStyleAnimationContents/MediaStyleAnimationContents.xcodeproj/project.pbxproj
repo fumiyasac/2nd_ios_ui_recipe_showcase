@@ -15,6 +15,11 @@
 		DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12ECDB22101BA6008DFBFB /* LaunchScreen.storyboard */; };
 		DE12ECE822101BA6008DFBFB /* MediaStyleAnimationContentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECE722101BA6008DFBFB /* MediaStyleAnimationContentsTests.swift */; };
 		DE12ECF322101BA6008DFBFB /* MediaStyleAnimationContentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ECF222101BA6008DFBFB /* MediaStyleAnimationContentsUITests.swift */; };
+		DE15A531222A063B00C677C7 /* ProfileLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A530222A063B00C677C7 /* ProfileLists.swift */; };
+		DE15A535222A116A00C677C7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A533222A116A00C677C7 /* ProfileTableViewCell.swift */; };
+		DE15A536222A116A00C677C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE15A534222A116A00C677C7 /* ProfileTableViewCell.xib */; };
+		DE15A539222A1F5900C677C7 /* ToastAdvertisementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE15A538222A1F5900C677C7 /* ToastAdvertisementView.xib */; };
+		DE15A53B222A1F6B00C677C7 /* ToastAdvertisementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A53A222A1F6B00C677C7 /* ToastAdvertisementView.swift */; };
 		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
@@ -77,6 +82,11 @@
 		DE12ECEE22101BA6008DFBFB /* MediaStyleAnimationContentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStyleAnimationContentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12ECF222101BA6008DFBFB /* MediaStyleAnimationContentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStyleAnimationContentsUITests.swift; sourceTree = "<group>"; };
 		DE12ECF422101BA6008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE15A530222A063B00C677C7 /* ProfileLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLists.swift; sourceTree = "<group>"; };
+		DE15A533222A116A00C677C7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DE15A534222A116A00C677C7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		DE15A538222A1F5900C677C7 /* ToastAdvertisementView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastAdvertisementView.xib; sourceTree = "<group>"; };
+		DE15A53A222A1F6B00C677C7 /* ToastAdvertisementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAdvertisementView.swift; sourceTree = "<group>"; };
 		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
@@ -200,6 +210,24 @@
 			path = MediaStyleAnimationContentsUITests;
 			sourceTree = "<group>";
 		};
+		DE15A532222A10AC00C677C7 /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE15A533222A116A00C677C7 /* ProfileTableViewCell.swift */,
+				DE15A534222A116A00C677C7 /* ProfileTableViewCell.xib */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		DE15A537222A19FB00C677C7 /* ToastAdvertisementView */ = {
+			isa = PBXGroup;
+			children = (
+				DE15A53A222A1F6B00C677C7 /* ToastAdvertisementView.swift */,
+				DE15A538222A1F5900C677C7 /* ToastAdvertisementView.xib */,
+			);
+			path = ToastAdvertisementView;
+			sourceTree = "<group>";
+		};
 		DEAAA1952220FAE60005B137 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,8 +322,10 @@
 		DEAAA1B6222109E60005B137 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1C722212E4E0005B137 /* MainArticleTableViewCell */,
 				DEAAA1C222211F3A0005B137 /* MainArticleRequestButtonView */,
+				DEAAA1C722212E4E0005B137 /* MainArticleTableViewCell */,
+				DE15A532222A10AC00C677C7 /* ProfileTableViewCell */,
+				DE15A537222A19FB00C677C7 /* ToastAdvertisementView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -306,6 +336,7 @@
 				DEAAA1BA22210DEB0005B137 /* ArticleCategoryLists.swift */,
 				DEAAA1CF222131B70005B137 /* MainMenuLists.swift */,
 				DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */,
+				DE15A530222A063B00C677C7 /* ProfileLists.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -505,7 +536,9 @@
 				DEAAA1C422211F5D0005B137 /* MainArticleRequestButtonView.xib in Resources */,
 				DEAAA1A6222101B30005B137 /* Profile.storyboard in Resources */,
 				DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */,
+				DE15A539222A1F5900C677C7 /* ToastAdvertisementView.xib in Resources */,
 				DE12ECDA22101BA6008DFBFB /* Assets.xcassets in Resources */,
+				DE15A536222A116A00C677C7 /* ProfileTableViewCell.xib in Resources */,
 				DE12ECD822101BA3008DFBFB /* Main.storyboard in Resources */,
 				DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */,
 				DEAAA1E32223EE0E0005B137 /* Qiita.storyboard in Resources */,
@@ -622,8 +655,11 @@
 				DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */,
 				DEAAA1E62223EE640005B137 /* QiitaViewController.swift in Sources */,
 				DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */,
+				DE15A53B222A1F6B00C677C7 /* ToastAdvertisementView.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
+				DE15A531222A063B00C677C7 /* ProfileLists.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ProfileViewController.swift in Sources */,
+				DE15A535222A116A00C677C7 /* ProfileTableViewCell.swift in Sources */,
 				DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

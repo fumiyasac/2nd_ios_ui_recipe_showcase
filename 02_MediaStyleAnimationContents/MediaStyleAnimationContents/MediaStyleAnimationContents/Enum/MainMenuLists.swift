@@ -24,21 +24,21 @@ enum MainMenuLists: CaseIterable {
         }
     }
 
-    func getIcon() -> FontAwesome {
-        switch self {
-        case .profile:
-            return .smile
-        case .qiita:
-            return .fileAlt
-        }
-    }
-
     func getTitle() -> String {
         switch self {
         case .profile:
             return "自己紹介とソーシャルリンク集"
         case .qiita:
             return "その他実装の参考Qiita資料集"
+        }
+    }
+
+    func getIcon() -> FontAwesome {
+        switch self {
+        case .profile:
+            return .smile
+        case .qiita:
+            return .fileAlt
         }
     }
 }

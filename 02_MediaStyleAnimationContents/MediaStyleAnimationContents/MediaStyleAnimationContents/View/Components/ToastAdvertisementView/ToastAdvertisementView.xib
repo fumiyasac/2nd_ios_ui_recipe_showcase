@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastAdvertisementView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+            <connections>
+                <outlet property="openAdvertisementButton" destination="gBC-3v-RLx" id="nw8-qs-CZ7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubj-jn-kFz">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="84"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI実装であると嬉しいレシピブックがこの度商業誌に！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-8g-ZSS">
+                    <rect key="frame" x="12" y="10" width="276.5" height="11"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在Amazon等で販売中です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rG-ZM-LjU">
+                    <rect key="frame" x="12" y="30" width="120" height="13"/>
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.31372549020000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="hIW-cW-50j"/>
+                        <constraint firstAttribute="height" constant="13" id="whz-Ea-zo2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="8"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66s-ft-fwk">
+                    <rect key="frame" x="12" y="52" width="276" height="24"/>
+                    <attributedString key="attributedText">
+                        <fragment content="以前に開催された技術書典5で頒布した書籍をリニュアールした形になっています。ぜひお手にとってみて下さい！">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="10" name="HiraginoSans-W3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBC-3v-RLx">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="84"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0l3-8g-ZSS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="4l1-Sa-6JJ"/>
+                <constraint firstItem="gBC-3v-RLx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="5kv-DB-Hl3"/>
+                <constraint firstItem="0l3-8g-ZSS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="EPJ-Oh-nPW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="66s-ft-fwk" secondAttribute="trailing" constant="12" id="Hx4-iY-fbG"/>
+                <constraint firstItem="ubj-jn-kFz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Iqb-2K-dMF"/>
+                <constraint firstItem="7rG-ZM-LjU" firstAttribute="top" secondItem="0l3-8g-ZSS" secondAttribute="bottom" constant="9" id="Nvy-Is-Igx"/>
+                <constraint firstItem="ubj-jn-kFz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Nwl-Gb-VcA"/>
+                <constraint firstItem="gBC-3v-RLx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pta-aL-qgZ"/>
+                <constraint firstItem="gBC-3v-RLx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="W8X-zC-Ew0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="66s-ft-fwk" secondAttribute="bottom" constant="8" id="bRc-rt-JtN"/>
+                <constraint firstItem="66s-ft-fwk" firstAttribute="top" secondItem="7rG-ZM-LjU" secondAttribute="bottom" constant="9" id="cEK-r7-3xU"/>
+                <constraint firstItem="ubj-jn-kFz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mbw-DQ-hKI"/>
+                <constraint firstItem="gBC-3v-RLx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="puz-NZ-Hp1"/>
+                <constraint firstItem="66s-ft-fwk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="rVu-rq-Y2b"/>
+                <constraint firstItem="ubj-jn-kFz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="vyO-cY-lJa"/>
+                <constraint firstItem="7rG-ZM-LjU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="z7p-5g-bDi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="52.799999999999997" y="82.758620689655174"/>
+        </view>
+    </objects>
+</document>

@@ -11,6 +11,8 @@ import Toast_Swift
 
 final class ProfileViewController: UIViewController {
 
+    @IBOutlet weak private var profileTableView: UITableView!
+
     // MARK: - Override
 
     override func viewDidLoad() {
@@ -19,24 +21,22 @@ final class ProfileViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+
         // 一番最初だけToast表示を実行する
         showToastForAnnounce()
     }
 
     // MARK: - Private Function
 
+    // 広告表示用のViewをToast表示のように表示させる
     private func showToastForAnnounce() {
-        let centerX: CGFloat = UIScreen.main.bounds.width / 2
-        let centerY: CGFloat = 96.0
-        let toastShowPoint = CGPoint(x: centerX, y: centerY)
-
-        var style = ToastStyle()
-        style.titleFont = UIFont(name: "HiraKakuProN-W6", size: 11.0)!
-        style.messageFont = UIFont(name: "HiraKakuProN-W3", size: 10.0)!
-        style.messageColor = .white
-        style.backgroundColor = UIColor(code: "#333333", alpha: 0.5)
-
-        self.view.makeToast("This is Webview which displays target articles of 'New York Times.'", duration: 1.0, point: toastShowPoint, title: "Thanks for watching my sample!", image: nil, completion: nil)
+        let advertisementView = ToastAdvertisementView()
+        advertisementView.frame = CGRect(x: 0, y: 0, width: 300.0, height: 84.0)
+        advertisementView.openAdvertisementButtonAction = {
+            if let url = URL(string: "https://nextpublishing.jp/book/10500.html") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+        self.view.showToast(advertisementView)
     }
 }
