@@ -135,7 +135,11 @@
                             <constraint firstItem="0Sc-UG-NYS" firstAttribute="top" secondItem="AKm-Za-ga9" secondAttribute="top" id="cTo-Iz-c3r"/>
                             <constraint firstAttribute="trailing" secondItem="0Sc-UG-NYS" secondAttribute="trailing" id="fEX-dL-04o"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jif-yo-1KC"/>
                     </view>
+                    <connections>
+                        <outlet property="mainSliderView" destination="0Sc-UG-NYS" id="hi3-ow-clo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZxL-GA-GRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,6 +175,7 @@
                             <constraint firstAttribute="bottom" secondItem="k7w-hd-qsD" secondAttribute="bottom" id="nim-04-NDl"/>
                             <constraint firstItem="5dF-of-gKK" firstAttribute="top" secondItem="bBk-MJ-93b" secondAttribute="top" id="tAP-SD-tiB"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="PtX-t1-D6U"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ha5-Gz-jDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
