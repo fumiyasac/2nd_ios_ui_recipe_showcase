@@ -38,17 +38,36 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="756"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WED-xL-f9l">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="648"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkp-F3-UVS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特設ギャラリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ima-xX-JoS">
+                                                        <rect key="frame" x="12" y="13" width="98" height="14"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜日本の素敵な風景集〜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-Kz-hlD">
+                                                        <rect key="frame" x="126" y="14.5" width="121" height="11"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
+                                                        <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="54" id="qWT-8l-hmo"/>
+                                                    <constraint firstItem="Tuw-Kz-hlD" firstAttribute="leading" secondItem="ima-xX-JoS" secondAttribute="trailing" constant="16" id="3x4-qj-Mwr"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tuw-Kz-hlD" secondAttribute="trailing" id="QBG-iN-C2v"/>
+                                                    <constraint firstItem="ima-xX-JoS" firstAttribute="leading" secondItem="Mkp-F3-UVS" secondAttribute="leading" constant="12" id="hMR-SS-EyK"/>
+                                                    <constraint firstItem="Tuw-Kz-hlD" firstAttribute="centerY" secondItem="Mkp-F3-UVS" secondAttribute="centerY" id="nPX-Lw-Ulm"/>
+                                                    <constraint firstAttribute="height" constant="40" id="qWT-8l-hmo"/>
+                                                    <constraint firstItem="ima-xX-JoS" firstAttribute="centerY" secondItem="Mkp-F3-UVS" secondAttribute="centerY" id="upE-AU-XNq"/>
                                                 </constraints>
                                             </view>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXr-Nm-Ziw">
-                                                <rect key="frame" x="0.0" y="54" width="375" height="180"/>
+                                                <rect key="frame" x="0.0" y="40" width="375" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="yeh-tj-gqX"/>
                                                 </constraints>
@@ -57,14 +76,33 @@
                                                 </connections>
                                             </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDJ-xq-OgE">
-                                                <rect key="frame" x="0.0" y="234" width="375" height="54"/>
+                                                <rect key="frame" x="0.0" y="220" width="375" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新記事一覧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F0-bh-Y4J">
+                                                        <rect key="frame" x="12" y="13" width="84" height="14"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜旅行で出会った風景をお届け〜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1N-zt-xNm">
+                                                        <rect key="frame" x="112" y="14.5" width="165" height="11"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
+                                                        <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="54" id="hWX-xC-NMP"/>
+                                                    <constraint firstItem="6F0-bh-Y4J" firstAttribute="leading" secondItem="gDJ-xq-OgE" secondAttribute="leading" constant="12" id="DUY-Zm-LdK"/>
+                                                    <constraint firstItem="6F0-bh-Y4J" firstAttribute="centerY" secondItem="gDJ-xq-OgE" secondAttribute="centerY" id="H5j-uP-9eg"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X1N-zt-xNm" secondAttribute="trailing" id="IlZ-uf-8OO"/>
+                                                    <constraint firstItem="X1N-zt-xNm" firstAttribute="centerY" secondItem="gDJ-xq-OgE" secondAttribute="centerY" id="aep-2G-DlL"/>
+                                                    <constraint firstItem="X1N-zt-xNm" firstAttribute="leading" secondItem="6F0-bh-Y4J" secondAttribute="trailing" constant="16" id="e4P-eb-KG5"/>
+                                                    <constraint firstAttribute="height" constant="40" id="hWX-xC-NMP"/>
                                                 </constraints>
                                             </view>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPt-HL-MUx">
-                                                <rect key="frame" x="0.0" y="288" width="375" height="360"/>
+                                                <rect key="frame" x="0.0" y="260" width="375" height="360"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="HQZ-vR-sSo"/>
                                                     <constraint firstAttribute="height" priority="250" constant="360" id="Ndi-g6-OeY"/>
@@ -113,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="26"/>
+            <point key="canvasLocation" x="53.600000000000001" y="25.187406296851577"/>
         </scene>
         <!--Main Slider View Controller-->
         <scene sceneID="Bbh-vA-mVy">
@@ -123,6 +161,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f4-ON-Sti" customClass="MainSliderErrorView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-UG-NYS" customClass="FSPagerView" customModule="FSPagerView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,12 +181,13 @@
                         <viewLayoutGuide key="safeArea" id="Jif-yo-1KC"/>
                     </view>
                     <connections>
+                        <outlet property="mainSliderErrorView" destination="0f4-ON-Sti" id="faE-Kn-aSn"/>
                         <outlet property="mainSliderView" destination="0Sc-UG-NYS" id="hi3-ow-clo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZxL-GA-GRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="-166"/>
+            <point key="canvasLocation" x="789.60000000000002" y="-166.41679160419793"/>
         </scene>
         <!--Main Article View Controller-->
         <scene sceneID="pdx-p4-zL7">

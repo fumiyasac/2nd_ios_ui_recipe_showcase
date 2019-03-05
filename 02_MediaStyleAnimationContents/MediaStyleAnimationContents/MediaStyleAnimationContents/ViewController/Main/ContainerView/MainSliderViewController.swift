@@ -18,24 +18,68 @@ final class MainSliderViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak private var mainSliderView: FSPagerView!
+    // ViewModelの初期化に必要な要素の定義
+    private let notificationCenter = NotificationCenter()
+    private let api = ArticleAPIManager.shared
 
+    // ViewModelの初期化
+    private lazy var viewModel = MainSliderViewModel(notificationCenter: notificationCenter, api: api)
+
+    @IBOutlet weak private var mainSliderView: FSPagerView!
+    @IBOutlet weak private var mainSliderErrorView: MainSliderErrorView!
+    
     // MARK: - Override
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupSliderView()
+        setupSliderErrorView()
+        setupNotificationsForDataBinding()
     }
 
     // MARK: - Private Function
 
+    // FSPagerViewの初期設定をする
     private func setupSliderView() {
         mainSliderView.delegate = self
         mainSliderView.dataSource = self
-        mainSliderView.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 180)
+        let imageWidth: CGFloat = UIScreen.main.bounds.width * 5 / 6
+        let imageHeight: CGFloat = 150.0
+        mainSliderView.itemSize = CGSize(width: imageWidth, height: imageHeight)
+        mainSliderView.isInfinite = true
         mainSliderView.interitemSpacing = 16
-        mainSliderView.transformer = FSPagerViewTransformer(type: .depth)
+        mainSliderView.transformer = FSPagerViewTransformer(type: .overlap)
+
+        // MEMO: あらかじめライブラリで用意されているセルを利用する
+        mainSliderView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
+    }
+
+    // エラー発生時に表示するViewの初期設定をする
+    private func setupSliderErrorView() {
+        mainSliderErrorView.requestSliderButtonAction = {
+            self.viewModel.fetchMainSlider()
+        }
+    }
+
+    // DataBindingを実行するための通知に関する初期設定をする
+    private func setupNotificationsForDataBinding() {
+
+        // MEMO: NotificationCenterを利用してViewModel側の変更を取得できるようにしている
+        // 書籍「iOS設計パターン入門 第6章 MVVM」で紹介されていたコードを参考に構築しました。
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(self.receiveSuccessNotificaton),
+            name: viewModel.successFetchMainSlider,
+            object: nil
+        )
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(self.receiveFailureNotificaton),
+            name: viewModel.failureFetchMainSlider,
+            object: nil
+        )
+        viewModel.fetchMainSlider()
     }
 }
 
@@ -60,6 +104,7 @@ extension MainSliderViewController: FSPagerViewDataSource, FSPagerViewDelegate {
             cell.imageView?.clipsToBounds = true
         }
         cell.textLabel?.text = mainSlider.title
+        cell.textLabel?.font = UIFont(name: "HiraKakuProN-W6", size: 12.0)
         cell.contentView.layer.shadowOpacity = 0.4
         cell.contentView.layer.opacity = 0.86
 
@@ -70,5 +115,31 @@ extension MainSliderViewController: FSPagerViewDataSource, FSPagerViewDelegate {
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
         pagerView.deselectItem(at: index, animated: true)
         pagerView.scrollToItem(at: index, animated: true)
+    }
+}
+
+// MARK: - MainSliderViewController
+
+extension MainSliderViewController {
+    
+    // MARK: - Function
+
+    // 写真データ取得成功の通知を受信した際に実行される処理
+    @objc func receiveSuccessNotificaton(notification: Notification) {
+
+        // View描画に関わる変更を反映する
+        mainSliderView.isHidden = false
+        mainSliderErrorView.isHidden = true
+
+        // データ表示に関わる変更を反映する
+        mainSliderLists = viewModel.targetMainSliderLists
+    }
+
+    // 写真データ取得失敗の通知を受信した際に実行される処理
+    @objc func receiveFailureNotificaton(notification: Notification) {
+
+        // View描画に関わる変更を反映する
+        mainSliderView.isHidden = true
+        mainSliderErrorView.isHidden = false
     }
 }
