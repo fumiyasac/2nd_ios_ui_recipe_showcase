@@ -11,23 +11,6 @@ import Alamofire
 import SwiftyJSON
 import PromiseKit
 
-// MARK: - Protocol
-
-protocol APIManagerProtocol {
-
-    // トップに表示するスライダー画像一覧を取得する
-    func getSliderImages() -> Promise<JSON>
-
-    // 引数のページ番号に紐づく記事情報一覧を取得する
-    func getArticleList(perPage: Int) -> Promise<JSON>
-
-    // 引数のIDに紐づく記事情報を取得する
-    func getArticleBy(id: Int) -> Promise<JSON>
-
-    // おすすめ記事一覧を取得する
-    func getRecommendArticles() -> Promise<JSON>
-}
-
 class ArticleAPIManager {
 
     // MEMO: MockサーバーへのURLに関する情報
@@ -50,7 +33,7 @@ class ArticleAPIManager {
 
     // MARK: - Enum
 
-    enum endPoint: String {
+    enum EndPoint: String {
         case sliders = "sliders"
         case list = "list"
         case detail = "detail"
@@ -71,29 +54,29 @@ extension ArticleAPIManager: APIManagerProtocol {
     // MARK: - Function
 
     func getSliderImages() -> Promise<JSON> {
-        let requestUrl = ArticleAPIManager.endPoint.sliders.getBaseUrl()
-        return handleMealsApiRequest(url: requestUrl)
+        let requestUrl = ArticleAPIManager.EndPoint.sliders.getBaseUrl()
+        return handleArticlesApiRequest(url: requestUrl)
     }
 
     func getArticleList(perPage: Int) -> Promise<JSON> {
-        let requestUrl = ArticleAPIManager.endPoint.list.getBaseUrl() + "?page=" + String(perPage)
-        return handleMealsApiRequest(url: requestUrl)
+        let requestUrl = ArticleAPIManager.EndPoint.list.getBaseUrl() + "?page=" + String(perPage)
+        return handleArticlesApiRequest(url: requestUrl)
     }
 
     func getArticleBy(id: Int) -> Promise<JSON> {
-        let requestUrl = ArticleAPIManager.endPoint.detail.getBaseUrl() + "?id=" + String(id)
-        return handleMealsApiRequest(url: requestUrl)
+        let requestUrl = ArticleAPIManager.EndPoint.detail.getBaseUrl() + "?id=" + String(id)
+        return handleArticlesApiRequest(url: requestUrl)
     }
 
     func getRecommendArticles() -> Promise<JSON> {
-        let requestUrl = ArticleAPIManager.endPoint.recommend.getBaseUrl()
-        return handleMealsApiRequest(url: requestUrl)
+        let requestUrl = ArticleAPIManager.EndPoint.recommend.getBaseUrl()
+        return handleArticlesApiRequest(url: requestUrl)
     }
 
     // MARK: - Private Function
 
     // Promise型のデータを返却するための共通処理
-    private func handleMealsApiRequest(url: String, params: [String : Any] = [:]) -> Promise<JSON> {
+    private func handleArticlesApiRequest(url: String, params: [String : Any] = [:]) -> Promise<JSON> {
 
         // MEMO: Alamofireでの通信処理をPromiseKitでラッピングする
         return Promise { seal in

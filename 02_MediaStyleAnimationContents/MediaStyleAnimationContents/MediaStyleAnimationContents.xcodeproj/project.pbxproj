@@ -25,6 +25,14 @@
 		DE15A541222EBF2B00C677C7 /* MainSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A540222EBF2B00C677C7 /* MainSliderViewModel.swift */; };
 		DE15A544222ECE0400C677C7 /* MainSliderErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE15A543222ECE0400C677C7 /* MainSliderErrorView.xib */; };
 		DE15A546222ECE1B00C677C7 /* MainSliderErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A545222ECE1B00C677C7 /* MainSliderErrorView.swift */; };
+		DE15A548222EDEA800C677C7 /* APIManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A547222EDEA800C677C7 /* APIManagerProtocol.swift */; };
+		DE15A54D222EE07200C677C7 /* MockArticleAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A54C222EE07200C677C7 /* MockArticleAPIManager.swift */; };
+		DE15A554222EE62B00C677C7 /* recommend.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A54E222EE62B00C677C7 /* recommend.json */; };
+		DE15A555222EE62B00C677C7 /* list1.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A54F222EE62B00C677C7 /* list1.json */; };
+		DE15A556222EE62B00C677C7 /* detail.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A550222EE62B00C677C7 /* detail.json */; };
+		DE15A557222EE62B00C677C7 /* list2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A551222EE62B00C677C7 /* list2.json */; };
+		DE15A558222EE62B00C677C7 /* list3.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A552222EE62B00C677C7 /* list3.json */; };
+		DE15A559222EE62B00C677C7 /* sliders.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A553222EE62B00C677C7 /* sliders.json */; };
 		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
@@ -97,6 +105,14 @@
 		DE15A540222EBF2B00C677C7 /* MainSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderViewModel.swift; sourceTree = "<group>"; };
 		DE15A543222ECE0400C677C7 /* MainSliderErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSliderErrorView.xib; sourceTree = "<group>"; };
 		DE15A545222ECE1B00C677C7 /* MainSliderErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSliderErrorView.swift; sourceTree = "<group>"; };
+		DE15A547222EDEA800C677C7 /* APIManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerProtocol.swift; sourceTree = "<group>"; };
+		DE15A54C222EE07200C677C7 /* MockArticleAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleAPIManager.swift; sourceTree = "<group>"; };
+		DE15A54E222EE62B00C677C7 /* recommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recommend.json; sourceTree = "<group>"; };
+		DE15A54F222EE62B00C677C7 /* list1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list1.json; sourceTree = "<group>"; };
+		DE15A550222EE62B00C677C7 /* detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail.json; sourceTree = "<group>"; };
+		DE15A551222EE62B00C677C7 /* list2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list2.json; sourceTree = "<group>"; };
+		DE15A552222EE62B00C677C7 /* list3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list3.json; sourceTree = "<group>"; };
+		DE15A553222EE62B00C677C7 /* sliders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sliders.json; sourceTree = "<group>"; };
 		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
@@ -204,7 +220,6 @@
 		DE12ECE622101BA6008DFBFB /* MediaStyleAnimationContentsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1952220FAE60005B137 /* Test */,
 				DE12ECE722101BA6008DFBFB /* MediaStyleAnimationContentsTests.swift */,
 				DE12ECE922101BA6008DFBFB /* Info.plist */,
 			);
@@ -247,13 +262,34 @@
 			path = MainSliderErrorView;
 			sourceTree = "<group>";
 		};
-		DEAAA1952220FAE60005B137 /* Test */ = {
+		DE15A549222EDFBB00C677C7 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				DEAAA1A92221021A0005B137 /* Mock */,
-				DEAAA1AA222102210005B137 /* Stub */,
+				DE15A54A222EDFDB00C677C7 /* Mock */,
+				DE15A54B222EDFEB00C677C7 /* Stub */,
 			);
-			path = Test;
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		DE15A54A222EDFDB00C677C7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DE15A54C222EE07200C677C7 /* MockArticleAPIManager.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		DE15A54B222EDFEB00C677C7 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				DE15A550222EE62B00C677C7 /* detail.json */,
+				DE15A54F222EE62B00C677C7 /* list1.json */,
+				DE15A551222EE62B00C677C7 /* list2.json */,
+				DE15A552222EE62B00C677C7 /* list3.json */,
+				DE15A54E222EE62B00C677C7 /* recommend.json */,
+				DE15A553222EE62B00C677C7 /* sliders.json */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 		DEAAA1962220FAF00005B137 /* View */ = {
@@ -316,20 +352,6 @@
 				DEAAA1E42223EE430005B137 /* Qiita */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		DEAAA1A92221021A0005B137 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		DEAAA1AA222102210005B137 /* Stub */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stub;
 			sourceTree = "<group>";
 		};
 		DEAAA1B5222109DC0005B137 /* Classes */ = {
@@ -428,6 +450,8 @@
 		DEAAA1D62223CFE40005B137 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				DE15A549222EDFBB00C677C7 /* Testing */,
+				DE15A547222EDEA800C677C7 /* APIManagerProtocol.swift */,
 				DEAAA1D72223D01C0005B137 /* ArticleAPIManager.swift */,
 			);
 			path = APIManager;
@@ -555,13 +579,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE15A554222EE62B00C677C7 /* recommend.json in Resources */,
+				DE15A558222EE62B00C677C7 /* list3.json in Resources */,
 				DEAAA1CB22212E710005B137 /* MainArticleTableViewCell.xib in Resources */,
 				DEAAA1C422211F5D0005B137 /* MainArticleRequestButtonView.xib in Resources */,
 				DE15A544222ECE0400C677C7 /* MainSliderErrorView.xib in Resources */,
 				DEAAA1A6222101B30005B137 /* Profile.storyboard in Resources */,
 				DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE15A539222A1F5900C677C7 /* ToastAdvertisementView.xib in Resources */,
+				DE15A555222EE62B00C677C7 /* list1.json in Resources */,
+				DE15A556222EE62B00C677C7 /* detail.json in Resources */,
 				DE12ECDA22101BA6008DFBFB /* Assets.xcassets in Resources */,
+				DE15A559222EE62B00C677C7 /* sliders.json in Resources */,
+				DE15A557222EE62B00C677C7 /* list2.json in Resources */,
 				DE15A536222A116A00C677C7 /* ProfileTableViewCell.xib in Resources */,
 				DE12ECD822101BA3008DFBFB /* Main.storyboard in Resources */,
 				DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */,
@@ -665,6 +695,7 @@
 				DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */,
 				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
 				DE15A53F222E139F00C677C7 /* DetailRecommend.swift in Sources */,
+				DE15A548222EDEA800C677C7 /* APIManagerProtocol.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,
 				DEAAA1DC2223DD950005B137 /* MainSlider.swift in Sources */,
@@ -683,6 +714,7 @@
 				DEAAA1D82223D01C0005B137 /* ArticleAPIManager.swift in Sources */,
 				DE15A541222EBF2B00C677C7 /* MainSliderViewModel.swift in Sources */,
 				DE15A53B222A1F6B00C677C7 /* ToastAdvertisementView.swift in Sources */,
+				DE15A54D222EE07200C677C7 /* MockArticleAPIManager.swift in Sources */,
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DE15A546222ECE1B00C677C7 /* MainSliderErrorView.swift in Sources */,
 				DE15A531222A063B00C677C7 /* ProfileLists.swift in Sources */,

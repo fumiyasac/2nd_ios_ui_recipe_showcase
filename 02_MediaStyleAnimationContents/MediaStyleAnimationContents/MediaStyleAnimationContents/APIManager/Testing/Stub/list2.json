@@ -1,0 +1,98 @@
+[
+    {
+        "page": 2,
+        "articles": [
+            {
+                "id": 11,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.11",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.11」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample11.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "2.3k"
+            },
+            {
+                "id": 12,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.12",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.12」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample12.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "5677"
+            },
+            {
+                "id": 13,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.13",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.13」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample13.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "1.6k"
+            },
+            {
+                "id": 14,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.14",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.14」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample14.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "566"
+            },
+            {
+                "id": 15,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.15",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.15」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample15.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "3421"
+            },
+            {
+                "id": 16,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.16",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.16」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample16.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "4633"
+            },
+            {
+                "id": 17,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.17",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.17」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample17.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "7654"
+            },
+            {
+                "id": 18,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.18",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.18」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample18.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "2342"
+            },
+            {
+                "id": 19,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.19",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.19」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample19.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "938"
+            },
+            {
+                "id": 20,
+                "category": 1,
+                "title": "海外および国内旅行での紹介サンプル風景Vol.20",
+                "summary": "こちらは「海外および国内旅行でのサンプル風景Vol.20」におけるサンプルデータになります。",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/article/article_sample20.jpg",
+                "publish_date": "2019/03/05",
+                "total_views": "2366"
+            }
+        ],
+        "has_next_page": true
+    }
+]
