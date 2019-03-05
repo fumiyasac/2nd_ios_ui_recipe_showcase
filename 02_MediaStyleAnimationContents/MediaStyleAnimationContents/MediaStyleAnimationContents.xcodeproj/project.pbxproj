@@ -21,6 +21,7 @@
 		DE15A539222A1F5900C677C7 /* ToastAdvertisementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE15A538222A1F5900C677C7 /* ToastAdvertisementView.xib */; };
 		DE15A53B222A1F6B00C677C7 /* ToastAdvertisementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A53A222A1F6B00C677C7 /* ToastAdvertisementView.swift */; };
 		DE15A53D222D7D5900C677C7 /* DetailRecommendEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A53C222D7D5900C677C7 /* DetailRecommendEntity.swift */; };
+		DE15A53F222E139F00C677C7 /* DetailRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15A53E222E139F00C677C7 /* DetailRecommend.swift */; };
 		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
@@ -89,6 +90,7 @@
 		DE15A538222A1F5900C677C7 /* ToastAdvertisementView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastAdvertisementView.xib; sourceTree = "<group>"; };
 		DE15A53A222A1F6B00C677C7 /* ToastAdvertisementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAdvertisementView.swift; sourceTree = "<group>"; };
 		DE15A53C222D7D5900C677C7 /* DetailRecommendEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendEntity.swift; sourceTree = "<group>"; };
+		DE15A53E222E139F00C677C7 /* DetailRecommend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommend.swift; sourceTree = "<group>"; };
 		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		DEAAA1982220FB170005B137 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE15A53E222E139F00C677C7 /* DetailRecommend.swift */,
 				DEAAA1D92223DA7E0005B137 /* MainArticle.swift */,
 				DEAAA1DB2223DD950005B137 /* MainSlider.swift */,
 			);
@@ -346,9 +349,9 @@
 		DEAAA1BC22210EB00005B137 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DE15A53C222D7D5900C677C7 /* DetailRecommendEntity.swift */,
 				DEAAA1D22223C2A40005B137 /* MainArticleEntity.swift */,
 				DEAAA1D42223CA600005B137 /* MainSliderEntity.swift */,
-				DE15A53C222D7D5900C677C7 /* DetailRecommendEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 				DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */,
 				DEAAA1D52223CA600005B137 /* MainSliderEntity.swift in Sources */,
 				DEAAA1B822210A210005B137 /* CustomViewBase.swift in Sources */,
+				DE15A53F222E139F00C677C7 /* DetailRecommend.swift in Sources */,
 				DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */,
 				DEAAA1B0222103860005B137 /* UIColorExtension.swift in Sources */,
 				DEAAA1DC2223DD950005B137 /* MainSlider.swift in Sources */,

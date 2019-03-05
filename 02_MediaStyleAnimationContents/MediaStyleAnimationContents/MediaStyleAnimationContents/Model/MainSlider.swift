@@ -15,7 +15,7 @@ class MainSlider {
 
     // JSONから記事部分のデータ一覧から表示対象Entityの配列へ変換したものを取得する
     static func getMainSliderList(_ json: JSON) -> [MainSliderEntity] {
-        let mainSliderList = json[0]["slider_list"].map{
+        let mainSliderList = json[0]["topics"].map{
             MainSliderEntity($1)
         }
         return mainSliderList

@@ -15,7 +15,7 @@ class MainArticle {
 
     // JSONから記事部分のデータ一覧から表示対象Entityの配列へ変換したものを取得する
     static func getMainArticleList(_ json: JSON) -> [MainArticleEntity] {
-        let mainArticleList = json[0]["article_list"].map{
+        let mainArticleList = json[0]["articles"].map{
             MainArticleEntity($1)
         }
         return mainArticleList

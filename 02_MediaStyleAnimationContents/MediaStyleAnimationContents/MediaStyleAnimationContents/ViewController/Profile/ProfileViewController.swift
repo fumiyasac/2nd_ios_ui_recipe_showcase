@@ -24,7 +24,7 @@ final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupNavigationBarTitle(MainMenuLists.profile.getTitle())
+        setupNavigationBarTitle("開発者のソーシャルリンク集")
         setupProfileTableView()
     }
 
