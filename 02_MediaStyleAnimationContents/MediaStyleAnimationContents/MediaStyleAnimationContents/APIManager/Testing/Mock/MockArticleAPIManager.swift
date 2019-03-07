@@ -56,7 +56,8 @@ extension MockArticleAPIManager: APIManagerProtocol {
     }
 
     func getArticleBy(id: Int) -> Promise<JSON> {
-        if let path = getStubFilePath(jsonFileName: MockArticleAPIManager.FileName.detail.rawValue) {
+        let targetFileName = MockArticleAPIManager.FileName.detail.rawValue + String(id)
+        if let path = getStubFilePath(jsonFileName: targetFileName) {
             let data = try! Data(contentsOf: URL(fileURLWithPath: path))
             return Promise { seal in
                 seal.fulfill(JSON(data))
