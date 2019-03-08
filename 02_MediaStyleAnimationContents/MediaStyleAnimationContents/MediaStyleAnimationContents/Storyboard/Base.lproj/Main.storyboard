@@ -134,7 +134,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VGk-sh-40h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="66P-Mi-tHT"/>
-                            <constraint firstItem="VGk-sh-40h" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6L1-tW-GU5"/>
+                            <constraint firstItem="VGk-sh-40h" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="6L1-tW-GU5"/>
                             <constraint firstItem="VGk-sh-40h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ftn-aZ-ce6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bZ4-ZX-xy7" secondAttribute="trailing" constant="16" id="YBv-qy-Jio"/>
                             <constraint firstItem="VGk-sh-40h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qPN-VK-QHS"/>

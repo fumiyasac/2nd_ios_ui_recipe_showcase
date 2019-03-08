@@ -66,15 +66,14 @@ final class QiitaViewController: UIViewController {
         webView.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
             webView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
-            webView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
             webView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor).isActive = true
             webView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor).isActive = true
         } else {
             webView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-            webView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
             webView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
             webView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         }
+        webView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
 
         // 取得したURLページをセットする
         selectedQiitaContents = .passcodeLock

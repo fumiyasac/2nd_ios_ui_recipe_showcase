@@ -113,15 +113,17 @@ final class MainArticleViewController: UIViewController {
     }
     
     // この画面におけるユーザー操作を受け付ける状態にする
-    private func allowMainArticleTableViewInterations() {
+    private func allowUserInterations() {
         mainArticleTableView.alpha = 1
         mainArticleTableView.isUserInteractionEnabled = true
+        mainArticleRequestButtonView.changeState(isLoading: false)
     }
     
     // この画面におけるユーザー操作を受け付けない状態にする
-    private func denyMainArticleTableViewInterations() {
+    private func denyUserInterations() {
         mainArticleTableView.alpha = 0.6
         mainArticleTableView.isUserInteractionEnabled = false
+        mainArticleRequestButtonView.changeState(isLoading: true)
     }
 
     // エラー発生時のアラート表示を設定をする
@@ -173,15 +175,17 @@ extension MainArticleViewController {
     // データ取得中の通知を受信した際に実行される処理
     @objc func updateStateForFetching(notification: Notification) {
 
-        // View描画に関わる変更
-        denyMainArticleTableViewInterations()
+        // 配置したView要素のユーザー操作に関わる変更
+        denyUserInterations()
     }
 
     // データ取得成功の通知を受信した際に実行される処理
     @objc func updateStateForSuccess(notification: Notification) {
 
-        // View描画に関わる変更
-        allowMainArticleTableViewInterations()
+        // 配置したView要素のユーザー操作に関わる変更
+        allowUserInterations()
+
+        // 次をデータを取得するボタンの表示可否
         mainArticleRequestButtonView.isHidden = !viewModel.hasNextPage
 
         // データ表示に関わる変更
@@ -191,8 +195,8 @@ extension MainArticleViewController {
     // データ取得失敗の通知を受信した際に実行される処理
     @objc func updateStateForFailure(notification: Notification) {
 
-        // View描画に関わる変更
-        allowMainArticleTableViewInterations()
+        // 配置したView要素のユーザー操作に関わる変更
+        allowUserInterations()
         showAlertWith(completionHandler: nil)
     }
 }
