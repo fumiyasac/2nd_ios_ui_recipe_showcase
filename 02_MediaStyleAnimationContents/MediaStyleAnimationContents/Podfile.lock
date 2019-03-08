@@ -16,9 +16,9 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.8.3):
     - PromiseKit/CorePromise
-  - PullUpController (0.6.0)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.2.0)
+  - SwiftyMarkdown (0.6.0)
   - Toast-Swift (4.0.1)
 
 DEPENDENCIES:
@@ -30,9 +30,9 @@ DEPENDENCIES:
   - FontAwesome.swift
   - FSPagerView
   - PromiseKit
-  - PullUpController
   - SVProgressHUD
   - SwiftyJSON
+  - SwiftyMarkdown
   - Toast-Swift (~> 4.0.0)
 
 SPEC REPOS:
@@ -45,9 +45,9 @@ SPEC REPOS:
     - FontAwesome.swift
     - FSPagerView
     - PromiseKit
-    - PullUpController
     - SVProgressHUD
     - SwiftyJSON
+    - SwiftyMarkdown
     - Toast-Swift
 
 SPEC CHECKSUMS:
@@ -59,11 +59,11 @@ SPEC CHECKSUMS:
   FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
-  PullUpController: 55d372633d55345a209add771458962abcdfbbf9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyMarkdown: 698fe6b283dddac69747f4e08ed0d067c18e0356
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: 4ac0be44cd71a4ad7de45f6bbf055614f8a30377
+PODFILE CHECKSUM: f098940dced51869965c835f53d1a55899621e80
 
 COCOAPODS: 1.6.0

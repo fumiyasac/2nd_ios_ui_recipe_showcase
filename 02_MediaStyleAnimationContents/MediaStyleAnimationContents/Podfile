@@ -19,7 +19,7 @@ target 'MediaStyleAnimationContents' do
   pod 'FSPagerView'
   pod 'SVProgressHUD'
   pod 'BTNavigationDropdownMenu'
-  pod 'PullUpController'
   pod 'ActiveLabel'
+  pod 'SwiftyMarkdown'
   pod 'Toast-Swift', '~> 4.0.0'
 end

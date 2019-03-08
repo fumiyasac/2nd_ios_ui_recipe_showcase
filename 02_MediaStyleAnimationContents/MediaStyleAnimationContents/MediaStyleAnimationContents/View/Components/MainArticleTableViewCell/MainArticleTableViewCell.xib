@@ -121,7 +121,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4k-P0-JSD">
-                        <rect key="frame" x="105" y="25" width="208" height="24"/>
+                        <rect key="frame" x="105" y="26" width="208" height="24"/>
                         <attributedString key="attributedText">
                             <fragment content="記事の本文が入ります。記事の本文が入ります。記事の本文が入ります。">
                                 <attributes>
@@ -143,8 +143,8 @@
                     <constraint firstItem="ndf-Uo-gcD" firstAttribute="top" secondItem="9ZP-8O-zCt" secondAttribute="top" constant="6" id="Stv-dL-hCy"/>
                     <constraint firstItem="9ZP-8O-zCt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="ZtD-F4-IT9"/>
                     <constraint firstAttribute="trailing" secondItem="jrR-Uy-uj8" secondAttribute="trailing" constant="7" id="c2B-hi-uHl"/>
-                    <constraint firstItem="i4k-P0-JSD" firstAttribute="top" secondItem="52T-Dv-L8g" secondAttribute="bottom" constant="7" id="fvd-AW-2bw"/>
-                    <constraint firstItem="jrR-Uy-uj8" firstAttribute="top" secondItem="i4k-P0-JSD" secondAttribute="bottom" constant="7.5" id="oan-uX-plS"/>
+                    <constraint firstItem="i4k-P0-JSD" firstAttribute="top" secondItem="52T-Dv-L8g" secondAttribute="bottom" constant="8" id="fvd-AW-2bw"/>
+                    <constraint firstItem="jrR-Uy-uj8" firstAttribute="top" secondItem="i4k-P0-JSD" secondAttribute="bottom" constant="6.5" id="oan-uX-plS"/>
                     <constraint firstAttribute="trailing" secondItem="52T-Dv-L8g" secondAttribute="trailing" constant="7" id="oww-o4-S1d"/>
                     <constraint firstAttribute="trailing" secondItem="i4k-P0-JSD" secondAttribute="trailing" constant="7" id="pFb-56-BBp"/>
                     <constraint firstItem="9ZP-8O-zCt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vek-2Q-Kaz"/>

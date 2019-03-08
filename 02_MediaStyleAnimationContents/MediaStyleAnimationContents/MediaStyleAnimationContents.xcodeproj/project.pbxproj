@@ -63,6 +63,7 @@
 		DE15A5952230E6CF00C677C7 /* detail4.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A5782230E6CF00C677C7 /* detail4.json */; };
 		DE15A5962230E6CF00C677C7 /* detail13.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A5792230E6CF00C677C7 /* detail13.json */; };
 		DE15A5972230E6CF00C677C7 /* detail6.json in Resources */ = {isa = PBXBuildFile; fileRef = DE15A57A2230E6CF00C677C7 /* detail6.json */; };
+		DE45949E2232B484006E0ECA /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45949D2232B484006E0ECA /* Decorator.swift */; };
 		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
@@ -173,6 +174,7 @@
 		DE15A5782230E6CF00C677C7 /* detail4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail4.json; sourceTree = "<group>"; };
 		DE15A5792230E6CF00C677C7 /* detail13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail13.json; sourceTree = "<group>"; };
 		DE15A57A2230E6CF00C677C7 /* detail6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail6.json; sourceTree = "<group>"; };
+		DE45949D2232B484006E0ECA /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				DEAAA1B922210DBB0005B137 /* Enum */,
 				DEAAA19B2220FB500005B137 /* Extensions */,
 				DEAAA1982220FB170005B137 /* Model */,
+				DE45949C2232B45C006E0ECA /* Modules */,
 				DEAAA1992220FB280005B137 /* Storyboard */,
 				DEAAA1962220FAF00005B137 /* View */,
 				DEAAA19C2220FC660005B137 /* ViewController */,
@@ -381,6 +384,35 @@
 			path = Stub;
 			sourceTree = "<group>";
 		};
+		DE4594992232AB37006E0ECA /* DetailMainArticleElementView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailMainArticleElementView;
+			sourceTree = "<group>";
+		};
+		DE45949A2232AB89006E0ECA /* DetailHashTagsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailHashTagsView;
+			sourceTree = "<group>";
+		};
+		DE45949B2232ABB1006E0ECA /* DetailMarkdownView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailMarkdownView;
+			sourceTree = "<group>";
+		};
+		DE45949C2232B45C006E0ECA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE45949D2232B484006E0ECA /* Decorator.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		DEAAA1962220FAF00005B137 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +487,9 @@
 		DEAAA1B6222109E60005B137 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE45949B2232ABB1006E0ECA /* DetailMarkdownView */,
+				DE45949A2232AB89006E0ECA /* DetailHashTagsView */,
+				DE4594992232AB37006E0ECA /* DetailMainArticleElementView */,
 				DEAAA1C222211F3A0005B137 /* MainArticleRequestButtonView */,
 				DEAAA1C722212E4E0005B137 /* MainArticleTableViewCell */,
 				DE15A542222ECDCE00C677C7 /* MainSliderErrorView */,
@@ -774,9 +809,9 @@
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/PullUpController/PullUpController.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyMarkdown/SwiftyMarkdown.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -791,9 +826,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullUpController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -827,6 +862,7 @@
 				DEAAA1CA22212E710005B137 /* MainArticleTableViewCell.swift in Sources */,
 				DEAAA1C1222111F20005B137 /* MainArticleViewController.swift in Sources */,
 				DEAAA1AE222103470005B137 /* UIViewControllerExtension.swift in Sources */,
+				DE45949E2232B484006E0ECA /* Decorator.swift in Sources */,
 				DE15A53D222D7D5900C677C7 /* DetailRecommendEntity.swift in Sources */,
 				DEAAA1BB22210DEB0005B137 /* ArticleCategoryLists.swift in Sources */,
 				DEAAA1BF222111AA0005B137 /* MainSliderViewController.swift in Sources */,
