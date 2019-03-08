@@ -55,6 +55,34 @@ final class MainArticleViewController: UIViewController {
 
     // MARK: - Private Function
 
+    // データ取得中の通知を受信した際に実行される処理
+    @objc private func updateStateForFetching(notification: Notification) {
+
+        // 配置したView要素のユーザー操作に関わる変更
+        denyUserInterations()
+    }
+    
+    // データ取得成功の通知を受信した際に実行される処理
+    @objc private func updateStateForSuccess(notification: Notification) {
+
+        // 配置したView要素のユーザー操作に関わる変更
+        allowUserInterations()
+
+        // 次をデータを取得するボタンの表示可否
+        mainArticleRequestButtonView.isHidden = !viewModel.hasNextPage
+
+        // データ表示に関わる変更
+        mainArticleLists = viewModel.targetMainArticleLists
+    }
+    
+    // データ取得失敗の通知を受信した際に実行される処理
+    @objc private func updateStateForFailure(notification: Notification) {
+
+        // 配置したView要素のユーザー操作に関わる変更
+        allowUserInterations()
+        showAlertWith(completionHandler: nil)
+    }
+
     // DataBindingを実行するための通知に関する初期設定をする
     private func setupNotificationsForDataBinding() {
 
@@ -163,40 +191,5 @@ extension MainArticleViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let targetEntity = mainArticleLists[indexPath.row]
         self.delegate?.sendTargetEntity(targetEntity)
-    }
-}
-
-// MARK: - MainArticleViewController
-
-extension MainArticleViewController {
-
-    // MARK: - Function
-
-    // データ取得中の通知を受信した際に実行される処理
-    @objc func updateStateForFetching(notification: Notification) {
-
-        // 配置したView要素のユーザー操作に関わる変更
-        denyUserInterations()
-    }
-
-    // データ取得成功の通知を受信した際に実行される処理
-    @objc func updateStateForSuccess(notification: Notification) {
-
-        // 配置したView要素のユーザー操作に関わる変更
-        allowUserInterations()
-
-        // 次をデータを取得するボタンの表示可否
-        mainArticleRequestButtonView.isHidden = !viewModel.hasNextPage
-
-        // データ表示に関わる変更
-        mainArticleLists = viewModel.targetMainArticleLists
-    }
-    
-    // データ取得失敗の通知を受信した際に実行される処理
-    @objc func updateStateForFailure(notification: Notification) {
-
-        // 配置したView要素のユーザー操作に関わる変更
-        allowUserInterations()
-        showAlertWith(completionHandler: nil)
     }
 }

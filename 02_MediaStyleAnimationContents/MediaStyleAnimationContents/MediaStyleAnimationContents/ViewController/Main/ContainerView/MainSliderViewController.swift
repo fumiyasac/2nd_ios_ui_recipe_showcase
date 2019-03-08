@@ -41,6 +41,25 @@ final class MainSliderViewController: UIViewController {
 
     // MARK: - Private Function
 
+    // 写真データ取得成功の通知を受信した際に実行される処理
+    @objc private func receiveSuccessNotificaton(notification: Notification) {
+
+        // View描画に関わる変更を反映する
+        mainSliderView.isHidden = false
+        mainSliderErrorView.isHidden = true
+
+        // データ表示に関わる変更を反映する
+        mainSliderLists = viewModel.targetMainSliderLists
+    }
+
+    // 写真データ取得失敗の通知を受信した際に実行される処理
+    @objc private func receiveFailureNotificaton(notification: Notification) {
+
+        // View描画に関わる変更を反映する
+        mainSliderView.isHidden = true
+        mainSliderErrorView.isHidden = false
+    }
+
     // DataBindingを実行するための通知に関する初期設定をする
     private func setupNotificationsForDataBinding() {
 
@@ -117,31 +136,5 @@ extension MainSliderViewController: FSPagerViewDataSource, FSPagerViewDelegate {
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
         pagerView.deselectItem(at: index, animated: true)
         pagerView.scrollToItem(at: index, animated: true)
-    }
-}
-
-// MARK: - MainSliderViewController
-
-extension MainSliderViewController {
-    
-    // MARK: - Function
-
-    // 写真データ取得成功の通知を受信した際に実行される処理
-    @objc func receiveSuccessNotificaton(notification: Notification) {
-
-        // View描画に関わる変更を反映する
-        mainSliderView.isHidden = false
-        mainSliderErrorView.isHidden = true
-
-        // データ表示に関わる変更を反映する
-        mainSliderLists = viewModel.targetMainSliderLists
-    }
-
-    // 写真データ取得失敗の通知を受信した際に実行される処理
-    @objc func receiveFailureNotificaton(notification: Notification) {
-
-        // View描画に関わる変更を反映する
-        mainSliderView.isHidden = true
-        mainSliderErrorView.isHidden = false
     }
 }

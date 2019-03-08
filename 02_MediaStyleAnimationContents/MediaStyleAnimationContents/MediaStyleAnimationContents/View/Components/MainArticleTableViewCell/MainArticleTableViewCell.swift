@@ -42,7 +42,20 @@ final class MainArticleTableViewCell: UITableViewCell {
 
         // 画像を表示する
         if let thumbnailUrl = mainArticle.thumbnailUrl {
-            thumbnailImageView.af_setImage(withURL: thumbnailUrl)
+
+            // 表示する画像に角丸をつけるためのフィルタ
+            let thumbnailFilter = AspectScaledToFillSizeWithRoundedCornersFilter(
+                size: thumbnailImageView.frame.size,
+                radius: 6.0
+            )
+
+            // 表示時のプレースホルダー画像・フィルタ・トランジションも引数に設定する
+            thumbnailImageView.af_setImage(
+                withURL: thumbnailUrl,
+                placeholderImage: UIImage(named: "placeholder"),
+                filter: thumbnailFilter,
+                imageTransition: .crossDissolve(0.2)
+            )
         }
 
         // カテゴリ表示用ラベルをEnumでの定義をもとに表示する
