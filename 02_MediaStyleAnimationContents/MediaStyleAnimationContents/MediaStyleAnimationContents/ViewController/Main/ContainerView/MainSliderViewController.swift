@@ -12,6 +12,7 @@ import AlamofireImage
 
 final class MainSliderViewController: UIViewController {
 
+    // 表示内容を一時的に格納するための変数
     private var mainSliderLists: [MainSliderEntity] = [] {
         didSet {
             self.mainSliderView.reloadData()
@@ -33,12 +34,32 @@ final class MainSliderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNotificationsForDataBinding()
         setupSliderView()
         setupSliderErrorView()
-        setupNotificationsForDataBinding()
     }
 
     // MARK: - Private Function
+
+    // DataBindingを実行するための通知に関する初期設定をする
+    private func setupNotificationsForDataBinding() {
+
+        // MEMO: NotificationCenterを利用してViewModel側の変更を取得できるようにしている
+        // 書籍「iOS設計パターン入門 第6章 MVVM」で紹介されていたコードを参考に構築しました。
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(self.receiveSuccessNotificaton),
+            name: viewModel.successFetchMainSlider,
+            object: nil
+        )
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(self.receiveFailureNotificaton),
+            name: viewModel.failureFetchMainSlider,
+            object: nil
+        )
+        viewModel.fetchMainSlider()
+    }
 
     // FSPagerViewの初期設定をする
     private func setupSliderView() {
@@ -60,26 +81,6 @@ final class MainSliderViewController: UIViewController {
         mainSliderErrorView.requestSliderButtonAction = {
             self.viewModel.fetchMainSlider()
         }
-    }
-
-    // DataBindingを実行するための通知に関する初期設定をする
-    private func setupNotificationsForDataBinding() {
-
-        // MEMO: NotificationCenterを利用してViewModel側の変更を取得できるようにしている
-        // 書籍「iOS設計パターン入門 第6章 MVVM」で紹介されていたコードを参考に構築しました。
-        notificationCenter.addObserver(
-            self,
-            selector: #selector(self.receiveSuccessNotificaton),
-            name: viewModel.successFetchMainSlider,
-            object: nil
-        )
-        notificationCenter.addObserver(
-            self,
-            selector: #selector(self.receiveFailureNotificaton),
-            name: viewModel.failureFetchMainSlider,
-            object: nil
-        )
-        viewModel.fetchMainSlider()
     }
 }
 
@@ -107,6 +108,7 @@ extension MainSliderViewController: FSPagerViewDataSource, FSPagerViewDelegate {
         cell.textLabel?.font = UIFont(name: "HiraKakuProN-W6", size: 12.0)
         cell.contentView.layer.shadowOpacity = 0.4
         cell.contentView.layer.opacity = 0.86
+        cell.backgroundColor = UIColor(code: "#eeeeee")
 
         return cell
     }

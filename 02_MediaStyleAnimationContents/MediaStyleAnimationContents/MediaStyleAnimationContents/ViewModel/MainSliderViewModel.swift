@@ -50,13 +50,13 @@ final class MainSliderViewModel {
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchMainSlider, object: nil)
-                print(responseResult)
+                print("スライド画像取得成功:", responseResult)
             }
             .catch { error in
 
                 // データ取得処理失敗時のNotification送信
                 self.notificationCenter.post(name: self.failureFetchMainSlider, object: nil)
-                print(error.localizedDescription)
+                print("スライド画像取得失敗:", error.localizedDescription)
         }
     }
 }

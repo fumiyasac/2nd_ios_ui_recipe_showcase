@@ -45,11 +45,14 @@ final class MainArticleViewModel {
 
     // MARK: - Function
 
-    func fetchMainSlider()  {
-
-        // 次のページが存在しない場合は以降の処理を実行しない
+    func fetchMainArtcle()  {
+        
         if !hasNextPage {
+            // 次のページが存在しない場合は以降の処理を実行しない
             return
+        } else {
+            // データ取得中のNotification送信
+            self.notificationCenter.post(name: self.executingFetchMainArticle, object: nil)
         }
 
         // 写真データをAPIから取得する(詳細表示用)
@@ -69,13 +72,13 @@ final class MainArticleViewModel {
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchMainArticle, object: nil)
-                print(responseResult)
+                print("記事データ取得成功:", responseResult)
             }
             .catch { error in
 
                 // データ取得処理失敗時のNotification送信
                 self.notificationCenter.post(name: self.failureFetchMainArticle, object: nil)
-                print(error.localizedDescription)
+                print("記事データ取得失敗:", error.localizedDescription)
         }
     }
 }

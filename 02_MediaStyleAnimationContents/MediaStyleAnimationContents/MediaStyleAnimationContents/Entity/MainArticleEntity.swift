@@ -34,7 +34,7 @@ struct MainArticleEntity {
         if let summary = json["summary"].string {
             self.summary = summary
         }
-        if let thumbnailUrl = json["thumbnail_url"].string {
+        if let thumbnailUrl = json["image_url"].string {
             self.thumbnailUrl = URL(string: thumbnailUrl)
         }
         if let publishDate = json["publish_date"].string {

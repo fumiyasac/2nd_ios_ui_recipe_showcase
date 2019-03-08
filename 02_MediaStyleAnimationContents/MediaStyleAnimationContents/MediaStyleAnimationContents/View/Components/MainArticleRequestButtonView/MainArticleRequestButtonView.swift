@@ -12,6 +12,9 @@ import FontAwesome_swift
 
 final class MainArticleRequestButtonView: CustomViewBase {
 
+    // 利用する画面での想定する高さ
+    static let viewHeight: CGFloat = 54.0
+
     // MEMO: ボタン押下時の挙動はViewControllerで実装する
     var requestNextArticlesButtonAction: (() -> ())?
 

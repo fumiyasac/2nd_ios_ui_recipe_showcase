@@ -25,7 +25,26 @@ final class MainViewController: UIViewController {
         setupMainMenuButton()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        applyChildViewControllerDelegatesFor(targetSegue: segue)
+    }
+
     // MARK: - Private Function
+
+    // ContainerViewで表示しているViewControllerのプロトコルを適合する
+    private func applyChildViewControllerDelegatesFor(targetSegue: UIStoryboardSegue) {
+
+        // Storyboardの名前からViewControllerのインスタンスを取得してprotocolを適用する
+        if targetSegue.identifier == "ConnectMainArticleContainer" {
+            let vc = targetSegue.destination as! MainArticleViewController
+            vc.delegate = self
+        }
+
+        // MEMO: このViewControllerに配置している他のContainerViewで表示しているものProtocolを適用するための準備
+        // 手順1. 対象ContainerViewの「EmbedSegue」部分にInterfaceBuilderでを利用して任意の名前をつける
+        // 手順2. prepareメソッド内でidentifierプロパティの値とつけた名前が一致するかを判定する
+        // 手順3. 一致する場合はdestinationプロパティの値を該当のViewControllerへダウンキャストしてインスタンスを取得する
+    }
 
     private func setupMainMenuButton() {
 
@@ -78,5 +97,20 @@ final class MainViewController: UIViewController {
         item.iconImageView.tintColor = .white
         item.iconImageView.frame = CGRect(origin: itemOrigin, size: itemSize)
         item.iconImageView.image = UIImage.fontAwesomeIcon(name: mainMenu.getIcon(), style: .solid, textColor: .white, size: itemSize)
+    }
+}
+
+// MARK: - MainArticleViewControllerDelegate
+
+extension MainViewController: MainArticleViewControllerDelegate {
+
+    // 記事一覧を表示しているContainerViewの高さ制約を更新する
+    func updateContainerViewHeight(_ height: CGFloat) {
+        mainArticlesContainerViewHeightConstraint.constant = height
+    }
+
+    // TODO: 該当のデータ(MainArticleEntity)を遷移先へ引き渡して進む
+    func sendTargetEntity(_ entity: MainArticleEntity) {
+        print("対象のMainArticleEntity:", entity)
     }
 }

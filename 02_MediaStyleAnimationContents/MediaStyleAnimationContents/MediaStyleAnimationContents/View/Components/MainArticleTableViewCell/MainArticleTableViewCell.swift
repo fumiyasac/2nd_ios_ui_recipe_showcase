@@ -12,6 +12,8 @@ import AlamofireImage
 
 final class MainArticleTableViewCell: UITableViewCell {
 
+    static let cellHeight: CGFloat = 80.0
+
     private let iconDefaultColor: UIColor = UIColor(code: "#bbbbbb")
     private let iconSelectedColor: UIColor = UIColor(code: "#d7847e")
     private let iconSize: CGSize = CGSize(width: 16.0, height: 16.0)
@@ -37,7 +39,36 @@ final class MainArticleTableViewCell: UITableViewCell {
     // MARK: - Function
 
     func setCell(_ mainArticle: MainArticleEntity) {
-        
+
+        // 画像を表示する
+        if let thumbnailUrl = mainArticle.thumbnailUrl {
+            thumbnailImageView.af_setImage(withURL: thumbnailUrl)
+        }
+
+        // カテゴリ表示用ラベルをEnumでの定義をもとに表示する
+        categoryLabel.text = ArticleCategoryLists(rawValue: mainArticle.category)?.getDisplayName()
+
+        // タイトル表示用ラベルの装飾を適用して表示する
+        let titleKeys = (
+            lineSpacing: CGFloat(6),
+            font: UIFont(name: "HiraKakuProN-W6", size: 11.0)!,
+            foregroundColor: UIColor(code: "#333333")
+        )
+        let titleAttributes = getLabelAttributesBy(keys: titleKeys)
+        titleLabel.attributedText = NSAttributedString(string: mainArticle.title, attributes: titleAttributes)
+
+        // サマリー表示用ラベルの装飾を適用して表示する
+        let summaryKeys = (
+            lineSpacing: CGFloat(4),
+            font: UIFont(name: "HiraKakuProN-W3", size: 10.0)!,
+            foregroundColor: UIColor(code: "#777777")
+        )
+        let summaryAttributes = getLabelAttributesBy(keys: summaryKeys)
+        summaryLabel.attributedText = NSAttributedString(string: mainArticle.summary, attributes: summaryAttributes)
+
+        // その他表示要素を表示する
+        publishDateLabel.text = mainArticle.publishDate
+        totalViewsLabel.text = mainArticle.totalViews
     }
 
     // MARK: - Private Function

@@ -108,7 +108,7 @@
                                                     <constraint firstAttribute="height" priority="250" constant="360" id="Ndi-g6-OeY"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="H1a-fV-egD" kind="embed" id="gTv-FU-RGG"/>
+                                                    <segue destination="H1a-fV-egD" kind="embed" identifier="ConnectMainArticleContainer" id="gTv-FU-RGG"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -117,7 +117,7 @@
                                 <constraints>
                                     <constraint firstItem="WED-xL-f9l" firstAttribute="width" secondItem="VGk-sh-40h" secondAttribute="width" id="66y-o6-mWJ"/>
                                     <constraint firstItem="WED-xL-f9l" firstAttribute="top" secondItem="VGk-sh-40h" secondAttribute="top" id="IKI-wj-3jr"/>
-                                    <constraint firstAttribute="bottom" secondItem="WED-xL-f9l" secondAttribute="bottom" id="N3f-c0-NhW"/>
+                                    <constraint firstAttribute="bottom" secondItem="WED-xL-f9l" secondAttribute="bottom" constant="80" id="N3f-c0-NhW"/>
                                     <constraint firstAttribute="trailing" secondItem="WED-xL-f9l" secondAttribute="trailing" id="hxY-cZ-ppa"/>
                                     <constraint firstItem="WED-xL-f9l" firstAttribute="leading" secondItem="VGk-sh-40h" secondAttribute="leading" id="ulh-4V-Ibq"/>
                                 </constraints>
@@ -221,6 +221,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PtX-t1-D6U"/>
                     </view>
+                    <connections>
+                        <outlet property="mainArticleRequestButtonView" destination="k7w-hd-qsD" id="gUm-b3-J8C"/>
+                        <outlet property="mainArticleTableView" destination="5dF-of-gKK" id="fVp-tu-W1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ha5-Gz-jDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

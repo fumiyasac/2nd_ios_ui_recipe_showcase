@@ -37,7 +37,7 @@ enum ArticleCategoryLists: Int, CaseIterable {
         case .menu:
             return UIColor(code: "#d78114")
         default:
-            return UIColor(code: "#9aadbe")
+            return UIColor(code: "#ff7e79")
         }
     }
 }
