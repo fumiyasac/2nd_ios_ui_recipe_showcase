@@ -9,6 +9,8 @@
 import XCTest
 @testable import MediaStyleAnimationContents
 
+// MEMO: 今回はAPIからの取得と表示用データ作成が行えているかのテストを実施
+
 class MediaStyleAnimationContentsTests: XCTestCase {
 
     override func setUp() {}
@@ -140,7 +142,6 @@ class MediaStyleAnimationContentsTests: XCTestCase {
     }
 
     // Case3: 詳細ページのデータの取得処理を実行する(その2)
-
     private func fetchRecommend(viewModel: DetailViewModel, timeOutSec: TimeInterval) {
 
         let descriptionName = "fetchRecommend"
