@@ -31,8 +31,8 @@
                                 <constraint firstAttribute="height" constant="16" id="s8c-Bh-9QI"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タグ一覧:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="571-8U-vys">
-                            <rect key="frame" x="22" y="0.0" width="51.5" height="16"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="この写真のハッシュタグ一覧:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="571-8U-vys">
+                            <rect key="frame" x="22" y="0.0" width="159" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="KzY-Pp-Ycv"/>
                             </constraints>

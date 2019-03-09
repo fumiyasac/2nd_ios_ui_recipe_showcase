@@ -50,7 +50,6 @@ final class DetailHashTagsView: CustomViewBase {
         let hashtagsString = sampleTagsList.joined(separator: " ")
         hashTagsLabel.attributedText = NSAttributedString(string: hashtagsString, attributes: hashTagsAttributes)
         hashTagsLabel.enabledTypes = [.hashtag]
-        hashTagsLabel.hashtagColor = UIColor(code: "#777777")
         hashTagsLabel.handleHashtagTap { hashtag in
             print("押下されたハッシュタグ：\(hashtag)")
         }

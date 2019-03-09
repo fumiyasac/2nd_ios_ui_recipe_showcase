@@ -83,19 +83,16 @@
                                 <rect key="frame" x="192" y="0.0" width="16" height="16"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NKO-Ms-u33">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="16" id="7Ie-kd-7HR"/>
-                                        </constraints>
+                                        <rect key="frame" x="2" y="2" width="12" height="12"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="AOC-r7-397"/>
-                                    <constraint firstItem="NKO-Ms-u33" firstAttribute="top" secondItem="9qb-Y3-cRa" secondAttribute="top" id="CoT-ck-AWJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="NKO-Ms-u33" secondAttribute="trailing" id="dJh-lr-ETL"/>
-                                    <constraint firstAttribute="bottom" secondItem="NKO-Ms-u33" secondAttribute="bottom" id="dw5-kl-3o8"/>
-                                    <constraint firstItem="NKO-Ms-u33" firstAttribute="leading" secondItem="9qb-Y3-cRa" secondAttribute="leading" id="it1-gh-pMt"/>
+                                    <constraint firstItem="NKO-Ms-u33" firstAttribute="top" secondItem="9qb-Y3-cRa" secondAttribute="top" constant="2" id="CoT-ck-AWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="NKO-Ms-u33" secondAttribute="trailing" constant="2" id="dJh-lr-ETL"/>
+                                    <constraint firstAttribute="bottom" secondItem="NKO-Ms-u33" secondAttribute="bottom" constant="2" id="dw5-kl-3o8"/>
+                                    <constraint firstItem="NKO-Ms-u33" firstAttribute="leading" secondItem="9qb-Y3-cRa" secondAttribute="leading" constant="2" id="it1-gh-pMt"/>
                                 </constraints>
                             </view>
                         </subviews>
