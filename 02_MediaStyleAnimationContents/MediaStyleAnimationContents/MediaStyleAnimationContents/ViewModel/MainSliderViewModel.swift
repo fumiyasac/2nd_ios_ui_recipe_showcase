@@ -40,8 +40,10 @@ final class MainSliderViewModel {
 
     func fetchMainSlider()  {
 
-        // 写真データをAPIから取得する(詳細表示用)
+        // スライダー表示用データをAPIから取得する
         api.getSliderImages()
+
+            // 成功時の処理をクロージャー内に記載する
             .done{ json in
 
                 // データ保持用の変数へJSONから取得したデータを整形して格納する
@@ -50,13 +52,15 @@ final class MainSliderViewModel {
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchMainSlider, object: nil)
-                print("スライド画像取得成功:", responseResult)
+                print("スライド画像一覧データ取得成功:", responseResult)
             }
+
+            // 失敗時の処理をクロージャー内に記載する
             .catch { error in
 
                 // データ取得処理失敗時のNotification送信
                 self.notificationCenter.post(name: self.failureFetchMainSlider, object: nil)
-                print("スライド画像取得失敗:", error.localizedDescription)
-        }
+                print("スライド画像一覧データ取得失敗:", error.localizedDescription)
+            }
     }
 }

@@ -67,7 +67,7 @@ extension MockArticleAPIManager: APIManagerProtocol {
         }
     }
 
-    func getRecommendArticles() -> Promise<JSON> {
+    func getRecommends() -> Promise<JSON> {
         if let path = getStubFilePath(jsonFileName: MockArticleAPIManager.FileName.recommend.rawValue) {
             let data = try! Data(contentsOf: URL(fileURLWithPath: path))
             return Promise { seal in

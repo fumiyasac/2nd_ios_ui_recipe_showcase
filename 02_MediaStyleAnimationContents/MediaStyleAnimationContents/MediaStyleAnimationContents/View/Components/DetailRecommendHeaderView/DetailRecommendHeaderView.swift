@@ -11,7 +11,7 @@ import FontAwesome_swift
 
 final class DetailRecommendHeaderView: UICollectionReusableView {
 
-    static let viewHeight: CGFloat = 48.0
+    static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width, height: 48.0)
 
     @IBOutlet weak private var foodImageView: UIImageView!
 

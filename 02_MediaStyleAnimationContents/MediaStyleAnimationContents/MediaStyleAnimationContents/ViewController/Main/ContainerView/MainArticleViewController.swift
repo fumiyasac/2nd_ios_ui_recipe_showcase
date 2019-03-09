@@ -80,7 +80,11 @@ final class MainArticleViewController: UIViewController {
 
         // 配置したView要素のユーザー操作に関わる変更
         allowUserInterations()
-        showAlertWith(completionHandler: nil)
+
+        // 失敗した際にはポップアップを表示して記事の再取得を促す
+        showAlertWith(completionHandler: {
+            self.viewModel.fetchMainArtcle()
+        })
     }
 
     // DataBindingを実行するための通知に関する初期設定をする
@@ -158,7 +162,7 @@ final class MainArticleViewController: UIViewController {
     private func showAlertWith(completionHandler: (() -> ())? = nil) {
         let alert = UIAlertController(
             title: "エラーが発生しました",
-            message: "APIからのデータの取得に失敗しました。通信環境等を確認の上再度お試し下さい。",
+            message: "記事一覧データの取得に失敗しました。通信環境等を確認の上再度お試し下さい。",
             preferredStyle: .alert
         )
         let okAction = UIAlertAction(title: "OK", style: .default, handler: { _ in

@@ -13,13 +13,13 @@
         <!--Detail View Controller-->
         <scene sceneID="Ioc-No-trX">
             <objects>
-                <viewController id="hRz-ZO-cul" customClass="DetailViewController" customModule="MediaStyleAnimationContents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="hRz-ZO-cul" customClass="DetailViewController" customModule="MediaStyleAnimationContents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U8q-iF-4ds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFF-gD-ZCX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="840"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKf-6r-FCj">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
@@ -102,12 +102,22 @@
                             <constraint firstItem="jFF-gD-ZCX" firstAttribute="leading" secondItem="IEY-nW-3p9" secondAttribute="leading" id="G0S-I4-UVf"/>
                             <constraint firstItem="jFF-gD-ZCX" firstAttribute="bottom" secondItem="U8q-iF-4ds" secondAttribute="bottom" id="JFp-9d-xhZ"/>
                             <constraint firstItem="jFF-gD-ZCX" firstAttribute="trailing" secondItem="IEY-nW-3p9" secondAttribute="trailing" id="aG2-WS-cJc"/>
-                            <constraint firstItem="jFF-gD-ZCX" firstAttribute="top" secondItem="U8q-iF-4ds" secondAttribute="top" id="ydb-uQ-cpD"/>
+                            <constraint firstItem="jFF-gD-ZCX" firstAttribute="top" secondItem="IEY-nW-3p9" secondAttribute="top" id="ydb-uQ-cpD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IEY-nW-3p9"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="860"/>
+                    <connections>
+                        <outlet property="detailImageView" destination="QKf-6r-FCj" id="AtE-QE-fYT"/>
+                        <outlet property="detailImageViewHeightConstraint" destination="2Rt-Dk-Nkq" id="9er-96-jS2"/>
+                        <outlet property="detailImageViewTopConstraint" destination="c6S-P6-DtP" id="8nN-lO-7T4"/>
+                        <outlet property="detailMainArticleElementView" destination="esK-zu-Krs" id="ypg-Cc-aiN"/>
+                        <outlet property="detailRecommendCollectionView" destination="RTs-y3-hvx" id="9PM-Hb-IcG"/>
+                        <outlet property="detailRecommendCollectionViewHeightConstraint" destination="uI6-mU-qVO" id="TE3-ew-7Hy"/>
+                        <outlet property="detailRecommendErrorView" destination="Pes-aw-art" id="OHh-gC-GeQ"/>
+                        <outlet property="detailScrollView" destination="jFF-gD-ZCX" id="xhS-sw-re0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAb-Na-zHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

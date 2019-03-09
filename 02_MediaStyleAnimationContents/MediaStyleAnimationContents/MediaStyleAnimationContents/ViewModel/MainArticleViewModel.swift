@@ -46,7 +46,7 @@ final class MainArticleViewModel {
     // MARK: - Function
 
     func fetchMainArtcle()  {
-        
+
         if !hasNextPage {
             // 次のページが存在しない場合は以降の処理を実行しない
             return
@@ -55,8 +55,10 @@ final class MainArticleViewModel {
             self.notificationCenter.post(name: self.executingFetchMainArticle, object: nil)
         }
 
-        // 写真データをAPIから取得する(詳細表示用)
+        // 記事一覧表示用データをAPIから取得する
         api.getArticleList(perPage: currentPage)
+
+            // 成功時の処理をクロージャー内に記載する
             .done{ json in
 
                 // データ保持用の変数へJSONから取得したデータを整形して格納する
@@ -72,13 +74,15 @@ final class MainArticleViewModel {
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchMainArticle, object: nil)
-                print("記事データ取得成功:", responseResult)
+                print("記事一覧データ取得成功:", responseResult)
             }
+
+            // 失敗時の処理をクロージャー内に記載する
             .catch { error in
 
                 // データ取得処理失敗時のNotification送信
                 self.notificationCenter.post(name: self.failureFetchMainArticle, object: nil)
-                print("記事データ取得失敗:", error.localizedDescription)
-        }
+                print("記事一覧データ取得失敗:", error.localizedDescription)
+            }
     }
 }

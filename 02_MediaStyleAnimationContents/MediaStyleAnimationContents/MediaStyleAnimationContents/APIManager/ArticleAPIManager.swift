@@ -68,7 +68,7 @@ extension ArticleAPIManager: APIManagerProtocol {
         return handleArticlesApiRequest(url: requestUrl)
     }
 
-    func getRecommendArticles() -> Promise<JSON> {
+    func getRecommends() -> Promise<JSON> {
         let requestUrl = ArticleAPIManager.EndPoint.recommend.getBaseUrl()
         return handleArticlesApiRequest(url: requestUrl)
     }

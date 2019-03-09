@@ -24,5 +24,5 @@ protocol APIManagerProtocol {
     func getArticleBy(id: Int) -> Promise<JSON>
 
     // おすすめ記事一覧を取得する
-    func getRecommendArticles() -> Promise<JSON>
+    func getRecommends() -> Promise<JSON>
 }

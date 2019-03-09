@@ -13,7 +13,12 @@ class MainArticle {
 
     // MARK: - Static Function
 
-    // JSONから記事部分のデータ一覧から表示対象Entityの配列へ変換したものを取得する
+    // JSONから記事部分のデータ一覧から表示対象Entityの配列へ変換したものを取得する(詳細表示用)
+    static func getSingleArticle(_ json: JSON) -> MainArticleEntity {
+        return MainArticleEntity(json)
+    }
+
+    // JSONから記事部分のデータ一覧から表示対象Entityの配列へ変換したものを取得する(一覧表示用)
     static func getMainArticleList(_ json: JSON) -> [MainArticleEntity] {
         let mainArticleList = json[0]["articles"].map{
             MainArticleEntity($1)

@@ -9,5 +9,5 @@
 import UIKit
 
 class DetailRecommendFooterView: UICollectionReusableView {
-    static let viewHeight: CGFloat = 44.0
+    static let viewSize: CGSize = CGSize(width: UIScreen.main.bounds.width, height: 44.0)
 }

@@ -109,10 +109,11 @@ extension MainViewController: MainArticleViewControllerDelegate {
         mainArticlesContainerViewHeightConstraint.constant = height
     }
 
-    // TODO: 該当のデータ(MainArticleEntity)を遷移先へ引き渡して進む
+    // 該当のデータ(MainArticleEntity)を遷移先へ引き渡して進む
     func sendTargetEntity(_ entity: MainArticleEntity) {
         let sb = UIStoryboard(name: "Detail", bundle: nil)
         let vc = sb.instantiateInitialViewController() as! DetailViewController
+        vc.setMainArticleEntityFromPresentedViewController(entity)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

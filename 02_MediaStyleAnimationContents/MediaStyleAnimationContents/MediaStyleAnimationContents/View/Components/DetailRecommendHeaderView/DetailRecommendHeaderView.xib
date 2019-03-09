@@ -72,6 +72,9 @@
                 <constraint firstAttribute="trailing" secondItem="Wbo-iv-6tQ" secondAttribute="trailing" constant="12" id="te7-F7-Pga"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="foodImageView" destination="HlM-rR-zgy" id="rJg-MX-mWX"/>
+            </connections>
             <point key="canvasLocation" x="52.799999999999997" y="108.84557721139431"/>
         </collectionReusableView>
     </objects>
