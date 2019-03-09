@@ -19,6 +19,7 @@ PODS:
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.2.0)
   - Toast-Swift (4.0.1)
+  - WaterfallLayout (0.2)
 
 DEPENDENCIES:
   - ActiveLabel
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - SVProgressHUD
   - SwiftyJSON
   - Toast-Swift (~> 4.0.0)
+  - WaterfallLayout (~> 0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,6 +48,7 @@ SPEC REPOS:
     - SVProgressHUD
     - SwiftyJSON
     - Toast-Swift
+    - WaterfallLayout
 
 SPEC CHECKSUMS:
   ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
@@ -59,7 +62,8 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+  WaterfallLayout: 030e04b041e5c6c47ae2c1eaa685c60289fab0b1
 
-PODFILE CHECKSUM: 93b1320b162aafb539dc19566d25686c237856ae
+PODFILE CHECKSUM: 0bbfb77bbc92622604d65433c3d395e3c352a89a
 
 COCOAPODS: 1.6.0

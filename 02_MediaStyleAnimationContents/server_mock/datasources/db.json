@@ -602,38 +602,38 @@
             "topics": [
                 {
                     "id": 1,
-                    "title": "メキシコ本場の唐辛子のパンチ力にノックアウト",
+                    "title": "メキシコ本場の青唐辛子ハラペーニョの辛さににノックアウト寸前",
                     "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/recommend/recommend_sample1.jpg",
                     "rating": "9.3"
                 },
                 {
                     "id": 2,
-                    "title": "本場のボリュームとインパクトが絶大なステーキ",
-                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample2.jpg",
+                    "title": "本場のボリューム＆インパクトとシズル感が絶大ステーキ",
+                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/recommend/recommend_sample2.jpg",
                     "rating": "9.6"
                 },
                 {
                     "id": 3,
-                    "title": "シンプルながらも飽きが来ないイタリアの家庭料理",
-                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample3.jpg",
+                    "title": "シンプルながらも飽きが来ないこだわりパスタ",
+                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/recommend/recommend_sample3.jpg",
                     "rating": "9.5"
                 },
                 {
                     "id": 4,
-                    "title": "中国や香港の点心スタイルと料理で楽しむ飲茶",
-                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample4.jpg",
+                    "title": "中国の点心と一緒に楽しむ飲茶",
+                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/recommend/recommend_sample4.jpg",
                     "rating": "9.4"
                 },
                 {
                     "id": 5,
-                    "title": "濃厚チョコレートを惜しまず使った極上デザート",
-                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample5.jpg",
+                    "title": "濃厚でほろ苦い大人な味わいのビターチョコレートを使用したケーキ",
+                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/recommend/recommend_sample5.jpg",
                     "rating": "9.3"
                 },
                 {
                     "id": 6,
-                    "title": "朝に獲れた鮮魚をそのまま仕入れて刺身で頂く贅沢",
-                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample6.jpg",
+                    "title": "その日の朝に獲れた鮮魚を贅沢にお刺身で",
+                    "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/recommend/recommend_sample6.jpg",
                     "rating": "9.5"
                 }
             ]

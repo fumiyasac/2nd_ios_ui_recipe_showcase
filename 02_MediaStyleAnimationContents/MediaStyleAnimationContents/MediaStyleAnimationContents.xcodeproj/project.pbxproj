@@ -75,6 +75,10 @@
 		DE4594B32232BD59006E0ECA /* UICollectionViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4594B22232BD59006E0ECA /* UICollectionViewDecorator.swift */; };
 		DE4594B52232BE82006E0ECA /* DetailRecommendErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4594B42232BE82006E0ECA /* DetailRecommendErrorView.swift */; };
 		DE4594B72232BE8D006E0ECA /* DetailRecommendErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4594B62232BE8D006E0ECA /* DetailRecommendErrorView.xib */; };
+		DE4594BC223354A1006E0ECA /* DetailRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4594BA223354A0006E0ECA /* DetailRecommendHeaderView.swift */; };
+		DE4594BD223354A1006E0ECA /* DetailRecommendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4594BB223354A0006E0ECA /* DetailRecommendHeaderView.xib */; };
+		DE4594C0223354C5006E0ECA /* DetailRecommendFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4594BE223354C5006E0ECA /* DetailRecommendFooterView.swift */; };
+		DE4594C1223354C5006E0ECA /* DetailRecommendFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4594BF223354C5006E0ECA /* DetailRecommendFooterView.xib */; };
 		DEA7CC572227C22C00BF9AA1 /* QiitaContentsLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */; };
 		DEAAA1A0222101110005B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAA19F222101110005B137 /* DetailViewController.swift */; };
 		DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAAA1A12221016E0005B137 /* Detail.storyboard */; };
@@ -197,6 +201,10 @@
 		DE4594B22232BD59006E0ECA /* UICollectionViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDecorator.swift; sourceTree = "<group>"; };
 		DE4594B42232BE82006E0ECA /* DetailRecommendErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendErrorView.swift; sourceTree = "<group>"; };
 		DE4594B62232BE8D006E0ECA /* DetailRecommendErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecommendErrorView.xib; sourceTree = "<group>"; };
+		DE4594BA223354A0006E0ECA /* DetailRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendHeaderView.swift; sourceTree = "<group>"; };
+		DE4594BB223354A0006E0ECA /* DetailRecommendHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecommendHeaderView.xib; sourceTree = "<group>"; };
+		DE4594BE223354C5006E0ECA /* DetailRecommendFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendFooterView.swift; sourceTree = "<group>"; };
+		DE4594BF223354C5006E0ECA /* DetailRecommendFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecommendFooterView.xib; sourceTree = "<group>"; };
 		DEA7CC562227C22C00BF9AA1 /* QiitaContentsLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentsLists.swift; sourceTree = "<group>"; };
 		DEAAA19F222101110005B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEAAA1A22221016E0005B137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
@@ -460,6 +468,24 @@
 			path = DetailRecommendCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		DE4594B82233510D006E0ECA /* DetailRecommendHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DE4594BA223354A0006E0ECA /* DetailRecommendHeaderView.swift */,
+				DE4594BB223354A0006E0ECA /* DetailRecommendHeaderView.xib */,
+			);
+			path = DetailRecommendHeaderView;
+			sourceTree = "<group>";
+		};
+		DE4594B922335436006E0ECA /* DetailRecommendFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				DE4594BE223354C5006E0ECA /* DetailRecommendFooterView.swift */,
+				DE4594BF223354C5006E0ECA /* DetailRecommendFooterView.xib */,
+			);
+			path = DetailRecommendFooterView;
+			sourceTree = "<group>";
+		};
 		DEAAA1962220FAF00005B137 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,11 +560,13 @@
 		DEAAA1B6222109E60005B137 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE45949B2232ABB1006E0ECA /* DetailAnotherInformationView */,
 				DE45949A2232AB89006E0ECA /* DetailHashTagsView */,
 				DE4594992232AB37006E0ECA /* DetailMainArticleElementView */,
-				DE45949B2232ABB1006E0ECA /* DetailAnotherInformationView */,
 				DE4594AD2232BCAE006E0ECA /* DetailRecommendCollectionViewCell */,
 				DE4594A32232BAA6006E0ECA /* DetailRecommendErrorView */,
+				DE4594B922335436006E0ECA /* DetailRecommendFooterView */,
+				DE4594B82233510D006E0ECA /* DetailRecommendHeaderView */,
 				DEAAA1C222211F3A0005B137 /* MainArticleRequestButtonView */,
 				DEAAA1C722212E4E0005B137 /* MainArticleTableViewCell */,
 				DE15A542222ECDCE00C677C7 /* MainSliderErrorView */,
@@ -765,6 +793,7 @@
 				DEAAA1A6222101B30005B137 /* Profile.storyboard in Resources */,
 				DE12ECDD22101BA6008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE15A539222A1F5900C677C7 /* ToastAdvertisementView.xib in Resources */,
+				DE4594C1223354C5006E0ECA /* DetailRecommendFooterView.xib in Resources */,
 				DE4594B12232BCE3006E0ECA /* DetailRecommendCollectionViewCell.xib in Resources */,
 				DE15A5852230E6CF00C677C7 /* detail24.json in Resources */,
 				DE15A58E2230E6CF00C677C7 /* detail25.json in Resources */,
@@ -796,6 +825,7 @@
 				DE15A5842230E6CF00C677C7 /* detail21.json in Resources */,
 				DE15A5972230E6CF00C677C7 /* detail6.json in Resources */,
 				DE15A5872230E6CF00C677C7 /* detail14.json in Resources */,
+				DE4594BD223354A1006E0ECA /* DetailRecommendHeaderView.xib in Resources */,
 				DE4594A62232BB03006E0ECA /* DetailHashTagsView.xib in Resources */,
 				DE15A58D2230E6CF00C677C7 /* detail29.json in Resources */,
 				DEAAA1A32221016E0005B137 /* Detail.storyboard in Resources */,
@@ -866,6 +896,7 @@
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/WaterfallLayout/WaterfallLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -882,6 +913,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WaterfallLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -931,10 +963,12 @@
 				DE12ECD322101BA3008DFBFB /* AppDelegate.swift in Sources */,
 				DE15A546222ECE1B00C677C7 /* MainSliderErrorView.swift in Sources */,
 				DE4594B52232BE82006E0ECA /* DetailRecommendErrorView.swift in Sources */,
+				DE4594BC223354A1006E0ECA /* DetailRecommendHeaderView.swift in Sources */,
 				DE15A531222A063B00C677C7 /* ProfileLists.swift in Sources */,
 				DEAAA1A8222101C40005B137 /* ProfileViewController.swift in Sources */,
 				DE15A535222A116A00C677C7 /* ProfileTableViewCell.swift in Sources */,
 				DEAAA1AC222103200005B137 /* NSObjectProtocolExtension.swift in Sources */,
+				DE4594C0223354C5006E0ECA /* DetailRecommendFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
