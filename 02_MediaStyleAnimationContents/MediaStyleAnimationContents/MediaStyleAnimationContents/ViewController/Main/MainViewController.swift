@@ -111,6 +111,8 @@ extension MainViewController: MainArticleViewControllerDelegate {
 
     // TODO: 該当のデータ(MainArticleEntity)を遷移先へ引き渡して進む
     func sendTargetEntity(_ entity: MainArticleEntity) {
-        print("対象のMainArticleEntity:", entity)
+        let sb = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! DetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

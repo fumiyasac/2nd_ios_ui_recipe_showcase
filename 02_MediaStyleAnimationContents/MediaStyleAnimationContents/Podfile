@@ -13,13 +13,14 @@ target 'MediaStyleAnimationContents' do
   pod 'PromiseKit'
   pod 'AlamofireImage'
 
-  # UI実装で利用するライブラリ
+  # UIレシピブックVol.1でも紹介したライブラリ
   pod 'FontAwesome.swift'
+  pod 'ActiveLabel'
+
+  # UI実装で今回新しく紹介するライブラリ
   pod 'Floaty'
   pod 'FSPagerView'
   pod 'SVProgressHUD'
   pod 'BTNavigationDropdownMenu'
-  pod 'ActiveLabel'
-  pod 'SwiftyMarkdown'
   pod 'Toast-Swift', '~> 4.0.0'
 end

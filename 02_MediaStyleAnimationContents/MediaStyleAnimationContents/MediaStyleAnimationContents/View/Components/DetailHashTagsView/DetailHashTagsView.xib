@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailHashTagsView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+            <connections>
+                <outlet property="hashTagsImageView" destination="avo-hM-U3N" id="nq5-Lx-jte"/>
+                <outlet property="hashTagsLabel" destination="yRs-04-Dda" id="bAF-hj-chp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPE-Wc-hL2">
+                    <rect key="frame" x="12" y="10" width="351" height="16"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="avo-hM-U3N">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="7Pu-Qd-3ch"/>
+                                <constraint firstAttribute="height" constant="16" id="s8c-Bh-9QI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タグ一覧:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="571-8U-vys">
+                            <rect key="frame" x="22" y="0.0" width="51.5" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="KzY-Pp-Ycv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" red="0.81176470588235294" green="0.31372549019607843" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="avo-hM-U3N" firstAttribute="leading" secondItem="nPE-Wc-hL2" secondAttribute="leading" id="2fG-n6-3R0"/>
+                        <constraint firstItem="571-8U-vys" firstAttribute="top" secondItem="nPE-Wc-hL2" secondAttribute="top" id="3T9-le-2Eo"/>
+                        <constraint firstItem="571-8U-vys" firstAttribute="leading" secondItem="avo-hM-U3N" secondAttribute="trailing" constant="6" id="IdO-gT-V7X"/>
+                        <constraint firstAttribute="bottom" secondItem="571-8U-vys" secondAttribute="bottom" id="VJY-Iz-qLY"/>
+                        <constraint firstAttribute="height" constant="16" id="YDL-0Y-iXk"/>
+                        <constraint firstItem="avo-hM-U3N" firstAttribute="top" secondItem="nPE-Wc-hL2" secondAttribute="top" id="qvd-36-4oP"/>
+                        <constraint firstAttribute="bottom" secondItem="avo-hM-U3N" secondAttribute="bottom" id="vHE-Gz-OoF"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRs-04-Dda" customClass="ActiveLabel" customModule="ActiveLabel">
+                    <rect key="frame" x="12" y="36" width="351" height="10"/>
+                    <attributedString key="attributedText">
+                        <fragment content="#サンプル1 ">
+                            <attributes>
+                                <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="#サンプル2 #サンプル3 #サンプル4 #サンプル5 #サンプル6 #サンプル7">
+                            <attributes>
+                                <color key="NSColor" red="0.46666999999999997" green="0.46666999999999997" blue="0.46666999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yRs-04-Dda" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="JU7-2S-MFL"/>
+                <constraint firstItem="yRs-04-Dda" firstAttribute="top" secondItem="nPE-Wc-hL2" secondAttribute="bottom" constant="10" id="RAn-Fr-3Qz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yRs-04-Dda" secondAttribute="bottom" constant="10" id="VqO-5y-8Rj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yRs-04-Dda" secondAttribute="trailing" constant="12" id="Ygn-Tz-e5Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nPE-Wc-hL2" secondAttribute="trailing" constant="12" id="f32-YV-lGn"/>
+                <constraint firstItem="nPE-Wc-hL2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="mAg-df-Mpp"/>
+                <constraint firstItem="nPE-Wc-hL2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nJU-as-Fvg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="108.84557721139431"/>
+        </view>
+    </objects>
+</document>

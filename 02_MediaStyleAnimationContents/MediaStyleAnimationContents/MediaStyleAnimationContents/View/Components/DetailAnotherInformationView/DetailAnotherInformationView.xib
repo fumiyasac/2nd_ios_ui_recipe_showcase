@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailAnotherInformationView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+            <connections>
+                <outlet property="bookImageView" destination="iqY-1J-Zyz" id="iVw-ag-jJG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QS-tM-IcZ">
+                    <rect key="frame" x="12" y="12" width="351" height="16"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-1J-Zyz">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="RPn-mB-9r0"/>
+                                <constraint firstAttribute="width" constant="16" id="RyX-zw-hez"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商業誌としてUIレシピブックがリニューアル:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4d-sb-cQZ">
+                            <rect key="frame" x="22" y="0.0" width="242.5" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="9Vt-nH-pKO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" red="0.81176470590000005" green="0.31372549020000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Cng-uY-UVn"/>
+                        <constraint firstItem="iqY-1J-Zyz" firstAttribute="leading" secondItem="1QS-tM-IcZ" secondAttribute="leading" id="MLy-E3-LC6"/>
+                        <constraint firstItem="iqY-1J-Zyz" firstAttribute="top" secondItem="1QS-tM-IcZ" secondAttribute="top" id="RrW-hI-HrS"/>
+                        <constraint firstAttribute="bottom" secondItem="a4d-sb-cQZ" secondAttribute="bottom" id="VQi-hS-RWL"/>
+                        <constraint firstItem="a4d-sb-cQZ" firstAttribute="leading" secondItem="iqY-1J-Zyz" secondAttribute="trailing" constant="6" id="bRr-QF-hwD"/>
+                        <constraint firstItem="a4d-sb-cQZ" firstAttribute="top" secondItem="1QS-tM-IcZ" secondAttribute="top" id="h5A-um-bJR"/>
+                        <constraint firstAttribute="bottom" secondItem="iqY-1J-Zyz" secondAttribute="bottom" id="jMo-zw-ig7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eto-aj-Jze">
+                    <rect key="frame" x="12" y="38" width="351" height="206"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_book" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-nq-XQN">
+                            <rect key="frame" x="0.0" y="0.0" width="146" height="206"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="146" id="NfC-Hk-5ro"/>
+                                <constraint firstAttribute="height" constant="206" id="Yad-Ct-dgv"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxj-Ye-hAG">
+                            <rect key="frame" x="154" y="8" width="189" height="183"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="250" constant="88" id="Zja-fH-MTx"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="aCo-iI-ae3"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">「少しの工夫とアイデアでできる表現集」としてこれまでサンプル開発や実務の中で培ったノウハウ等から、UI実装いくつかのまとまったサンプル実装を例にUI構築をする上で重要な実装ポイントやアイデアを紹介していく形式にしてみました。
+※ 現在はAmazon等で絶賛販売中です。</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="CGa-nq-XQN" firstAttribute="leading" secondItem="Eto-aj-Jze" secondAttribute="leading" id="EJF-32-tf4"/>
+                        <constraint firstItem="zxj-Ye-hAG" firstAttribute="leading" secondItem="CGa-nq-XQN" secondAttribute="trailing" constant="8" id="FER-7L-Shi"/>
+                        <constraint firstAttribute="bottom" secondItem="CGa-nq-XQN" secondAttribute="bottom" id="Nqt-n4-J7b"/>
+                        <constraint firstItem="zxj-Ye-hAG" firstAttribute="top" secondItem="Eto-aj-Jze" secondAttribute="top" constant="8" id="c16-Ug-w3S"/>
+                        <constraint firstItem="CGa-nq-XQN" firstAttribute="top" secondItem="Eto-aj-Jze" secondAttribute="top" id="dOm-df-2yJ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="206" id="dtb-lf-HoN"/>
+                        <constraint firstAttribute="trailing" secondItem="zxj-Ye-hAG" secondAttribute="trailing" constant="8" id="xkh-WN-gm1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Eto-aj-Jze" secondAttribute="bottom" constant="12" id="5Eh-1s-ioJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Eto-aj-Jze" secondAttribute="trailing" constant="12" id="FBg-eI-lbT"/>
+                <constraint firstItem="Eto-aj-Jze" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="Guo-0I-B7Q"/>
+                <constraint firstItem="1QS-tM-IcZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="K1C-C4-0Mt"/>
+                <constraint firstItem="Eto-aj-Jze" firstAttribute="top" secondItem="1QS-tM-IcZ" secondAttribute="bottom" constant="10" id="WCt-Sb-Gi9"/>
+                <constraint firstItem="1QS-tM-IcZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="XGL-4e-0kb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1QS-tM-IcZ" secondAttribute="trailing" constant="12" id="yBj-Tg-EGV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recipe_book" width="146" height="206"/>
+    </resources>
+</document>

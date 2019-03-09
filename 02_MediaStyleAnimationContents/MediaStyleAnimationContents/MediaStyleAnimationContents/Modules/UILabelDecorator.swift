@@ -1,5 +1,5 @@
 //
-//  Decorator.swift
+//  UILabelDecorator.swift
 //  MediaStyleAnimationContents
 //
 //  Created by 酒井文也 on 2019/03/08.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-final class Decorator {
+final class UILabelDecorator {
 
     // MARK: - Static Function
 
@@ -27,6 +27,20 @@ final class Decorator {
         attributes[NSAttributedString.Key.paragraphStyle] = paragraphStyle
         attributes[NSAttributedString.Key.font] = keys.font
         attributes[NSAttributedString.Key.foregroundColor] = keys.foregroundColor
+
+        return attributes
+    }
+
+    // 該当のUILabelに付与する属性を設定する
+    static func getHashTagsAttributesBy(minimumLineHeight: CGFloat) -> [NSAttributedString.Key : Any] {
+
+        // 最小の行の高さに関する設定をする
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = minimumLineHeight
+
+        // 上記で定義した最小の行の高さ・色を属性値として設定する
+        var attributes: [NSAttributedString.Key : Any] = [:]
+        attributes[NSAttributedString.Key.paragraphStyle] = paragraphStyle
 
         return attributes
     }

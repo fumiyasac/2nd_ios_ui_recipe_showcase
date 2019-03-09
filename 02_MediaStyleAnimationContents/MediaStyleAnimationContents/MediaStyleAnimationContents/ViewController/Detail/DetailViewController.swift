@@ -14,5 +14,7 @@ final class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupNavigationBarTitle("風景写真の詳細表示")
     }
 }

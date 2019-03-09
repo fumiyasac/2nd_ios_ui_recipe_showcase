@@ -67,7 +67,7 @@ final class MainArticleTableViewCell: UITableViewCell {
             font: UIFont(name: "HiraKakuProN-W6", size: 11.0)!,
             foregroundColor: UIColor(code: "#333333")
         )
-        let titleAttributes = Decorator.getLabelAttributesBy(keys: titleKeys)
+        let titleAttributes = UILabelDecorator.getLabelAttributesBy(keys: titleKeys)
         titleLabel.attributedText = NSAttributedString(string: mainArticle.title, attributes: titleAttributes)
 
         // サマリー表示用ラベルの装飾を適用して表示する
@@ -76,7 +76,7 @@ final class MainArticleTableViewCell: UITableViewCell {
             font: UIFont(name: "HiraKakuProN-W3", size: 10.0)!,
             foregroundColor: UIColor(code: "#777777")
         )
-        let summaryAttributes = Decorator.getLabelAttributesBy(keys: summaryKeys)
+        let summaryAttributes = UILabelDecorator.getLabelAttributesBy(keys: summaryKeys)
         summaryLabel.attributedText = NSAttributedString(string: mainArticle.summary, attributes: summaryAttributes)
 
         // その他表示要素を表示する
@@ -102,6 +102,7 @@ final class MainArticleTableViewCell: UITableViewCell {
 
         // アーカイブ状況表示のViewに関する設定
         if let superView = archiveImageView.superview {
+            superView.backgroundColor = UIColor(code: "#eeeeee")
             superView.layer.masksToBounds = true
             superView.layer.borderColor = UIColor.darkGray.cgColor
             superView.layer.cornerRadius = superView.frame.width * 0.5

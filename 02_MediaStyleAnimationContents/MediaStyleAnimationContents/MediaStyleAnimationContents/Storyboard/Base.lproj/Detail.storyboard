@@ -29,26 +29,26 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Zt-eo-f4a">
-                                        <rect key="frame" x="0.0" y="240" width="375" height="360"/>
+                                        <rect key="frame" x="0.0" y="240" width="375" height="296"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQ0-zI-bxT">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQ0-zI-bxT" customClass="DetailHashTagsView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="P2O-OR-45R"/>
-                                                    <constraint firstAttribute="height" priority="250" constant="120" id="VUw-Hf-9wl"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="56" id="VUw-Hf-9wl"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esK-zu-Krs">
-                                                <rect key="frame" x="0.0" y="120" width="375" height="120"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esK-zu-Krs" customClass="DetailMainArticleElementView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="56" width="375" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="120" id="J3S-EB-pxp"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="MIS-a8-O6E"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bx-hk-g0m">
-                                                <rect key="frame" x="0.0" y="240" width="375" height="120"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bx-hk-g0m" customClass="DetailAnotherInformationView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="176" width="375" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="120" id="57K-z7-YtK"/>
