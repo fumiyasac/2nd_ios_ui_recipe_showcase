@@ -39,7 +39,7 @@ final class DetailRecommendErrorView: CustomViewBase {
     private func setupRequestRecommendButton() {
         requestRecommendButton.superview?.layer.borderWidth = 0.5
         requestRecommendButton.superview?.layer.borderColor = UIColor(code: "#cf504c").cgColor
-        requestRecommendButton.superview?.layer.cornerRadius = requestSliderButton.frame.height / 2
+        requestRecommendButton.superview?.layer.cornerRadius = requestRecommendButton.frame.height / 2
         requestRecommendButton.addTarget(self, action: #selector(self.executeRequestRecommendButtonAction), for: .touchUpInside)
     }
 }
