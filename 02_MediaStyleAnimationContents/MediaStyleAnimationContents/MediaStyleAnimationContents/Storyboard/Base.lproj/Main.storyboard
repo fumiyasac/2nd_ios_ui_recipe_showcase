@@ -161,9 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f4-ON-Sti" customClass="MainSliderErrorView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0f4-ON-Sti" customClass="MainSliderErrorView" customModule="MediaStyleAnimationContents" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-UG-NYS" customClass="FSPagerView" customModule="FSPagerView">
@@ -173,10 +172,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0f4-ON-Sti" firstAttribute="top" secondItem="Jif-yo-1KC" secondAttribute="top" id="0sG-RY-jcU"/>
                             <constraint firstAttribute="bottom" secondItem="0Sc-UG-NYS" secondAttribute="bottom" id="Fad-Fb-Mha"/>
+                            <constraint firstItem="0f4-ON-Sti" firstAttribute="trailing" secondItem="Jif-yo-1KC" secondAttribute="trailing" id="LHt-fY-Xtm"/>
+                            <constraint firstItem="0f4-ON-Sti" firstAttribute="bottom" secondItem="Jif-yo-1KC" secondAttribute="bottom" id="MKh-7U-RMJ"/>
                             <constraint firstItem="0Sc-UG-NYS" firstAttribute="leading" secondItem="AKm-Za-ga9" secondAttribute="leading" id="NnR-XV-ep1"/>
                             <constraint firstItem="0Sc-UG-NYS" firstAttribute="top" secondItem="AKm-Za-ga9" secondAttribute="top" id="cTo-Iz-c3r"/>
                             <constraint firstAttribute="trailing" secondItem="0Sc-UG-NYS" secondAttribute="trailing" id="fEX-dL-04o"/>
+                            <constraint firstItem="0f4-ON-Sti" firstAttribute="leading" secondItem="Jif-yo-1KC" secondAttribute="leading" id="q4w-9V-DYR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jif-yo-1KC"/>
                     </view>
