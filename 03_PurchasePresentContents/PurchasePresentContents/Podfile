@@ -6,7 +6,20 @@ target 'PurchasePresentContents' do
   use_frameworks!
 
   # Pods for PurchasePresentContents
-  pod 'DeckTransition', '~> 2.0'
+
+  # 1. API通信や設計等で利用するライブラリ
+  pod 'Alamofire'
+  pod 'PromiseKit'
+  pod 'PINRemoteImage'
+  pod 'IGListKit'
+
+  # 2. UI表現の構築に関連するライブラリ
+  pod 'DeckTransition'
   pod 'AnimatedCollectionViewLayout'
-  
+  pod 'YNDropDownMenu'
+  pod 'DeckTransition'
+  pod 'PinterestSegment'
+  pod 'View2ViewTransition'
+  pod 'FloatingPanel'
+  pod 'FlexibleSteppedProgressBar'
 end

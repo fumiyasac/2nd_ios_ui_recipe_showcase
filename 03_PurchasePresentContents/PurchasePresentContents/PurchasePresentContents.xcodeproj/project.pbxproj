@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ADA10E88DB1ECF142A9D484 /* Pods_PurchasePresentContents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD534E389350A1EB09BC990 /* Pods_PurchasePresentContents.framework */; };
 		DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ED0C22101C1B008DFBFB /* AppDelegate.swift */; };
 		DE12ED0F22101C1B008DFBFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ED0E22101C1B008DFBFB /* ViewController.swift */; };
 		DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12ED1022101C1B008DFBFB /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8391F37F9F60AA90747BE3AF /* Pods-PurchasePresentContents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchasePresentContents.release.xcconfig"; path = "Target Support Files/Pods-PurchasePresentContents/Pods-PurchasePresentContents.release.xcconfig"; sourceTree = "<group>"; };
+		A74BB7AE4E5D3296CFD2E8F8 /* Pods-PurchasePresentContents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchasePresentContents.debug.xcconfig"; path = "Target Support Files/Pods-PurchasePresentContents/Pods-PurchasePresentContents.debug.xcconfig"; sourceTree = "<group>"; };
+		DCD534E389350A1EB09BC990 /* Pods_PurchasePresentContents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchasePresentContents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12ED0922101C1B008DFBFB /* PurchasePresentContents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchasePresentContents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12ED0C22101C1B008DFBFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE12ED0E22101C1B008DFBFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ADA10E88DB1ECF142A9D484 /* Pods_PurchasePresentContents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12AB59D5A387710DAFE7253D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A74BB7AE4E5D3296CFD2E8F8 /* Pods-PurchasePresentContents.debug.xcconfig */,
+				8391F37F9F60AA90747BE3AF /* Pods-PurchasePresentContents.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D03DFC3E7604282098B345A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD534E389350A1EB09BC990 /* Pods_PurchasePresentContents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE12ED0022101C1B008DFBFB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				DE12ED2022101C1D008DFBFB /* PurchasePresentContentsTests */,
 				DE12ED2B22101C1D008DFBFB /* PurchasePresentContentsUITests */,
 				DE12ED0A22101C1B008DFBFB /* Products */,
+				12AB59D5A387710DAFE7253D /* Pods */,
+				D03DFC3E7604282098B345A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE12ED3122101C1D008DFBFB /* Build configuration list for PBXNativeTarget "PurchasePresentContents" */;
 			buildPhases = (
+				5BC8817A6F95166B516FBDBF /* [CP] Check Pods Manifest.lock */,
 				DE12ED0522101C1B008DFBFB /* Sources */,
 				DE12ED0622101C1B008DFBFB /* Frameworks */,
 				DE12ED0722101C1B008DFBFB /* Resources */,
+				B785E599FCA20C40516C068F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BC8817A6F95166B516FBDBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PurchasePresentContents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B785E599FCA20C40516C068F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PurchasePresentContents/Pods-PurchasePresentContents-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PinterestSegment/PinterestSegment.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/View2ViewTransition/View2ViewTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/YNDropDownMenu/YNDropDownMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexibleSteppedProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSegment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/View2ViewTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNDropDownMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PurchasePresentContents/Pods-PurchasePresentContents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE12ED0522101C1B008DFBFB /* Sources */ = {
@@ -430,6 +528,7 @@
 		};
 		DE12ED3222101C1D008DFBFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74BB7AE4E5D3296CFD2E8F8 /* Pods-PurchasePresentContents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +547,7 @@
 		};
 		DE12ED3322101C1D008DFBFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8391F37F9F60AA90747BE3AF /* Pods-PurchasePresentContents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
