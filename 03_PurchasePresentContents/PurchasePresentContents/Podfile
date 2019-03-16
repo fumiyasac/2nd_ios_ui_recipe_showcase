@@ -11,7 +11,6 @@ target 'PurchasePresentContents' do
   pod 'Alamofire'
   pod 'PromiseKit'
   pod 'PINRemoteImage'
-  pod 'IGListKit'
 
   # 2. UI表現の構築に関連するライブラリ
   pod 'DeckTransition'
@@ -21,5 +20,4 @@ target 'PurchasePresentContents' do
   pod 'PinterestSegment'
   pod 'View2ViewTransition'
   pod 'FloatingPanel'
-  pod 'FlexibleSteppedProgressBar'
 end

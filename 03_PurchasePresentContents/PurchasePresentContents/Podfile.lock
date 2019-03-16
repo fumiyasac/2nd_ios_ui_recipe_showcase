@@ -3,13 +3,7 @@ PODS:
   - AnimatedCollectionViewLayout (0.5.0)
   - DeckTransition (2.1.0)
   - FLAnimatedImage (1.0.12)
-  - FlexibleSteppedProgressBar (0.6.0)
   - FloatingPanel (1.3.3)
-  - IGListKit (3.4.0):
-    - IGListKit/Default (= 3.4.0)
-  - IGListKit/Default (3.4.0):
-    - IGListKit/Diffing
-  - IGListKit/Diffing (3.4.0)
   - PINCache (2.3)
   - PINRemoteImage (2.1.4):
     - PINRemoteImage/FLAnimatedImage (= 2.1.4)
@@ -35,9 +29,7 @@ DEPENDENCIES:
   - Alamofire
   - AnimatedCollectionViewLayout
   - DeckTransition
-  - FlexibleSteppedProgressBar
   - FloatingPanel
-  - IGListKit
   - PINRemoteImage
   - PinterestSegment
   - PromiseKit
@@ -50,9 +42,7 @@ SPEC REPOS:
     - AnimatedCollectionViewLayout
     - DeckTransition
     - FLAnimatedImage
-    - FlexibleSteppedProgressBar
     - FloatingPanel
-    - IGListKit
     - PINCache
     - PINRemoteImage
     - PinterestSegment
@@ -65,9 +55,7 @@ SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: 8b660a623d85001f76f00f0d2302a7b043c72bda
   DeckTransition: ca707456e3d83928c895fed6f458cbf68c5cac84
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  FlexibleSteppedProgressBar: 523e41e98f131e937f680b228b8c24e23f9751a8
   FloatingPanel: f7aaa8fe66a92a518f2038dcc94673543b2f2323
-  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
@@ -75,6 +63,6 @@ SPEC CHECKSUMS:
   View2ViewTransition: b37145e3aaba1315cb214da240978e6865e8f48d
   YNDropDownMenu: dbdc5558c845c28c7f55cf8c6bb36d2dce852e4f
 
-PODFILE CHECKSUM: 8bea906679278ed44e3eec0bef58a549ba93f612
+PODFILE CHECKSUM: 77461ebb907e7828e7b35233c1150c1151efcc44
 
 COCOAPODS: 1.6.0
