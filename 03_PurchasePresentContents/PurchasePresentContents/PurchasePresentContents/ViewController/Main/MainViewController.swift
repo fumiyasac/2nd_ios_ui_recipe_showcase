@@ -10,8 +10,6 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
-    @IBOutlet weak private var mainCollectionView: UICollectionView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

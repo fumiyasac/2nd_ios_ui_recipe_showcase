@@ -184,9 +184,9 @@
 		DE62D489223CC37300351731 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DE62D4A5223CD3B600351731 /* Purchase */,
-				DE62D4A4223CD3AA00351731 /* Main */,
 				DE12ED1522101C1C008DFBFB /* LaunchScreen.storyboard */,
+				DE62D4A4223CD3AA00351731 /* Main */,
+				DE62D4A5223CD3B600351731 /* Purchase */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				DE62D4A3223CD39F00351731 /* Main */,
-				DE62D4A1223CD38400351731 /* PurchaseViewController.swift */,
+				DE62D4B2223CDC8900351731 /* Purchase */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -278,6 +278,14 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		DE62D4B2223CDC8900351731 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4A1223CD38400351731 /* PurchaseViewController.swift */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
