@@ -24,6 +24,7 @@
 		DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AA223CD61400351731 /* UIViewControllerExtension.swift */; };
 		DE62D4AD223CD6CE00351731 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AC223CD6CE00351731 /* StoryboardInstantiatable.swift */; };
 		DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AE223CD76B00351731 /* CustomViewBase.swift */; };
+		DE62D4B7223E27D100351731 /* MainSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D4B5223E27D100351731 /* MainSection.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DE62D4AA223CD61400351731 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DE62D4AC223CD6CE00351731 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		DE62D4AE223CD76B00351731 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DE62D4B6223E27D100351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainSection.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				DE12ED1022101C1B008DFBFB /* Main.storyboard */,
+				DE62D4B5223E27D100351731 /* MainSection.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE62D4B7223E27D100351731 /* MainSection.storyboard in Resources */,
 				DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */,
 				DE12ED1422101C1C008DFBFB /* Assets.xcassets in Resources */,
@@ -556,6 +560,14 @@
 				DE62D49F223CD33F00351731 /* Base */,
 			);
 			name = Purchase.storyboard;
+			sourceTree = "<group>";
+		};
+		DE62D4B5223E27D100351731 /* MainSection.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE62D4B6223E27D100351731 /* Base */,
+			);
+			name = MainSection.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
