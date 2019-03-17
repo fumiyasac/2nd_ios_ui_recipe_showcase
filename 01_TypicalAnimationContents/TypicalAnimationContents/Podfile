@@ -8,7 +8,6 @@ target 'TypicalAnimationContents' do
   # Pods for TypicalAnimationContents
   pod 'FontAwesome.swift'
   pod 'TransitionableTab', '~> 0.2.0'
-  pod 'GridView' 
 end
 
 # TransitionableTabのライブラリバージョンをSwift4.2に固定する

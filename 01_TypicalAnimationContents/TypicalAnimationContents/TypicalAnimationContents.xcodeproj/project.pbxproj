@@ -578,7 +578,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TypicalAnimationContents/Pods-TypicalAnimationContents-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
-				"${BUILT_PRODUCTS_DIR}/GridView/GridView.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionableTab/TransitionableTab.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -586,7 +585,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GridView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionableTab.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
