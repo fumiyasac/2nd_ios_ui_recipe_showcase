@@ -7,12 +7,15 @@ target 'PurchasePresentContents' do
 
   # Pods for PurchasePresentContents
 
-  # 1. API通信や設計等で利用するライブラリ
+  # その他の処理で利用するライブラリ
   pod 'Alamofire'
   pod 'PromiseKit'
   pod 'PINRemoteImage'
 
-  # 2. UI表現の構築に関連するライブラリ
+  # UIレシピブックVol.1でも紹介したライブラリ
+  pod 'FontAwesome.swift'
+
+  # UI実装で今回新しく紹介するライブラリ
   pod 'DeckTransition'
   pod 'AnimatedCollectionViewLayout'
   pod 'YNDropDownMenu'
@@ -20,4 +23,5 @@ target 'PurchasePresentContents' do
   pod 'PinterestSegment'
   pod 'View2ViewTransition'
   pod 'FloatingPanel'
+  pod 'SkeletonView'
 end

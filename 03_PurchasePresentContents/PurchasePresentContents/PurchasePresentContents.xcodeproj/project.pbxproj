@@ -30,6 +30,10 @@
 		DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */; };
 		DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */; };
 		DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */; };
+		DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C5223FAEF700351731 /* GalleryViewController.swift */; };
+		DE62D4C8223FAF2400351731 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D4C7223FAF2400351731 /* Gallery.storyboard */; };
+		DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4CA223FC15200351731 /* GalleryCollectionViewCell.swift */; };
+		DE62D4CD223FC15200351731 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE62D4CB223FC15200351731 /* GalleryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpecialSectionViewController.swift; sourceTree = "<group>"; };
 		DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMonthlySectionViewController.swift; sourceTree = "<group>"; };
 		DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendSectionViewController.swift; sourceTree = "<group>"; };
+		DE62D4C5223FAEF700351731 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		DE62D4C7223FAF2400351731 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		DE62D4CA223FC15200351731 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE62D4CB223FC15200351731 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				DE12ED1522101C1C008DFBFB /* LaunchScreen.storyboard */,
+				DE62D4C4223FAE9F00351731 /* Gallery */,
 				DE62D4A4223CD3AA00351731 /* Main */,
 				DE62D4A5223CD3B600351731 /* Purchase */,
 			);
@@ -207,6 +216,7 @@
 		DE62D48A223CC38000351731 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DE62D4C9223FAF3600351731 /* Gallery */,
 				DE62D4A3223CD39F00351731 /* Main */,
 				DE62D4B2223CDC8900351731 /* Purchase */,
 			);
@@ -291,6 +301,7 @@
 		DE62D4B1223CDA9700351731 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE62D4CE223FC15B00351731 /* GalleryCollectionViewCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,6 +331,31 @@
 				DE62D4BA223F706000351731 /* MainSectionType.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		DE62D4C4223FAE9F00351731 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4C7223FAF2400351731 /* Gallery.storyboard */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		DE62D4C9223FAF3600351731 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4C5223FAEF700351731 /* GalleryViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		DE62D4CE223FC15B00351731 /* GalleryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4CA223FC15200351731 /* GalleryCollectionViewCell.swift */,
+				DE62D4CB223FC15200351731 /* GalleryCollectionViewCell.xib */,
+			);
+			path = GalleryCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,9 +465,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE62D4B7223E27D100351731 /* MainSection.storyboard in Resources */,
+				DE62D4C8223FAF2400351731 /* Gallery.storyboard in Resources */,
 				DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */,
 				DE12ED1422101C1C008DFBFB /* Assets.xcassets in Resources */,
+				DE62D4CD223FC15200351731 /* GalleryCollectionViewCell.xib in Resources */,
 				DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,10 +527,12 @@
 				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PinterestSegment/PinterestSegment.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 				"${BUILT_PRODUCTS_DIR}/View2ViewTransition/View2ViewTransition.framework",
 				"${BUILT_PRODUCTS_DIR}/YNDropDownMenu/YNDropDownMenu.framework",
 			);
@@ -505,10 +545,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSegment.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/View2ViewTransition.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNDropDownMenu.framework",
 			);
@@ -528,7 +570,9 @@
 				DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */,
 				DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */,
 				DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */,
+				DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */,
 				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
+				DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
 				DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */,
 				DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */,

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GalleryCollectionViewCell" customModule="PurchasePresentContents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drU-O0-Kjy">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9T-9k-TEg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srd-mV-coy">
+                                <rect key="frame" x="8" y="168" width="224" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="サムネイル画像のタイトルが入ります。サムネイル画像の">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HiraginoSans-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="タイトル">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HiraginoSans-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="が入ります。">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HiraginoSans-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqA-2a-x4O">
+                                <rect key="frame" x="8" y="203" width="224" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="サムネイル画像の概要が入ります。サムネイル画像の概要が入ります。">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="10" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qqA-2a-x4O" secondAttribute="trailing" constant="8" id="7q3-da-v7W"/>
+                            <constraint firstAttribute="trailing" secondItem="I9T-9k-TEg" secondAttribute="trailing" id="7rP-F1-BmI"/>
+                            <constraint firstItem="I9T-9k-TEg" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" id="DHC-NE-Sjt"/>
+                            <constraint firstAttribute="trailing" secondItem="srd-mV-coy" secondAttribute="trailing" constant="8" id="FFf-v7-noE"/>
+                            <constraint firstItem="I9T-9k-TEg" firstAttribute="top" secondItem="drU-O0-Kjy" secondAttribute="top" id="FLC-EP-WIk"/>
+                            <constraint firstItem="srd-mV-coy" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="8" id="JcM-kf-eIV"/>
+                            <constraint firstAttribute="bottom" secondItem="I9T-9k-TEg" secondAttribute="bottom" id="QqQ-lX-fbq"/>
+                            <constraint firstItem="qqA-2a-x4O" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="8" id="RWh-5H-l8j"/>
+                            <constraint firstItem="qqA-2a-x4O" firstAttribute="top" secondItem="srd-mV-coy" secondAttribute="bottom" constant="8" id="r9y-gY-nec"/>
+                            <constraint firstAttribute="bottom" secondItem="qqA-2a-x4O" secondAttribute="bottom" constant="12" id="x3k-YG-J7C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="drU-O0-Kjy" secondAttribute="trailing" id="JjW-bD-7Bj"/>
+                <constraint firstItem="drU-O0-Kjy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a1C-fW-rhr"/>
+                <constraint firstAttribute="bottom" secondItem="drU-O0-Kjy" secondAttribute="bottom" id="oz9-hC-yPS"/>
+                <constraint firstItem="drU-O0-Kjy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qBU-Vv-JFM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="summaryLabel" destination="qqA-2a-x4O" id="xc1-dX-YgB"/>
+                <outlet property="thumbnailImageView" destination="I9T-9k-TEg" id="WLg-ZL-V6K"/>
+                <outlet property="titleLabel" destination="srd-mV-coy" id="aLi-AG-baz"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="111.54422788605699"/>
+        </collectionViewCell>
+    </objects>
+</document>

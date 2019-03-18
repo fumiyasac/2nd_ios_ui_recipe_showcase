@@ -10,6 +10,8 @@ import UIKit
 
 final class MainNewSectionViewController: UIViewController {
 
+    // MARK: - Override
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

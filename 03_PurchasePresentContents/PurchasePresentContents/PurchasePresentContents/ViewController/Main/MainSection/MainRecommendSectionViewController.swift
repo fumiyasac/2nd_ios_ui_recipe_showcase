@@ -10,6 +10,8 @@ import UIKit
 
 final class MainRecommendSectionViewController: UIViewController {
 
+    // MARK: - Override
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
