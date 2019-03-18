@@ -25,6 +25,11 @@
 		DE62D4AD223CD6CE00351731 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AC223CD6CE00351731 /* StoryboardInstantiatable.swift */; };
 		DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AE223CD76B00351731 /* CustomViewBase.swift */; };
 		DE62D4B7223E27D100351731 /* MainSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D4B5223E27D100351731 /* MainSection.storyboard */; };
+		DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BA223F706000351731 /* MainSectionType.swift */; };
+		DE62D4BD223F7D5B00351731 /* MainNewSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BC223F7D5B00351731 /* MainNewSectionViewController.swift */; };
+		DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */; };
+		DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */; };
+		DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		DE62D4AC223CD6CE00351731 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		DE62D4AE223CD76B00351731 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		DE62D4B6223E27D100351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainSection.storyboard; sourceTree = "<group>"; };
+		DE62D4BA223F706000351731 /* MainSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionType.swift; sourceTree = "<group>"; };
+		DE62D4BC223F7D5B00351731 /* MainNewSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewSectionViewController.swift; sourceTree = "<group>"; };
+		DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpecialSectionViewController.swift; sourceTree = "<group>"; };
+		DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMonthlySectionViewController.swift; sourceTree = "<group>"; };
+		DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendSectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,13 +155,14 @@
 				DE12ED0C22101C1B008DFBFB /* AppDelegate.swift */,
 				DE12ED1322101C1C008DFBFB /* Assets.xcassets */,
 				DE62D48F223CC3F900351731 /* APIManager */,
+				DE62D4B9223F702300351731 /* Enum */,
 				DE62D48D223CC3B400351731 /* Extensions */,
 				DE62D48C223CC3AA00351731 /* Model */,
 				DE62D48E223CC3BF00351731 /* Modules */,
+				DE62D48B223CC38800351731 /* Presenter */,
 				DE62D489223CC37300351731 /* Storyboard */,
 				DE62D488223CC36C00351731 /* View */,
 				DE62D48A223CC38000351731 /* ViewController */,
-				DE62D48B223CC38800351731 /* Presenter */,
 			);
 			path = PurchasePresentContents;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 		DE62D4A3223CD39F00351731 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DE62D4B8223F590E00351731 /* MainSection */,
 				DE12ED0E22101C1B008DFBFB /* MainViewController.swift */,
 			);
 			path = Main;
@@ -289,6 +301,25 @@
 				DE62D4A1223CD38400351731 /* PurchaseViewController.swift */,
 			);
 			path = Purchase;
+			sourceTree = "<group>";
+		};
+		DE62D4B8223F590E00351731 /* MainSection */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */,
+				DE62D4BC223F7D5B00351731 /* MainNewSectionViewController.swift */,
+				DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */,
+				DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */,
+			);
+			path = MainSection;
+			sourceTree = "<group>";
+		};
+		DE62D4B9223F702300351731 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4BA223F706000351731 /* MainSectionType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,9 +524,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE62D4BD223F7D5B00351731 /* MainNewSectionViewController.swift in Sources */,
 				DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */,
+				DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */,
+				DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */,
 				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
+				DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */,
+				DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */,
 				DE12ED0F22101C1B008DFBFB /* MainViewController.swift in Sources */,
 				DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */,
 				DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */,

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Monthly Section View Controller-->
         <scene sceneID="CD9-Kh-Z0P">
             <objects>
-                <viewController id="RXk-9x-F26" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainMonthlySectionViewController" id="RXk-9x-F26" customClass="MainMonthlySectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jQD-RF-NhK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,11 +23,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Mu-Q5-A8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="210" y="126"/>
         </scene>
-        <!--View Controller-->
+        <!--Main New Section View Controller-->
         <scene sceneID="Gce-gb-Yh2">
             <objects>
-                <viewController id="Hah-sV-fZG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainNewSectionViewController" id="Hah-sV-fZG" customClass="MainNewSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9S-97-4Kb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,12 +38,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAz-nl-hxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="127"/>
+            <point key="canvasLocation" x="209" y="-539"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Special Section View Controller-->
         <scene sceneID="HTh-8d-TaN">
             <objects>
-                <viewController id="jwS-Gx-0ae" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainSpecialSectionViewController" id="jwS-Gx-0ae" customClass="MainSpecialSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pIv-do-VcD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +53,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aA-j0-gpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="128"/>
+            <point key="canvasLocation" x="882" y="-539"/>
+        </scene>
+        <!--Main Recommend Section View Controller-->
+        <scene sceneID="k1O-39-rzd">
+            <objects>
+                <viewController storyboardIdentifier="MainRecommendSectionViewController" id="NAO-fV-Cip" customClass="MainRecommendSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="civ-Jm-zhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q0O-xH-Z4S"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obz-fq-XlR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="125"/>
         </scene>
     </scenes>
 </document>
