@@ -11,6 +11,8 @@ import AnimatedCollectionViewLayout
 
 final class GalleryViewController: UIViewController {
 
+    //private var galleryList: [Galley] = []
+
     @IBOutlet weak private var galleryCollectionView: UICollectionView!
 
     // MARK: - Override
@@ -68,7 +70,7 @@ extension GalleryViewController: UICollectionViewDataSource {
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
 
-    // タブ用のセルにおける矩形サイズを設定する
+    // タブ用のセルにおける矩形サイズを設定する（※ここでは画面サイズに仮置きする）
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
