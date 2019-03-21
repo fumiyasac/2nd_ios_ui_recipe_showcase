@@ -21,7 +21,7 @@ target 'PurchasePresentContents' do
   pod 'YNDropDownMenu'
   pod 'DeckTransition'
   pod 'PinterestSegment'
-  pod 'View2ViewTransition'
+  pod 'ARNTransitionAnimator'
   pod 'FloatingPanel'
   pod 'SkeletonView'
 end
