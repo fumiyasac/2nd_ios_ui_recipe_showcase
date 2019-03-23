@@ -8,11 +8,16 @@
 
 import UIKit
 import PinterestSegment
-
+import DeckTransition
 
 final class MainViewController: UIViewController {
 
-    @IBOutlet weak private var lineupSegmentControl: PinterestSegment!
+    // ボタン押下時の軽微な振動(Haptic Feedback)を追加する
+    private let feedbackGenerator: UIImpactFeedbackGenerator = {
+        let generator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+        generator.prepare()
+        return generator
+    }()
 
     // ページングして表示させるViewControllerを保持する配列
     private var targetViewControllerLists: [UIViewController] = []
@@ -23,6 +28,9 @@ final class MainViewController: UIViewController {
     // 現在UIPageViewControllerで表示しているViewControllerのインデックス番号
     private var currentIndex: Int = 0
 
+    @IBOutlet weak private var lineupSegmentControl: PinterestSegment!
+    @IBOutlet weak private var informationButtonView: InformationButtonView!
+
     // MARK: - Override
 
     override func viewDidLoad() {
@@ -31,6 +39,7 @@ final class MainViewController: UIViewController {
         setupNavigationBarTitle("PRESENT SHOP")
         setupLineupSegmentControl()
         setupPageViewController()
+        setupInformationButtonView()
     }
 
     // MARK: - Private Function
@@ -63,6 +72,9 @@ final class MainViewController: UIViewController {
                 self.moveToPageViewControllerFor(targetIndex: targetIndex, targetDirection: .forward)
             }
             self.currentIndex = targetIndex
+
+            // Haptic Feedbackを発火させる
+            self.feedbackGenerator.impactOccurred()
         }
     }
 
@@ -87,7 +99,6 @@ final class MainViewController: UIViewController {
         if let targetPageViewController = pageViewController {
 
             // MEMO: Storyboardを利用する場合はTransitionStyleはInterfaceBuilderで設定する
-
             // UIPageViewControllerDelegate & UIPageViewControllerDataSourceの宣言
             targetPageViewController.delegate = self
             targetPageViewController.dataSource = self
@@ -101,6 +112,19 @@ final class MainViewController: UIViewController {
     private func moveToPageViewControllerFor(targetIndex: Int, targetDirection: UIPageViewController.NavigationDirection) {
         if let targetPageViewController = pageViewController {
             targetPageViewController.setViewControllers([targetViewControllerLists[targetIndex]], direction: targetDirection, animated: true, completion: nil)
+        }
+    }
+
+    // お知らせ表示ボタンが押下された際にはDeckTransitionを利用した表示をさせる
+    private func setupInformationButtonView() {
+        informationButtonView.showInformationButtonAction = {
+
+            // ライブラリ「DeckTransition」を利用したメッセージアプリの様な画面遷移を行う
+            let vc = MainInformationViewController.instantiate()
+            let delegate = DeckTransitioningDelegate()
+            vc.transitioningDelegate = delegate
+            vc.modalPresentationStyle = .custom
+            self.present(vc, animated: true, completion: nil)
         }
     }
 }
@@ -124,6 +148,9 @@ extension MainViewController: UIPageViewControllerDelegate, UIPageViewController
                 // 受け取ったインデックス値を元にコンテンツ表示を更新する
                 currentIndex = targetViewController.view.tag
                 lineupSegmentControl.setSelectIndex(index: currentIndex, animated: true)
+
+                // Haptic Feedbackを発火させる
+                feedbackGenerator.impactOccurred()
             }
         }
     }

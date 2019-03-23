@@ -31,13 +31,23 @@
                                     <segue destination="fFI-AF-BiQ" kind="embed" id="oj0-48-nPg"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4T-JS-EOo" customClass="InformationButtonView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                <rect key="frame" x="309" y="605" width="54" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="81v-MB-lWa"/>
+                                    <constraint firstAttribute="width" constant="54" id="q8r-ux-Vo0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5AU-73-Kjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4g0-56-btl"/>
                             <constraint firstItem="5AU-73-Kjd" firstAttribute="top" secondItem="OaV-lD-q1O" secondAttribute="bottom" id="58Y-Zj-ryh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5AU-73-Kjd" secondAttribute="trailing" id="CmA-VG-mDY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x4T-JS-EOo" secondAttribute="bottom" constant="8" id="IQq-rH-Xrp"/>
                             <constraint firstItem="OaV-lD-q1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SiK-i1-JOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x4T-JS-EOo" secondAttribute="trailing" constant="12" id="WVu-2w-POy"/>
                             <constraint firstItem="OaV-lD-q1O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bE9-13-eLE"/>
                             <constraint firstItem="OaV-lD-q1O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qlR-K0-H41"/>
                             <constraint firstAttribute="bottom" secondItem="5AU-73-Kjd" secondAttribute="bottom" id="rA8-Y2-iYW"/>
@@ -46,6 +56,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YAR-Ie-MS9"/>
                     <connections>
+                        <outlet property="informationButtonView" destination="x4T-JS-EOo" id="CdQ-Oy-5jt"/>
                         <outlet property="lineupSegmentControl" destination="OaV-lD-q1O" id="MKP-hu-Pai"/>
                     </connections>
                 </viewController>
