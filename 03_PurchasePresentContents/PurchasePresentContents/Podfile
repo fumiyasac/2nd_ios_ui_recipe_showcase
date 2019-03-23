@@ -9,7 +9,6 @@ target 'PurchasePresentContents' do
 
   # その他の処理で利用するライブラリ
   pod 'Alamofire'
-  pod 'PromiseKit'
   pod 'PINRemoteImage'
 
   # UIレシピブックVol.1でも紹介したライブラリ
@@ -24,4 +23,5 @@ target 'PurchasePresentContents' do
   pod 'ARNTransitionAnimator'
   pod 'FloatingPanel'
   pod 'SkeletonView'
+  pod 'Blueprints'
 end
