@@ -22,5 +22,5 @@ target 'PurchasePresentContents' do
   pod 'ARNTransitionAnimator'
   pod 'FloatingPanel'
   pod 'SkeletonView'
-  pod 'Blueprints'
+  pod 'Cosmos'
 end
