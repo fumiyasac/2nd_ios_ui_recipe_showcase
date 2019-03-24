@@ -17,7 +17,6 @@ target 'PurchasePresentContents' do
   # UI実装で今回新しく紹介するライブラリ
   pod 'DeckTransition'
   pod 'AnimatedCollectionViewLayout'
-  pod 'YNDropDownMenu'
   pod 'DeckTransition'
   pod 'PinterestSegment'
   pod 'ARNTransitionAnimator'

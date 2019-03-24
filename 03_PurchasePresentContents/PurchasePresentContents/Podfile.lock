@@ -17,7 +17,6 @@ PODS:
     - PINRemoteImage/Core
   - PinterestSegment (1.2.3)
   - SkeletonView (1.4.1)
-  - YNDropDownMenu (3.0.4)
 
 DEPENDENCIES:
   - Alamofire
@@ -30,7 +29,6 @@ DEPENDENCIES:
   - PINRemoteImage
   - PinterestSegment
   - SkeletonView
-  - YNDropDownMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,7 +44,6 @@ SPEC REPOS:
     - PINRemoteImage
     - PinterestSegment
     - SkeletonView
-    - YNDropDownMenu
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -61,8 +58,7 @@ SPEC CHECKSUMS:
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
   SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
-  YNDropDownMenu: dbdc5558c845c28c7f55cf8c6bb36d2dce852e4f
 
-PODFILE CHECKSUM: 1ebdf2313b63b3edca35743219cb57af7449675c
+PODFILE CHECKSUM: 630619ab81094e61619795a26462ae32863c9dcf
 
 COCOAPODS: 1.6.0
