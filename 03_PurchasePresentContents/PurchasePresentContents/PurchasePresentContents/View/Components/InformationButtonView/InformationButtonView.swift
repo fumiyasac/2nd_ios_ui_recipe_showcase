@@ -43,7 +43,7 @@ final class InformationButtonView: CustomViewBase {
         iconImageView.image = UIImage.fontAwesomeIcon(name: .newspaper, style: .solid, textColor: iconColor, size: iconSize)
 
         showInformationButton.superview?.layer.borderWidth = 0.5
-        showInformationButton.superview?.layer.borderColor = UIColor.white.cgColor
+        showInformationButton.superview?.layer.borderColor = UIColor(code: "#dddddd").cgColor
         showInformationButton.superview?.layer.cornerRadius = showInformationButton.frame.height / 2
         showInformationButton.addTarget(self, action: #selector(self.executeShowInformationButtonAction), for: .touchUpInside)
     }

@@ -17,13 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="VHM-wg-pA2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6P-Bt-PaG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3In-79-wuA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="466"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lik-z7-EhB" customClass="InformationDetailHeaderView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="210" id="9lf-Ct-9GL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QD-9M-MDr" customClass="InformationDetailDescriptionView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="210" width="375" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="UmQ-MD-eF5"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="kRN-Hm-ieV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-eM-6fy" customClass="InformationDetailFormButtonView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="338" width="375" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="a8j-b3-16B"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="lML-T7-Fps"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3In-79-wuA" firstAttribute="width" secondItem="K6P-Bt-PaG" secondAttribute="width" id="Cv9-7u-SJR"/>
+                                    <constraint firstItem="3In-79-wuA" firstAttribute="top" secondItem="K6P-Bt-PaG" secondAttribute="top" id="MC2-UN-GlV"/>
+                                    <constraint firstItem="3In-79-wuA" firstAttribute="leading" secondItem="K6P-Bt-PaG" secondAttribute="leading" id="eT2-SJ-Z2o"/>
+                                    <constraint firstAttribute="bottom" secondItem="3In-79-wuA" secondAttribute="bottom" id="hHI-KB-AgD"/>
+                                    <constraint firstAttribute="trailing" secondItem="3In-79-wuA" secondAttribute="trailing" id="mx5-px-BpS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K6P-Bt-PaG" firstAttribute="top" secondItem="VHM-wg-pA2" secondAttribute="top" id="7H7-gF-bZH"/>
+                            <constraint firstItem="K6P-Bt-PaG" firstAttribute="trailing" secondItem="jKq-n9-yEL" secondAttribute="trailing" id="R46-py-6lC"/>
+                            <constraint firstItem="K6P-Bt-PaG" firstAttribute="bottom" secondItem="VHM-wg-pA2" secondAttribute="bottom" id="SyT-Rz-Jfn"/>
+                            <constraint firstItem="K6P-Bt-PaG" firstAttribute="leading" secondItem="jKq-n9-yEL" secondAttribute="leading" id="wGg-EO-wiC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jKq-n9-yEL"/>
                     </view>
+                    <connections>
+                        <outlet property="mainInformationScrollView" destination="K6P-Bt-PaG" id="a8y-9q-VNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj1-ld-5wL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="10"/>
+            <point key="canvasLocation" x="-47.200000000000003" y="9.4452773613193415"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationDetailFormButtonView" customModule="PurchasePresentContents" customModuleProvider="target">
+            <connections>
+                <outlet property="showDetailButton" destination="4TL-0A-R15" id="Gih-ce-LSV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vo-yc-qsd">
+                    <rect key="frame" x="12" y="49" width="351" height="12"/>
+                    <attributedString key="attributedText">
+                        <fragment content="2019年4月1日 〜 2019年5月31日">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="12" name="HiraginoSans-W6"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBD-4O-SxM">
+                    <rect key="frame" x="12" y="77" width="351" height="28"/>
+                    <attributedString key="attributedText">
+                        <fragment content="対象商品の割引につきましては店頭販売およびオンラインショッピング・本アプリからの購入が対象となりますのでご注意ください。">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuR-Ek-mEH">
+                    <rect key="frame" x="12" y="16" width="351" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="キャンペーン実施期間について">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="17" name="HiraginoSans-W6"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hde-IQ-RgN">
+                    <rect key="frame" x="12" y="121" width="351" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="対象の商品一覧ページへ進む" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHP-WK-IjV">
+                            <rect key="frame" x="97.5" y="14" width="156" height="12"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" red="1" green="0.68235294117647061" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TL-0A-R15">
+                            <rect key="frame" x="0.0" y="0.0" width="351" height="40"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3qj-Ca-KZf"/>
+                        <constraint firstItem="jHP-WK-IjV" firstAttribute="centerX" secondItem="Hde-IQ-RgN" secondAttribute="centerX" id="BjQ-hZ-blk"/>
+                        <constraint firstAttribute="trailing" secondItem="4TL-0A-R15" secondAttribute="trailing" id="KsF-1e-ymX"/>
+                        <constraint firstAttribute="bottom" secondItem="4TL-0A-R15" secondAttribute="bottom" id="hSn-Hy-0Nw"/>
+                        <constraint firstItem="jHP-WK-IjV" firstAttribute="centerY" secondItem="Hde-IQ-RgN" secondAttribute="centerY" id="hXc-qo-VLg"/>
+                        <constraint firstItem="4TL-0A-R15" firstAttribute="leading" secondItem="Hde-IQ-RgN" secondAttribute="leading" id="ocM-Kz-MHs"/>
+                        <constraint firstItem="4TL-0A-R15" firstAttribute="top" secondItem="Hde-IQ-RgN" secondAttribute="top" id="uYZ-Mr-vVi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SBD-4O-SxM" secondAttribute="trailing" constant="12" id="09r-R6-BfZ"/>
+                <constraint firstItem="tuR-Ek-mEH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="2eb-MK-Mrh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tuR-Ek-mEH" secondAttribute="trailing" constant="12" id="G0w-9m-ZOJ"/>
+                <constraint firstItem="SBD-4O-SxM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="GrD-d8-VGj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Hde-IQ-RgN" secondAttribute="bottom" constant="16" id="KTm-Xq-WMP"/>
+                <constraint firstItem="2Vo-yc-qsd" firstAttribute="top" secondItem="tuR-Ek-mEH" secondAttribute="bottom" constant="16" id="OGa-wB-YrY"/>
+                <constraint firstItem="SBD-4O-SxM" firstAttribute="top" secondItem="2Vo-yc-qsd" secondAttribute="bottom" constant="16" id="PHf-0R-HSc"/>
+                <constraint firstItem="Hde-IQ-RgN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="ThM-TM-2O6"/>
+                <constraint firstItem="Hde-IQ-RgN" firstAttribute="top" secondItem="SBD-4O-SxM" secondAttribute="bottom" constant="16" id="TqY-kc-Clg"/>
+                <constraint firstItem="2Vo-yc-qsd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="f95-nr-ZSR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2Vo-yc-qsd" secondAttribute="trailing" constant="12" id="gv6-A2-Gac"/>
+                <constraint firstItem="tuR-Ek-mEH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="hdb-Jl-Oja"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hde-IQ-RgN" secondAttribute="trailing" constant="12" id="nJK-UQ-tck"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

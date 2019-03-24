@@ -15,6 +15,8 @@
 		DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12ED1522101C1C008DFBFB /* LaunchScreen.storyboard */; };
 		DE12ED2222101C1D008DFBFB /* PurchasePresentContentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ED2122101C1D008DFBFB /* PurchasePresentContentsTests.swift */; };
 		DE12ED2D22101C1D008DFBFB /* PurchasePresentContentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ED2C22101C1D008DFBFB /* PurchasePresentContentsUITests.swift */; };
+		DE1E04772247672A00EB8E8B /* InformationDetailFormButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04762247672A00EB8E8B /* InformationDetailFormButtonView.swift */; };
+		DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E04782247674900EB8E8B /* InformationDetailFormButtonView.xib */; };
 		DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D496223CC70800351731 /* UICollectionViewExtension.swift */; };
 		DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */; };
 		DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D49E223CD33F00351731 /* Purchase.storyboard */; };
@@ -42,6 +44,10 @@
 		DE6A4029224600F900E724E5 /* InformationButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6A4028224600F900E724E5 /* InformationButtonView.xib */; };
 		DE6A402C22460C6300E724E5 /* MainInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6A402A22460C6200E724E5 /* MainInformation.storyboard */; };
 		DE6A402F22460CA700E724E5 /* MainInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A402E22460CA700E724E5 /* MainInformationViewController.swift */; };
+		DE6A403422461D9A00E724E5 /* InformationDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A403322461D9A00E724E5 /* InformationDetailHeaderView.swift */; };
+		DE6A403622461DAE00E724E5 /* InformationDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6A403522461DAE00E724E5 /* InformationDetailHeaderView.xib */; };
+		DE6A40382246297800E724E5 /* InformationDetailDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6A40372246297800E724E5 /* InformationDetailDescriptionView.xib */; };
+		DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A40392246298E00E724E5 /* InformationDetailDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,8 @@
 		DE12ED2822101C1D008DFBFB /* PurchasePresentContentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchasePresentContentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12ED2C22101C1D008DFBFB /* PurchasePresentContentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePresentContentsUITests.swift; sourceTree = "<group>"; };
 		DE12ED2E22101C1D008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1E04762247672A00EB8E8B /* InformationDetailFormButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailFormButtonView.swift; sourceTree = "<group>"; };
+		DE1E04782247674900EB8E8B /* InformationDetailFormButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationDetailFormButtonView.xib; sourceTree = "<group>"; };
 		DE62D496223CC70800351731 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DE62D49F223CD33F00351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Purchase.storyboard; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 		DE6A4028224600F900E724E5 /* InformationButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationButtonView.xib; sourceTree = "<group>"; };
 		DE6A402B22460C6300E724E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInformation.storyboard; sourceTree = "<group>"; };
 		DE6A402E22460CA700E724E5 /* MainInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInformationViewController.swift; sourceTree = "<group>"; };
+		DE6A403322461D9A00E724E5 /* InformationDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailHeaderView.swift; sourceTree = "<group>"; };
+		DE6A403522461DAE00E724E5 /* InformationDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationDetailHeaderView.xib; sourceTree = "<group>"; };
+		DE6A40372246297800E724E5 /* InformationDetailDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationDetailDescriptionView.xib; sourceTree = "<group>"; };
+		DE6A40392246298E00E724E5 /* InformationDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +335,9 @@
 		DE62D4B1223CDA9700351731 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */,
+				DE6A403122461C8E00E724E5 /* InformationDetailDescriptionView */,
+				DE6A403022461C7900E724E5 /* InformationDetailHeaderView */,
 				DE6A4025224600A500E724E5 /* InformationButtonView */,
 				DE62D4CE223FC15B00351731 /* GalleryCollectionViewCell */,
 			);
@@ -412,6 +427,33 @@
 				DE6A402E22460CA700E724E5 /* MainInformationViewController.swift */,
 			);
 			path = MainInformation;
+			sourceTree = "<group>";
+		};
+		DE6A403022461C7900E724E5 /* InformationDetailHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A403322461D9A00E724E5 /* InformationDetailHeaderView.swift */,
+				DE6A403522461DAE00E724E5 /* InformationDetailHeaderView.xib */,
+			);
+			path = InformationDetailHeaderView;
+			sourceTree = "<group>";
+		};
+		DE6A403122461C8E00E724E5 /* InformationDetailDescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A40392246298E00E724E5 /* InformationDetailDescriptionView.swift */,
+				DE6A40372246297800E724E5 /* InformationDetailDescriptionView.xib */,
+			);
+			path = InformationDetailDescriptionView;
+			sourceTree = "<group>";
+		};
+		DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E04762247672A00EB8E8B /* InformationDetailFormButtonView.swift */,
+				DE1E04782247674900EB8E8B /* InformationDetailFormButtonView.xib */,
+			);
+			path = InformationDetailFormButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,11 +567,14 @@
 				DE6A4029224600F900E724E5 /* InformationButtonView.xib in Resources */,
 				DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */,
+				DE6A40382246297800E724E5 /* InformationDetailDescriptionView.xib in Resources */,
 				DE12ED1422101C1C008DFBFB /* Assets.xcassets in Resources */,
 				DE6A402C22460C6300E724E5 /* MainInformation.storyboard in Resources */,
 				DE62D4CD223FC15200351731 /* GalleryCollectionViewCell.xib in Resources */,
 				DE62D4D62240BBBB00351731 /* Search.storyboard in Resources */,
+				DE6A403622461DAE00E724E5 /* InformationDetailHeaderView.xib in Resources */,
 				DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */,
+				DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +673,7 @@
 				DE62D4BD223F7D5B00351731 /* MainNewSectionViewController.swift in Sources */,
 				DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */,
 				DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */,
+				DE1E04772247672A00EB8E8B /* InformationDetailFormButtonView.swift in Sources */,
 				DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */,
 				DE62D4D42240BB4B00351731 /* SearchViewController.swift in Sources */,
 				DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */,
@@ -638,9 +684,11 @@
 				DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */,
 				DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */,
 				DE12ED0F22101C1B008DFBFB /* MainViewController.swift in Sources */,
+				DE6A403422461D9A00E724E5 /* InformationDetailHeaderView.swift in Sources */,
 				DE62D4D02240BA5900351731 /* GalleryEntity.swift in Sources */,
 				DE6A4027224600E300E724E5 /* InformationButtonView.swift in Sources */,
 				DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */,
+				DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */,
 				DE62D4DA2240DC0F00351731 /* GiftEntity.swift in Sources */,
 				DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */,
 				DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */,
