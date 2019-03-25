@@ -9,8 +9,13 @@
 import UIKit
 import PinterestSegment
 import DeckTransition
+import ARNTransitionAnimator
 
-final class MainViewController: UIViewController {
+final class MainViewController: ZoomImageTransitionViewController {
+
+    // 写真が拡大するようなアニメーションを実現する際に必要な変数
+    private var selectedImageView: UIImageView!
+    private var transionAnimator: ARNTransitionAnimator!
 
     // ボタン押下時の軽微な振動(Haptic Feedback)を追加する
     private let feedbackGenerator: UIImpactFeedbackGenerator = {
@@ -27,8 +32,9 @@ final class MainViewController: UIViewController {
 
     // 現在UIPageViewControllerで表示しているViewControllerのインデックス番号
     private var currentIndex: Int = 0
-
+    
     @IBOutlet weak private var lineupSegmentControl: PinterestSegment!
+    @IBOutlet weak private var sectionContainerView: UIView!
     @IBOutlet weak private var informationButtonView: InformationButtonView!
 
     // MARK: - Override
@@ -40,6 +46,15 @@ final class MainViewController: UIViewController {
         setupLineupSegmentControl()
         setupPageViewController()
         setupInformationButtonView()
+    }
+
+    override func createTransitionImageView() -> UIImageView {
+        let imageView = UIImageView(image: selectedImageView.image)
+        imageView.contentMode = selectedImageView!.contentMode
+        imageView.clipsToBounds = true
+        imageView.isUserInteractionEnabled = false
+        imageView.frame = selectedImageView.convert(selectedImageView.frame, to: self.navigationController?.view)
+        return imageView
     }
 
     // MARK: - Private Function
@@ -84,6 +99,7 @@ final class MainViewController: UIViewController {
         // UIPageViewControllerで表示したいViewControllerの一覧を取得する
         let _ = MainSectionType.allCases.map{
             let targetViewController = $0.getViewController()
+            targetViewController.sectionDelegate = self
             targetViewController.view.tag = $0.rawValue
             targetViewControllerLists.append(targetViewController)
         }
@@ -126,6 +142,28 @@ final class MainViewController: UIViewController {
             vc.modalPresentationStyle = .custom
             self.present(vc, animated: true, completion: nil)
         }
+    }
+}
+
+// MARK: - MainSectionDelegate
+
+extension MainViewController: MainSectionDelegate {
+
+    func handleSelectedImage(_ imageView: UIImageView) {
+
+        //
+        selectedImageView = imageView
+
+        let vc = DetailGiftViewController.instantiate()
+        vc.detailGiftImageView = imageView
+
+        let zoomImageTransition = ZoomImageTransition<ZoomImageTransitionViewController>(rootVC: self, modalVC: vc, rootNavigation: self.navigationController)
+        let zoomImageAnimator = ARNTransitionAnimator(duration: 0.36, animation: zoomImageTransition)
+
+        vc.transitioningDelegate = zoomImageAnimator
+        transionAnimator = zoomImageAnimator
+
+        self.present(vc, animated: true, completion: nil)
     }
 }
 

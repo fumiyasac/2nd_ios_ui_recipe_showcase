@@ -9,11 +9,11 @@
 import UIKit
 import FloatingPanel
 
-final class DetailGiftViewController: UIViewController {
+final class DetailGiftViewController: ZoomImageTransitionViewController {
 
     private let floatingPanel: FloatingPanelController = FloatingPanelController()
 
-    @IBOutlet weak private var detailGiftImageView: UIImageView!
+    @IBOutlet weak var detailGiftImageView: UIImageView!
     
     // MARK: - Override
 
@@ -21,6 +21,7 @@ final class DetailGiftViewController: UIViewController {
         super.viewDidLoad()
 
         setupFloatingPanel()
+        detailGiftImageView.image = UIImage(named: "sample_image")
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,10 +31,19 @@ final class DetailGiftViewController: UIViewController {
         floatingPanel.removePanelFromParent(animated: true)
     }
 
+    override func createTransitionImageView() -> UIImageView {
+        let imageView = UIImageView(image: detailGiftImageView.image)
+        imageView.contentMode = detailGiftImageView.contentMode
+        imageView.clipsToBounds = true
+        imageView.isUserInteractionEnabled = false
+        imageView.frame = detailGiftImageView.frame
+        return imageView
+    }
+
     // MARK: - Function
 
-    func setDetailImage(_ targetImage: UIImage?) {
-        detailGiftImageView.image = targetImage
+    func setDetailImage(_ targetImage: UIImageView) {
+        detailGiftImageView = targetImage
     }
 
     // MARK: - Private Function

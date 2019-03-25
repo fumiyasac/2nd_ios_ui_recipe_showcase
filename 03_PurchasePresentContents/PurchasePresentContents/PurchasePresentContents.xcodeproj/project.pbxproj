@@ -26,6 +26,9 @@
 		DE1E04952248C64F00EB8E8B /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04942248C64F00EB8E8B /* CategoryType.swift */; };
 		DE1E04992248E19A00EB8E8B /* GiftPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04982248E19A00EB8E8B /* GiftPresenter.swift */; };
 		DE1E049B2248E1B400EB8E8B /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E049A2248E1B400EB8E8B /* GalleryPresenter.swift */; };
+		DE1E049D2248EEEE00EB8E8B /* ZoomImageTransitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E049C2248EEEE00EB8E8B /* ZoomImageTransitionProtocol.swift */; };
+		DE1E049F2248F1DB00EB8E8B /* ZoomImageTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E049E2248F1DB00EB8E8B /* ZoomImageTransitionViewController.swift */; };
+		DE1E04A12248F22000EB8E8B /* ZoomImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04A02248F22000EB8E8B /* ZoomImageTransition.swift */; };
 		DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D496223CC70800351731 /* UICollectionViewExtension.swift */; };
 		DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */; };
 		DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D49E223CD33F00351731 /* Purchase.storyboard */; };
@@ -99,6 +102,9 @@
 		DE1E04942248C64F00EB8E8B /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		DE1E04982248E19A00EB8E8B /* GiftPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPresenter.swift; sourceTree = "<group>"; };
 		DE1E049A2248E1B400EB8E8B /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
+		DE1E049C2248EEEE00EB8E8B /* ZoomImageTransitionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageTransitionProtocol.swift; sourceTree = "<group>"; };
+		DE1E049E2248F1DB00EB8E8B /* ZoomImageTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageTransitionViewController.swift; sourceTree = "<group>"; };
+		DE1E04A02248F22000EB8E8B /* ZoomImageTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageTransition.swift; sourceTree = "<group>"; };
 		DE62D496223CC70800351731 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DE62D49F223CD33F00351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Purchase.storyboard; sourceTree = "<group>"; };
@@ -265,6 +271,9 @@
 		DE1E04972248DE4500EB8E8B /* ZoomImageTransition */ = {
 			isa = PBXGroup;
 			children = (
+				DE1E04A02248F22000EB8E8B /* ZoomImageTransition.swift */,
+				DE1E049C2248EEEE00EB8E8B /* ZoomImageTransitionProtocol.swift */,
+				DE1E049E2248F1DB00EB8E8B /* ZoomImageTransitionViewController.swift */,
 			);
 			path = ZoomImageTransition;
 			sourceTree = "<group>";
@@ -707,6 +716,7 @@
 			files = (
 				DE62D4BD223F7D5B00351731 /* MainSectionViewController.swift in Sources */,
 				DE1E04992248E19A00EB8E8B /* GiftPresenter.swift in Sources */,
+				DE1E04A12248F22000EB8E8B /* ZoomImageTransition.swift in Sources */,
 				DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */,
 				DE1E04772247672A00EB8E8B /* InformationDetailFormButtonView.swift in Sources */,
 				DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */,
@@ -731,7 +741,9 @@
 				DE1E04872248ADD000EB8E8B /* DetailCommentViewController.swift in Sources */,
 				DE62D4AD223CD6CE00351731 /* StoryboardInstantiatable.swift in Sources */,
 				DE62D4A7223CD56000351731 /* UIColorExtension.swift in Sources */,
+				DE1E049F2248F1DB00EB8E8B /* ZoomImageTransitionViewController.swift in Sources */,
 				DE62D4A9223CD5E000351731 /* UITableViewExtension.swift in Sources */,
+				DE1E049D2248EEEE00EB8E8B /* ZoomImageTransitionProtocol.swift in Sources */,
 				DE1E04842248AD7700EB8E8B /* DetailGiftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

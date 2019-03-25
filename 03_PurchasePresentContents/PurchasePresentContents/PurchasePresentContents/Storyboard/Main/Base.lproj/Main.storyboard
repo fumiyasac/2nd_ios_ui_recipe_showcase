@@ -58,6 +58,7 @@
                     <connections>
                         <outlet property="informationButtonView" destination="x4T-JS-EOo" id="CdQ-Oy-5jt"/>
                         <outlet property="lineupSegmentControl" destination="OaV-lD-q1O" id="MKP-hu-Pai"/>
+                        <outlet property="sectionContainerView" destination="5AU-73-Kjd" id="jER-iU-5J2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -7,9 +7,16 @@
 //
 
 import UIKit
-import SkeletonView
+
+protocol MainSectionDelegate: NSObjectProtocol {
+    
+    //
+    func handleSelectedImage(_ imageView: UIImageView)
+}
 
 final class MainSectionViewController: UIViewController {
+
+    weak var sectionDelegate: MainSectionDelegate?
 
     @IBOutlet weak private var mainSectionCollectionView: UICollectionView!
 
@@ -50,10 +57,12 @@ extension MainSectionViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! MainCollectionViewCell
+        self.sectionDelegate?.handleSelectedImage(cell.giftImageView)
 
         // TODO: 画面遷移
-        let vc = DetailGiftViewController.instantiate()
-        self.present(vc, animated: true, completion: nil)
+
+
     }
 }
 

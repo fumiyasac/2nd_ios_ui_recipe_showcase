@@ -28,7 +28,7 @@ enum MainSectionType: Int, CaseIterable {
         }
     }
 
-    func getViewController() -> UIViewController {
+    func getViewController() -> MainSectionViewController {
         return MainSectionViewController.instantiate()
     }
 }
