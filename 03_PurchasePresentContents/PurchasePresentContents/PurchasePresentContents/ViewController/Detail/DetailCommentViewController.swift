@@ -1,14 +1,14 @@
 //
-//  SearchViewController.swift
+//  DetailCommentViewController.swift
 //  PurchasePresentContents
 //
-//  Created by 酒井文也 on 2019/03/19.
+//  Created by 酒井文也 on 2019/03/25.
 //  Copyright © 2019 酒井文也. All rights reserved.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class DetailCommentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,15 +17,16 @@ class SearchViewController: UIViewController {
 
 // MARK: - StoryboardInstantiatable
 
-extension SearchViewController: StoryboardInstantiatable {
+extension DetailCommentViewController: StoryboardInstantiatable {
 
     // このViewControllerに対応するStoryboard名
     static var storyboardName: String {
-        return "Search"
+        return "Detail"
     }
 
     // このViewControllerに対応するViewControllerのIdentifier名
     static var viewControllerIdentifier: String? {
-        return nil
+        return DetailCommentViewController.className
     }
 }
+
