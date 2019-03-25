@@ -17,13 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="1q1-J7-rZg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4n1-ih-TwI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4n1-ih-TwI" secondAttribute="height" multiplier="4:3" id="9UX-qO-INY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4n1-ih-TwI" firstAttribute="leading" secondItem="zGB-yM-UVl" secondAttribute="leading" id="9Uh-js-rKt"/>
+                            <constraint firstItem="4n1-ih-TwI" firstAttribute="top" secondItem="1q1-J7-rZg" secondAttribute="top" id="KMc-Si-NJt"/>
+                            <constraint firstItem="4n1-ih-TwI" firstAttribute="trailing" secondItem="zGB-yM-UVl" secondAttribute="trailing" id="eAI-g7-DFz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zGB-yM-UVl"/>
                     </view>
+                    <connections>
+                        <outlet property="detailGiftImageView" destination="4n1-ih-TwI" id="P7S-ct-W5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoW-3m-nVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-41" y="63"/>
+            <point key="canvasLocation" x="-42.399999999999999" y="62.518740629685162"/>
         </scene>
         <!--Detail Comment View Controller-->
         <scene sceneID="0Wi-B8-FP6">
@@ -32,13 +48,35 @@
                     <view key="view" contentMode="scaleToFill" id="hxQ-a1-8Aw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="caE-Ui-90W">
+                                <rect key="frame" x="8" y="100" width="359" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz6-0g-cfe">
+                                <rect key="frame" x="8" y="56" width="359" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zoi-F2-fKJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kz6-0g-cfe" firstAttribute="top" secondItem="1Bg-DS-HiI" secondAttribute="top" constant="36" id="47d-UT-tN7"/>
+                            <constraint firstItem="1Bg-DS-HiI" firstAttribute="trailing" secondItem="Kz6-0g-cfe" secondAttribute="trailing" constant="8" id="6r0-n2-6an"/>
+                            <constraint firstItem="1Bg-DS-HiI" firstAttribute="trailing" secondItem="caE-Ui-90W" secondAttribute="trailing" constant="8" id="8Tg-bn-6yg"/>
+                            <constraint firstItem="1Bg-DS-HiI" firstAttribute="bottom" secondItem="caE-Ui-90W" secondAttribute="bottom" constant="8" id="8yT-7h-WZV"/>
+                            <constraint firstItem="caE-Ui-90W" firstAttribute="top" secondItem="Kz6-0g-cfe" secondAttribute="bottom" id="Hy1-c6-DoM"/>
+                            <constraint firstItem="Kz6-0g-cfe" firstAttribute="leading" secondItem="1Bg-DS-HiI" secondAttribute="leading" constant="8" id="Rsc-tT-eSX"/>
+                            <constraint firstItem="caE-Ui-90W" firstAttribute="leading" secondItem="1Bg-DS-HiI" secondAttribute="leading" constant="8" id="xaV-8a-7oI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Bg-DS-HiI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cek-ag-8rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="63"/>
+            <point key="canvasLocation" x="676" y="62.518740629685162"/>
         </scene>
     </scenes>
 </document>

@@ -21,6 +21,11 @@
 		DE1E04842248AD7700EB8E8B /* DetailGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04832248AD7700EB8E8B /* DetailGiftViewController.swift */; };
 		DE1E04872248ADD000EB8E8B /* DetailCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04862248ADD000EB8E8B /* DetailCommentViewController.swift */; };
 		DE1E048A2248AE0100EB8E8B /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1E04892248AE0100EB8E8B /* Detail.storyboard */; };
+		DE1E048E2248BDF900EB8E8B /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E048C2248BDF900EB8E8B /* MainCollectionViewCell.swift */; };
+		DE1E048F2248BDF900EB8E8B /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E048D2248BDF900EB8E8B /* MainCollectionViewCell.xib */; };
+		DE1E04952248C64F00EB8E8B /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04942248C64F00EB8E8B /* CategoryType.swift */; };
+		DE1E04992248E19A00EB8E8B /* GiftPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04982248E19A00EB8E8B /* GiftPresenter.swift */; };
+		DE1E049B2248E1B400EB8E8B /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E049A2248E1B400EB8E8B /* GalleryPresenter.swift */; };
 		DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D496223CC70800351731 /* UICollectionViewExtension.swift */; };
 		DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */; };
 		DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D49E223CD33F00351731 /* Purchase.storyboard */; };
@@ -32,10 +37,7 @@
 		DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AE223CD76B00351731 /* CustomViewBase.swift */; };
 		DE62D4B7223E27D100351731 /* MainSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D4B5223E27D100351731 /* MainSection.storyboard */; };
 		DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BA223F706000351731 /* MainSectionType.swift */; };
-		DE62D4BD223F7D5B00351731 /* MainNewSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BC223F7D5B00351731 /* MainNewSectionViewController.swift */; };
-		DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */; };
-		DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */; };
-		DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */; };
+		DE62D4BD223F7D5B00351731 /* MainSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4BC223F7D5B00351731 /* MainSectionViewController.swift */; };
 		DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4C5223FAEF700351731 /* GalleryViewController.swift */; };
 		DE62D4C8223FAF2400351731 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D4C7223FAF2400351731 /* Gallery.storyboard */; };
 		DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4CA223FC15200351731 /* GalleryCollectionViewCell.swift */; };
@@ -92,6 +94,11 @@
 		DE1E04832248AD7700EB8E8B /* DetailGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailGiftViewController.swift; path = PurchasePresentContents/ViewController/Detail/DetailGiftViewController.swift; sourceTree = SOURCE_ROOT; };
 		DE1E04862248ADD000EB8E8B /* DetailCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCommentViewController.swift; path = PurchasePresentContents/ViewController/Detail/DetailCommentViewController.swift; sourceTree = SOURCE_ROOT; };
 		DE1E04892248AE0100EB8E8B /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		DE1E048C2248BDF900EB8E8B /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE1E048D2248BDF900EB8E8B /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE1E04942248C64F00EB8E8B /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		DE1E04982248E19A00EB8E8B /* GiftPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPresenter.swift; sourceTree = "<group>"; };
+		DE1E049A2248E1B400EB8E8B /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
 		DE62D496223CC70800351731 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DE62D49F223CD33F00351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Purchase.storyboard; sourceTree = "<group>"; };
@@ -103,10 +110,7 @@
 		DE62D4AE223CD76B00351731 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		DE62D4B6223E27D100351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainSection.storyboard; sourceTree = "<group>"; };
 		DE62D4BA223F706000351731 /* MainSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionType.swift; sourceTree = "<group>"; };
-		DE62D4BC223F7D5B00351731 /* MainNewSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewSectionViewController.swift; sourceTree = "<group>"; };
-		DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpecialSectionViewController.swift; sourceTree = "<group>"; };
-		DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMonthlySectionViewController.swift; sourceTree = "<group>"; };
-		DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendSectionViewController.swift; sourceTree = "<group>"; };
+		DE62D4BC223F7D5B00351731 /* MainSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionViewController.swift; sourceTree = "<group>"; };
 		DE62D4C5223FAEF700351731 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DE62D4C7223FAF2400351731 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
 		DE62D4CA223FC15200351731 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -225,22 +229,44 @@
 			path = PurchasePresentContentsUITests;
 			sourceTree = "<group>";
 		};
-		DE1E04822248AD4A00EB8E8B /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				DE1E04832248AD7700EB8E8B /* DetailGiftViewController.swift */,
-				DE1E04862248ADD000EB8E8B /* DetailCommentViewController.swift */,
-			);
-			name = Detail;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		DE1E04882248ADE600EB8E8B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				DE1E04892248AE0100EB8E8B /* Detail.storyboard */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E048C2248BDF900EB8E8B /* MainCollectionViewCell.swift */,
+				DE1E048D2248BDF900EB8E8B /* MainCollectionViewCell.xib */,
+			);
+			path = MainCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DE1E04932248C58500EB8E8B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E04862248ADD000EB8E8B /* DetailCommentViewController.swift */,
+				DE1E04832248AD7700EB8E8B /* DetailGiftViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DE1E04962248DDE600EB8E8B /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
+		DE1E04972248DE4500EB8E8B /* ZoomImageTransition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZoomImageTransition;
 			sourceTree = "<group>";
 		};
 		DE62D488223CC36C00351731 /* View */ = {
@@ -267,7 +293,7 @@
 		DE62D48A223CC38000351731 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DE1E04822248AD4A00EB8E8B /* Detail */,
+				DE1E04932248C58500EB8E8B /* Detail */,
 				DE62D4C9223FAF3600351731 /* Gallery */,
 				DE62D4A3223CD39F00351731 /* Main */,
 				DE62D4B2223CDC8900351731 /* Purchase */,
@@ -278,6 +304,8 @@
 		DE62D48B223CC38800351731 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DE1E049A2248E1B400EB8E8B /* GalleryPresenter.swift */,
+				DE1E04982248E19A00EB8E8B /* GiftPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -350,6 +378,8 @@
 		DE62D4B0223CDA8E00351731 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				DE1E04972248DE4500EB8E8B /* ZoomImageTransition */,
+				DE1E04962248DDE600EB8E8B /* FloatingPanel */,
 				DE62D4AE223CD76B00351731 /* CustomViewBase.swift */,
 			);
 			path = Class;
@@ -358,6 +388,7 @@
 		DE62D4B1223CDA9700351731 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
 				DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */,
 				DE6A403122461C8E00E724E5 /* InformationDetailDescriptionView */,
 				DE6A403022461C7900E724E5 /* InformationDetailHeaderView */,
@@ -378,10 +409,7 @@
 		DE62D4B8223F590E00351731 /* MainSection */ = {
 			isa = PBXGroup;
 			children = (
-				DE62D4C0223F7DB000351731 /* MainMonthlySectionViewController.swift */,
-				DE62D4BC223F7D5B00351731 /* MainNewSectionViewController.swift */,
-				DE62D4C2223F7DCB00351731 /* MainRecommendSectionViewController.swift */,
-				DE62D4BE223F7D8200351731 /* MainSpecialSectionViewController.swift */,
+				DE62D4BC223F7D5B00351731 /* MainSectionViewController.swift */,
 			);
 			path = MainSection;
 			sourceTree = "<group>";
@@ -389,6 +417,7 @@
 		DE62D4B9223F702300351731 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				DE1E04942248C64F00EB8E8B /* CategoryType.swift */,
 				DE62D4BA223F706000351731 /* MainSectionType.swift */,
 			);
 			path = Enum;
@@ -574,6 +603,7 @@
 				DE6A4029224600F900E724E5 /* InformationButtonView.xib in Resources */,
 				DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */,
+				DE1E048F2248BDF900EB8E8B /* MainCollectionViewCell.xib in Resources */,
 				DE6A40382246297800E724E5 /* InformationDetailDescriptionView.xib in Resources */,
 				DE12ED1422101C1C008DFBFB /* Assets.xcassets in Resources */,
 				DE6A402C22460C6300E724E5 /* MainInformation.storyboard in Resources */,
@@ -645,7 +675,6 @@
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PinterestSegment/PinterestSegment.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
-				"${BUILT_PRODUCTS_DIR}/StepIndicator/StepIndicator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -663,7 +692,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSegment.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StepIndicator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -677,18 +705,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE62D4BD223F7D5B00351731 /* MainNewSectionViewController.swift in Sources */,
+				DE62D4BD223F7D5B00351731 /* MainSectionViewController.swift in Sources */,
+				DE1E04992248E19A00EB8E8B /* GiftPresenter.swift in Sources */,
 				DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */,
-				DE62D4BF223F7D8200351731 /* MainSpecialSectionViewController.swift in Sources */,
 				DE1E04772247672A00EB8E8B /* InformationDetailFormButtonView.swift in Sources */,
-				DE62D4C1223F7DB100351731 /* MainMonthlySectionViewController.swift in Sources */,
 				DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */,
 				DE6A402F22460CA700E724E5 /* MainInformationViewController.swift in Sources */,
+				DE1E048E2248BDF900EB8E8B /* MainCollectionViewCell.swift in Sources */,
 				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
 				DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
+				DE1E04952248C64F00EB8E8B /* CategoryType.swift in Sources */,
 				DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */,
-				DE62D4C3223F7DCB00351731 /* MainRecommendSectionViewController.swift in Sources */,
 				DE12ED0F22101C1B008DFBFB /* MainViewController.swift in Sources */,
 				DE6A403422461D9A00E724E5 /* InformationDetailHeaderView.swift in Sources */,
 				DE62D4D02240BA5900351731 /* GalleryEntity.swift in Sources */,
@@ -698,6 +726,7 @@
 				DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */,
 				DE62D4DA2240DC0F00351731 /* GiftEntity.swift in Sources */,
 				DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */,
+				DE1E049B2248E1B400EB8E8B /* GalleryPresenter.swift in Sources */,
 				DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */,
 				DE1E04872248ADD000EB8E8B /* DetailCommentViewController.swift in Sources */,
 				DE62D4AD223CD6CE00351731 /* StoryboardInstantiatable.swift in Sources */,

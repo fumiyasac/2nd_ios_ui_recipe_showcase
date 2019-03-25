@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCollectionViewCell" customModule="PurchasePresentContents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WbR-wE-YKv">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WbR-wE-YKv" secondAttribute="height" multiplier="4:3" id="2aK-Ka-zVx"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hky-77-7xt">
+                        <rect key="frame" x="0.0" y="120" width="160" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY: UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tg-9y-J9h">
+                                <rect key="frame" x="9" y="48" width="142" height="9"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="9"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="DYo-xG-1ky">
+                                <rect key="frame" x="8" y="8" width="144" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名が入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qk-KL-NTL">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="15"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8qk-KL-NTL" secondAttribute="bottom" id="EQn-W3-Szm"/>
+                                    <constraint firstAttribute="height" constant="15" id="LOL-xW-edL"/>
+                                    <constraint firstAttribute="trailing" secondItem="8qk-KL-NTL" secondAttribute="trailing" id="MVc-aV-FPL"/>
+                                    <constraint firstAttribute="bottom" secondItem="8qk-KL-NTL" secondAttribute="bottom" id="NEU-H0-MYb"/>
+                                    <constraint firstItem="8qk-KL-NTL" firstAttribute="top" secondItem="DYo-xG-1ky" secondAttribute="top" id="jnC-8e-KcY"/>
+                                    <constraint firstItem="8qk-KL-NTL" firstAttribute="top" secondItem="DYo-xG-1ky" secondAttribute="top" id="lLA-qA-u0z"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE: ¥2000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLo-NR-HnI">
+                                <rect key="frame" x="8" y="30" width="144" height="11"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.086793664383561647" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Tg-9y-J9h" firstAttribute="leading" secondItem="hky-77-7xt" secondAttribute="leading" constant="9" id="B1J-kL-iEi"/>
+                            <constraint firstAttribute="trailing" secondItem="4Tg-9y-J9h" secondAttribute="trailing" constant="9" id="BGl-Be-Ns3"/>
+                            <constraint firstItem="DYo-xG-1ky" firstAttribute="leading" secondItem="hky-77-7xt" secondAttribute="leading" constant="8" id="CMq-e3-Cjx"/>
+                            <constraint firstAttribute="trailing" secondItem="wLo-NR-HnI" secondAttribute="trailing" constant="8" id="M9Z-Su-mGv"/>
+                            <constraint firstAttribute="height" constant="65" id="Tfa-N1-XhZ"/>
+                            <constraint firstAttribute="bottom" secondItem="4Tg-9y-J9h" secondAttribute="bottom" constant="8" id="UFv-73-9I7"/>
+                            <constraint firstAttribute="trailing" secondItem="DYo-xG-1ky" secondAttribute="trailing" constant="8" id="URk-8M-PtH"/>
+                            <constraint firstItem="wLo-NR-HnI" firstAttribute="leading" secondItem="hky-77-7xt" secondAttribute="leading" constant="8" id="cvO-ok-NZW"/>
+                            <constraint firstItem="DYo-xG-1ky" firstAttribute="top" secondItem="hky-77-7xt" secondAttribute="top" constant="8" id="g1C-30-ps2"/>
+                            <constraint firstItem="wLo-NR-HnI" firstAttribute="top" secondItem="DYo-xG-1ky" secondAttribute="bottom" constant="7" id="u8K-AV-sEI"/>
+                            <constraint firstItem="4Tg-9y-J9h" firstAttribute="top" secondItem="wLo-NR-HnI" secondAttribute="bottom" constant="7" id="zzE-XF-9XI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hky-77-7xt" secondAttribute="bottom" id="3Db-9h-ngz"/>
+                <constraint firstItem="WbR-wE-YKv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7MD-9H-7yt"/>
+                <constraint firstItem="WbR-wE-YKv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AMo-Fn-Ykk"/>
+                <constraint firstAttribute="trailing" secondItem="WbR-wE-YKv" secondAttribute="trailing" id="fXl-Pr-hFt"/>
+                <constraint firstItem="hky-77-7xt" firstAttribute="top" secondItem="WbR-wE-YKv" secondAttribute="bottom" id="jiO-xx-p52"/>
+                <constraint firstItem="hky-77-7xt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mgh-Q4-lYr"/>
+                <constraint firstAttribute="trailing" secondItem="hky-77-7xt" secondAttribute="trailing" id="x4K-KG-nXW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="categoryLabel" destination="4Tg-9y-J9h" id="Hci-wb-PzC"/>
+                <outlet property="giftImageView" destination="WbR-wE-YKv" id="hTf-GZ-UVh"/>
+                <outlet property="nameLabel" destination="8qk-KL-NTL" id="NqE-XC-mYs"/>
+                <outlet property="priceLabel" destination="wLo-NR-HnI" id="kdB-SJ-z0I"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="111.54422788605699"/>
+        </collectionViewCell>
+    </objects>
+</document>

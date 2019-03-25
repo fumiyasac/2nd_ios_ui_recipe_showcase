@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hah-sV-fZG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,65 +10,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Monthly Section View Controller-->
-        <scene sceneID="CD9-Kh-Z0P">
-            <objects>
-                <viewController storyboardIdentifier="MainMonthlySectionViewController" id="RXk-9x-F26" customClass="MainMonthlySectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jQD-RF-NhK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="dLv-GV-6qN"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mu-Q5-A8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="210" y="126"/>
-        </scene>
-        <!--Main New Section View Controller-->
+        <!--Main Section View Controller-->
         <scene sceneID="Gce-gb-Yh2">
             <objects>
-                <viewController storyboardIdentifier="MainNewSectionViewController" id="Hah-sV-fZG" customClass="MainNewSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hah-sV-fZG" customClass="MainSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9S-97-4Kb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pDt-f0-gSK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fdX-Rk-zUX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pDt-f0-gSK" firstAttribute="top" secondItem="f9S-97-4Kb" secondAttribute="top" id="6zj-Wb-HCu"/>
+                            <constraint firstItem="pDt-f0-gSK" firstAttribute="bottom" secondItem="f9S-97-4Kb" secondAttribute="bottom" id="EIt-DZ-Mym"/>
+                            <constraint firstItem="pDt-f0-gSK" firstAttribute="leading" secondItem="k0n-fa-d6t" secondAttribute="leading" id="XvB-0k-c6i"/>
+                            <constraint firstItem="pDt-f0-gSK" firstAttribute="trailing" secondItem="k0n-fa-d6t" secondAttribute="trailing" id="mKp-ch-IHh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k0n-fa-d6t"/>
                     </view>
+                    <connections>
+                        <outlet property="mainSectionCollectionView" destination="pDt-f0-gSK" id="hco-UB-p8p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAz-nl-hxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="-539"/>
-        </scene>
-        <!--Main Special Section View Controller-->
-        <scene sceneID="HTh-8d-TaN">
-            <objects>
-                <viewController storyboardIdentifier="MainSpecialSectionViewController" id="jwS-Gx-0ae" customClass="MainSpecialSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pIv-do-VcD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xxZ-XA-KdG"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0aA-j0-gpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="882" y="-539"/>
-        </scene>
-        <!--Main Recommend Section View Controller-->
-        <scene sceneID="k1O-39-rzd">
-            <objects>
-                <viewController storyboardIdentifier="MainRecommendSectionViewController" id="NAO-fV-Cip" customClass="MainRecommendSectionViewController" customModule="PurchasePresentContents" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="civ-Jm-zhz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Q0O-xH-Z4S"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="obz-fq-XlR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="881" y="125"/>
+            <point key="canvasLocation" x="208.80000000000001" y="-539.28035982008998"/>
         </scene>
     </scenes>
 </document>

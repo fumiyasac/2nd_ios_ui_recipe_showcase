@@ -190,7 +190,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLOWER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eME-AV-kDM">
                                             <rect key="frame" x="54" y="50.5" width="65" height="14"/>
                                             <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
-                                            <color key="textColor" red="0.4373929794520548" green="0.42352941176470588" blue="0.85800608128525391" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.4392156862745098" green="0.42352941176470588" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>

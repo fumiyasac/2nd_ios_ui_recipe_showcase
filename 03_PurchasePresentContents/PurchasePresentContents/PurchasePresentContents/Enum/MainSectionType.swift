@@ -29,15 +29,6 @@ enum MainSectionType: Int, CaseIterable {
     }
 
     func getViewController() -> UIViewController {
-        switch self {
-        case .new:
-            return MainNewSectionViewController.instantiate()
-        case .special:
-            return MainSpecialSectionViewController.instantiate()
-        case .monthly:
-            return MainMonthlySectionViewController.instantiate()
-        case .recommend:
-            return MainRecommendSectionViewController.instantiate()
-        }
+        return MainSectionViewController.instantiate()
     }
 }

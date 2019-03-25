@@ -15,10 +15,8 @@ target 'PurchasePresentContents' do
   pod 'FontAwesome.swift'
 
   # UI実装で今回新しく紹介するライブラリ
-  pod 'StepIndicator'
   pod 'DeckTransition'
   pod 'AnimatedCollectionViewLayout'
-  pod 'DeckTransition'
   pod 'PinterestSegment'
   pod 'ARNTransitionAnimator'
   pod 'FloatingPanel'

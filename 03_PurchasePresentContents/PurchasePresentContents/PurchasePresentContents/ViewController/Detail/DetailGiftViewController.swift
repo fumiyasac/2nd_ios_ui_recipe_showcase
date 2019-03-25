@@ -13,6 +13,8 @@ final class DetailGiftViewController: UIViewController {
 
     private let floatingPanel: FloatingPanelController = FloatingPanelController()
 
+    @IBOutlet weak private var detailGiftImageView: UIImageView!
+    
     // MARK: - Override
 
     override func viewDidLoad() {
@@ -26,6 +28,12 @@ final class DetailGiftViewController: UIViewController {
 
         // セミモーダルビューを非表示にする
         floatingPanel.removePanelFromParent(animated: true)
+    }
+
+    // MARK: - Function
+
+    func setDetailImage(_ targetImage: UIImage?) {
+        detailGiftImageView.image = targetImage
     }
 
     // MARK: - Private Function

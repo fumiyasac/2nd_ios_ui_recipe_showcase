@@ -40,8 +40,8 @@ final class InformationButtonView: CustomViewBase {
     }
 
     private func setupInformationButtonView() {
+        self.backgroundColor = .clear
         iconImageView.image = UIImage.fontAwesomeIcon(name: .newspaper, style: .solid, textColor: iconColor, size: iconSize)
-
         showInformationButton.superview?.layer.borderWidth = 0.5
         showInformationButton.superview?.layer.borderColor = UIColor(code: "#dddddd").cgColor
         showInformationButton.superview?.layer.cornerRadius = showInformationButton.frame.height / 2

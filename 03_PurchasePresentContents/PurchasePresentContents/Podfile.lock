@@ -17,7 +17,6 @@ PODS:
     - PINRemoteImage/Core
   - PinterestSegment (1.2.3)
   - SkeletonView (1.4.1)
-  - StepIndicator (1.0.6.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -30,7 +29,6 @@ DEPENDENCIES:
   - PINRemoteImage
   - PinterestSegment
   - SkeletonView
-  - StepIndicator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,7 +44,6 @@ SPEC REPOS:
     - PINRemoteImage
     - PinterestSegment
     - SkeletonView
-    - StepIndicator
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -61,8 +58,7 @@ SPEC CHECKSUMS:
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
   SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
-  StepIndicator: 73b4bcc8bcf816cb98479d99ada7e85463252caa
 
-PODFILE CHECKSUM: a8bf06fb6f20af4b9e513589b6dd1414803693ce
+PODFILE CHECKSUM: 68993f99f29b9f2dfc45bab31c2248ff77107cf3
 
 COCOAPODS: 1.6.0
