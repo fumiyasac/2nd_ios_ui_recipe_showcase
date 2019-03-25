@@ -22,17 +22,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3In-79-wuA">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="466"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="496"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lik-z7-EhB" customClass="InformationDetailHeaderView" customModule="PurchasePresentContents" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="210" id="9lf-Ct-9GL"/>
+                                                    <constraint firstAttribute="height" constant="240" id="9lf-Ct-9GL"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QD-9M-MDr" customClass="InformationDetailDescriptionView" customModule="PurchasePresentContents" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="210" width="375" height="128"/>
+                                                <rect key="frame" x="0.0" y="240" width="375" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="UmQ-MD-eF5"/>
@@ -40,7 +40,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-eM-6fy" customClass="InformationDetailFormButtonView" customModule="PurchasePresentContents" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="338" width="375" height="128"/>
+                                                <rect key="frame" x="0.0" y="368" width="375" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="a8j-b3-16B"/>

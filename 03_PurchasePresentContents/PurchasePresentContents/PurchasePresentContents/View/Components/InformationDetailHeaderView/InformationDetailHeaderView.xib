@@ -17,18 +17,18 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwT-Yb-Tjn">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                 </imageView>
                 <view alpha="0.35999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohn-jT-2aF">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVv-4W-nSR">
-                    <rect key="frame" x="12" y="149" width="351" height="43"/>
+                    <rect key="frame" x="12" y="179" width="351" height="43"/>
                     <attributedString key="attributedText">
                         <fragment content="このページで本アプリの利用に関する便利な情報や機能におけるご紹介をしています。皆様の満足度の向上には継続してコミットしていきますので何卒よろしくお願い致します。">
                             <attributes>
@@ -77,7 +77,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新情報に関するお知らせ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQg-2u-Bly">
-                    <rect key="frame" x="12" y="120" width="351" height="17"/>
+                    <rect key="frame" x="12" y="150" width="351" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>

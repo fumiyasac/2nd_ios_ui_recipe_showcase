@@ -11,7 +11,7 @@ import FloatingPanel
 
 final class DetailGiftViewController: UIViewController {
 
-    private var floatingPanel: FloatingPanelController!
+    private let floatingPanel: FloatingPanelController = FloatingPanelController()
 
     // MARK: - Override
 
@@ -29,15 +29,14 @@ final class DetailGiftViewController: UIViewController {
     }
 
     // MARK: - Private Function
-    
+
     private func setupFloatingPanel() {
 
-        // セミモーダルビューで表示するViewControllerを生成し、FloatingPanelControllerへセットする
-        floatingPanel = FloatingPanelController()
+        // セミモーダルビューで表示する画面をFloatingPanelControllerへセットする
         let detailCommentViewController = DetailCommentViewController.instantiate()
         floatingPanel.set(contentViewController: detailCommentViewController)
 
-        // セミモーダルビューを表示した状態にする
+        // セミモーダルビューを表示する
         floatingPanel.addPanel(toParent: self, belowView: nil, animated: true)
     }
 }
