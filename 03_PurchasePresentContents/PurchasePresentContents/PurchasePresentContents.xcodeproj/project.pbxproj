@@ -401,9 +401,9 @@
 		DE62D4B0223CDA8E00351731 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				DE1E04972248DE4500EB8E8B /* ZoomImageTransition */,
-				DE1E04962248DDE600EB8E8B /* CommentFloatingPanel */,
 				DE62D4AE223CD76B00351731 /* CustomViewBase.swift */,
+				DE1E04962248DDE600EB8E8B /* CommentFloatingPanel */,
+				DE1E04972248DE4500EB8E8B /* ZoomImageTransition */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -411,16 +411,16 @@
 		DE62D4B1223CDA9700351731 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEC2C8F022492E81001236C1 /* DetailCloseButtonView */,
 				DEC2C907224A2479001236C1 /* DetailGalleryInformationView */,
 				DEC2C901224A2142001236C1 /* DetailGiftInformationView */,
-				DEC2C8FA224A1646001236C1 /* GiftCommentTableViewCell */,
-				DEC2C8F022492E81001236C1 /* DetailCloseButtonView */,
-				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
-				DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */,
-				DE6A403122461C8E00E724E5 /* InformationDetailDescriptionView */,
-				DE6A403022461C7900E724E5 /* InformationDetailHeaderView */,
-				DE6A4025224600A500E724E5 /* InformationButtonView */,
 				DE62D4CE223FC15B00351731 /* GalleryCollectionViewCell */,
+				DEC2C8FA224A1646001236C1 /* GiftCommentTableViewCell */,
+				DE6A4025224600A500E724E5 /* InformationButtonView */,
+				DE6A403122461C8E00E724E5 /* InformationDetailDescriptionView */,
+				DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */,
+				DE6A403022461C7900E724E5 /* InformationDetailHeaderView */,
+				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
