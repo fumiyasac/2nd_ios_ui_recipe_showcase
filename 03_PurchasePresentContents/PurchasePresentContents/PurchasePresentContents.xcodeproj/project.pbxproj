@@ -66,6 +66,7 @@
 		DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */; };
 		DEC2C90B224A24B1001236C1 /* DetailGalleryInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */; };
 		DEC2C90D224A86DD001236C1 /* GiftCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */; };
+		DEC2C911224A87E8001236C1 /* GiftCommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGalleryInformationView.swift; sourceTree = "<group>"; };
 		DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGalleryInformationView.xib; sourceTree = "<group>"; };
 		DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentEntity.swift; sourceTree = "<group>"; };
+		DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1E049A2248E1B400EB8E8B /* GalleryPresenter.swift */,
+				DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */,
 				DE1E04982248E19A00EB8E8B /* GiftPresenter.swift */,
 			);
 			path = Presenter;
@@ -807,6 +810,7 @@
 				DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */,
 				DE6A4027224600E300E724E5 /* InformationButtonView.swift in Sources */,
 				DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */,
+				DEC2C911224A87E8001236C1 /* GiftCommentPresenter.swift in Sources */,
 				DEC2C90D224A86DD001236C1 /* GiftCommentEntity.swift in Sources */,
 				DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */,
 				DE62D4DA2240DC0F00351731 /* GiftEntity.swift in Sources */,
