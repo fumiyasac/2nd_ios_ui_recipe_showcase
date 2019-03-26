@@ -38,7 +38,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zyf-Jq-ywM">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqk-JD-ShW" customClass="DetailsGiftInformationView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqk-JD-ShW" customClass="DetailGiftInformationView" customModule="PurchasePresentContents" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -84,7 +84,7 @@
                         <outlet property="detailCloseButtonView" destination="fgy-Qm-BwC" id="qHv-w4-9vY"/>
                         <outlet property="detailGalleryInformationView" destination="dLQ-JD-R4D" id="XP8-Mi-qpt"/>
                         <outlet property="detailGiftImageView" destination="4n1-ih-TwI" id="P7S-ct-W5M"/>
-                        <outlet property="detailGiftInformationView" destination="Iqk-JD-ShW" id="re2-GC-xZu"/>
+                        <outlet property="detailGiftInformationView" destination="Iqk-JD-ShW" id="UlD-Oj-Kx7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoW-3m-nVE" userLabel="First Responder" sceneMemberID="firstResponder"/>

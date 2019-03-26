@@ -20,13 +20,13 @@ final class DetailGalleryInformationView: CustomViewBase {
     required init(frame: CGRect) {
         super.init(frame: frame)
 
-        setupDetailGalleryInformationView()
+        setupShowGalleryButton()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        setupDetailGalleryInformationView()
+        setupShowGalleryButton()
     }
 
     // MARK: - Private Function
@@ -35,8 +35,7 @@ final class DetailGalleryInformationView: CustomViewBase {
         showGalleryButtonAction?()
     }
 
-    private func setupDetailGalleryInformationView() {
-        self.backgroundColor = .clear
+    private func setupShowGalleryButton() {
         showGalleryButton.superview?.layer.borderWidth = 0.5
         showGalleryButton.superview?.layer.borderColor = UIColor(code: "#ffae00").cgColor
         showGalleryButton.superview?.layer.cornerRadius = showGalleryButton.frame.height / 2

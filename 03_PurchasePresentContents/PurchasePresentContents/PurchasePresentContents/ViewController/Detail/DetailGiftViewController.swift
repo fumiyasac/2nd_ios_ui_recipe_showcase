@@ -15,7 +15,7 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
 
     @IBOutlet weak var detailGiftImageView: UIImageView!
     @IBOutlet weak private var detailCloseButtonView: DetailCloseButtonView!
-    @IBOutlet weak private var detailGiftInformationView: DetailsGiftInformationView!
+    @IBOutlet weak private var detailGiftInformationView: DetailGiftInformationView!
     @IBOutlet weak private var detailGalleryInformationView: DetailGalleryInformationView!
 
     // MARK: - Override

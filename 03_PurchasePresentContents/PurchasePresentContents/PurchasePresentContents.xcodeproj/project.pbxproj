@@ -61,8 +61,8 @@
 		DEC2C8FD224A1677001236C1 /* GiftCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8FB224A1677001236C1 /* GiftCommentTableViewCell.swift */; };
 		DEC2C8FE224A1677001236C1 /* GiftCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C8FC224A1677001236C1 /* GiftCommentTableViewCell.xib */; };
 		DEC2C900224A1F23001236C1 /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8FF224A1F23001236C1 /* UILabelDecorator.swift */; };
-		DEC2C904224A2271001236C1 /* DetailsGiftInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C903224A2271001236C1 /* DetailsGiftInformationView.xib */; };
-		DEC2C906224A227C001236C1 /* DetailsGiftInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C905224A227C001236C1 /* DetailsGiftInformationView.swift */; };
+		DEC2C904224A2271001236C1 /* DetailGiftInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C903224A2271001236C1 /* DetailGiftInformationView.xib */; };
+		DEC2C906224A227C001236C1 /* DetailGiftInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C905224A227C001236C1 /* DetailGiftInformationView.swift */; };
 		DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */; };
 		DEC2C90B224A24B1001236C1 /* DetailGalleryInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */; };
 /* End PBXBuildFile section */
@@ -147,8 +147,8 @@
 		DEC2C8FB224A1677001236C1 /* GiftCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentTableViewCell.swift; sourceTree = "<group>"; };
 		DEC2C8FC224A1677001236C1 /* GiftCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftCommentTableViewCell.xib; sourceTree = "<group>"; };
 		DEC2C8FF224A1F23001236C1 /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
-		DEC2C903224A2271001236C1 /* DetailsGiftInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsGiftInformationView.xib; sourceTree = "<group>"; };
-		DEC2C905224A227C001236C1 /* DetailsGiftInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsGiftInformationView.swift; sourceTree = "<group>"; };
+		DEC2C903224A2271001236C1 /* DetailGiftInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGiftInformationView.xib; sourceTree = "<group>"; };
+		DEC2C905224A227C001236C1 /* DetailGiftInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGiftInformationView.swift; sourceTree = "<group>"; };
 		DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGalleryInformationView.swift; sourceTree = "<group>"; };
 		DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGalleryInformationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -412,7 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC2C907224A2479001236C1 /* DetailGalleryInformationView */,
-				DEC2C901224A2142001236C1 /* DetailsGiftInformationView */,
+				DEC2C901224A2142001236C1 /* DetailGiftInformationView */,
 				DEC2C8FA224A1646001236C1 /* GiftCommentTableViewCell */,
 				DEC2C8F022492E81001236C1 /* DetailCloseButtonView */,
 				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
@@ -537,13 +537,13 @@
 			path = GiftCommentTableViewCell;
 			sourceTree = "<group>";
 		};
-		DEC2C901224A2142001236C1 /* DetailsGiftInformationView */ = {
+		DEC2C901224A2142001236C1 /* DetailGiftInformationView */ = {
 			isa = PBXGroup;
 			children = (
-				DEC2C905224A227C001236C1 /* DetailsGiftInformationView.swift */,
-				DEC2C903224A2271001236C1 /* DetailsGiftInformationView.xib */,
+				DEC2C905224A227C001236C1 /* DetailGiftInformationView.swift */,
+				DEC2C903224A2271001236C1 /* DetailGiftInformationView.xib */,
 			);
-			path = DetailsGiftInformationView;
+			path = DetailGiftInformationView;
 			sourceTree = "<group>";
 		};
 		DEC2C907224A2479001236C1 /* DetailGalleryInformationView */ = {
@@ -677,7 +677,7 @@
 				DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */,
 				DEC2C8FE224A1677001236C1 /* GiftCommentTableViewCell.xib in Resources */,
 				DEC2C8F422492EA8001236C1 /* DetailCloseButtonView.xib in Resources */,
-				DEC2C904224A2271001236C1 /* DetailsGiftInformationView.xib in Resources */,
+				DEC2C904224A2271001236C1 /* DetailGiftInformationView.xib in Resources */,
 				DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,7 +784,7 @@
 				DE1E048E2248BDF900EB8E8B /* MainCollectionViewCell.swift in Sources */,
 				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
 				DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */,
-				DEC2C906224A227C001236C1 /* DetailsGiftInformationView.swift in Sources */,
+				DEC2C906224A227C001236C1 /* DetailGiftInformationView.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
 				DEC2C8F822493ABB001236C1 /* CommentFloatingPanelBehavior.swift in Sources */,
 				DE1E04952248C64F00EB8E8B /* CategoryType.swift in Sources */,

@@ -11,8 +11,6 @@ import AnimatedCollectionViewLayout
 
 final class GalleryViewController: UIViewController {
 
-    //private var galleryList: [Galley] = []
-
     @IBOutlet weak private var galleryCollectionView: UICollectionView!
 
     // MARK: - Override
@@ -25,6 +23,7 @@ final class GalleryViewController: UIViewController {
 
     // MARK: - @IBAction
 
+    // MEMO: 特に画面に直接できるものなら@IBActionにしてしまっても良いと思います
     @IBAction func clonseGalleryAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

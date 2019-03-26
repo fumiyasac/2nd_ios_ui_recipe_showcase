@@ -35,6 +35,9 @@ final class InformationDetailFormButtonView: CustomViewBase {
         showDetailButton.superview?.layer.borderWidth = 0.5
         showDetailButton.superview?.layer.borderColor = UIColor(code: "#ffae00").cgColor
         showDetailButton.superview?.layer.cornerRadius = showDetailButton.frame.height / 2
+
+        // MEMO: 今回はサンプルなので購入ボタンを非活性状態にする
+        showDetailButton.superview?.alpha = 0.6
         showDetailButton.isEnabled = false
     }
 }
