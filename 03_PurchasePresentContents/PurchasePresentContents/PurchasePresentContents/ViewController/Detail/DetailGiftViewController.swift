@@ -15,15 +15,20 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
 
     @IBOutlet weak var detailGiftImageView: UIImageView!
     @IBOutlet weak private var detailCloseButtonView: DetailCloseButtonView!
-    
+    @IBOutlet weak private var detailGiftInformationView: DetailsGiftInformationView!
+    @IBOutlet weak private var detailGalleryInformationView: DetailGalleryInformationView!
+
     // MARK: - Override
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // MEMO: 後で修正する
+        detailGiftImageView.image = UIImage(named: "sample_image")
+
         setupFloatingPanel()
         setupDetailCloseButtonView()
-        detailGiftImageView.image = UIImage(named: "sample_image")
+        setupDetailGalleryInformationView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -81,6 +86,15 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
     private func setupDetailCloseButtonView() {
         detailCloseButtonView.closeDetailButtonAction = {
             self.dismiss(animated: true, completion: nil)
+        }
+    }
+
+    private func setupDetailGalleryInformationView() {
+        detailGalleryInformationView.showGalleryButtonAction = {
+            let vc = GalleryViewController.instantiate()
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: nil)
         }
     }
 }

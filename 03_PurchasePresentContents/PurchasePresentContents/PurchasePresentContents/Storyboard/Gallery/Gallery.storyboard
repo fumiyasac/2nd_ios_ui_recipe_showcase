@@ -39,6 +39,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kL-sa-tjs">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="36"/>
+                                        <connections>
+                                            <action selector="clonseGalleryAction:" destination="K8H-AS-mUr" eventType="touchUpInside" id="sKz-Nq-sPp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -55,10 +58,10 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="trailing" secondItem="Ovz-PN-SqK" secondAttribute="trailing" id="1yL-ce-IGL"/>
-                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="leading" secondItem="Ovz-PN-SqK" secondAttribute="leading" id="8Vd-kw-wPf"/>
-                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="bottom" secondItem="86W-mn-FqH" secondAttribute="bottom" id="Pro-xj-Wy7"/>
-                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="top" secondItem="86W-mn-FqH" secondAttribute="top" constant="-20" id="Sl6-FT-k5b"/>
+                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="trailing" secondItem="86W-mn-FqH" secondAttribute="trailing" id="1yL-ce-IGL"/>
+                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="leading" secondItem="86W-mn-FqH" secondAttribute="leading" id="8Vd-kw-wPf"/>
+                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="bottom" secondItem="Ovz-PN-SqK" secondAttribute="bottom" id="Pro-xj-Wy7"/>
+                            <constraint firstItem="RfZ-Q9-PYT" firstAttribute="top" secondItem="Ovz-PN-SqK" secondAttribute="top" id="Sl6-FT-k5b"/>
                             <constraint firstItem="h7u-f7-OGW" firstAttribute="top" secondItem="86W-mn-FqH" secondAttribute="top" id="k1i-zd-Dcu"/>
                             <constraint firstItem="h7u-f7-OGW" firstAttribute="leading" secondItem="86W-mn-FqH" secondAttribute="leading" constant="12" id="s9H-ZR-bEx"/>
                         </constraints>

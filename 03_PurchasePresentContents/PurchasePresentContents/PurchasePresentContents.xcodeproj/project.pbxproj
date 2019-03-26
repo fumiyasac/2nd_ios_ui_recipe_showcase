@@ -58,6 +58,13 @@
 		DEC2C8F422492EA8001236C1 /* DetailCloseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C8F322492EA8001236C1 /* DetailCloseButtonView.xib */; };
 		DEC2C8F6224939BB001236C1 /* CommentFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8F5224939BB001236C1 /* CommentFloatingPanelLayout.swift */; };
 		DEC2C8F822493ABB001236C1 /* CommentFloatingPanelBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8F722493ABB001236C1 /* CommentFloatingPanelBehavior.swift */; };
+		DEC2C8FD224A1677001236C1 /* GiftCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8FB224A1677001236C1 /* GiftCommentTableViewCell.swift */; };
+		DEC2C8FE224A1677001236C1 /* GiftCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C8FC224A1677001236C1 /* GiftCommentTableViewCell.xib */; };
+		DEC2C900224A1F23001236C1 /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8FF224A1F23001236C1 /* UILabelDecorator.swift */; };
+		DEC2C904224A2271001236C1 /* DetailsGiftInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C903224A2271001236C1 /* DetailsGiftInformationView.xib */; };
+		DEC2C906224A227C001236C1 /* DetailsGiftInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C905224A227C001236C1 /* DetailsGiftInformationView.swift */; };
+		DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */; };
+		DEC2C90B224A24B1001236C1 /* DetailGalleryInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +144,13 @@
 		DEC2C8F322492EA8001236C1 /* DetailCloseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCloseButtonView.xib; sourceTree = "<group>"; };
 		DEC2C8F5224939BB001236C1 /* CommentFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		DEC2C8F722493ABB001236C1 /* CommentFloatingPanelBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFloatingPanelBehavior.swift; sourceTree = "<group>"; };
+		DEC2C8FB224A1677001236C1 /* GiftCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentTableViewCell.swift; sourceTree = "<group>"; };
+		DEC2C8FC224A1677001236C1 /* GiftCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftCommentTableViewCell.xib; sourceTree = "<group>"; };
+		DEC2C8FF224A1F23001236C1 /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
+		DEC2C903224A2271001236C1 /* DetailsGiftInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsGiftInformationView.xib; sourceTree = "<group>"; };
+		DEC2C905224A227C001236C1 /* DetailsGiftInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsGiftInformationView.swift; sourceTree = "<group>"; };
+		DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGalleryInformationView.swift; sourceTree = "<group>"; };
+		DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGalleryInformationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +365,7 @@
 		DE62D48E223CC3BF00351731 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DEC2C8FF224A1F23001236C1 /* UILabelDecorator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -396,6 +411,9 @@
 		DE62D4B1223CDA9700351731 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEC2C907224A2479001236C1 /* DetailGalleryInformationView */,
+				DEC2C901224A2142001236C1 /* DetailsGiftInformationView */,
+				DEC2C8FA224A1646001236C1 /* GiftCommentTableViewCell */,
 				DEC2C8F022492E81001236C1 /* DetailCloseButtonView */,
 				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
 				DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */,
@@ -508,6 +526,33 @@
 				DEC2C8F322492EA8001236C1 /* DetailCloseButtonView.xib */,
 			);
 			path = DetailCloseButtonView;
+			sourceTree = "<group>";
+		};
+		DEC2C8FA224A1646001236C1 /* GiftCommentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2C8FB224A1677001236C1 /* GiftCommentTableViewCell.swift */,
+				DEC2C8FC224A1677001236C1 /* GiftCommentTableViewCell.xib */,
+			);
+			path = GiftCommentTableViewCell;
+			sourceTree = "<group>";
+		};
+		DEC2C901224A2142001236C1 /* DetailsGiftInformationView */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2C905224A227C001236C1 /* DetailsGiftInformationView.swift */,
+				DEC2C903224A2271001236C1 /* DetailsGiftInformationView.xib */,
+			);
+			path = DetailsGiftInformationView;
+			sourceTree = "<group>";
+		};
+		DEC2C907224A2479001236C1 /* DetailGalleryInformationView */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */,
+				DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */,
+			);
+			path = DetailGalleryInformationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -628,8 +673,11 @@
 				DE62D4CD223FC15200351731 /* GalleryCollectionViewCell.xib in Resources */,
 				DE6A403622461DAE00E724E5 /* InformationDetailHeaderView.xib in Resources */,
 				DE1E048A2248AE0100EB8E8B /* Detail.storyboard in Resources */,
+				DEC2C90B224A24B1001236C1 /* DetailGalleryInformationView.xib in Resources */,
 				DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */,
+				DEC2C8FE224A1677001236C1 /* GiftCommentTableViewCell.xib in Resources */,
 				DEC2C8F422492EA8001236C1 /* DetailCloseButtonView.xib in Resources */,
+				DEC2C904224A2271001236C1 /* DetailsGiftInformationView.xib in Resources */,
 				DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,13 +784,16 @@
 				DE1E048E2248BDF900EB8E8B /* MainCollectionViewCell.swift in Sources */,
 				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
 				DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */,
+				DEC2C906224A227C001236C1 /* DetailsGiftInformationView.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
 				DEC2C8F822493ABB001236C1 /* CommentFloatingPanelBehavior.swift in Sources */,
 				DE1E04952248C64F00EB8E8B /* CategoryType.swift in Sources */,
+				DEC2C8FD224A1677001236C1 /* GiftCommentTableViewCell.swift in Sources */,
 				DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */,
 				DE12ED0F22101C1B008DFBFB /* MainViewController.swift in Sources */,
 				DE6A403422461D9A00E724E5 /* InformationDetailHeaderView.swift in Sources */,
 				DE62D4D02240BA5900351731 /* GalleryEntity.swift in Sources */,
+				DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */,
 				DE6A4027224600E300E724E5 /* InformationButtonView.swift in Sources */,
 				DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */,
 				DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */,
@@ -751,6 +802,7 @@
 				DE1E049B2248E1B400EB8E8B /* GalleryPresenter.swift in Sources */,
 				DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */,
 				DE1E04872248ADD000EB8E8B /* DetailCommentViewController.swift in Sources */,
+				DEC2C900224A1F23001236C1 /* UILabelDecorator.swift in Sources */,
 				DE62D4AD223CD6CE00351731 /* StoryboardInstantiatable.swift in Sources */,
 				DE62D4A7223CD56000351731 /* UIColorExtension.swift in Sources */,
 				DE1E049F2248F1DB00EB8E8B /* ZoomImageTransitionViewController.swift in Sources */,

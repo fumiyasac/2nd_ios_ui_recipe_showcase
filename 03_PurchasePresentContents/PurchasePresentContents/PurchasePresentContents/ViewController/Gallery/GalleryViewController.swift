@@ -23,7 +23,11 @@ final class GalleryViewController: UIViewController {
         setupGalleryCollectionView()
     }
 
-    // MARK: - Function
+    // MARK: - @IBAction
+
+    @IBAction func clonseGalleryAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     // MARK: - Private Function
 
@@ -41,8 +45,9 @@ final class GalleryViewController: UIViewController {
         galleryCollectionView.registerCustomCell(GalleryCollectionViewCell.self)
 
         // UICollectionViewに付与するアニメーションに関する設定
+        // MEMO: AnimatedCollectionViewLayoutでカードが回転するアニメーションを加える
         let layout = AnimatedCollectionViewLayout()
-        layout.animator = CubeAttributesAnimator()
+        layout.animator = RotateInOutAttributesAnimator()
         layout.scrollDirection = .horizontal
         galleryCollectionView.collectionViewLayout = layout
     }
@@ -51,7 +56,7 @@ final class GalleryViewController: UIViewController {
 // MARK: - UICollectionViewDataSource
 
 extension GalleryViewController: UICollectionViewDataSource {
-    
+
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -70,9 +75,24 @@ extension GalleryViewController: UICollectionViewDataSource {
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
 
-    // タブ用のセルにおける矩形サイズを設定する（※ここでは画面サイズに仮置きする）
+    //
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    }
+
+    //
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+
+    //
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
+    //
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }
 

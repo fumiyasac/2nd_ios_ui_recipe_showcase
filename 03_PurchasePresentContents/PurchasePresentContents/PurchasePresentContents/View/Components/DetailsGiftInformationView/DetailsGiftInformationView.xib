@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsGiftInformationView" customModule="PurchasePresentContents" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品のタイトルが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sw-LM-yjO">
+                    <rect key="frame" x="12" y="12" width="351" height="15"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE: ¥2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtT-65-gFY">
+                    <rect key="frame" x="12" y="41" width="351" height="13"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.086793664379999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY: UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kd-HN-OhV">
+                    <rect key="frame" x="12" y="68" width="351" height="13.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLI-1D-nwc">
+                    <rect key="frame" x="12" y="97.5" width="351" height="79"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">こちらの商品につきましては架空のものになりますので、実際には注文はできませんので何卒ご注意ください。また、この部分には商品の紹介文や概要、注文の際のご注意点について掲載する部分となります。不足している部分が目立つかと思いますが、今後5月以降に少し追加や修正を行う予定です。</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GtT-65-gFY" secondAttribute="trailing" constant="12" id="1h6-Si-Z72"/>
+                <constraint firstItem="GtT-65-gFY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="4RZ-4i-WFs"/>
+                <constraint firstItem="GtT-65-gFY" firstAttribute="top" secondItem="9sw-LM-yjO" secondAttribute="bottom" constant="14" id="4dq-nC-tQR"/>
+                <constraint firstItem="9sw-LM-yjO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="5Xd-Cm-59P"/>
+                <constraint firstItem="5Kd-HN-OhV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="7Ps-4Z-8Lu"/>
+                <constraint firstItem="9sw-LM-yjO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="ADv-2x-3as"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Kd-HN-OhV" secondAttribute="trailing" constant="12" id="Krz-1t-Y7D"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dLI-1D-nwc" secondAttribute="bottom" constant="15.5" id="Rem-8v-VPp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dLI-1D-nwc" secondAttribute="trailing" constant="12" id="U3i-sT-L2B"/>
+                <constraint firstItem="dLI-1D-nwc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="U9j-aY-msg"/>
+                <constraint firstItem="dLI-1D-nwc" firstAttribute="top" secondItem="5Kd-HN-OhV" secondAttribute="bottom" constant="16" id="qMy-Dt-ti8"/>
+                <constraint firstItem="5Kd-HN-OhV" firstAttribute="top" secondItem="GtT-65-gFY" secondAttribute="bottom" constant="14" id="zPE-1z-O1v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9sw-LM-yjO" secondAttribute="trailing" constant="12" id="zco-tr-DgF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="119.2" y="110.64467766116942"/>
+        </view>
+    </objects>
+</document>

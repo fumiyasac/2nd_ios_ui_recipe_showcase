@@ -34,6 +34,36 @@
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a69-Ie-TUa">
                                 <rect key="frame" x="0.0" y="281.5" width="375" height="313.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zyf-Jq-ywM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqk-JD-ShW" customClass="DetailsGiftInformationView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6xd-pa-fhf"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="a5s-H0-joK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLQ-JD-R4D" customClass="DetailGalleryInformationView" customModule="PurchasePresentContents" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="128" width="375" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="2lN-nD-aKh"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8qp-9n-Rjj"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zyf-Jq-ywM" firstAttribute="leading" secondItem="a69-Ie-TUa" secondAttribute="leading" id="1kp-Xb-1I6"/>
+                                    <constraint firstItem="zyf-Jq-ywM" firstAttribute="top" secondItem="a69-Ie-TUa" secondAttribute="top" id="Vr4-2v-U1m"/>
+                                    <constraint firstAttribute="trailing" secondItem="zyf-Jq-ywM" secondAttribute="trailing" id="YlF-98-NrP"/>
+                                    <constraint firstAttribute="bottom" secondItem="zyf-Jq-ywM" secondAttribute="bottom" id="l4y-C0-NSB"/>
+                                    <constraint firstItem="zyf-Jq-ywM" firstAttribute="width" secondItem="a69-Ie-TUa" secondAttribute="width" id="pdL-0s-LeG"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,7 +82,9 @@
                     </view>
                     <connections>
                         <outlet property="detailCloseButtonView" destination="fgy-Qm-BwC" id="qHv-w4-9vY"/>
+                        <outlet property="detailGalleryInformationView" destination="dLQ-JD-R4D" id="XP8-Mi-qpt"/>
                         <outlet property="detailGiftImageView" destination="4n1-ih-TwI" id="P7S-ct-W5M"/>
+                        <outlet property="detailGiftInformationView" destination="Iqk-JD-ShW" id="re2-GC-xZu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoW-3m-nVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -69,7 +101,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="caE-Ui-90W">
                                 <rect key="frame" x="8" y="94" width="359" height="531"/>
-                                <color key="backgroundColor" red="1" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz6-0g-cfe">
                                 <rect key="frame" x="8" y="20" width="359" height="74"/>

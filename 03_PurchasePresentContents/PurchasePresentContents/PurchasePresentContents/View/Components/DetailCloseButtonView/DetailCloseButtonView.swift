@@ -27,7 +27,7 @@ final class DetailCloseButtonView: CustomViewBase {
 
         setupDetailCloseButtonView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 

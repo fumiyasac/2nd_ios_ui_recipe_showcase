@@ -10,9 +10,7 @@ import UIKit
 
 final class GalleryCollectionViewCell: UICollectionViewCell {
 
-    // MEMO: サムネイル用のUIImageViewはSetterのみPrivateにしておく
-    @IBOutlet weak private(set) var thumbnailImageView: UIImageView!
-
+    @IBOutlet weak private var thumbnailImageView: UIImageView!
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var summaryLabel: UILabel!
 
