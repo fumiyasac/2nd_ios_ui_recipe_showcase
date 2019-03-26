@@ -65,6 +65,7 @@
 		DEC2C906224A227C001236C1 /* DetailGiftInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C905224A227C001236C1 /* DetailGiftInformationView.swift */; };
 		DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */; };
 		DEC2C90B224A24B1001236C1 /* DetailGalleryInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */; };
+		DEC2C90D224A86DD001236C1 /* GiftCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		DEC2C905224A227C001236C1 /* DetailGiftInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGiftInformationView.swift; sourceTree = "<group>"; };
 		DEC2C908224A24A4001236C1 /* DetailGalleryInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGalleryInformationView.swift; sourceTree = "<group>"; };
 		DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGalleryInformationView.xib; sourceTree = "<group>"; };
+		DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				DE62D4CF2240BA5900351731 /* GalleryEntity.swift */,
+				DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */,
 				DE62D4D92240DC0E00351731 /* GiftEntity.swift */,
 			);
 			path = Entity;
@@ -401,7 +404,7 @@
 		DE62D4B0223CDA8E00351731 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				DE62D4AE223CD76B00351731 /* CustomViewBase.swift */,
+				DEC2C90F224A870B001236C1 /* CustomViewBase */,
 				DE1E04962248DDE600EB8E8B /* CommentFloatingPanel */,
 				DE1E04972248DE4500EB8E8B /* ZoomImageTransition */,
 			);
@@ -553,6 +556,14 @@
 				DEC2C90A224A24B1001236C1 /* DetailGalleryInformationView.xib */,
 			);
 			path = DetailGalleryInformationView;
+			sourceTree = "<group>";
+		};
+		DEC2C90F224A870B001236C1 /* CustomViewBase */ = {
+			isa = PBXGroup;
+			children = (
+				DE62D4AE223CD76B00351731 /* CustomViewBase.swift */,
+			);
+			path = CustomViewBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -796,6 +807,7 @@
 				DEC2C909224A24A4001236C1 /* DetailGalleryInformationView.swift in Sources */,
 				DE6A4027224600E300E724E5 /* InformationButtonView.swift in Sources */,
 				DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */,
+				DEC2C90D224A86DD001236C1 /* GiftCommentEntity.swift in Sources */,
 				DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */,
 				DE62D4DA2240DC0F00351731 /* GiftEntity.swift in Sources */,
 				DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */,
