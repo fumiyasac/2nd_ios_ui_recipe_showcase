@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MEMO: 5月のアップデートでフォーム画面を作るのでそれまでお待ちください。
+
 final class PurchaseViewController: UIViewController {
 
     override func viewDidLoad() {

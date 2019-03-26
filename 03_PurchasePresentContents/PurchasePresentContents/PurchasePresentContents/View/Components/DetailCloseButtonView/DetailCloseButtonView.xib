@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailCloseButtonView" customModule="PurchasePresentContents" customModuleProvider="target">
+            <connections>
+                <outlet property="closeDetailButton" destination="UB2-O8-o6D" id="63c-Ug-opZ"/>
+                <outlet property="iconImageView" destination="Kkp-OF-nqo" id="ogk-sN-ybs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kkp-OF-nqo">
+                    <rect key="frame" x="4" y="4" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="6ox-EG-gGb"/>
+                        <constraint firstAttribute="width" constant="32" id="ncW-lD-sMk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UB2-O8-o6D">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UB2-O8-o6D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1qR-8a-Zl8"/>
+                <constraint firstItem="Kkp-OF-nqo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fwr-Kw-GZV"/>
+                <constraint firstItem="Kkp-OF-nqo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NhS-vR-aVB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UB2-O8-o6D" secondAttribute="bottom" id="Smo-u8-kPi"/>
+                <constraint firstItem="UB2-O8-o6D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W9d-Py-SeB"/>
+                <constraint firstAttribute="trailing" secondItem="UB2-O8-o6D" secondAttribute="trailing" id="gZE-aE-LTr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="92.799999999999997" y="111.54422788605699"/>
+        </view>
+    </objects>
+</document>

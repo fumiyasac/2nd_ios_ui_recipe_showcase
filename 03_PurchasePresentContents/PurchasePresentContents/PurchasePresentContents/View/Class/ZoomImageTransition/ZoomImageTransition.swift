@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 import ARNTransitionAnimator
 
+// MEMO: アニメーションを適用するためのカスタムクラスを定義する
+// https://github.com/xxxAIRINxxx/ARNZoomImageTransition
+
 // MEMO: TransitionAnimatableはライブラリ「ARNTransitionAnimator」で提供されるもの
+// https://github.com/xxxAIRINxxx/ARNTransitionAnimator
 
 final class ZoomImageTransition<T: UIViewController> : TransitionAnimatable where T : ZoomImageTransitionProtocol {
 

@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+// MEMO: UIViewControllerを継承したクラスを定義してZoomImageTransitionProtocolのメソッドを利用できる形にする
+// https://github.com/xxxAIRINxxx/ARNZoomImageTransition
+
 class ZoomImageTransitionViewController: UIViewController, ZoomImageTransitionProtocol {}
 
 // MARK: - ZoomImageTransitionProtocol

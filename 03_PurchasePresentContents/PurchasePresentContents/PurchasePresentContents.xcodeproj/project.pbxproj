@@ -17,7 +17,6 @@
 		DE12ED2D22101C1D008DFBFB /* PurchasePresentContentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12ED2C22101C1D008DFBFB /* PurchasePresentContentsUITests.swift */; };
 		DE1E04772247672A00EB8E8B /* InformationDetailFormButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04762247672A00EB8E8B /* InformationDetailFormButtonView.swift */; };
 		DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E04782247674900EB8E8B /* InformationDetailFormButtonView.xib */; };
-		DE1E047D2248ACB700EB8E8B /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E047C2248ACB700EB8E8B /* APIRequestManager.swift */; };
 		DE1E04842248AD7700EB8E8B /* DetailGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04832248AD7700EB8E8B /* DetailGiftViewController.swift */; };
 		DE1E04872248ADD000EB8E8B /* DetailCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04862248ADD000EB8E8B /* DetailCommentViewController.swift */; };
 		DE1E048A2248AE0100EB8E8B /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1E04892248AE0100EB8E8B /* Detail.storyboard */; };
@@ -55,6 +54,10 @@
 		DE6A403622461DAE00E724E5 /* InformationDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6A403522461DAE00E724E5 /* InformationDetailHeaderView.xib */; };
 		DE6A40382246297800E724E5 /* InformationDetailDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6A40372246297800E724E5 /* InformationDetailDescriptionView.xib */; };
 		DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A40392246298E00E724E5 /* InformationDetailDescriptionView.swift */; };
+		DEC2C8F222492E9B001236C1 /* DetailCloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8F122492E9B001236C1 /* DetailCloseButtonView.swift */; };
+		DEC2C8F422492EA8001236C1 /* DetailCloseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C8F322492EA8001236C1 /* DetailCloseButtonView.xib */; };
+		DEC2C8F6224939BB001236C1 /* CommentFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8F5224939BB001236C1 /* CommentFloatingPanelLayout.swift */; };
+		DEC2C8F822493ABB001236C1 /* CommentFloatingPanelBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C8F722493ABB001236C1 /* CommentFloatingPanelBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +96,6 @@
 		DE12ED2E22101C1D008DFBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE1E04762247672A00EB8E8B /* InformationDetailFormButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailFormButtonView.swift; sourceTree = "<group>"; };
 		DE1E04782247674900EB8E8B /* InformationDetailFormButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationDetailFormButtonView.xib; sourceTree = "<group>"; };
-		DE1E047C2248ACB700EB8E8B /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		DE1E04832248AD7700EB8E8B /* DetailGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailGiftViewController.swift; path = PurchasePresentContents/ViewController/Detail/DetailGiftViewController.swift; sourceTree = SOURCE_ROOT; };
 		DE1E04862248ADD000EB8E8B /* DetailCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCommentViewController.swift; path = PurchasePresentContents/ViewController/Detail/DetailCommentViewController.swift; sourceTree = SOURCE_ROOT; };
 		DE1E04892248AE0100EB8E8B /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
@@ -131,6 +133,10 @@
 		DE6A403522461DAE00E724E5 /* InformationDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationDetailHeaderView.xib; sourceTree = "<group>"; };
 		DE6A40372246297800E724E5 /* InformationDetailDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationDetailDescriptionView.xib; sourceTree = "<group>"; };
 		DE6A40392246298E00E724E5 /* InformationDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailDescriptionView.swift; sourceTree = "<group>"; };
+		DEC2C8F122492E9B001236C1 /* DetailCloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCloseButtonView.swift; sourceTree = "<group>"; };
+		DEC2C8F322492EA8001236C1 /* DetailCloseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCloseButtonView.xib; sourceTree = "<group>"; };
+		DEC2C8F5224939BB001236C1 /* CommentFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFloatingPanelLayout.swift; sourceTree = "<group>"; };
+		DEC2C8F722493ABB001236C1 /* CommentFloatingPanelBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFloatingPanelBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +210,6 @@
 				DE12ED1822101C1C008DFBFB /* Info.plist */,
 				DE12ED0C22101C1B008DFBFB /* AppDelegate.swift */,
 				DE12ED1322101C1C008DFBFB /* Assets.xcassets */,
-				DE62D48F223CC3F900351731 /* APIManager */,
 				DE62D4B9223F702300351731 /* Enum */,
 				DE62D48D223CC3B400351731 /* Extensions */,
 				DE62D48C223CC3AA00351731 /* Entity */,
@@ -261,11 +266,13 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		DE1E04962248DDE600EB8E8B /* FloatingPanel */ = {
+		DE1E04962248DDE600EB8E8B /* CommentFloatingPanel */ = {
 			isa = PBXGroup;
 			children = (
+				DEC2C8F5224939BB001236C1 /* CommentFloatingPanelLayout.swift */,
+				DEC2C8F722493ABB001236C1 /* CommentFloatingPanelBehavior.swift */,
 			);
-			path = FloatingPanel;
+			path = CommentFloatingPanel;
 			sourceTree = "<group>";
 		};
 		DE1E04972248DE4500EB8E8B /* ZoomImageTransition */ = {
@@ -348,14 +355,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		DE62D48F223CC3F900351731 /* APIManager */ = {
-			isa = PBXGroup;
-			children = (
-				DE1E047C2248ACB700EB8E8B /* APIRequestManager.swift */,
-			);
-			path = APIManager;
-			sourceTree = "<group>";
-		};
 		DE62D4A3223CD39F00351731 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1E04972248DE4500EB8E8B /* ZoomImageTransition */,
-				DE1E04962248DDE600EB8E8B /* FloatingPanel */,
+				DE1E04962248DDE600EB8E8B /* CommentFloatingPanel */,
 				DE62D4AE223CD76B00351731 /* CustomViewBase.swift */,
 			);
 			path = Class;
@@ -397,6 +396,7 @@
 		DE62D4B1223CDA9700351731 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEC2C8F022492E81001236C1 /* DetailCloseButtonView */,
 				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
 				DE6A403222461CEC00E724E5 /* InformationDetailFormButtonView */,
 				DE6A403122461C8E00E724E5 /* InformationDetailDescriptionView */,
@@ -499,6 +499,15 @@
 				DE1E04782247674900EB8E8B /* InformationDetailFormButtonView.xib */,
 			);
 			path = InformationDetailFormButtonView;
+			sourceTree = "<group>";
+		};
+		DEC2C8F022492E81001236C1 /* DetailCloseButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2C8F122492E9B001236C1 /* DetailCloseButtonView.swift */,
+				DEC2C8F322492EA8001236C1 /* DetailCloseButtonView.xib */,
+			);
+			path = DetailCloseButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,6 +629,7 @@
 				DE6A403622461DAE00E724E5 /* InformationDetailHeaderView.xib in Resources */,
 				DE1E048A2248AE0100EB8E8B /* Detail.storyboard in Resources */,
 				DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */,
+				DEC2C8F422492EA8001236C1 /* DetailCloseButtonView.xib in Resources */,
 				DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,8 +724,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC2C8F6224939BB001236C1 /* CommentFloatingPanelLayout.swift in Sources */,
 				DE62D4BD223F7D5B00351731 /* MainSectionViewController.swift in Sources */,
 				DE1E04992248E19A00EB8E8B /* GiftPresenter.swift in Sources */,
+				DEC2C8F222492E9B001236C1 /* DetailCloseButtonView.swift in Sources */,
 				DE1E04A12248F22000EB8E8B /* ZoomImageTransition.swift in Sources */,
 				DE62D4AF223CD76B00351731 /* CustomViewBase.swift in Sources */,
 				DE1E04772247672A00EB8E8B /* InformationDetailFormButtonView.swift in Sources */,
@@ -725,6 +737,7 @@
 				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
 				DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
+				DEC2C8F822493ABB001236C1 /* CommentFloatingPanelBehavior.swift in Sources */,
 				DE1E04952248C64F00EB8E8B /* CategoryType.swift in Sources */,
 				DE62D4BB223F706000351731 /* MainSectionType.swift in Sources */,
 				DE12ED0F22101C1B008DFBFB /* MainViewController.swift in Sources */,
@@ -732,7 +745,6 @@
 				DE62D4D02240BA5900351731 /* GalleryEntity.swift in Sources */,
 				DE6A4027224600E300E724E5 /* InformationButtonView.swift in Sources */,
 				DE12ED0D22101C1B008DFBFB /* AppDelegate.swift in Sources */,
-				DE1E047D2248ACB700EB8E8B /* APIRequestManager.swift in Sources */,
 				DE6A403A2246298E00E724E5 /* InformationDetailDescriptionView.swift in Sources */,
 				DE62D4DA2240DC0F00351731 /* GiftEntity.swift in Sources */,
 				DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */,

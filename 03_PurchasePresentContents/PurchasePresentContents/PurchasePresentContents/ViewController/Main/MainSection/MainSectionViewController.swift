@@ -9,9 +9,9 @@
 import UIKit
 
 protocol MainSectionDelegate: NSObjectProtocol {
-    
-    //
-    func handleSelectedImage(_ imageView: UIImageView)
+
+    // UIImageViewをプロトコル適用先の画面へ引き渡す
+    func serveSelectedImageView(_ imageView: UIImageView)
 }
 
 final class MainSectionViewController: UIViewController {
@@ -57,12 +57,9 @@ extension MainSectionViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // 選択されたセルを元にUIPageViewControllerを配置している画面へ引き渡す
         let cell = collectionView.cellForItem(at: indexPath) as! MainCollectionViewCell
-        self.sectionDelegate?.handleSelectedImage(cell.giftImageView)
-
-        // TODO: 画面遷移
-
-
+        self.sectionDelegate?.serveSelectedImageView(cell.giftImageView)
     }
 }
 

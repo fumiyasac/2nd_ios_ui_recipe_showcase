@@ -99,8 +99,10 @@ final class MainViewController: ZoomImageTransitionViewController {
         // UIPageViewControllerで表示したいViewControllerの一覧を取得する
         let _ = MainSectionType.allCases.map{
             let targetViewController = $0.getViewController()
-            targetViewController.sectionDelegate = self
             targetViewController.view.tag = $0.rawValue
+
+            // MEMO: MainSectionViewControllerで定義したプロトコルを適用する
+            targetViewController.sectionDelegate = self
             targetViewControllerLists.append(targetViewController)
         }
 
@@ -149,20 +151,25 @@ final class MainViewController: ZoomImageTransitionViewController {
 
 extension MainViewController: MainSectionDelegate {
 
-    func handleSelectedImage(_ imageView: UIImageView) {
+    // UIImageViewをプロトコル適用先の画面へ引き渡す
+    func serveSelectedImageView(_ imageView: UIImageView) {
 
-        //
-        selectedImageView = imageView
-
+        // 遷移先のViewControllerを作成しUIPageViewControllerで選択されたUIImageViewを反映する
         let vc = DetailGiftViewController.instantiate()
         vc.detailGiftImageView = imageView
 
+        // カスタムトランジションを実行するためのクラスを作成する
         let zoomImageTransition = ZoomImageTransition<ZoomImageTransitionViewController>(rootVC: self, modalVC: vc, rootNavigation: self.navigationController)
-        let zoomImageAnimator = ARNTransitionAnimator(duration: 0.36, animation: zoomImageTransition)
+        let zoomImageAnimator = ARNTransitionAnimator(duration: 0.28, animation: zoomImageTransition)
 
+        // 遷移先のViewControllerを作成する
         vc.transitioningDelegate = zoomImageAnimator
-        transionAnimator = zoomImageAnimator
 
+        // 必要な値をアニメーションを実現する際に必要な変数へセットする
+        transionAnimator = zoomImageAnimator
+        selectedImageView = imageView
+
+        // Modalの画面遷移を実行する
         self.present(vc, animated: true, completion: nil)
     }
 }
