@@ -11,7 +11,7 @@ import AnimatedCollectionViewLayout
 
 final class GalleryViewController: UIViewController {
 
-    // サンプル用の食べ物(寿司)データを格納するための変数
+    // サンプル用の写真情報データを格納するための変数
     private var galleryEntityList: [GalleryEntity] = [] {
         didSet {
             self.galleryCollectionView.reloadData()

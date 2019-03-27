@@ -144,6 +144,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Bg-DS-HiI"/>
                     </view>
+                    <connections>
+                        <outlet property="detailCommentTableView" destination="caE-Ui-90W" id="zbe-df-SL0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cek-ag-8rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

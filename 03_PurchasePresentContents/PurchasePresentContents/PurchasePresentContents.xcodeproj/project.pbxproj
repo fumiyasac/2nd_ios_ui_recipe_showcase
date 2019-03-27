@@ -68,6 +68,7 @@
 		DEC2C90D224A86DD001236C1 /* GiftCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */; };
 		DEC2C911224A87E8001236C1 /* GiftCommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */; };
 		DEC2C914224B3172001236C1 /* galleries.json in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C913224B3171001236C1 /* galleries.json */; };
+		DECBBC12224BE88E00D2474A /* gift_comments.json in Resources */ = {isa = PBXBuildFile; fileRef = DECBBC11224BE88E00D2474A /* gift_comments.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		DEC2C90C224A86DD001236C1 /* GiftCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentEntity.swift; sourceTree = "<group>"; };
 		DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentPresenter.swift; sourceTree = "<group>"; };
 		DEC2C913224B3171001236C1 /* galleries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = galleries.json; sourceTree = "<group>"; };
+		DECBBC11224BE88E00D2474A /* gift_comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_comments.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -575,6 +577,7 @@
 		DEC2C912224AB5A2001236C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DECBBC11224BE88E00D2474A /* gift_comments.json */,
 				DEC2C913224B3171001236C1 /* galleries.json */,
 			);
 			path = Data;
@@ -703,6 +706,7 @@
 				DE12ED1222101C1B008DFBFB /* Main.storyboard in Resources */,
 				DEC2C8FE224A1677001236C1 /* GiftCommentTableViewCell.xib in Resources */,
 				DEC2C8F422492EA8001236C1 /* DetailCloseButtonView.xib in Resources */,
+				DECBBC12224BE88E00D2474A /* gift_comments.json in Resources */,
 				DEC2C904224A2271001236C1 /* DetailGiftInformationView.xib in Resources */,
 				DE1E04792247674900EB8E8B /* InformationDetailFormButtonView.xib in Resources */,
 			);

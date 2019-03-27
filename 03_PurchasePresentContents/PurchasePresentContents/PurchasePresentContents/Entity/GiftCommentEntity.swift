@@ -13,7 +13,7 @@ struct GiftCommentEntity: Decodable {
 
     let id: Int
     let author: String
-    let rating: String
+    let rating: Double
     let comment: String
 
     // MARK: - Enum
@@ -35,7 +35,7 @@ struct GiftCommentEntity: Decodable {
         // JSONの配列内の要素にある値をDecodeして初期化する
         self.id = try container.decode(Int.self, forKey: .id)
         self.author = try container.decode(String.self, forKey: .author)
-        self.rating = try container.decode(String.self, forKey: .rating)
+        self.rating = try container.decode(Double.self, forKey: .rating)
         self.comment = try container.decode(String.self, forKey: .comment)
     }
 }
