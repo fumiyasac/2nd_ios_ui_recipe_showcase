@@ -28,6 +28,19 @@ enum MainSectionType: Int, CaseIterable {
         }
     }
 
+    func getJsonFileName() -> String {
+        switch self {
+        case .new:
+            return "gift_new"
+        case .special:
+            return "gift_special"
+        case .monthly:
+            return "gift_monthly"
+        case .recommend:
+            return "gift_recommend"
+        }
+    }
+
     func getViewController() -> MainSectionViewController {
         return MainSectionViewController.instantiate()
     }
