@@ -30,7 +30,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srd-mV-coy">
-                                <rect key="frame" x="8" y="63" width="224" height="66"/>
+                                <rect key="frame" x="16" y="18" width="208" height="90"/>
                                 <attributedString key="attributedText">
                                     <fragment content="サムネイル画像のタイトルが入ります。サムネイル画像のタイトルが入ります。">
                                         <attributes>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqA-2a-x4O">
-                                <rect key="frame" x="8" y="143" width="224" height="33"/>
+                                <rect key="frame" x="16" y="124" width="208" height="52"/>
                                 <attributedString key="attributedText">
                                     <fragment content="サムネイル画像の概要が入ります。サムネイル画像の概要が入ります。">
                                         <attributes>
@@ -58,19 +58,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qqA-2a-x4O" secondAttribute="trailing" constant="8" id="7q3-da-v7W"/>
+                            <constraint firstAttribute="trailing" secondItem="qqA-2a-x4O" secondAttribute="trailing" constant="16" id="7q3-da-v7W"/>
                             <constraint firstAttribute="trailing" secondItem="I9T-9k-TEg" secondAttribute="trailing" id="7rP-F1-BmI"/>
                             <constraint firstItem="I9T-9k-TEg" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" id="DHC-NE-Sjt"/>
-                            <constraint firstAttribute="trailing" secondItem="srd-mV-coy" secondAttribute="trailing" constant="8" id="FFf-v7-noE"/>
+                            <constraint firstAttribute="trailing" secondItem="srd-mV-coy" secondAttribute="trailing" constant="16" id="FFf-v7-noE"/>
                             <constraint firstItem="I9T-9k-TEg" firstAttribute="top" secondItem="drU-O0-Kjy" secondAttribute="top" id="FLC-EP-WIk"/>
-                            <constraint firstItem="srd-mV-coy" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="8" id="JcM-kf-eIV"/>
+                            <constraint firstItem="srd-mV-coy" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="16" id="JcM-kf-eIV"/>
                             <constraint firstAttribute="bottom" secondItem="I9T-9k-TEg" secondAttribute="bottom" id="QqQ-lX-fbq"/>
-                            <constraint firstItem="qqA-2a-x4O" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="8" id="RWh-5H-l8j"/>
+                            <constraint firstItem="qqA-2a-x4O" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="16" id="RWh-5H-l8j"/>
                             <constraint firstItem="Fd6-9E-UKn" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" id="ccU-Wt-Pnu"/>
                             <constraint firstAttribute="bottom" secondItem="Fd6-9E-UKn" secondAttribute="bottom" id="ei2-FL-qIC"/>
                             <constraint firstAttribute="trailing" secondItem="Fd6-9E-UKn" secondAttribute="trailing" id="ivP-S0-8Ea"/>
                             <constraint firstItem="Fd6-9E-UKn" firstAttribute="top" secondItem="drU-O0-Kjy" secondAttribute="top" id="jbS-yp-oI3"/>
-                            <constraint firstItem="qqA-2a-x4O" firstAttribute="top" secondItem="srd-mV-coy" secondAttribute="bottom" constant="14" id="r9y-gY-nec"/>
+                            <constraint firstItem="qqA-2a-x4O" firstAttribute="top" secondItem="srd-mV-coy" secondAttribute="bottom" constant="16" id="r9y-gY-nec"/>
                             <constraint firstAttribute="bottom" secondItem="qqA-2a-x4O" secondAttribute="bottom" constant="64" id="x3k-YG-J7C"/>
                         </constraints>
                     </view>
