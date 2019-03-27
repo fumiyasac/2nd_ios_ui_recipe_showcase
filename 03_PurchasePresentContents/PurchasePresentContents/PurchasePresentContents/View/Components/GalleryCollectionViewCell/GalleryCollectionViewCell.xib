@@ -25,26 +25,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9T-9k-TEg">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                             </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fd6-9E-UKn">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srd-mV-coy">
-                                <rect key="frame" x="8" y="168" width="224" height="27"/>
+                                <rect key="frame" x="8" y="63" width="224" height="66"/>
                                 <attributedString key="attributedText">
                                     <fragment content="サムネイル画像のタイトルが入ります。サムネイル画像のタイトルが入ります。">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="11" name="HiraginoSans-W6"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="18" name="HiraginoSans-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqA-2a-x4O">
-                                <rect key="frame" x="8" y="203" width="224" height="25"/>
+                                <rect key="frame" x="8" y="143" width="224" height="33"/>
                                 <attributedString key="attributedText">
                                     <fragment content="サムネイル画像の概要が入ります。サムネイル画像の概要が入ります。">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="10" name="HiraginoSans-W3"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -62,8 +66,12 @@
                             <constraint firstItem="srd-mV-coy" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="8" id="JcM-kf-eIV"/>
                             <constraint firstAttribute="bottom" secondItem="I9T-9k-TEg" secondAttribute="bottom" id="QqQ-lX-fbq"/>
                             <constraint firstItem="qqA-2a-x4O" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" constant="8" id="RWh-5H-l8j"/>
-                            <constraint firstItem="qqA-2a-x4O" firstAttribute="top" secondItem="srd-mV-coy" secondAttribute="bottom" constant="8" id="r9y-gY-nec"/>
-                            <constraint firstAttribute="bottom" secondItem="qqA-2a-x4O" secondAttribute="bottom" constant="12" id="x3k-YG-J7C"/>
+                            <constraint firstItem="Fd6-9E-UKn" firstAttribute="leading" secondItem="drU-O0-Kjy" secondAttribute="leading" id="ccU-Wt-Pnu"/>
+                            <constraint firstAttribute="bottom" secondItem="Fd6-9E-UKn" secondAttribute="bottom" id="ei2-FL-qIC"/>
+                            <constraint firstAttribute="trailing" secondItem="Fd6-9E-UKn" secondAttribute="trailing" id="ivP-S0-8Ea"/>
+                            <constraint firstItem="Fd6-9E-UKn" firstAttribute="top" secondItem="drU-O0-Kjy" secondAttribute="top" id="jbS-yp-oI3"/>
+                            <constraint firstItem="qqA-2a-x4O" firstAttribute="top" secondItem="srd-mV-coy" secondAttribute="bottom" constant="14" id="r9y-gY-nec"/>
+                            <constraint firstAttribute="bottom" secondItem="qqA-2a-x4O" secondAttribute="bottom" constant="64" id="x3k-YG-J7C"/>
                         </constraints>
                     </view>
                 </subviews>

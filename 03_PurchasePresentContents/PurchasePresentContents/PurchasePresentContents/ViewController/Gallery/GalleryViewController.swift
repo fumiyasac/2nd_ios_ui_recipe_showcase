@@ -11,6 +11,16 @@ import AnimatedCollectionViewLayout
 
 final class GalleryViewController: UIViewController {
 
+    // サンプル用の食べ物(寿司)データを格納するための変数
+    private var galleryEntityList: [GalleryEntity] = [] {
+        didSet {
+            self.galleryCollectionView.reloadData()
+        }
+    }
+
+    // GalleryPresenterに設定したプロトコルを適用するための変数
+    private var presenter: GalleryPresenter!
+
     @IBOutlet weak private var galleryCollectionView: UICollectionView!
 
     // MARK: - Override
@@ -19,6 +29,7 @@ final class GalleryViewController: UIViewController {
         super.viewDidLoad()
 
         setupGalleryCollectionView()
+        setupGalleryPresenter()
     }
 
     // MARK: - @IBAction
@@ -50,6 +61,20 @@ final class GalleryViewController: UIViewController {
         layout.scrollDirection = .horizontal
         galleryCollectionView.collectionViewLayout = layout
     }
+
+    private func setupGalleryPresenter() {
+        presenter = GalleryPresenter(presenter: self)
+        presenter.getGalleries()
+    }
+}
+
+// MARK: - GalleryPresenterProtocol
+
+extension GalleryViewController: GalleryPresenterProtocol {
+
+    func serveGalleryList(_ galleries: [GalleryEntity]) {
+        galleryEntityList = galleries
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -61,11 +86,12 @@ extension GalleryViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return galleryEntityList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCustomCell(with: GalleryCollectionViewCell.self, indexPath: indexPath)
+        cell.setCell(galleryEntityList[indexPath.row])
         return cell
     }
 }
@@ -74,25 +100,26 @@ extension GalleryViewController: UICollectionViewDataSource {
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
 
-    //
+    // セルのサイズを設定する
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
 
-    //
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .zero
+    // セルの垂直方向の余白(margin)を設定する
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 
-    //
+    // セルの水平方向の余白(margin)を設定する
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
 
-    //
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+    // セル内のアイテム間の余白(margin)調整を行う
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
     }
+
 }
 
 // MARK: - StoryboardInstantiatable

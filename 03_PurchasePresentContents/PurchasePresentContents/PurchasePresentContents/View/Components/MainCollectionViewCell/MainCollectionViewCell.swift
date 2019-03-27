@@ -49,9 +49,23 @@ final class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Function
 
     func setCell() {
-        setSkeletonableStatus(false)
-        giftImageView.image = UIImage(named: "sample_image")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.64, execute: {
+            self.giftImageView.image = UIImage(named: "sample_image")
+            self.setSkeletonableStatus(false)
+        })
     }
+
+    /*
+    func setCell(_ gift: GiftEntity) {
+
+        //
+
+        // 0.64秒後にスケルトン表示からデータの表示に切り替える
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.64, execute: {
+            self.setSkeletonableStatus(false)
+        })
+    }
+    */
 
     // MARK: - Private Function
 
