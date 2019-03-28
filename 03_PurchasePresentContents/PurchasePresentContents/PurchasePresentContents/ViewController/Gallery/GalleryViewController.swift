@@ -57,7 +57,7 @@ final class GalleryViewController: UIViewController {
         // UICollectionViewに付与するアニメーションに関する設定
         // MEMO: AnimatedCollectionViewLayoutでカードが回転するアニメーションを加える
         let layout = AnimatedCollectionViewLayout()
-        layout.animator = RotateInOutAttributesAnimator()
+        layout.animator = CubeAttributesAnimator()
         layout.scrollDirection = .horizontal
         galleryCollectionView.collectionViewLayout = layout
     }

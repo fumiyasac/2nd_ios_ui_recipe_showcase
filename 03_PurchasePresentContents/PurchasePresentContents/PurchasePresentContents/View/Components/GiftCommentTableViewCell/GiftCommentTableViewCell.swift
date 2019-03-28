@@ -20,6 +20,7 @@ final class GiftCommentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        // 特に画面遷移がないのでアクセサリとセレクションを非表示にする
         self.accessoryType = .none
         self.selectionStyle = .none
     }

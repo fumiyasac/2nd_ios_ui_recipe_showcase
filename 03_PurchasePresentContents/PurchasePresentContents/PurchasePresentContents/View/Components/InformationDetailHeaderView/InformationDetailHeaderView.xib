@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwT-Yb-Tjn">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="information_title" translatesAutoresizingMaskIntoConstraints="NO" id="vwT-Yb-Tjn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                 </imageView>
                 <view alpha="0.35999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohn-jT-2aF">
@@ -108,4 +108,7 @@
             <point key="canvasLocation" x="53.600000000000001" y="111.54422788605699"/>
         </view>
     </objects>
+    <resources>
+        <image name="information_title" width="600" height="400"/>
+    </resources>
 </document>

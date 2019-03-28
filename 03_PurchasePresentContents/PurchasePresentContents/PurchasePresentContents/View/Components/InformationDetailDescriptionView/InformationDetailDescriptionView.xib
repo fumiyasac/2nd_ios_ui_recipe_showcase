@@ -53,7 +53,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2J8-W3-YbZ">
                                     <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TOr-Xd-eZi">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deli" translatesAutoresizingMaskIntoConstraints="NO" id="TOr-Xd-eZi">
                                             <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
@@ -78,7 +78,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-fb-saY">
                                     <rect key="frame" x="0.0" y="117" width="172.5" height="115"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Srl-ga-rr4">
+                                        <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="household" translatesAutoresizingMaskIntoConstraints="NO" id="Srl-ga-rr4">
                                             <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
@@ -103,7 +103,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYn-YB-9PH">
                                     <rect key="frame" x="0.0" y="234" width="172.5" height="115"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-UQ-fSk">
+                                        <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amenity" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-UQ-fSk">
                                             <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
@@ -133,7 +133,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipq-zs-fwk">
                                     <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vk7-I9-bzj">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clothes" translatesAutoresizingMaskIntoConstraints="NO" id="Vk7-I9-bzj">
                                             <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
@@ -158,7 +158,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krc-QD-Mui">
                                     <rect key="frame" x="0.0" y="117" width="172.5" height="115"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-1g-3mN">
+                                        <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interior" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-1g-3mN">
                                             <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
@@ -183,7 +183,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEU-gU-vCI">
                                     <rect key="frame" x="0.0" y="234" width="172.5" height="115"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gN-bF-qVZ">
+                                        <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="9gN-bF-qVZ">
                                             <rect key="frame" x="0.0" y="0.0" width="172.5" height="115"/>
                                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
@@ -228,4 +228,12 @@
             <point key="canvasLocation" x="53.600000000000001" y="111.0944527736132"/>
         </view>
     </objects>
+    <resources>
+        <image name="amenity" width="600" height="400"/>
+        <image name="clothes" width="600" height="400"/>
+        <image name="deli" width="600" height="400"/>
+        <image name="flower" width="600" height="400"/>
+        <image name="household" width="600" height="400"/>
+        <image name="interior" width="600" height="400"/>
+    </resources>
 </document>

@@ -30,8 +30,6 @@
 		DE1E04A12248F22000EB8E8B /* ZoomImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E04A02248F22000EB8E8B /* ZoomImageTransition.swift */; };
 		DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D496223CC70800351731 /* UICollectionViewExtension.swift */; };
 		DE62D49D223CD2BF00351731 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */; };
-		DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62D49E223CD33F00351731 /* Purchase.storyboard */; };
-		DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4A1223CD38400351731 /* PurchaseViewController.swift */; };
 		DE62D4A7223CD56000351731 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4A6223CD56000351731 /* UIColorExtension.swift */; };
 		DE62D4A9223CD5E000351731 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4A8223CD5E000351731 /* UITableViewExtension.swift */; };
 		DE62D4AB223CD61400351731 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62D4AA223CD61400351731 /* UIViewControllerExtension.swift */; };
@@ -120,8 +118,6 @@
 		DE1E04A02248F22000EB8E8B /* ZoomImageTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageTransition.swift; sourceTree = "<group>"; };
 		DE62D496223CC70800351731 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DE62D49C223CD2BE00351731 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
-		DE62D49F223CD33F00351731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Purchase.storyboard; sourceTree = "<group>"; };
-		DE62D4A1223CD38400351731 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		DE62D4A6223CD56000351731 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DE62D4A8223CD5E000351731 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DE62D4AA223CD61400351731 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -324,7 +320,6 @@
 				DE1E04882248ADE600EB8E8B /* Detail */,
 				DE62D4C4223FAE9F00351731 /* Gallery */,
 				DE62D4A4223CD3AA00351731 /* Main */,
-				DE62D4A5223CD3B600351731 /* Purchase */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -335,7 +330,6 @@
 				DE1E04932248C58500EB8E8B /* Detail */,
 				DE62D4C9223FAF3600351731 /* Gallery */,
 				DE62D4A3223CD39F00351731 /* Main */,
-				DE62D4B2223CDC8900351731 /* Purchase */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -401,14 +395,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		DE62D4A5223CD3B600351731 /* Purchase */ = {
-			isa = PBXGroup;
-			children = (
-				DE62D49E223CD33F00351731 /* Purchase.storyboard */,
-			);
-			path = Purchase;
-			sourceTree = "<group>";
-		};
 		DE62D4B0223CDA8E00351731 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,14 +420,6 @@
 				DE1E048B2248BDD300EB8E8B /* MainCollectionViewCell */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		DE62D4B2223CDC8900351731 /* Purchase */ = {
-			isa = PBXGroup;
-			children = (
-				DE62D4A1223CD38400351731 /* PurchaseViewController.swift */,
-			);
-			path = Purchase;
 			sourceTree = "<group>";
 		};
 		DE62D4B8223F590E00351731 /* MainSection */ = {
@@ -693,7 +671,6 @@
 				DE62D4C8223FAF2400351731 /* Gallery.storyboard in Resources */,
 				DE6A4029224600F900E724E5 /* InformationButtonView.xib in Resources */,
 				DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */,
-				DE62D4A0223CD33F00351731 /* Purchase.storyboard in Resources */,
 				DE1E048F2248BDF900EB8E8B /* MainCollectionViewCell.xib in Resources */,
 				DE6A40382246297800E724E5 /* InformationDetailDescriptionView.xib in Resources */,
 				DE12ED1422101C1C008DFBFB /* Assets.xcassets in Resources */,
@@ -812,7 +789,6 @@
 				DE62D4CC223FC15200351731 /* GalleryCollectionViewCell.swift in Sources */,
 				DE6A402F22460CA700E724E5 /* MainInformationViewController.swift in Sources */,
 				DE1E048E2248BDF900EB8E8B /* MainCollectionViewCell.swift in Sources */,
-				DE62D4A2223CD38400351731 /* PurchaseViewController.swift in Sources */,
 				DE62D4C6223FAEF700351731 /* GalleryViewController.swift in Sources */,
 				DEC2C906224A227C001236C1 /* DetailGiftInformationView.swift in Sources */,
 				DE62D497223CC70800351731 /* UICollectionViewExtension.swift in Sources */,
@@ -890,14 +866,6 @@
 				DE12ED1622101C1C008DFBFB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DE62D49E223CD33F00351731 /* Purchase.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE62D49F223CD33F00351731 /* Base */,
-			);
-			name = Purchase.storyboard;
 			sourceTree = "<group>";
 		};
 		DE62D4B5223E27D100351731 /* MainSection.storyboard */ = {

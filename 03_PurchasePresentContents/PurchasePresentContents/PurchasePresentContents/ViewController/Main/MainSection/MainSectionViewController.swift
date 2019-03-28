@@ -28,6 +28,14 @@ final class MainSectionViewController: UIViewController {
         setupMainSectionCollectionView()
     }
 
+    // MARK: - Function
+
+    // セクション属性(MainSectionType)に該当するデータを画面に反映する
+    // MEMO: このメソッドはUIPageViewControllerを配置している場所から実行する
+    func executeGetGiftListBy(mainSectionType: MainSectionType) {
+        
+    }
+
     // MARK: - Private Function
 
     private func setupMainSectionCollectionView() {
