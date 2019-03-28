@@ -11,6 +11,9 @@ import UIKit
 
 final class DetailGiftInformationView: CustomViewBase {
 
+    @IBOutlet weak private var nameLabel: UILabel!
+    @IBOutlet weak private var priceLabel: UILabel!
+    @IBOutlet weak private var categoryLabel: UILabel!
     @IBOutlet weak private var purchaseGiftButton: UIButton!
 
     // MARK: - Initializer
@@ -25,6 +28,23 @@ final class DetailGiftInformationView: CustomViewBase {
         super.init(coder: aDecoder)
 
         setupPurchaseGiftButton()
+    }
+
+    // MARK: - Function
+
+    func setGiftData(_ giftEntity: GiftEntity) {
+
+        // 商品名表示の設定
+        nameLabel.text = giftEntity.giftName
+
+        // 値段表示の設定
+        priceLabel.text = "PRICE: \(giftEntity.price)"
+
+        // カテゴリー表示の設定
+        if let category = CategoryType(rawValue: giftEntity.categoryId) {
+            categoryLabel.text = "CATEGORY: \(category.getTitle())"
+            categoryLabel.textColor = category.getColor()
+        }
     }
 
     // MARK: - Private Function

@@ -67,6 +67,10 @@
 		DEC2C911224A87E8001236C1 /* GiftCommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */; };
 		DEC2C914224B3172001236C1 /* galleries.json in Resources */ = {isa = PBXBuildFile; fileRef = DEC2C913224B3171001236C1 /* galleries.json */; };
 		DECBBC12224BE88E00D2474A /* gift_comments.json in Resources */ = {isa = PBXBuildFile; fileRef = DECBBC11224BE88E00D2474A /* gift_comments.json */; };
+		DECBBC17224CB6F900D2474A /* gift_new.json in Resources */ = {isa = PBXBuildFile; fileRef = DECBBC13224CB6F700D2474A /* gift_new.json */; };
+		DECBBC18224CB6F900D2474A /* gift_monthly.json in Resources */ = {isa = PBXBuildFile; fileRef = DECBBC14224CB6F700D2474A /* gift_monthly.json */; };
+		DECBBC19224CB6F900D2474A /* gift_special.json in Resources */ = {isa = PBXBuildFile; fileRef = DECBBC15224CB6F800D2474A /* gift_special.json */; };
+		DECBBC1A224CB6F900D2474A /* gift_recommend.json in Resources */ = {isa = PBXBuildFile; fileRef = DECBBC16224CB6F800D2474A /* gift_recommend.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +159,10 @@
 		DEC2C910224A87E8001236C1 /* GiftCommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCommentPresenter.swift; sourceTree = "<group>"; };
 		DEC2C913224B3171001236C1 /* galleries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = galleries.json; sourceTree = "<group>"; };
 		DECBBC11224BE88E00D2474A /* gift_comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_comments.json; sourceTree = "<group>"; };
+		DECBBC13224CB6F700D2474A /* gift_new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_new.json; sourceTree = "<group>"; };
+		DECBBC14224CB6F700D2474A /* gift_monthly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_monthly.json; sourceTree = "<group>"; };
+		DECBBC15224CB6F800D2474A /* gift_special.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_special.json; sourceTree = "<group>"; };
+		DECBBC16224CB6F800D2474A /* gift_recommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gift_recommend.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +563,10 @@
 		DEC2C912224AB5A2001236C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DECBBC14224CB6F700D2474A /* gift_monthly.json */,
+				DECBBC13224CB6F700D2474A /* gift_new.json */,
+				DECBBC16224CB6F800D2474A /* gift_recommend.json */,
+				DECBBC15224CB6F800D2474A /* gift_special.json */,
 				DECBBC11224BE88E00D2474A /* gift_comments.json */,
 				DEC2C913224B3171001236C1 /* galleries.json */,
 			);
@@ -668,13 +680,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE62D4B7223E27D100351731 /* MainSection.storyboard in Resources */,
+				DECBBC1A224CB6F900D2474A /* gift_recommend.json in Resources */,
 				DE62D4C8223FAF2400351731 /* Gallery.storyboard in Resources */,
 				DE6A4029224600F900E724E5 /* InformationButtonView.xib in Resources */,
 				DE12ED1722101C1C008DFBFB /* LaunchScreen.storyboard in Resources */,
 				DE1E048F2248BDF900EB8E8B /* MainCollectionViewCell.xib in Resources */,
+				DECBBC19224CB6F900D2474A /* gift_special.json in Resources */,
 				DE6A40382246297800E724E5 /* InformationDetailDescriptionView.xib in Resources */,
 				DE12ED1422101C1C008DFBFB /* Assets.xcassets in Resources */,
 				DE6A402C22460C6300E724E5 /* MainInformation.storyboard in Resources */,
+				DECBBC17224CB6F900D2474A /* gift_new.json in Resources */,
+				DECBBC18224CB6F900D2474A /* gift_monthly.json in Resources */,
 				DE62D4CD223FC15200351731 /* GalleryCollectionViewCell.xib in Resources */,
 				DE6A403622461DAE00E724E5 /* InformationDetailHeaderView.xib in Resources */,
 				DE1E048A2248AE0100EB8E8B /* Detail.storyboard in Resources */,

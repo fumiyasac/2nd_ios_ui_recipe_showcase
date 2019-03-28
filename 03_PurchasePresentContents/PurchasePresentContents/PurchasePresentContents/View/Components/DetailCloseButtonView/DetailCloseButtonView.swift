@@ -15,7 +15,7 @@ final class DetailCloseButtonView: CustomViewBase {
     var closeDetailButtonAction: (() -> ())?
 
     private let iconSize: CGSize = CGSize(width: 32.0, height: 32.0)
-    private let iconColor: UIColor = .white
+    private let iconColor: UIColor = UIColor(code: "#ffae00")
 
     @IBOutlet weak private var iconImageView: UIImageView!
     @IBOutlet weak private var closeDetailButton: UIButton!

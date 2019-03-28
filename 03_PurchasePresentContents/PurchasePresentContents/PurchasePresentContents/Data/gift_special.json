@@ -1,0 +1,72 @@
+[
+    {
+        "id": 11,
+        "price": "3000",
+        "gift_name": "旅行用アメニティセット",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift11.jpg"
+    },
+    {
+        "id": 12,
+        "price": "6000",
+        "gift_name": "産地直送メロン",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift12.jpg"
+    },
+    {
+        "id": 13,
+        "price": "3000",
+        "gift_name": "チャーシュー3本",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift13.jpg"
+    },
+    {
+        "id": 14,
+        "price": "2500",
+        "gift_name": "新生活お風呂掃除セット",
+        "category_id": 5,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift14.jpg"
+    },
+    {
+        "id": 15,
+        "price": "2500",
+        "gift_name": "お風呂用セット",
+        "category_id": 5,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift15.jpg"
+    },
+    {
+        "id": 16,
+        "price": "3000",
+        "gift_name": "チョコレート詰め合わせ",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift16.jpg"
+    },
+    {
+        "id": 17,
+        "price": "4500",
+        "gift_name": "まるごとチーズケーキ",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift17.jpg"
+    },
+    {
+        "id": 18,
+        "price": "4000",
+        "gift_name": "すき焼きセット4人前",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift18.jpg"
+    },
+    {
+        "id": 19,
+        "price": "8000",
+        "gift_name": "おうちのお掃除セット",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift19.jpg"
+    },
+    {
+        "id": 20,
+        "price": "5000",
+        "gift_name": "ビール券5000円分",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift20.jpg"
+    }
+]

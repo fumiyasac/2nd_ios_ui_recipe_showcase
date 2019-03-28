@@ -1,0 +1,72 @@
+[
+    {
+        "id": 31,
+        "price": "5000",
+        "gift_name": "健康お野菜詰め合わせ(1)",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift31.jpg"
+    },
+    {
+        "id": 32,
+        "price": "4000",
+        "gift_name": "パーティー用たこ焼き機",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift32.jpg"
+    },
+    {
+        "id": 33,
+        "price": "2000",
+        "gift_name": "ベイクドチーズケーキ",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift33.jpg"
+    },
+    {
+        "id": 34,
+        "price": "3000",
+        "gift_name": "大さじ＆小さじセット",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift34.jpg"
+    },
+    {
+        "id": 35,
+        "price": "6000",
+        "gift_name": "高級包丁3種",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift35.jpg"
+    },
+    {
+        "id": 36,
+        "price": "5000",
+        "gift_name": "桜のお菓子詰め合わせ",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift36.jpg"
+    },
+    {
+        "id": 37,
+        "price": "8000",
+        "gift_name": "健康お野菜詰め合わせ(2)",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift37.jpg"
+    },
+    {
+        "id": 38,
+        "price": "4000",
+        "gift_name": "スムージーセット",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift38.jpg"
+    },
+    {
+        "id": 39,
+        "price": "2000",
+        "gift_name": "木ベラとお箸のセット",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift39.jpg"
+    },
+    {
+        "id": 40,
+        "price": "3000",
+        "gift_name": "シュークリーム8個セット",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift40.jpg"
+    }
+]

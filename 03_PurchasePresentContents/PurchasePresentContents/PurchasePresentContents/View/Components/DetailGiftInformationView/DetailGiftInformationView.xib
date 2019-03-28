@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailGiftInformationView" customModule="PurchasePresentContents" customModuleProvider="target">
             <connections>
+                <outlet property="categoryLabel" destination="5Kd-HN-OhV" id="fR3-3T-c1R"/>
+                <outlet property="nameLabel" destination="9sw-LM-yjO" id="nkK-h9-Nrp"/>
+                <outlet property="priceLabel" destination="GtT-65-gFY" id="Jf6-6s-Vms"/>
                 <outlet property="purchaseGiftButton" destination="38Q-Hr-OtQ" id="n4I-wd-duj"/>
             </connections>
         </placeholder>

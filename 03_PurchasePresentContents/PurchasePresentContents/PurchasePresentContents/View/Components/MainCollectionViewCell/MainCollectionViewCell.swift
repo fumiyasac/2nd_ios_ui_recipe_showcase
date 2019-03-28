@@ -48,29 +48,35 @@ final class MainCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Function
 
-    func setCell() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.64, execute: {
-            self.giftImageView.image = UIImage(named: "sample_image")
+    func setCell(_ giftEntity: GiftEntity) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.48, execute: {
+
+            // 商品名表示の設定
+            self.nameLabel.text = giftEntity.giftName
+
+            // 値段表示の設定
+            self.priceLabel.text = "PRICE: \(giftEntity.price)"
+
+            // カテゴリー表示の設定
+            if let category = CategoryType(rawValue: giftEntity.categoryId) {
+                self.categoryLabel.text = "CATEGORY: \(category.getTitle())"
+                self.categoryLabel.textColor = category.getColor()
+            }
+
+            // サムネイル画像の設定
+            self.giftImageView.pin_setImage(from: URL(string: giftEntity.imageUrl))
+
+            // スケルトン表示を変更する
             self.setSkeletonableStatus(false)
         })
     }
-
-    /*
-    func setCell(_ gift: GiftEntity) {
-
-        //
-
-        // 0.64秒後にスケルトン表示からデータの表示に切り替える
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.64, execute: {
-            self.setSkeletonableStatus(false)
-        })
-    }
-    */
 
     // MARK: - Private Function
 
     private func setupMainCollectionViewCell() {
         self.backgroundColor = UIColor(code: "#efefef")
+        giftImageView.contentMode = .scaleAspectFill
+        giftImageView.clipsToBounds = true
         setSkeletonableStatus(true)
     }
 

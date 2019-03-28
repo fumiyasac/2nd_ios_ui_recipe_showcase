@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import PINRemoteImage
 import FloatingPanel
 
 final class DetailGiftViewController: ZoomImageTransitionViewController {
 
     private var floatingPanel: FloatingPanelController!
 
-    @IBOutlet weak var detailGiftImageView: UIImageView!
+    // MEMO: MainViewControllerから引き渡されるデータを格納する
+    private var giftEntity: GiftEntity? = nil
+
+    @IBOutlet weak private var detailGiftImageView: UIImageView!
     @IBOutlet weak private var detailCloseButtonView: DetailCloseButtonView!
     @IBOutlet weak private var detailGiftInformationView: DetailGiftInformationView!
     @IBOutlet weak private var detailGalleryInformationView: DetailGalleryInformationView!
@@ -23,11 +27,16 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // MEMO: 後で修正する
-        detailGiftImageView.image = UIImage(named: "sample_image")
+        // MEMO: 引き渡されたGiftEntityから画像を反映する
+        if let gift = giftEntity {
+            if let targetImageUrl = URL(string: gift.imageUrl) {
+                detailGiftImageView.pin_setImage(from: targetImageUrl)
+            }
+        }
 
         setupFloatingPanel()
         setupDetailCloseButtonView()
+        setupDetailGiftInformationView()
         setupDetailGalleryInformationView()
     }
 
@@ -61,8 +70,8 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
 
     // MARK: - Function
 
-    func setDetailImage(_ targetImage: UIImageView) {
-        detailGiftImageView = targetImage
+    func setEntityFromPresentingViewController(_ targetGiftEntity: GiftEntity) {
+        giftEntity = targetGiftEntity
     }
 
     // MARK: - Private Function
@@ -87,6 +96,13 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
         detailCloseButtonView.closeDetailButtonAction = {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+
+    private func setupDetailGiftInformationView() {
+        guard let gift = giftEntity else {
+            fatalError("variable: giftEntity is nil.")
+        }
+        detailGiftInformationView.setGiftData(gift)
     }
 
     private func setupDetailGalleryInformationView() {

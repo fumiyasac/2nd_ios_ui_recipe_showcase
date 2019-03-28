@@ -1,0 +1,72 @@
+[
+    {
+        "id": 21,
+        "price": "5000",
+        "gift_name": "レインブーツ",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift21.jpg"
+    },
+    {
+        "id": 22,
+        "price": "6000",
+        "gift_name": "カジュアルシューズ",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift22.jpg"
+    },
+    {
+        "id": 23,
+        "price": "7500",
+        "gift_name": "ジョギング用スニーカー",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift23.jpg"
+    },
+    {
+        "id": 24,
+        "price": "10000",
+        "gift_name": "フォーマル用革靴",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift24.jpg"
+    },
+    {
+        "id": 25,
+        "price": "8000",
+        "gift_name": "春服3点セット",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift25.jpg"
+    },
+    {
+        "id": 26,
+        "price": "15000",
+        "gift_name": "新社会人用セット",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift26.jpg"
+    },
+    {
+        "id": 27,
+        "price": "8000",
+        "gift_name": "男性用ジャケット",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift27.jpg"
+    },
+    {
+        "id": 28,
+        "price": "9500",
+        "gift_name": "男性用デニム",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift28.jpg"
+    },
+    {
+        "id": 29,
+        "price": "5000",
+        "gift_name": "お子様用革靴",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift29.jpg"
+    },
+    {
+        "id": 30,
+        "price": "8000",
+        "gift_name": "女性用ヒール",
+        "category_id": 2,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift30.jpg"
+    }
+]

@@ -11,12 +11,22 @@ import UIKit
 protocol MainSectionDelegate: NSObjectProtocol {
 
     // UIImageViewをプロトコル適用先の画面へ引き渡す
-    func serveSelectedImageView(_ imageView: UIImageView)
+    func serveSelectedDataForPresentedViewController(imageView: UIImageView, giftEntity: GiftEntity)
 }
 
 final class MainSectionViewController: UIViewController {
 
     weak var sectionDelegate: MainSectionDelegate?
+    
+    // サンプル用のギフト情報データを格納するための変数
+    private var giftList: [GiftEntity] = [] {
+        didSet {
+            self.mainSectionCollectionView.reloadData()
+        }
+    }
+
+    // GiftPresenterに設定したプロトコルを適用するための変数
+    private var presenter: GiftPresenter!
 
     @IBOutlet weak private var mainSectionCollectionView: UICollectionView!
 
@@ -26,6 +36,7 @@ final class MainSectionViewController: UIViewController {
         super.viewDidLoad()
 
         setupMainSectionCollectionView()
+        setupGiftPresenter()
     }
 
     // MARK: - Function
@@ -33,7 +44,7 @@ final class MainSectionViewController: UIViewController {
     // セクション属性(MainSectionType)に該当するデータを画面に反映する
     // MEMO: このメソッドはUIPageViewControllerを配置している場所から実行する
     func executeGetGiftListBy(mainSectionType: MainSectionType) {
-        
+        presenter.getGiftListBy(targetSectionType: mainSectionType)
     }
 
     // MARK: - Private Function
@@ -43,6 +54,19 @@ final class MainSectionViewController: UIViewController {
         mainSectionCollectionView.dataSource = self
         mainSectionCollectionView.registerCustomCell(MainCollectionViewCell.self)
         mainSectionCollectionView.backgroundColor = UIColor(code: "#dddddd")
+    }
+
+    private func setupGiftPresenter() {
+        presenter = GiftPresenter(presenter: self)
+    }
+}
+
+// MARK: - GiftPresenterProtocol
+
+extension MainSectionViewController: GiftPresenterProtocol {
+
+    func serveGiftListBySectionType(_ gifts: [GiftEntity]) {
+        giftList = gifts
     }
 }
 
@@ -55,19 +79,20 @@ extension MainSectionViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return giftList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCustomCell(with: MainCollectionViewCell.self, indexPath: indexPath)
-        cell.setCell()
+        cell.setCell(giftList[indexPath.row])
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // 選択されたセルを元にUIPageViewControllerを配置している画面へ引き渡す
+
+        // MEMO: 選択されたセルを元にUIPageViewControllerを配置している画面へデータを引き渡す
         let cell = collectionView.cellForItem(at: indexPath) as! MainCollectionViewCell
-        self.sectionDelegate?.serveSelectedImageView(cell.giftImageView)
+        self.sectionDelegate?.serveSelectedDataForPresentedViewController(imageView: cell.giftImageView, giftEntity: giftList[indexPath.row])
     }
 }
 

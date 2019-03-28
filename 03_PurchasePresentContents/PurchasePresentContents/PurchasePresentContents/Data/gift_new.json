@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "price": "2000",
+        "gift_name": "手帳＆日記帳セット",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift1.jpg"
+    },
+    {
+        "id": 2,
+        "price": "3500",
+        "gift_name": "おしゃれキャンドル",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift2.jpg"
+    },
+    {
+        "id": 3,
+        "price": "1500",
+        "gift_name": "36色えんぴつ",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift3.jpg"
+    },
+    {
+        "id": 4,
+        "price": "2500",
+        "gift_name": "毎日のアメニティセット",
+        "category_id": 5,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift4.jpg"
+    },
+    {
+        "id": 5,
+        "price": "2500",
+        "gift_name": "タオル詰め合わせ",
+        "category_id": 5,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift5.jpg"
+    },
+    {
+        "id": 6,
+        "price": "2000",
+        "gift_name": "ペアマグカップ",
+        "category_id": 5,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift6.jpg"
+    },
+    {
+        "id": 7,
+        "price": "17000",
+        "gift_name": "勉強机と椅子",
+        "category_id": 4,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift7.jpg"
+    },
+    {
+        "id": 8,
+        "price": "2000",
+        "gift_name": "ハーブティーセット",
+        "category_id": 1,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift8.jpg"
+    },
+    {
+        "id": 9,
+        "price": "4000",
+        "gift_name": "お裁縫セット",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift9.jpg"
+    },
+    {
+        "id": 10,
+        "price": "2000",
+        "gift_name": "アロマオイル4種",
+        "category_id": 3,
+        "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter03/gift/gift10.jpg"
+    }
+]

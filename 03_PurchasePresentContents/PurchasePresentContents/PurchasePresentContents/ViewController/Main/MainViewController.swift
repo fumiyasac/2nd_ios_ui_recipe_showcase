@@ -99,7 +99,12 @@ final class MainViewController: ZoomImageTransitionViewController {
         // UIPageViewControllerで表示したいViewControllerの一覧を取得する
         let _ = MainSectionType.allCases.map{
             let targetViewController = $0.getViewController()
+
+            // MEMO: tag値をMainSectionTypeと対応させる
             targetViewController.view.tag = $0.rawValue
+
+            // MEMO: 生成したViewControllerで定義しているデータ取得処理を実行する
+            targetViewController.executeGetGiftListBy(mainSectionType: $0)
 
             // MEMO: MainSectionViewControllerで定義したプロトコルを適用する
             targetViewController.sectionDelegate = self
@@ -152,11 +157,12 @@ final class MainViewController: ZoomImageTransitionViewController {
 extension MainViewController: MainSectionDelegate {
 
     // UIImageViewをプロトコル適用先の画面へ引き渡す
-    func serveSelectedImageView(_ imageView: UIImageView) {
+    func serveSelectedDataForPresentedViewController(imageView: UIImageView, giftEntity: GiftEntity) {
 
-        // 遷移先のViewControllerを作成しUIPageViewControllerで選択されたUIImageViewを反映する
+        // 遷移先のViewControllerを作成しUIPageViewControllerで選択されたUIImageViewとGiftEntityを反映する
         let vc = DetailGiftViewController.instantiate()
-        vc.detailGiftImageView = imageView
+        //vc.detailGiftImageView = imageView
+        vc.setEntityFromPresentingViewController(giftEntity)
 
         // カスタムトランジションを実行するためのクラスを作成する
         let zoomImageTransition = ZoomImageTransition<ZoomImageTransitionViewController>(rootVC: self, modalVC: vc, rootNavigation: self.navigationController)
