@@ -8,11 +8,11 @@ target 'PurchasePresentContents' do
   # Pods for PurchasePresentContents
 
   # その他の処理で利用するライブラリ
-  pod 'Alamofire'
   pod 'PINRemoteImage'
 
   # UIレシピブックVol.1でも紹介したライブラリ
   pod 'FontAwesome.swift'
+  pod 'Cosmos'
 
   # UI実装で今回新しく紹介するライブラリ
   pod 'DeckTransition'
@@ -21,5 +21,4 @@ target 'PurchasePresentContents' do
   pod 'ARNTransitionAnimator'
   pod 'FloatingPanel'
   pod 'SkeletonView'
-  pod 'Cosmos'
 end

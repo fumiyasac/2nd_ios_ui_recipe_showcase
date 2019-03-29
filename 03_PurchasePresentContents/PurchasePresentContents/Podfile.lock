@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.8.1)
   - AnimatedCollectionViewLayout (0.5.0)
   - ARNTransitionAnimator (3.1.0)
   - Cosmos (18.0.1)
@@ -19,7 +18,6 @@ PODS:
   - SkeletonView (1.4.1)
 
 DEPENDENCIES:
-  - Alamofire
   - AnimatedCollectionViewLayout
   - ARNTransitionAnimator
   - Cosmos
@@ -32,7 +30,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
     - AnimatedCollectionViewLayout
     - ARNTransitionAnimator
     - Cosmos
@@ -46,7 +43,6 @@ SPEC REPOS:
     - SkeletonView
 
 SPEC CHECKSUMS:
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AnimatedCollectionViewLayout: 8b660a623d85001f76f00f0d2302a7b043c72bda
   ARNTransitionAnimator: 2b9bb180e4250dd847af59bda677fcbae4d2da99
   Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
@@ -59,6 +55,6 @@ SPEC CHECKSUMS:
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
   SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
 
-PODFILE CHECKSUM: 68993f99f29b9f2dfc45bab31c2248ff77107cf3
+PODFILE CHECKSUM: 807fd6f867215fa7842ff3af673c7f47e52690e3
 
 COCOAPODS: 1.6.0
