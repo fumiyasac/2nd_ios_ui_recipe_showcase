@@ -119,12 +119,12 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
 
 extension DetailGiftViewController: FloatingPanelControllerDelegate {
 
-    //
+    // FloatingPanelのレイアウト設定に関するクラスを適用する
     func floatingPanel(_ vc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout? {
         return CommentFloatingPanelLayout()
     }
 
-    //
+    // FloatingPanelの振る舞い設定に関するクラスを適用する
     func floatingPanel(_ vc: FloatingPanelController, behaviorFor newCollection: UITraitCollection) -> FloatingPanelBehavior? {
         return CommentFloatingPanelBehavior()
     }
