@@ -161,7 +161,6 @@ extension MainViewController: MainSectionDelegate {
 
         // 遷移先のViewControllerを作成しUIPageViewControllerで選択されたUIImageViewとGiftEntityを反映する
         let vc = DetailGiftViewController.instantiate()
-        //vc.detailGiftImageView = imageView
         vc.setEntityFromPresentingViewController(giftEntity)
 
         // カスタムトランジションを実行するためのクラスを作成する
