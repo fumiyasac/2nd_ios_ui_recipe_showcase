@@ -1,4 +1,4 @@
-// 参考: json-serverに関するもの
+// 参考: json-serverの実装に関する参考資料
 // https://blog.eleven-labs.com/en/json-server
 
 // Mock用のJSONレスポンスサーバーの初期化設定

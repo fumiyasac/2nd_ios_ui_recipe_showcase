@@ -18,7 +18,6 @@ target 'MediaStyleAnimationContents' do
   pod 'ActiveLabel'
 
   # UI実装で今回新しく紹介するライブラリ
-  pod 'WaterfallLayout', '~> 0.1'
   pod 'Floaty'
   pod 'FSPagerView'
   pod 'SVProgressHUD'

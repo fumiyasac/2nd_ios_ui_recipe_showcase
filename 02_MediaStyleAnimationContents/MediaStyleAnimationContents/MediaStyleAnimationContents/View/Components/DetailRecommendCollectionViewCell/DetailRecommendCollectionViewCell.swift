@@ -30,6 +30,19 @@ final class DetailRecommendCollectionViewCell: UICollectionViewCell {
         setupStarImageView()
     }
 
+    // MARK: - Static Function
+
+    static func getCellSize() -> CGSize {
+
+        // MEMO: 縦方向のセルの余白数とマージン値を設定する
+        let numberOfMargin: CGFloat = 3
+        let cellMargin: CGFloat = 10.0
+
+        let cellWidth: CGFloat = (UIScreen.main.bounds.width - cellMargin * numberOfMargin) / 2
+        let cellHeight: CGFloat = 240.0
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
+
     // MARK: - Function
 
     func setCell(_ detailRecommend: DetailRecommendEntity) {

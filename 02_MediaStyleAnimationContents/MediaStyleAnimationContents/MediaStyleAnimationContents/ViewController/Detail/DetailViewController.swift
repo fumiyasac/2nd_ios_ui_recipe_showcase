@@ -7,10 +7,13 @@
 //
 
 import UIKit
-import WaterfallLayout
 import AlamofireImage
 
 final class DetailViewController: UIViewController {
+
+    private let targetInsets: UIEdgeInsets = UIEdgeInsets(top: 8.0, left: 10.0, bottom: 8.0, right: 10.0)
+    private let targetMinimumInteritemSpacing: CGFloat = 8.0
+    private let targetIminimumLineSpacing: CGFloat = 8.0
 
     // メインとなる画像表示部分の本来の高さ
     private let originalDetailImageViewHeight: CGFloat = 240.0
@@ -164,16 +167,6 @@ final class DetailViewController: UIViewController {
     // おすすめ記事データ表示に関連するView要素の初期設定をする
     private func setupTargetViewsForDetailRecommend() {
 
-        // ライブラリ「WaterfallLayout」のインスタンスを作成して設定を適用する
-        let layout = WaterfallLayout()
-        layout.delegate = self
-        layout.sectionInset = UIEdgeInsets(top: 8.0, left: 10.0, bottom: 8.0, right: 10.0)
-        layout.minimumLineSpacing = 8.0
-        layout.minimumInteritemSpacing = 8.0
-        layout.headerHeight = 0.0
-        detailRecommendCollectionView.setCollectionViewLayout(layout, animated: true)
-        detailRecommendCollectionView.collectionViewLayout = layout
-
         // おすすめ記事データ表示のUICollectionViewを設定する
         detailRecommendCollectionView.isScrollEnabled = false
         detailRecommendCollectionView.registerCustomCell(DetailRecommendCollectionViewCell.self)
@@ -286,45 +279,27 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
 }
 
-// MARK: - WaterfallLayoutDelegate
+// MARK: - UICollectionViewDelegateFlowLayout
 
-extension DetailViewController: WaterfallLayoutDelegate {
+extension DetailViewController: UICollectionViewDelegateFlowLayout {
 
-    // ライブラリ「WaterfallLayout」における配置対象のセルのサイズを指定する
-    func collectionView(_ collectionView: UICollectionView, layout: WaterfallLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        // セルのサイズ調整用の値(写真の比率と調和するように調整を加える)
-        let adjustRatio: CGFloat = 2.6
-        let cellWidth: CGFloat = UIScreen.main.bounds.width / 2.0
-        var cellHeight: CGFloat = 120
-
-        // 取得した画像を元に高さの調節を行う
-        let targetDetailRecommend = detailRecommendLists[indexPath.row]
-        if let imageURL = targetDetailRecommend.imageUrl {
-            do {
-                let data = try Data(contentsOf: imageURL)
-                let image = UIImage(data: data)
-                let height = image?.size.height ?? 0
-                cellHeight += height / adjustRatio
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
-        return CGSize(width: cellWidth, height: cellHeight)
+    // セルのサイズを設定する
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return DetailRecommendCollectionViewCell.getCellSize()
     }
 
-    // ライブラリ「WaterfallLayout」における配置対象のセクション用Headerの高さを指定する
-    func collectionView(_ collectionView: UICollectionView, layout: WaterfallLayout, headerHeightFor section: Int) -> CGFloat? {
-        return DetailRecommendHeaderView.viewSize.height
+    // セルの垂直方向の余白(margin)を設定する
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return targetMinimumInteritemSpacing
     }
 
-    // ライブラリ「WaterfallLayout」における配置対象のセクション用Footerの高さを指定する
-    func collectionView(_ collectionView: UICollectionView, layout: WaterfallLayout, footerHeightFor section: Int) -> CGFloat? {
-        return DetailRecommendFooterView.viewSize.height
+    // セルの水平方向の余白(margin)を設定する
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return targetIminimumLineSpacing
     }
 
-    // ライブラリ「WaterfallLayout」における配置対象のセル表示パターンを指定する
-    func collectionViewLayout(for section: Int) -> WaterfallLayout.Layout {
-        return .waterfall(column: 2, distributionMethod: .balanced)
+    // セル内のアイテム間の余白(margin)調整を行う
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return targetInsets
     }
 }
