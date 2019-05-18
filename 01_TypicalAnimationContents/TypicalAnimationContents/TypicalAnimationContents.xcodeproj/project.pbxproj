@@ -499,13 +499,16 @@
 				TargetAttributes = {
 					DE12EC9422101AD7008DFBFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					DE12ECA822101AD9008DFBFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DE12EC9422101AD7008DFBFB;
 					};
 					DE12ECB322101AD9008DFBFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DE12EC9422101AD7008DFBFB;
 					};
 				};
@@ -853,7 +856,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TypicalAnimationContents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -872,7 +875,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TypicalAnimationContents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -892,7 +895,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TypicalAnimationContentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypicalAnimationContents.app/TypicalAnimationContents";
 			};
@@ -913,7 +916,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TypicalAnimationContentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypicalAnimationContents.app/TypicalAnimationContents";
 			};
@@ -933,7 +936,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TypicalAnimationContentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TypicalAnimationContents;
 			};
@@ -953,7 +956,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TypicalAnimationContentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TypicalAnimationContents;
 			};
