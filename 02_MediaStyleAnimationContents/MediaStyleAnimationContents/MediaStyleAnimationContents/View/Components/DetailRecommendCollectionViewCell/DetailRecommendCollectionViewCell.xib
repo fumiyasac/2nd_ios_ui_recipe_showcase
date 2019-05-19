@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,30 +13,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailRecommendCollectionViewCell" customModule="MediaStyleAnimationContents" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="164" height="264"/>
+            <rect key="frame" x="0.0" y="0.0" width="164" height="240"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="164" height="264"/>
+                <rect key="frame" x="0.0" y="0.0" width="164" height="240"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogg-pH-doQ">
-                        <rect key="frame" x="0.0" y="0.0" width="164" height="264"/>
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="240"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-cQ-Y72">
-                                <rect key="frame" x="8" y="8" width="144" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルが入ります。タイトルが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-cQ-Y72">
+                                <rect key="frame" x="8" y="8" width="144" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="wNz-lb-ak4"/>
+                                    <constraint firstAttribute="height" constant="33" id="SS3-RV-qcR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iB9-o6-xwc">
-                                <rect key="frame" x="10" y="28" width="144" height="168"/>
+                                <rect key="frame" x="10" y="49" width="144" height="123"/>
                                 <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ol-Ly-xxQ">
-                                <rect key="frame" x="8" y="204" width="148" height="28"/>
+                                <rect key="frame" x="8" y="180" width="148" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nys-Eq-79X">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="28"/>
@@ -62,7 +62,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZz-3a-Byr">
-                                <rect key="frame" x="8" y="240" width="148" height="16"/>
+                                <rect key="frame" x="8" y="216" width="148" height="16"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qq4-o8-iDr">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="16"/>
@@ -132,7 +132,6 @@
                 <outlet property="rateLabel" destination="uOv-to-7bl" id="lVo-gB-eEa"/>
                 <outlet property="starImageView" destination="3cu-aN-4hl" id="86P-xs-Vy5"/>
                 <outlet property="thumbnailImageView" destination="iB9-o6-xwc" id="9Ux-Ia-IoO"/>
-                <outlet property="titleHeightConstraint" destination="wNz-lb-ak4" id="puu-hB-OBA"/>
                 <outlet property="titleLabel" destination="kGX-cQ-Y72" id="v4C-ys-UNq"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="108.84557721139431"/>

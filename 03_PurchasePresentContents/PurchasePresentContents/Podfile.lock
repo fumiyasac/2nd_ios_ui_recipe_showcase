@@ -1,21 +1,27 @@
 PODS:
-  - AnimatedCollectionViewLayout (0.5.0)
-  - ARNTransitionAnimator (3.1.0)
-  - Cosmos (18.0.1)
+  - AnimatedCollectionViewLayout (0.6.0)
+  - ARNTransitionAnimator (3.2.0)
+  - Cosmos (19.0.3)
   - DeckTransition (2.1.0)
-  - FLAnimatedImage (1.0.12)
-  - FloatingPanel (1.3.3)
-  - FontAwesome.swift (1.5.0)
-  - PINCache (2.3)
-  - PINRemoteImage (2.1.4):
-    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
-  - PINRemoteImage/Core (2.1.4):
-    - PINCache (>= 2.1)
-  - PINRemoteImage/FLAnimatedImage (2.1.4):
-    - FLAnimatedImage (>= 1.0)
+  - FloatingPanel (1.5.1)
+  - FontAwesome.swift (1.7.0)
+  - PINCache (3.0.1-beta.7):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.7)
+    - PINCache/Core (= 3.0.1-beta.7)
+  - PINCache/Arc-exception-safe (3.0.1-beta.7):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.7):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.1)
+  - PINRemoteImage (3.0.0-beta.14):
+    - PINRemoteImage/PINCache (= 3.0.0-beta.14)
+  - PINRemoteImage/Core (3.0.0-beta.14):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.0-beta.14):
+    - PINCache (= 3.0.1-beta.7)
     - PINRemoteImage/Core
   - PinterestSegment (1.2.3)
-  - SkeletonView (1.4.1)
+  - SkeletonView (1.5)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
@@ -24,7 +30,7 @@ DEPENDENCIES:
   - DeckTransition
   - FloatingPanel
   - FontAwesome.swift
-  - PINRemoteImage
+  - PINRemoteImage (= 3.0.0-beta.14)
   - PinterestSegment
   - SkeletonView
 
@@ -34,27 +40,27 @@ SPEC REPOS:
     - ARNTransitionAnimator
     - Cosmos
     - DeckTransition
-    - FLAnimatedImage
     - FloatingPanel
     - FontAwesome.swift
     - PINCache
+    - PINOperation
     - PINRemoteImage
     - PinterestSegment
     - SkeletonView
 
 SPEC CHECKSUMS:
-  AnimatedCollectionViewLayout: 8b660a623d85001f76f00f0d2302a7b043c72bda
-  ARNTransitionAnimator: 2b9bb180e4250dd847af59bda677fcbae4d2da99
-  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
+  AnimatedCollectionViewLayout: f2c4e8dda4e3f1678ad6c0b39273a31b19bc935d
+  ARNTransitionAnimator: 6fea1fe318b251abfd3cbd06d91215deb374ae40
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
   DeckTransition: ca707456e3d83928c895fed6f458cbf68c5cac84
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  FloatingPanel: f7aaa8fe66a92a518f2038dcc94673543b2f2323
-  FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
-  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
-  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+  FloatingPanel: b2f4fb6f8fea7877954beff8f3f03bb6595ab354
+  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
+  PINCache: 7cb9ae068c8f655717f7c644ef1dff9fd573e979
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINRemoteImage: 81bbff853acc71c6de9e106e9e489a791b8bbb08
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
-  SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
+  SkeletonView: 6cbb80f82f8bdee3f9093e2fa03b84819b4bd826
 
-PODFILE CHECKSUM: 807fd6f867215fa7842ff3af673c7f47e52690e3
+PODFILE CHECKSUM: c1e1da4a143d9effe82a1074655de34cd3f27aa3
 
 COCOAPODS: 1.6.0

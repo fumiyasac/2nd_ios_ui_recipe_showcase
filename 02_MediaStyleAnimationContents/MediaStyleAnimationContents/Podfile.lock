@@ -1,24 +1,24 @@
 PODS:
-  - ActiveLabel (1.0.1)
-  - Alamofire (4.8.1)
-  - AlamofireImage (3.5.0):
+  - ActiveLabel (1.1.0)
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
   - BTNavigationDropdownMenu (0.5)
-  - Floaty (4.1.0)
-  - FontAwesome.swift (1.5.0)
+  - Floaty (4.2.0)
+  - FontAwesome.swift (1.7.0)
   - FSPagerView (0.8.2)
-  - PromiseKit (6.8.3):
-    - PromiseKit/CorePromise (= 6.8.3)
-    - PromiseKit/Foundation (= 6.8.3)
-    - PromiseKit/UIKit (= 6.8.3)
-  - PromiseKit/CorePromise (6.8.3)
-  - PromiseKit/Foundation (6.8.3):
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.8.3):
+  - PromiseKit/UIKit (6.8.4):
     - PromiseKit/CorePromise
   - SVProgressHUD (2.2.5)
-  - SwiftyJSON (4.2.0)
-  - Toast-Swift (4.0.1)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
   - ActiveLabel
@@ -31,7 +31,7 @@ DEPENDENCIES:
   - PromiseKit
   - SVProgressHUD
   - SwiftyJSON
-  - Toast-Swift (~> 4.0.0)
+  - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -48,18 +48,18 @@ SPEC REPOS:
     - Toast-Swift
 
 SPEC CHECKSUMS:
-  ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
-  Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
-  FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
-  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
-  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 93b1320b162aafb539dc19566d25686c237856ae
+PODFILE CHECKSUM: 86fca7db0c7d9d0be867cb7a80c2c07bd9d1994b
 
 COCOAPODS: 1.6.0

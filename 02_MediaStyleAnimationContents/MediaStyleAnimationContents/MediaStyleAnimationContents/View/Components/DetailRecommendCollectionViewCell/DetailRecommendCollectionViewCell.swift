@@ -61,9 +61,6 @@ final class DetailRecommendCollectionViewCell: UICollectionViewCell {
         let titleAttributes = UILabelDecorator.getLabelAttributesBy(keys: titleKeys)
         titleLabel.attributedText = NSAttributedString(string: detailRecommend.title, attributes: titleAttributes)
 
-        // 属性テキストに合わせた高さをラベル制約へ適用する
-        titleHeightConstraint.constant = titleLabel.sizeThatFits(titleLabel.frame.size).height
-
         // 評価レーティング表示用ラベルを表示する
         rateLabel.text = detailRecommend.rates
 

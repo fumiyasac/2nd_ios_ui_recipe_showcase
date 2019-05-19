@@ -1,5 +1,5 @@
 PODS:
-  - FontAwesome.swift (1.5.0)
+  - FontAwesome.swift (1.7.0)
   - TransitionableTab (0.2.0)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - TransitionableTab
 
 SPEC CHECKSUMS:
-  FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
+  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
   TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
 
 PODFILE CHECKSUM: ef325e4fe1ea681f0b004674e9981be78f78694e
