@@ -748,13 +748,16 @@
 				TargetAttributes = {
 					DE12ECCE22101BA3008DFBFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					DE12ECE222101BA6008DFBFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DE12ECCE22101BA3008DFBFB;
 					};
 					DE12ECED22101BA6008DFBFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DE12ECCE22101BA3008DFBFB;
 					};
 				};
@@ -1179,7 +1182,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.MediaStyleAnimationContents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1198,7 +1201,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.MediaStyleAnimationContents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1218,7 +1221,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.MediaStyleAnimationContentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaStyleAnimationContents.app/MediaStyleAnimationContents";
 			};
@@ -1239,7 +1242,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.MediaStyleAnimationContentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaStyleAnimationContents.app/MediaStyleAnimationContents";
 			};
@@ -1259,7 +1262,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.MediaStyleAnimationContentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MediaStyleAnimationContents;
 			};
@@ -1279,7 +1282,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.MediaStyleAnimationContentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MediaStyleAnimationContents;
 			};
