@@ -26,7 +26,7 @@ __プロジェクトを動作させるための事前準備:__
 
 本章ではTabBarControllerでの画面切り替え時のアニメーション表現と表示コンテンツにおけるレイアウトのカスタマイズと表現方法に関するTipsについて解説をしていきます。TabBarControllerを切り替える場合に実行するアニメーション表現についてはUI実装ライブラリを活用する一方で、表示コンテンツにおけるUIレイアウトや表示に関する部分については自前で実装する形としています。
 
-![第1章サンプル図](https://github.com/fumiyasac/ios_ui_recipe_showcase/blob/master/images/capture_techbook_vol2_chapter1.jpg)
+![第1章サンプル図](https://github.com/fumiyasac/2nd_ios_ui_recipe_showcase/blob/master/images/capture_techbook_vol2_chapter1.jpg)
 
 __利用しているライブラリ一覧:__
 
@@ -61,7 +61,7 @@ $ pod install
 
 本章ではニュースや読み物系のアプリの中で良く見かけるレイアウトにおけるUI実装において、ベースとなる部分以外のUI表現におけるワンポイントとなる部分にUIライブラリを活用した表現を実装するためのTipsと、API通信による非同期通信処理を実行する部分についてよく利用されているライブラリを活用した実装をするためのTipの2点について解説をしてきます。
 
-![第2章サンプル図](https://github.com/fumiyasac/ios_ui_recipe_showcase/blob/master/images/capture_techbook_vol2_chapter2.jpg)
+![第2章サンプル図](https://github.com/fumiyasac/2nd_ios_ui_recipe_showcase/blob/master/images/capture_techbook_vol2_chapter2.jpg)
 
 __利用しているライブラリ一覧:__
 
@@ -119,7 +119,7 @@ $ node index.js
 
 本章ではECやメディア系のアプリにおいてよく目にするタイプの表現でもある、写真を生かした画面レイアウトや心地よいアニメーションを組み合わせたUI表現においてUIライブラリを積極的に活用したレイアウトのカスタマイズとアニメーション表現に関するTipsについて解説をしていきます。このサンプルで紹介している表現については、綺麗なUI表現をセールスポイントにしているアプリにおいては試してみたいと思える表現ではあるが、正攻法で挑むと工数も手間も想像以上に掛かるUI表現に関する実装をライブラリが持っている特性や実装方法を上手に活用しながらUI表現を組み立てるための実装について解説をしていきます。
 
-![第3章サンプル図](https://github.com/fumiyasac/ios_ui_recipe_showcase/blob/master/images/capture_techbook_vol2_chapter3.jpg)
+![第3章サンプル図](https://github.com/fumiyasac/2nd_ios_ui_recipe_showcase/blob/master/images/capture_techbook_vol2_chapter3.jpg)
 
 __利用しているライブラリ一覧:__
 
