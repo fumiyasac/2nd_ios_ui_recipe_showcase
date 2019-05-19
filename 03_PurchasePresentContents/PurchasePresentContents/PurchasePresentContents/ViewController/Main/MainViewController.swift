@@ -209,7 +209,7 @@ extension MainViewController: UIPageViewControllerDelegate, UIPageViewController
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 
         // インデックスを取得してその値に応じてコンテンツを移動する
-        guard let index = targetViewControllerLists.index(of: viewController) else {
+        guard let index = targetViewControllerLists.firstIndex(of: viewController) else {
             return nil
         }
 
@@ -224,7 +224,7 @@ extension MainViewController: UIPageViewControllerDelegate, UIPageViewController
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
 
         // インデックスを取得してその値に応じてコンテンツを移動する
-        guard let index = targetViewControllerLists.index(of: viewController) else {
+        guard let index = targetViewControllerLists.firstIndex(of: viewController) else {
             return nil
         }
 
