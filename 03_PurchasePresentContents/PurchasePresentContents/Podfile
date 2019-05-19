@@ -23,7 +23,7 @@ target 'PurchasePresentContents' do
   pod 'SkeletonView'
 end
 
-# PinterestSegmentのライブラリバージョンをSwift4.2に固定する
+# DeckTransition & PinterestSegmentのライブラリバージョンをSwift4.2に固定する
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     if ['DeckTransition', 'PinterestSegment'].include? target.name
