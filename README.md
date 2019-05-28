@@ -4,7 +4,7 @@
 
 こちらは、上記書籍にて紹介しているサンプルを収録したリポジトリになります。書籍内で解説の際に利用したサンプルコードの完成版のプロジェクトがそれぞれの章毎にありますので、書籍内の解説をより詳細に理解する際や開発中のアプリにおける実装時の参考等にご活用頂ければ嬉しく思います。
 
-+ Xcode 10.2
++ Xcode 10.2.1
 + Swift 5.0
 + CocoaPods 1.6.0
 
@@ -87,7 +87,7 @@ target 'MediaStyleAnimationContents' do
   pod 'Toast-Swift', '~> 5.0.0'
 end
 
-# FSPagerViewのライブラリバージョンをSwift4.2に固定する
+# FSPagerView & BTNavigationDropdownMenuのライブラリバージョンをSwift4.2に固定する
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     if ['FSPagerView', 'BTNavigationDropdownMenu'].include? target.name
