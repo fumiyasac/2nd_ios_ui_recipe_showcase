@@ -5,16 +5,16 @@ PODS:
     - Alamofire (~> 4.8)
   - BTNavigationDropdownMenu (0.5)
   - Floaty (4.2.0)
-  - FontAwesome.swift (1.7.0)
+  - FontAwesome.swift (1.7.1)
   - FSPagerView (0.8.2)
-  - PromiseKit (6.8.4):
-    - PromiseKit/CorePromise (= 6.8.4)
-    - PromiseKit/Foundation (= 6.8.4)
-    - PromiseKit/UIKit (= 6.8.4)
-  - PromiseKit/CorePromise (6.8.4)
-  - PromiseKit/Foundation (6.8.4):
+  - PromiseKit (6.10.0):
+    - PromiseKit/CorePromise (= 6.10.0)
+    - PromiseKit/Foundation (= 6.10.0)
+    - PromiseKit/UIKit (= 6.10.0)
+  - PromiseKit/CorePromise (6.10.0)
+  - PromiseKit/Foundation (6.10.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.8.4):
+  - PromiseKit/UIKit (6.10.0):
     - PromiseKit/CorePromise
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.0)
@@ -53,13 +53,13 @@ SPEC CHECKSUMS:
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
   Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
-  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
+  FontAwesome.swift: 8d9792fa2d2347055da35bd97752b3960bd75952
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
-  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
+  PromiseKit: 1fdaeb6c0a94a5114fcb814ff3d772b86886ad4e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
 PODFILE CHECKSUM: 86fca7db0c7d9d0be867cb7a80c2c07bd9d1994b
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.7.2

@@ -3,8 +3,8 @@ PODS:
   - ARNTransitionAnimator (3.2.0)
   - Cosmos (19.0.3)
   - DeckTransition (2.1.0)
-  - FloatingPanel (1.5.1)
-  - FontAwesome.swift (1.7.0)
+  - FloatingPanel (1.6.1)
+  - FontAwesome.swift (1.7.1)
   - PINCache (3.0.1-beta.7):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.7)
     - PINCache/Core (= 3.0.1-beta.7)
@@ -12,7 +12,7 @@ PODS:
     - PINCache/Core
   - PINCache/Core (3.0.1-beta.7):
     - PINOperation (~> 1.1.1)
-  - PINOperation (1.1.1)
+  - PINOperation (1.1.2)
   - PINRemoteImage (3.0.0-beta.14):
     - PINRemoteImage/PINCache (= 3.0.0-beta.14)
   - PINRemoteImage/Core (3.0.0-beta.14):
@@ -21,7 +21,7 @@ PODS:
     - PINCache (= 3.0.1-beta.7)
     - PINRemoteImage/Core
   - PinterestSegment (1.2.3)
-  - SkeletonView (1.5)
+  - SkeletonView (1.6)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
@@ -53,14 +53,14 @@ SPEC CHECKSUMS:
   ARNTransitionAnimator: 6fea1fe318b251abfd3cbd06d91215deb374ae40
   Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
   DeckTransition: ca707456e3d83928c895fed6f458cbf68c5cac84
-  FloatingPanel: b2f4fb6f8fea7877954beff8f3f03bb6595ab354
-  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
+  FloatingPanel: 46f000f80eddffd7c27acdb48b813eb1b4ba7d79
+  FontAwesome.swift: 8d9792fa2d2347055da35bd97752b3960bd75952
   PINCache: 7cb9ae068c8f655717f7c644ef1dff9fd573e979
-  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: 81bbff853acc71c6de9e106e9e489a791b8bbb08
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
-  SkeletonView: 6cbb80f82f8bdee3f9093e2fa03b84819b4bd826
+  SkeletonView: 6c2bf622c352c7e36b4f3c8d73afc46d6c9360d6
 
 PODFILE CHECKSUM: c1e1da4a143d9effe82a1074655de34cd3f27aa3
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.7.2
