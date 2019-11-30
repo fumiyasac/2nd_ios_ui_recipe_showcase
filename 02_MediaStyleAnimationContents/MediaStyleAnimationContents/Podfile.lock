@@ -1,20 +1,20 @@
 PODS:
   - ActiveLabel (1.1.0)
-  - Alamofire (4.8.2)
-  - AlamofireImage (3.5.2):
-    - Alamofire (~> 4.8)
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - BTNavigationDropdownMenu (0.5)
   - Floaty (4.2.0)
-  - FontAwesome.swift (1.7.1)
-  - FSPagerView (0.8.2)
-  - PromiseKit (6.10.0):
-    - PromiseKit/CorePromise (= 6.10.0)
-    - PromiseKit/Foundation (= 6.10.0)
-    - PromiseKit/UIKit (= 6.10.0)
-  - PromiseKit/CorePromise (6.10.0)
-  - PromiseKit/Foundation (6.10.0):
+  - FontAwesome.swift (1.8.2)
+  - FSPagerView (0.8.3)
+  - PromiseKit (6.12.0):
+    - PromiseKit/CorePromise (= 6.12.0)
+    - PromiseKit/Foundation (= 6.12.0)
+    - PromiseKit/UIKit (= 6.12.0)
+  - PromiseKit/CorePromise (6.12.0)
+  - PromiseKit/Foundation (6.12.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.10.0):
+  - PromiseKit/UIKit (6.12.0):
     - PromiseKit/CorePromise
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.0)
@@ -34,7 +34,7 @@ DEPENDENCIES:
   - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ActiveLabel
     - Alamofire
     - AlamofireImage
@@ -49,17 +49,17 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
   Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
-  FontAwesome.swift: 8d9792fa2d2347055da35bd97752b3960bd75952
-  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
-  PromiseKit: 1fdaeb6c0a94a5114fcb814ff3d772b86886ad4e
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
 PODFILE CHECKSUM: 86fca7db0c7d9d0be867cb7a80c2c07bd9d1994b
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.8.4
