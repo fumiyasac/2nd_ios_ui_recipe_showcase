@@ -143,6 +143,7 @@ final class MainViewController: ZoomImageTransitionViewController {
         informationButtonView.showInformationButtonAction = {
 
             // ライブラリ「DeckTransition」を利用したメッセージアプリの様な画面遷移を行う
+            // MEMO: iOS13以降のPresent/Dismiss時は.modalPresentationStyleの設定がない場合はこのライブラリとほとんど同じ挙動になる
             let vc = MainInformationViewController.instantiate()
             let delegate = DeckTransitioningDelegate()
             vc.transitioningDelegate = delegate
@@ -175,6 +176,11 @@ extension MainViewController: MainSectionDelegate {
         selectedImageView = imageView
 
         // Modalの画面遷移を実行する
+        // MEMO: iOS13以降のPresent/Dismiss時の調整
+        // Present/Dismissで実行するカスタムトランジションの場合ではこの設定を忘れると画面遷移がおかしくなるので注意
+        if #available(iOS 13.0, *) {
+            vc.modalPresentationStyle = .fullScreen
+        }
         self.present(vc, animated: true, completion: nil)
     }
 }
