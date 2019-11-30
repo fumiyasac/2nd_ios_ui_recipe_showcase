@@ -79,8 +79,12 @@ extension ArticleAPIManager: APIManagerProtocol {
     private func handleArticlesApiRequest(url: String, params: [String : Any] = [:]) -> Promise<JSON> {
 
         // MEMO: Alamofireでの通信処理をPromiseKitでラッピングする
+        // 注意: iOS13以降では、Alamofireを利用する際の「encoding」は下記の様に設定する。
+        // .getの場合はURLEncoding.default
+        // .post,.put,.deleteはJSONEncoding.default
+
         return Promise { seal in
-            Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: ArticleAPIManager.requestHeader).validate().responseJSON { response in
+            Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: ArticleAPIManager.requestHeader).validate().responseJSON { response in
 
                 switch response.result {
 
