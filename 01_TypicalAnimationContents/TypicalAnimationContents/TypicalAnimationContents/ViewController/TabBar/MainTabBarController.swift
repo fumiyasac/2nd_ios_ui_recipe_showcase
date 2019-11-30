@@ -28,13 +28,24 @@ final class MainTabBarController: UITabBarController {
 
         // MEMO: UITabBarに配置されているアイコン画像をアニメーションさせるための処理
         // 現在配置されているUITabBarからUIImageViewを取得して配列にする
-        let targetClass: AnyClass = NSClassFromString("UITabBarButton")!
-        let tabBarImageViews = tabBar.subviews
-            .filter{ $0.isKind(of: targetClass) }
-            .map{ $0.subviews.first as! UIImageView }
+        if #available(iOS 13.0, *) {
 
-        // アイコン画像にバウンドさせるアニメーションを付与する
-        executeBounceAnimationFor(selectedImageView: tabBarImageViews[item.tag])
+            // iOS13以降では、この方法で機能を実現することが不可能
+            // ログはこんな感じ: → Could not cast value of type 'UITabBarButtonLabel' (xxx) to 'UIImageView' (yyy).
+            // UITabBarItem内の構造が変化したことが原因。
+            // ＜同様な動きを実現するためのライブラリ＞
+            // 下記のようなライブラリを導入してUITabBarItemにアニメーションを付与するアイデアもあるかと思います。
+            // https://github.com/eggswift/ESTabBarController
+
+        } else {
+
+            let targetClass: AnyClass = NSClassFromString("UITabBarButton")!
+            let tabBarImageViews = tabBar.subviews
+                .filter{ $0.isKind(of: targetClass) }
+                .map{ $0.subviews.first as! UIImageView }
+            // アイコン画像にバウンドさせるアニメーションを付与する
+            executeBounceAnimationFor(selectedImageView: tabBarImageViews[item.tag])
+        }
     }
 
     // MARK: - Private Function

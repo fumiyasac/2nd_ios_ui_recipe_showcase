@@ -57,7 +57,11 @@ final class GalleryViewController: UIViewController {
         // UICollectionViewに付与するアニメーションに関する設定
         // MEMO: AnimatedCollectionViewLayoutでカードが回転するアニメーションを加える
         let layout = AnimatedCollectionViewLayout()
-        layout.animator = CubeAttributesAnimator()
+
+        // MEMO: こちらはCubeAttributesAnimatorを選択した際に表示がおかしかった為、RotateInOutAttributesAnimatorへ変更しています。
+        // iOS13以降のSimulatorで確認した際に発生していたのでおそらくバージョン起因のライブラリ側の問題も可能性がありそうなので調査＆確認中
+        // https://github.com/KelvinJin/AnimatedCollectionViewLayout/issues/54
+        layout.animator = RotateInOutAttributesAnimator()
         layout.scrollDirection = .horizontal
         galleryCollectionView.collectionViewLayout = layout
     }

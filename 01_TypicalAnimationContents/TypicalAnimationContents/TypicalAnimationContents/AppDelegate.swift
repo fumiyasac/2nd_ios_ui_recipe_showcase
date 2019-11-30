@@ -8,6 +8,10 @@
 
 import UIKit
 
+// 本サンプルにおいて現状非対応にしている、または最低限の対応だけに留めている部分は下記の通り
+// 1. DarkMode: 現状ではDarkModeをキャンセルしています。
+// 2. UISceneAPI: 現状挙動への問題はないがiOS13以降では非推奨となっています。
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        // MEMO: DarkModeのキャンセル（Info.plistについても念のため記載）
+        if #available(iOS 13.0, *) {
+            window?.overrideUserInterfaceStyle = .light
+        }
         return true
     }
 

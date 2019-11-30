@@ -29,15 +29,28 @@ extension UIViewController {
         self.navigationItem.title = title
 
         // ラージタイトルの表示設定に関する設定やデザイン調整を行う
-        // 下記リンクも参考に!
+        // 下記「stackoverflow」に掲載されていたコードを参考に実装しています。
         // http://bit.ly/2TXCbd7
         self.navigationItem.largeTitleDisplayMode = .always
         self.navigationController?.navigationBar.prefersLargeTitles = true
 
+        // MEMO: iOS13以降ではラージタイトル表示時の属性テキストの設定方法が若干変わる点に注意する
+        // https://qiita.com/MilanistaDev/items/6181495e8504612ec053
         var largeAttributes = [NSAttributedString.Key : Any]()
         largeAttributes[NSAttributedString.Key.font] = UIFont(name: "HiraKakuProN-W6", size: 26.0)
         largeAttributes[NSAttributedString.Key.foregroundColor] = UIColor(code: "#333333")
-        navigationController?.navigationBar.largeTitleTextAttributes = largeAttributes
+
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithDefaultBackground()
+            appearance.backgroundColor = UIColor(code: "#ffffff")
+            appearance.largeTitleTextAttributes = largeAttributes
+            appearance.titleTextAttributes = attributes
+            self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            self.navigationController?.navigationBar.standardAppearance = appearance
+        } else {
+            self.navigationController?.navigationBar.largeTitleTextAttributes = largeAttributes
+        }
     }
 
     // 戻るボタンの「戻る」テキストを削除した状態にするメソッド
