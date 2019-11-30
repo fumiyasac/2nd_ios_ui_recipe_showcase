@@ -4,10 +4,10 @@
 
 こちらは、上記書籍にて紹介しているサンプルを収録したリポジトリになります。書籍内で解説の際に利用したサンプルコードの完成版のプロジェクトがそれぞれの章毎にありますので、書籍内の解説をより詳細に理解する際や開発中のアプリにおける実装時の参考等にご活用頂ければ嬉しく思います。
 
- * macOS Mojave 10.14.4
- * Xcode 10.3
- * Swift 5.0.1
- * CocoaPods 1.7.2
+ * macOS Mojave 10.15.1
+ * Xcode 11.1
+ * Swift 5.1
+ * CocoaPods 1.8.4
 
 ※ サンプルで利用しているライブラリの中にはSwift4.2のまま利用しているものがあります。
 
@@ -88,10 +88,10 @@ target 'MediaStyleAnimationContents' do
   pod 'Toast-Swift', '~> 5.0.0'
 end
 
-# FSPagerView & BTNavigationDropdownMenuのライブラリバージョンをSwift4.2に固定する
+# BTNavigationDropdownMenuのライブラリバージョンをSwift4.2に固定する
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    if ['FSPagerView', 'BTNavigationDropdownMenu'].include? target.name
+    if ['BTNavigationDropdownMenu'].include? target.name
       target.build_configurations.each do |config|
         config.build_settings['SWIFT_VERSION'] = '4.2'
       end
@@ -144,10 +144,10 @@ target 'PurchasePresentContents' do
   pod 'SkeletonView'
 end
 
-# DeckTransition & PinterestSegmentのライブラリバージョンをSwift4.2に固定する
+# PinterestSegmentのライブラリバージョンをSwift4.2に固定する
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    if ['DeckTransition', 'PinterestSegment'].include? target.name
+    if ['PinterestSegment'].include? target.name
       target.build_configurations.each do |config|
         config.build_settings['SWIFT_VERSION'] = '4.2'
       end
@@ -167,3 +167,10 @@ $ pod install
 ## 3. その他サンプルに関することについて
 
 その他、サンプルにおける気になる点や要望等がある場合は是非GithubのIssueやPullRequestをお送り頂けますと嬉しく思います。
+
+__【iOS13 & Xcode11.1へのバージョンアップにおいてこのサンプルで触れていない部分】__
+
+本サンプルでは下記の部分に関しては、今回は対応していませんのでご注意下さい。
+
++ DarkModeの無効化（現在は強制的にLightModeにしています。）
++ SceneDelegateは利用しない従来のAppDelegateの利用（現状は挙動に問題はありませんが非推奨です。）
