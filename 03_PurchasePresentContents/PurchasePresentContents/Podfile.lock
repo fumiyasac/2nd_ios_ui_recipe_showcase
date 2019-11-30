@@ -1,10 +1,10 @@
 PODS:
-  - AnimatedCollectionViewLayout (0.6.0)
+  - AnimatedCollectionViewLayout (1.0.0)
   - ARNTransitionAnimator (3.2.0)
-  - Cosmos (19.0.3)
-  - DeckTransition (2.1.0)
-  - FloatingPanel (1.6.1)
-  - FontAwesome.swift (1.7.1)
+  - Cosmos (20.0.1)
+  - DeckTransition (2.2.0)
+  - FloatingPanel (1.7.1)
+  - FontAwesome.swift (1.8.2)
   - PINCache (3.0.1-beta.7):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.7)
     - PINCache/Core (= 3.0.1-beta.7)
@@ -21,7 +21,7 @@ PODS:
     - PINCache (= 3.0.1-beta.7)
     - PINRemoteImage/Core
   - PinterestSegment (1.2.3)
-  - SkeletonView (1.6)
+  - SkeletonView (1.8.2)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
@@ -35,7 +35,7 @@ DEPENDENCIES:
   - SkeletonView
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AnimatedCollectionViewLayout
     - ARNTransitionAnimator
     - Cosmos
@@ -49,18 +49,18 @@ SPEC REPOS:
     - SkeletonView
 
 SPEC CHECKSUMS:
-  AnimatedCollectionViewLayout: f2c4e8dda4e3f1678ad6c0b39273a31b19bc935d
+  AnimatedCollectionViewLayout: ad7879152f068df6a17192551587709ff88678db
   ARNTransitionAnimator: 6fea1fe318b251abfd3cbd06d91215deb374ae40
-  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
-  DeckTransition: ca707456e3d83928c895fed6f458cbf68c5cac84
-  FloatingPanel: 46f000f80eddffd7c27acdb48b813eb1b4ba7d79
-  FontAwesome.swift: 8d9792fa2d2347055da35bd97752b3960bd75952
+  Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
+  DeckTransition: c705e1f6bf8d63a3515a91d8a41be7038005bf35
+  FloatingPanel: 2f87246071476cf05d77ba3f50a373ca4b04549e
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
   PINCache: 7cb9ae068c8f655717f7c644ef1dff9fd573e979
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: 81bbff853acc71c6de9e106e9e489a791b8bbb08
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
-  SkeletonView: 6c2bf622c352c7e36b4f3c8d73afc46d6c9360d6
+  SkeletonView: bb27c39857e5492136f02ee8a3aa78de55d12ecd
 
-PODFILE CHECKSUM: c1e1da4a143d9effe82a1074655de34cd3f27aa3
+PODFILE CHECKSUM: a654f6261737d040cdc763f561f834f6d16b7cd6
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.8.4
