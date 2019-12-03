@@ -1,5 +1,5 @@
 PODS:
-  - AnimatedCollectionViewLayout (1.0.0)
+  - AnimatedCollectionViewLayout (1.0.1)
   - ARNTransitionAnimator (3.2.0)
   - Cosmos (20.0.1)
   - DeckTransition (2.2.0)
@@ -49,7 +49,7 @@ SPEC REPOS:
     - SkeletonView
 
 SPEC CHECKSUMS:
-  AnimatedCollectionViewLayout: ad7879152f068df6a17192551587709ff88678db
+  AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
   ARNTransitionAnimator: 6fea1fe318b251abfd3cbd06d91215deb374ae40
   Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
   DeckTransition: c705e1f6bf8d63a3515a91d8a41be7038005bf35
@@ -61,6 +61,6 @@ SPEC CHECKSUMS:
   PinterestSegment: 3dd673ffd9feb00dc7816bb1e503d70459e8eaa8
   SkeletonView: bb27c39857e5492136f02ee8a3aa78de55d12ecd
 
-PODFILE CHECKSUM: a654f6261737d040cdc763f561f834f6d16b7cd6
+PODFILE CHECKSUM: d989519409bf1aa2db3596dc29631f00bd7a00fe
 
 COCOAPODS: 1.8.4
