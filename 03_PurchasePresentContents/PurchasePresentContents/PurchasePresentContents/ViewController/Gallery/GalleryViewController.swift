@@ -60,7 +60,7 @@ final class GalleryViewController: UIViewController {
 
         // Ver1.0.0 + iOS13以降の組み合わせの場合CubeAttributesAnimatorがおかしくなるのでVer1.0.1を利用します
         // https://github.com/KelvinJin/AnimatedCollectionViewLayout/issues/54
-        layout.animator = CubeAttributesAnimator()
+        layout.animator = RotateInOutAttributesAnimator()
         layout.scrollDirection = .horizontal
         galleryCollectionView.collectionViewLayout = layout
     }
