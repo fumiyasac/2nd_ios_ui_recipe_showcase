@@ -30,7 +30,6 @@ final class MainTabBarController: UITabBarController {
         // 現在配置されているUITabBarからUIImageViewを取得して配列にする
         // ＜同様な動きを実現するためのライブラリ＞
         // (例1) https://github.com/eggswift/ESTabBarController
-        // (例2) https://github.com/eggswift/ESTabBarController
 
         var tabBarImageViews: [UIImageView] = []
         let targetClass: AnyClass = NSClassFromString("UITabBarButton")!
