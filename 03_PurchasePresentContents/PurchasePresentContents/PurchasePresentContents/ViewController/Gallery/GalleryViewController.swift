@@ -55,12 +55,9 @@ final class GalleryViewController: UIViewController {
         galleryCollectionView.registerCustomCell(GalleryCollectionViewCell.self)
 
         // UICollectionViewに付与するアニメーションに関する設定
-        // MEMO: AnimatedCollectionViewLayoutでカードが回転するアニメーションを加える
+        // MEMO: AnimatedCollectionViewLayoutでカードがInstagramの様に回転するアニメーションを加える
         let layout = AnimatedCollectionViewLayout()
-
-        // Ver1.0.0 + iOS13以降の組み合わせの場合CubeAttributesAnimatorがおかしくなるのでVer1.0.1を利用します
-        // https://github.com/KelvinJin/AnimatedCollectionViewLayout/issues/54
-        layout.animator = RotateInOutAttributesAnimator()
+        layout.animator = CubeAttributesAnimator()
         layout.scrollDirection = .horizontal
         galleryCollectionView.collectionViewLayout = layout
     }
