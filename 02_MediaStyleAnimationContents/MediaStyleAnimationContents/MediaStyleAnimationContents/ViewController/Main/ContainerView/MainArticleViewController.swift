@@ -32,6 +32,7 @@ final class MainArticleViewController: UIViewController {
 
     // ViewModelの初期化に必要な要素の定義
     private let notificationCenter = NotificationCenter()
+    // MEMO: Mockに接続する場合はMockArticleAPIManager.sharedを設定する
     private let api = ArticleAPIManager.shared
 
     // ViewModelの初期化
