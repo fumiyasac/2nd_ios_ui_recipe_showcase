@@ -1,6 +1,6 @@
 {
   "name": "chapter02_mock_server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mock server of sample app MediaStyleAnimationContents.",
   "main": "index.js",
   "dependencies": {
