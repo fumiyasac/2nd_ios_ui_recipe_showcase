@@ -49,7 +49,7 @@ final class DetailRecommendCollectionViewCell: UICollectionViewCell {
 
         // 画像データを表示する
         if let imageURL = detailRecommend.imageUrl {
-            thumbnailImageView.af_setImage(withURL: imageURL)
+            thumbnailImageView.af.setImage(withURL: imageURL)
         }
 
         // タイトル表示用ラベルの装飾を適用して表示する

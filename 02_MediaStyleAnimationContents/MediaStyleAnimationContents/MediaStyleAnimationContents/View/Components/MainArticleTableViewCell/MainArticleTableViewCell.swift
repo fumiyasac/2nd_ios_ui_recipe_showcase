@@ -50,7 +50,7 @@ final class MainArticleTableViewCell: UITableViewCell {
             )
 
             // 表示時のプレースホルダー画像・フィルタ・トランジションも引数に設定する
-            thumbnailImageView.af_setImage(
+            thumbnailImageView.af.setImage(
                 withURL: thumbnailUrl,
                 placeholderImage: UIImage(named: "placeholder"),
                 filter: thumbnailFilter,

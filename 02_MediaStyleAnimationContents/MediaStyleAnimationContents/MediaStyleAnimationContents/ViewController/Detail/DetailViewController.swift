@@ -195,7 +195,7 @@ final class DetailViewController: UIViewController {
 
             // メインとなる画像表示部分を反映する
             if let thumbnailURL = entity.thumbnailUrl {
-                detailImageView.af_setImage(withURL: thumbnailURL)
+                detailImageView.af.setImage(withURL: thumbnailURL)
             }
         }
     }
