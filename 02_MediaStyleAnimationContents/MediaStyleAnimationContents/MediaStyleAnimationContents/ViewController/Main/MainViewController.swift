@@ -44,6 +44,7 @@ final class MainViewController: UIViewController {
         // 手順1. 対象ContainerViewの「EmbedSegue」部分にInterfaceBuilderでを利用して任意の名前をつける
         // 手順2. prepareメソッド内でidentifierプロパティの値とつけた名前が一致するかを判定する
         // 手順3. 一致する場合はdestinationプロパティの値を該当のViewControllerへダウンキャストしてインスタンスを取得する
+        // 注意点: このサンプルの様な形でUIScrollViewの内部にUITableView(UICollectionView)を持ち、かつ追加読み込みが発生する場合には、少ない件数であれば支障はありませんが表示するアイテムの個数が多くなる場合にはUI構造上、要素のリサイクルができない点に注意が必要です。
     }
 
     private func setupMainMenuButton() {

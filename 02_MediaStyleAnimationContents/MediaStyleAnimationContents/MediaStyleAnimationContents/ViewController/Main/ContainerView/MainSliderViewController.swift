@@ -119,7 +119,7 @@ extension MainSliderViewController: FSPagerViewDataSource, FSPagerViewDelegate {
 
         let mainSlider = mainSliderLists[index]
         if let imageUrl = mainSlider.imageUrl {
-            cell.imageView?.af_setImage(withURL: imageUrl)
+            cell.imageView?.af.setImage(withURL: imageUrl)
             cell.imageView?.contentMode = .scaleAspectFill
             cell.imageView?.clipsToBounds = true
         }

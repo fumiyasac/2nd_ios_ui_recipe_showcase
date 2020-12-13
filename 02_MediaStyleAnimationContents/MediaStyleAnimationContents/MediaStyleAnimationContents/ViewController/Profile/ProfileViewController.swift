@@ -51,10 +51,32 @@ final class ProfileViewController: UIViewController {
         advertisementView.frame = CGRect(x: 0, y: 0, width: 300.0, height: 84.0)
         advertisementView.openAdvertisementButtonAction = {
             if let url = URL(string: "https://nextpublishing.jp/book/10500.html") {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:])
+                } else {
+                    self.showAlertWith(completionHandler: nil)
+                }
             }
         }
         self.view.showToast(advertisementView)
+    }
+
+    // MEMO: iOS14からSafari以外のブラウザをデフォルトに変更することが可能です。
+    // その場合には「LSApplicationQueriesSchemes」の設定をしないとcanOpenURLでfalseになってしまいます。
+    // ※ 詳細はInfo.plistを参照
+    // 確認したSafari以外のブラウザは下記の通りになります。
+    // - Google Chrome / Smooz
+    private func showAlertWith(completionHandler: (() -> ())? = nil) {
+        let alert = UIAlertController(
+            title: "リンクを開くことができませんでした。",
+            message: "アプリ内部の設定が誤っている可能性があります。",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
+            completionHandler?()
+        })
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -79,7 +101,11 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let targetProfile = targetProfiles[indexPath.row]
         if let url = targetProfile.getLink() {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:])
+            } else {
+                showAlertWith(completionHandler: nil)
+            }
         }
     }
 }

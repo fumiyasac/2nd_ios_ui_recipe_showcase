@@ -206,8 +206,25 @@ extension QiitaViewController: WKUIDelegate, WKNavigationDelegate {
                 let safariVC = SFSafariViewController(url: url)
                 self.present(safariVC, animated: true, completion: nil)
             } else {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:])
+                } else {
+                    showAlertWith(completionHandler: nil)
+                }
             }
         }
+    }
+
+    private func showAlertWith(completionHandler: (() -> ())? = nil) {
+        let alert = UIAlertController(
+            title: "リンクを開くことができませんでした。",
+            message: "アプリ内部の設定が誤っている可能性があります。",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
+            completionHandler?()
+        })
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }
