@@ -15,37 +15,41 @@ final class CommentFloatingPanelLayout: FloatingPanelLayout {
 
     // MARK: - Computed Property
 
+    // 制約の基準値に関する設定
+    var position: FloatingPanelPosition {
+        return .bottom
+    }
+
     // 初期化時のハーフモーダル位置の表示状態
-    var initialPosition: FloatingPanelPosition {
+    var initialState: FloatingPanelState {
         return .tip
     }
 
-    // 上部のドラッグ可能位置におけるずれのバッファ値
-    var topInteractionBuffer: CGFloat {
-        return 0.0
-    }
-
-    // 下部のドラッグ可能位置におけるずれのバッファ値
-    var bottomInteractionBuffer: CGFloat {
-        return 0.0
-    }
-
-    // MARK: - Function
-
     // 全画面時・半分時・一番下部時の位置を決定する
-    func insetFor(position: FloatingPanelPosition) -> CGFloat? {
-        switch position {
-        case .full:
-            // MEMO: 上部SafeAreaからの位置
-            return 0.0
-        case .half:
-            // MEMO: 下部SafeAreaからの位置
-            return 246.0
-        case .tip:
-            // MEMO: 下部SafeAreaからの位置
-            return 64.0
-        default:
-            return nil
-        }
+    // MEMO: 基準をSuperViewとする場合は「referenceGuide: .superview」とする
+    var anchors: [FloatingPanelState : FloatingPanelLayoutAnchoring] {
+        return [
+            .full:
+                // MEMO: 上部SafeAreaからの位置
+                FloatingPanelLayoutAnchor(
+                    absoluteInset: 0.0,
+                    edge: .top,
+                    referenceGuide: .safeArea
+                ),
+            .half:
+                // MEMO: 下部SafeAreaからの位置
+                FloatingPanelLayoutAnchor(
+                    absoluteInset: 246.0,
+                    edge: .bottom,
+                    referenceGuide: .safeArea
+                ),
+            .tip:
+                // MEMO: 下部SafeAreaからの位置
+                FloatingPanelLayoutAnchor(
+                    absoluteInset: 64.0,
+                    edge: .bottom,
+                    referenceGuide: .safeArea
+                )
+        ]
     }
 }

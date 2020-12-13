@@ -80,12 +80,27 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
 
         // セミモーダルビューで表示する画面をFloatingPanelControllerへセットする
         floatingPanel = FloatingPanelController()
-        floatingPanel.surfaceView.cornerRadius = 24.0
+        
+        // セミモーダル画面の見た目に関する設定
+        let appearance = SurfaceAppearance()
+        // セミモーダル画面に設定するシャドウの設定
+        let shadow = SurfaceAppearance.Shadow()
+        shadow.color = UIColor.black
+        shadow.offset = CGSize(width: 0, height: 24.0)
+        shadow.radius = 24.0
+        shadow.spread = 8
+        appearance.shadows = [shadow]
+        // セミモーダル画面に設定する角丸表現の設定
+        appearance.cornerRadius = 24.0
+        appearance.backgroundColor = .clear
+        // 見た目の設定を反映する
+        floatingPanel.surfaceView.appearance = appearance
+
         let detailCommentViewController = DetailCommentViewController.instantiate()
         floatingPanel.set(contentViewController: detailCommentViewController)
 
         // セミモーダルビューを表示して初期位置を一番下の状態にする
-        floatingPanel.addPanel(toParent: self, belowView: nil, animated: true)
+        floatingPanel.addPanel(toParent: self, animated: true)
         floatingPanel.move(to: .tip, animated: false)
 
         // FloatingPanelControllerDelegateを適用する
@@ -120,7 +135,7 @@ final class DetailGiftViewController: ZoomImageTransitionViewController {
 extension DetailGiftViewController: FloatingPanelControllerDelegate {
 
     // FloatingPanelのレイアウト設定に関するクラスを適用する
-    func floatingPanel(_ vc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout? {
+    func floatingPanel(_ vc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout {
         return CommentFloatingPanelLayout()
     }
 
