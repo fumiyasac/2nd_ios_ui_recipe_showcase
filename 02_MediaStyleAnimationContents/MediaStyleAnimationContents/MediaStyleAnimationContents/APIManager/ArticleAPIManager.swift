@@ -20,10 +20,10 @@ class ArticleAPIManager {
 
     // MEMO: UserAgentに付加する情報の組み立て
     private static let bundleIdentifier = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String
-    private static let requestHeader = [
-        "User-Agent" : bundleIdentifier,
-        "Content-Type" : "application/x-www-from-urlencoded"
-    ]
+    private static let requestHeader = HTTPHeaders(
+        arrayLiteral: HTTPHeader(name: "User-Agent", value: bundleIdentifier),
+        HTTPHeader(name: "Content-Type", value: "application/x-www-from-urlencoded")
+    )
 
     // MARK: - Singleton Instance
 
@@ -82,9 +82,10 @@ extension ArticleAPIManager: APIManagerProtocol {
         // 注意: iOS13以降では、Alamofireを利用する際の「encoding」は下記の様に設定する。
         // .getの場合はURLEncoding.default
         // .post,.put,.deleteはJSONEncoding.default
+        // Alamofire5.x系からは変更がある点に注意
 
         return Promise { seal in
-            Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: ArticleAPIManager.requestHeader).validate().responseJSON { response in
+            AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: ArticleAPIManager.requestHeader).validate().responseJSON { response in
 
                 switch response.result {
 
