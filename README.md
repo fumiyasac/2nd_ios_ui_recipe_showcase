@@ -4,10 +4,12 @@
 
 こちらは、上記書籍にて紹介しているサンプルを収録したリポジトリになります。書籍内で解説の際に利用したサンプルコードの完成版のプロジェクトがそれぞれの章毎にありますので、書籍内の解説をより詳細に理解する際や開発中のアプリにおける実装時の参考等にご活用頂ければ嬉しく思います。
 
- * macOS Catalina 10.15.1
- * Xcode 11.1
- * Swift 5.1
- * CocoaPods 1.8.4
+2020.12.13時点での収録サンプルのリポジトリに関しては下記のバージョンで実装したものになっております。
+
+ * macOS Big Sur 11.0.1
+ * Xcode 12.2
+ * Swift 5.3
+ * CocoaPods 1.10.0
 
 ※ サンプルで利用しているライブラリの中にはSwift4.2のまま利用しているものがあります。
 
@@ -87,17 +89,6 @@ target 'MediaStyleAnimationContents' do
   pod 'BTNavigationDropdownMenu'
   pod 'Toast-Swift', '~> 5.0.0'
 end
-
-# BTNavigationDropdownMenuのライブラリバージョンをSwift4.2に固定する
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    if ['BTNavigationDropdownMenu'].include? target.name
-      target.build_configurations.each do |config|
-        config.build_settings['SWIFT_VERSION'] = '4.2'
-      end
-    end
-  end
-end
 ```
 
 __ライブラリのインストール手順:__
@@ -133,7 +124,7 @@ __利用しているライブラリ一覧:__
 ```ruby
 target 'PurchasePresentContents' do
   use_frameworks!
-  pod 'PINRemoteImage', '3.0.0-beta.14'
+  pod 'PINRemoteImage'
   pod 'FontAwesome.swift'
   pod 'Cosmos'
   pod 'DeckTransition'
