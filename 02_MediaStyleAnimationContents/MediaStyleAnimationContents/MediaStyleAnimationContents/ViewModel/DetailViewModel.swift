@@ -53,12 +53,11 @@ final class DetailViewModel {
             .done{ json in
 
                 // データ保持用の変数へJSONから取得したデータを整形して格納する
-                let responseResult = MainArticle.getSingleArticle(json)
-                self.targetDetailArticle = responseResult
+                self.targetDetailArticle = MainArticle.getSingleArticle(json)
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchArticleById, object: nil)
-                print("記事詳細データ取得成功:", responseResult)
+                print("記事詳細データ取得成功:", self.targetDetailArticle ?? "")
             }
 
             // 失敗時の処理をクロージャー内に記載する
@@ -79,12 +78,11 @@ final class DetailViewModel {
             .done{ json in
 
                 // データ保持用の変数へJSONから取得したデータを整形して格納する
-                let responseResult = DetailRecommend.getDetailRecommendList(json)
-                self.targetDetailRecommendLists = responseResult
+                self.targetDetailRecommendLists = DetailRecommend.getDetailRecommendList(json)
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchDetailRecommend, object: nil)
-                print("おすすめデータ取得成功:", responseResult)
+                print("おすすめデータ取得成功:", self.targetDetailRecommendLists)
             }
 
             // 失敗時の処理をクロージャー内に記載する

@@ -65,8 +65,8 @@ final class MainArticleViewModel {
                 // 1. 次のページが存在するかの判定
                 self.hasNextPage = MainArticle.getHasNextPage(json)
                 // 2. 記事10件分
-                let responseResult = MainArticle.getMainArticleList(json).map {
-                    self.targetMainArticleLists.append($0)
+                MainArticle.getMainArticleList(json).forEach { mainArticle in
+                    self.targetMainArticleLists.append(mainArticle)
                 }
 
                 // 現在のページ数に+1加算する
@@ -74,7 +74,7 @@ final class MainArticleViewModel {
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchMainArticle, object: nil)
-                print("記事一覧データ取得成功:", responseResult)
+                print("記事一覧データ取得成功:", self.targetMainArticleLists)
             }
 
             // 失敗時の処理をクロージャー内に記載する

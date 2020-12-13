@@ -47,12 +47,11 @@ final class MainSliderViewModel {
             .done{ json in
 
                 // データ保持用の変数へJSONから取得したデータを整形して格納する
-                let responseResult = MainSlider.getMainSliderList(json)
-                self.targetMainSliderLists = responseResult
+                self.targetMainSliderLists = MainSlider.getMainSliderList(json)
 
                 // データ取得処理成功時のNotification送信
                 self.notificationCenter.post(name: self.successFetchMainSlider, object: nil)
-                print("スライド画像一覧データ取得成功:", responseResult)
+                print("スライド画像一覧データ取得成功:", self.targetMainSliderLists)
             }
 
             // 失敗時の処理をクロージャー内に記載する
