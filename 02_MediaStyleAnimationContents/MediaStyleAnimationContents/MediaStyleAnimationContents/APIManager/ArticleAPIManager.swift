@@ -85,7 +85,7 @@ extension ArticleAPIManager: APIManagerProtocol {
         // Alamofire5.x系からは変更がある点に注意
 
         return Promise { seal in
-            AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: ArticleAPIManager.requestHeader).validate().responseJSON { response in
+            AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: ArticleAPIManager.requestHeader).responseData { response in
 
                 switch response.result {
 
